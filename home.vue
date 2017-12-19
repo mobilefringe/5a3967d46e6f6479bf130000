@@ -84,6 +84,7 @@
                     temp_val.name = "Temp Feature";
                     temp_val.description = "Temp Feature description";
                     temp_val.url = "/promotions";
+                    return new_features;
                 }
             },
             methods: {
