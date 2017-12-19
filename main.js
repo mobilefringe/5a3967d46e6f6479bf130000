@@ -27,7 +27,7 @@ require.config({
   }
 });
 
-require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'locales', 'moment', "vue-meta","vue-select"], function (Vue, Vue2Filters, VueRouter, appRoutes, store, VueI18n, messages, moment, Meta, VueSelect) {
+require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'locales', 'moment', "vue-meta","vue-select","vue-dropdown"], function (Vue, Vue2Filters, VueRouter, appRoutes, store, VueI18n, messages, moment, Meta, VueSelect) {
   Vue.use(Meta);
   Vue.use(VueRouter);
   Vue.use(Vue2Filters);
