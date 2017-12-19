@@ -157,6 +157,16 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                         name: "About Us",
                         id: "stores_link",
                         href: "/map"
+                    },
+                    {
+                        name: "About Us",
+                        id: "stores_link",
+                        href: "/map"
+                    },
+                    {
+                        name: "About Us",
+                        id: "stores_link",
+                        href: "/map"
                     }
                 ]
             }
