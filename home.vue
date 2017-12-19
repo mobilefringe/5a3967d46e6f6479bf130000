@@ -89,7 +89,7 @@
                     new_features.push(temp_val, temp_val);
                     
                     new_features.map(feature => {
-                        feature.short_description = _.truncate(feature.description,250);
+                        feature.short_description = _.truncate(feature.description,300);
                     });
                     return new_features;
                 }
