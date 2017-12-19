@@ -139,7 +139,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 hover_class_list:"menu_underline",
                 sub_menu : [
                     {
-                        name: "Leasing ",
+                        name: "Customer Service ",
                         id: "stores_link",
                         href: "/leasing"
                     },
