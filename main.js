@@ -118,7 +118,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                         href: "/leasing"
                     },
                     {
-                        name: "Centre Map",
+                        name: "Speciality",
                         id: "stores_link",
                         href: "/map"
                     },
