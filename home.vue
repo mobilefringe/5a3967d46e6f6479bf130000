@@ -82,7 +82,7 @@
                     // return _.slice(this.$store.state.results.feature_items, 2,this.$store.state.results.feature_items.length );
                     new_features = _.slice(this.$store.state.results.feature_items, 2,this.$store.state.results.feature_items.length );
                     new_features.map(feature => {
-                        feature.image_url = _.truncare(feature.description,200);
+                        feature.short_description = _.truncare(feature.description,200);
                     });
                     var temp_val = {};
                     temp_val.name = "Temp Feature";
