@@ -86,7 +86,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 ]
             },
             {
-                name: "Events",
+                name: "Sales & Promos",
                 id: "sales_link",
                 href: "/promotions",
                 parent_id: "sales",
