@@ -5,7 +5,7 @@
                 <div  class="prev"></div>
                 <slick ref="slick" :options="slickOptions">
                     <div class="" v-for="banner in banners">
-                       <img src="http://placehold.it/700x458" class="" alt=""><!--<img :src="banner.image_url" class="" alt="">-->
+                       <img src="http://placehold.it/700x460" class="" alt=""><!--<img :src="banner.image_url" class="" alt="">-->
                         <div class="banner_text" v-if="banner.description">
                             <p class="banner-description">{{banner.description}}</p>
                             <router-link :to="banner.url">
