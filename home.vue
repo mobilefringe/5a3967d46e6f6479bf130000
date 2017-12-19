@@ -72,6 +72,7 @@
                 banners () {
                     console.log(_.orderBy(this.$store.state.results.banners, ['position'], ['asc']));
                     return _.orderBy(this.$store.state.results.banners, ['position'], ['asc']);
+                    // banners: ['http://placehold.it/700x460','http://placehold.it/700x460','http://placehold.it/700x460']
                 },
                 banner_features () {
                    return  _.slice(this.$store.state.results.feature_items, 0, 2);
