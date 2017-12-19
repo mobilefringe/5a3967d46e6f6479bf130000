@@ -82,7 +82,7 @@
                     return _.slice(this.$store.state.results.feature_items, 2,this.$store.state.results.feature_items.length );
                     var temp_val = {};
                     temp_val.name = "Temp Feature";
-                    temp_val.description = "Temp Feature";
+                    temp_val.description = "Temp Feature description";
                     temp_val.name = "Temp Feature";
                 }
             },
