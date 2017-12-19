@@ -80,6 +80,7 @@
                 feature_items () {
                     console.log(this.$store.state.results.feature_items);
                     return _.slice(this.$store.state.results.feature_items, 2,this.$store.state.results.feature_items.length );
+                    var temp_val = {}
                 }
             },
             methods: {
