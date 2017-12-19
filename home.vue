@@ -34,7 +34,7 @@
                         <p class="feature-title">{{item.name}}</p>
                         <img src="http://placehold.it/300x625" class="feature-image" /><!--<img :src="item.image_url" class="feature-image" />-->
                         <p class="feature-html">{{item.html}}</p>
-                        <p class="feature-desc">{{item.description}}</p>
+                        <p class="feature-desc">{{item.short_description}}</p>
                         <span class="feature_read_more"><router-link :to="item.url" class="mobile_readmore" ><p class="feature-readmore">Read More <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></p></router-link></span>
                     </div>
                 </span>
