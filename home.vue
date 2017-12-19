@@ -58,7 +58,7 @@
                         prevArrow: '.prev',
                         nextArrow: '.next',
                         autoplay: false,
-                        banners: ['http://placehold.it/700x460']
+                        banners: ['http://placehold.it/700x460','http://placehold.it/700x460','http://placehold.it/700x460']
                     }
                 }
             },
