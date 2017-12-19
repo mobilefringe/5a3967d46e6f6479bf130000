@@ -58,8 +58,8 @@
                         prevArrow: '.prev',
                         nextArrow: '.next',
                         autoplay: false
-                    },
-                    banners: ['http://placehold.it/700x460','http://placehold.it/700x460','http://placehold.it/700x460']
+                        // Any other options that can be got from plugin documentation
+                    }
                 }
             },
             computed: {
@@ -69,10 +69,10 @@
                 processedStores() {
                   return this.$store.getters.processedStores;
                 },
-                // banners () {
-                //     console.log(_.orderBy(this.$store.state.results.banners, ['position'], ['asc']));
-                //     return _.orderBy(this.$store.state.results.banners, ['position'], ['asc']);
-                // },
+                banners () {
+                    console.log(_.orderBy(this.$store.state.results.banners, ['position'], ['asc']));
+                    return _.orderBy(this.$store.state.results.banners, ['position'], ['asc']);
+                },
                 banner_features () {
                    return  _.slice(this.$store.state.results.feature_items, 0, 2);
                 },
