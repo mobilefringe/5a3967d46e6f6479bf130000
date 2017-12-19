@@ -130,13 +130,30 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 ]
             },
             {
-                name: "Store Hours",
-                id: "hours_link",
-                href: "/",
-                parent_id: "hours",
+                name: "Leasing",
+                id: "stores_link",
+                // href: "/stores",
+                parent_id: "stores",
                 parent_class_list: "menu_item",
-                hover_id: "hours_underline",
-                hover_class_list:"menu_underline"
+                hover_id: "stores_underline",
+                hover_class_list:"menu_underline",
+                sub_menu : [
+                    {
+                        name: "Leasing ",
+                        id: "stores_link",
+                        href: "/leasing"
+                    },
+                    {
+                        name: "Speciality Leasing",
+                        id: "stores_link",
+                        href: "/map"
+                    },
+                    {
+                        name: "Photos",
+                        id: "stores_link",
+                        href: "/map"
+                    }
+                ]
             }
         ],
         toggle_sitemap : false
