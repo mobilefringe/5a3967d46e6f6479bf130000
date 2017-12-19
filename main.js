@@ -86,15 +86,6 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 ]
             },
             {
-                name: "Sales & Promos",
-                id: "sales_link",
-                href: "/promotions",
-                parent_id: "sales",
-                parent_class_list: "menu_item",
-                hover_id: "sales_underline",
-                hover_class_list:"menu_underline"
-            },
-            {
                 name: "Events",
                 id: "events_link",
                 href: "/",
@@ -103,6 +94,16 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 hover_id: "events_underline",
                 hover_class_list:"menu_underline"
             },
+            {
+                name: "Sales & Promos",
+                id: "sales_link",
+                href: "/promotions",
+                parent_id: "sales",
+                parent_class_list: "menu_item",
+                hover_id: "sales_underline",
+                hover_class_list:"menu_underline"
+            },
+            
             {
                 name: "Careers",
                 id: "jobs_link",
