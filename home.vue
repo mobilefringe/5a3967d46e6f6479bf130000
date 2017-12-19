@@ -57,8 +57,8 @@
                         arrows:true,
                         prevArrow: '.prev',
                         nextArrow: '.next',
-                        autoplay: false
-                        // Any other options that can be got from plugin documentation
+                        autoplay: false,
+                        banners: []
                     }
                 }
             },
