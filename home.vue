@@ -69,10 +69,10 @@
                 processedStores() {
                   return this.$store.getters.processedStores;
                 },
-                banners () {
-                    console.log(_.orderBy(this.$store.state.results.banners, ['position'], ['asc']));
-                    return _.orderBy(this.$store.state.results.banners, ['position'], ['asc']);
-                },
+                // banners () {
+                //     console.log(_.orderBy(this.$store.state.results.banners, ['position'], ['asc']));
+                //     return _.orderBy(this.$store.state.results.banners, ['position'], ['asc']);
+                // },
                 banner_features () {
                    return  _.slice(this.$store.state.results.feature_items, 0, 2);
                 },
