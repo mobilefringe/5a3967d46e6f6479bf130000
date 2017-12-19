@@ -54,7 +54,8 @@
             <div class="menu-container hidden-phone ">
                 <div class="menu-div page_container">
                     <div v-for="item in menu_items" :id="item.parent_id" :class="item.parent_class_list">
-                        <router-link tag="li" :to="item.href" :id="item.id" class="all_caps dropdown">{{item.name}} 
+                        <router-link tag="li" :to="item.href" :id="item.id" class="all_caps dropdown">
+                        <a href="" data-toggle="dropdown" class="menu_link dropdown-toggle menu_dropdown_parent">{{item.name}} </a>
                         <!--<div :id="item.hover_id" :class="item.hover_class_list + ' dropdown menu_link dropdown-toggle menu_dropdown_parent'"  data-toggle="dropdown">&nbsp;</div>-->
                             <div class="dropdown-menu invisible_dropdown_div dd_programs dropdown-menu-hover">
                                 <ul class="dd_guest dropdown_list">
