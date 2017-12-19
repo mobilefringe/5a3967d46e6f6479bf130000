@@ -60,7 +60,7 @@
                             <ul class="dd_guest dropdown_list">
                                 <div class="triangle-up"></div>
                                 <div class="triangle-up-inside"></div>
-                                <router-link tag="li" v-for="sub_menu in item" :to="item.href" :id="item.id" class="all_caps">{{item.name}} </router-link>
+                                <router-link tag="li" v-for="sub_menu in item.sub_menu" :to="item.href" :id="item.id" class="all_caps">{{item.name}} </router-link>
                             </ul>
                         </div>
                     </div>
