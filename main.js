@@ -104,7 +104,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 hover_class_list:"menu_underline"
             },
             {
-                name: "Store Directory",
+                name: "Leasing",
                 id: "stores_link",
                 // href: "/stores",
                 parent_id: "stores",
