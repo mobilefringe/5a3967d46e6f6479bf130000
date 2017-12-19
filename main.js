@@ -72,11 +72,13 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 parent_class_list: "menu_item",
                 hover_id: "stores_underline",
                 hover_class_list:"menu_underline",
-                sub_menu : {
+                sub_menu : [
+                    {
                     name: "Store Directory",
                     id: "stores_link",
                     href: "/stores"
                 }
+                ]
             },
             {
                 name: "Sales & Promos",
