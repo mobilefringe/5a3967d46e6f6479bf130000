@@ -83,7 +83,7 @@
                     var temp_val = {};
                     temp_val.name = "Temp Feature";
                     temp_val.description = "Temp Feature description";
-                    temp_val.name = "Temp Feature";
+                    temp_val.url = "Temp Feature";
                 }
             },
             methods: {
