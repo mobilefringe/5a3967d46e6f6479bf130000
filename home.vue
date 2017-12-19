@@ -84,7 +84,7 @@
                     
                     var temp_val = {};
                     temp_val.name = "Temp Feature";
-                    temp_val.description = "Temp Feature description";
+                    temp_val.description = "Temp Feature description. Lorem ipsum dolor sit amet, consectetur adipiscing elit";
                     temp_val.url = "/promotions";
                     new_features.push(temp_val, temp_val);
                     
