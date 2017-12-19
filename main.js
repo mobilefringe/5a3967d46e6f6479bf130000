@@ -71,7 +71,10 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 parent_id: "stores",
                 parent_class_list: "menu_item",
                 hover_id: "stores_underline",
-                hover_class_list:"menu_underline"
+                hover_class_list:"menu_underline",
+                sub_menu : {
+                    
+                }
             },
             {
                 name: "Sales & Promos",
