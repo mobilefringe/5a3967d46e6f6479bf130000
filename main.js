@@ -103,15 +103,26 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 hover_id: "sales_underline",
                 hover_class_list:"menu_underline"
             },
-            
             {
-                name: "Careers",
-                id: "jobs_link",
-                href: "/",
-                parent_id: "jobs",
+                name: "Store Directory",
+                id: "stores_link",
+                // href: "/stores",
+                parent_id: "stores",
                 parent_class_list: "menu_item",
-                hover_id: "jobs_underline",
-                hover_class_list:"menu_underline"
+                hover_id: "stores_underline",
+                hover_class_list:"menu_underline",
+                sub_menu : [
+                    {
+                        name: "Store Directory",
+                        id: "stores_link",
+                        href: "/stores"
+                    },
+                    {
+                        name: "Centre Map",
+                        id: "stores_link",
+                        href: "/map"
+                    }
+                ]
             },
             {
                 name: "Store Hours",
