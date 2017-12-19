@@ -106,7 +106,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             {
                 name: "Leasing",
                 id: "leasing_link",
-                // href: "/stores",
+                href: "",
                 parent_id: "leasing",
                 parent_class_list: "menu_item",
                 hover_id: "stores_underline",
