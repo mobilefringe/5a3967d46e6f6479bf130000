@@ -81,6 +81,9 @@
                     console.log(this.$store.state.results.feature_items);
                     // return _.slice(this.$store.state.results.feature_items, 2,this.$store.state.results.feature_items.length );
                     new_features = _.slice(this.$store.state.results.feature_items, 2,this.$store.state.results.feature_items.length );
+                    new_features.map(feature => {
+                        feature.image_url = "https://mallmaverick.cdn.speedyrails.net" + store.store_front_url;
+                    });
                     var temp_val = {};
                     temp_val.name = "Temp Feature";
                     temp_val.description = "Temp Feature description";
