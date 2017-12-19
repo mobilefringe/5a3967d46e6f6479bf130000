@@ -69,7 +69,7 @@
             </div>
             <div class="footer-div hidden-phone" id="footer-div">
                 <div class="footer-top page_container">
-                    <span>
+                    <span v-if="property">
                        <p class="pull-left"> <a href="#" @click="toggle_sitemap = !toggle_sitemap;">Sitemap</a> | <a href="/pages/canyoncrest-terms-of-use">Terms of Use</a> | <a href = "/pages/canyoncrest-center-code-of-conduct">Code of Conduct </a> | <a href="/pages/canyoncrest-privacy-policy">Privacy Policy</a> | <a href="/pages/canyoncrest-contact-us">Contact Us</a> | <a href="/login">Admin Login</a> | <a href="http://www.mallmaverick.com" target="_blank">Powered by Mall Maverick</a>  | </p><p class="pull-right">&copy; Copyright {{copyright_year}} {{property.name}}</p>
                     </span>
                         <p class="pull-left"> {{property.address1}} {{property.city}}{{property.province}} {{property.postal_code}} - 214.363.7441</p>      
