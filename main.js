@@ -95,7 +95,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 hover_class_list:"menu_underline"
             },
             {
-                name: "Sales & Promotions",
+                name: "Promotions",
                 id: "sales_link",
                 href: "/promotions",
                 parent_id: "sales",
