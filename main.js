@@ -47,6 +47,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
   });
   
   Vue.component('v-select', VueSelect.VueSelect);
+  
   /* bootstrap app */
   const vm = new Vue({
     el: '#app',
