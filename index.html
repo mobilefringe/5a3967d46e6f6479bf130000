@@ -66,7 +66,8 @@
                             <!--        </router-link>-->
                             <!--    </ul>-->
                             <!--</div>-->
-                            <popover name="foo">-->
+                            <popover name="foo">
+                            <router-link tag="li" v-for="sub_menu in item.sub_menu" :to="sub_menu.href" :id="sub_menu.id" class="all_caps">
                                         <a href="/contests/yubasutter-test-contest">Contest</a>
                                     </router-link>
                             </popover>
