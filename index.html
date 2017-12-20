@@ -57,15 +57,15 @@
                         <router-link tag="li" :to="item.href" :id="item.id" class="all_caps dropdown">
                         <a href="" data-toggle="dropdown" class="menu_link dropdown-toggle menu_dropdown_parent">{{item.name}} </a>
                         <!--<div :id="item.hover_id" :class="item.hover_class_list + ' dropdown menu_link dropdown-toggle menu_dropdown_parent'"  data-toggle="dropdown">&nbsp;</div>-->
-                            <div class="dropdown-menu invisible_dropdown_div dd_programs dropdown-menu-hover">
-                                <ul class="dd_guest dropdown_list">
-                                    <div class="triangle-up"></div>
-                                    <div class="triangle-up-inside"></div>
-                                    <router-link tag="li" v-for="sub_menu in item.sub_menu" :to="sub_menu.href" :id="sub_menu.id" class="all_caps">
-                                        <a href="/contests/yubasutter-test-contest">Contest</a>
-                                    </router-link>
-                                </ul>
-                            </div>
+                            <!--<div class="dropdown-menu invisible_dropdown_div dd_programs dropdown-menu-hover">-->
+                            <!--    <ul class="dd_guest dropdown_list">-->
+                            <!--        <div class="triangle-up"></div>-->
+                            <!--        <div class="triangle-up-inside"></div>-->
+                            <!--        <router-link tag="li" v-for="sub_menu in item.sub_menu" :to="sub_menu.href" :id="sub_menu.id" class="all_caps">-->
+                            <!--            <a href="/contests/yubasutter-test-contest">Contest</a>-->
+                            <!--        </router-link>-->
+                            <!--    </ul>-->
+                            <!--</div>-->
                         </router-link>
                     </div>
                 </div>
