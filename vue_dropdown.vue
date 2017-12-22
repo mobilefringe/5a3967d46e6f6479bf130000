@@ -201,7 +201,7 @@ define(["Vue", "vue!today_hours", "vue!search-component", 'vue!vue-slick'], func
       this.open()
     }
   }
-}
+});
 </script>
 
 <style>
