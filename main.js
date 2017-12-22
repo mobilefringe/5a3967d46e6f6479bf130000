@@ -95,6 +95,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 parent_class_list: "menu_item",
                 hover_id: "events_underline",
                 hover_class_list:"menu_underline"
+                show_sub_menu : false
             },
             {
                 name: "Promotions",
@@ -104,6 +105,8 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 parent_class_list: "menu_item",
                 hover_id: "sales_underline",
                 hover_class_list:"menu_underline"
+                show_sub_menu : false
+                show_sub_menu : false,
             },
             {
                 name: "Leasing",
@@ -113,6 +116,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 parent_class_list: "menu_item",
                 hover_id: "stores_underline",
                 hover_class_list:"menu_underline",
+                show_sub_menu : false,
                 sub_menu : [
                     {
                         name: "Leasing ",
@@ -139,7 +143,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 parent_class_list: "menu_item",
                 hover_id: "stores_underline",
                 hover_class_list:"menu_underline",
-                show_sub_menu : false;
+                show_sub_menu : false,
                 sub_menu : [
                     {
                         name: "Customer Service ",
