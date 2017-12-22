@@ -192,12 +192,6 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         console.error("Could not retrieve data from server. Please check internet connection and try again.");
       });
       
-      window.addEventListener('click', function(e){
-      if (! e.target.parentNode.classList.contains('menu__link--toggle'))
-      {
-        self.close()
-      }
-    }, false)
     },
     watch: {
       // watcher to update vue-i18n when the locale has been changed by the user
