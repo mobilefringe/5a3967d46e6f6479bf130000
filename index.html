@@ -55,7 +55,7 @@
             <div class="menu-container hidden-phone ">
                 <div class="menu-div page_container">
                     <div v-for="item in menu_items" :id="item.parent_id" :class="item.parent_class_list">
-                        <router-link tag="li" :to="item.href" :id="item.id" class="all_caps dropdown">
+                        <router-link tag="a" :to="item.href" :id="item.id" class="all_caps dropdown">
                         <a href="" class="menu_link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" :id="item.name.id">{{item.name}} </a>
                         <div class="dropdown-menu" :aria-labelledby="item.id">
                             <a class="dropdown-item" href="#">Action</a>
