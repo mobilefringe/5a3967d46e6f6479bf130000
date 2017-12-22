@@ -126,7 +126,7 @@ function setPosition($link, $dd, position, margin) {
 }
 
     define(["Vue", "vue!today_hours", "vue!search-component", 'vue!vue-slick'], function(Vue, TodayHoursComponent, SearchComponent, slick) {
-        return Vue.component("home-component", {
+        return Vue.component("VueMyDropdown-component", {
             template: template, // the variable template will be injected
     data() {
     return {
