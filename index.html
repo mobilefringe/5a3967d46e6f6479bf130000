@@ -67,7 +67,7 @@
                             <!--        </router-link>-->
                             <!--    </ul>-->
                             <!--</div>-->
-                           <b-dropdown id="ddown1" text="Dropdown Button" class="m-md-2 menu_link" v-if="item.sub_menu">
+                           <b-dropdown id="ddown1" :text="item.name" class="m-md-2 menu_link" v-if="item.sub_menu">
                             <b-dropdown-item v-for="sub_menu in item.sub_menu">{{item.name}}</b-dropdown-item>
                           </b-dropdown>
                         </router-link>
