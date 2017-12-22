@@ -68,7 +68,7 @@
                             <!--    </ul>-->
                             <!--</div>-->
                             <b-nav-item-dropdown :id="item.id" :text="item.name" right>
-                                <b-dropdown-item v-for="sub_menu in item.sub_menu">{{sub_menu.name}}</b-dropdown-item>
+                                <b-dropdown-item v-if="item.sub_menu" v-for="sub_menu in item.sub_menu">{{sub_menu.name}}</b-dropdown-item>
                                 <b-dropdown-item>two</b-dropdown-item>
                                 <b-dropdown-divider></b-dropdown-divider>
                                 <b-dropdown-item>three</b-dropdown-item>
