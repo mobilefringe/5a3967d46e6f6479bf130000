@@ -175,8 +175,8 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         ],
         toggle_sitemap : false,
         dropDowns: {
-      ranking: { open: false}  
-    }
+            ranking: { open: false}  
+        }
       }
     },
     created() {
