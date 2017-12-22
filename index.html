@@ -68,7 +68,7 @@
                             <!--    </ul>-->
                             <!--</div>-->
                            <b-dropdown id="ddown1" text="Dropdown Button" class="m-md-2" v-if="item.sub_menu">
-                            <b-dropdown-item>First Action</b-dropdown-item>
+                            <b-dropdown-item v-for="sub_menu in item.sub_menu">First Action</b-dropdown-item>
                             <b-dropdown-item>Second Action</b-dropdown-item>
                             <b-dropdown-item>Third Action</b-dropdown-item>
                             <b-dropdown-divider></b-dropdown-divider>
