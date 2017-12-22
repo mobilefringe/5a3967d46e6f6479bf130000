@@ -60,7 +60,7 @@
                 <div class="menu-div page_container">
                     <div v-for="item in menu_items" :id="item.parent_id" :class="item.parent_class_list">
                         <router-link  :to="item.href" :id="item.id" class="all_caps dropdown">
-                        <a href="" class="menu_link" :id="item.name.id" @click="if(item.sub_menu) { item.show_sub_menu = !item.show_sub_menu}">{{item.name}} </a>
+                        <a href="" class="menu_link" :id="item.name.id" @click="item.show_sub_menu = !item.show_sub_menu">{{item.name}} </a>
                         <div class="dropdown-menu" v-if="item.sub_menu" v-show="item.show_sub_menu" >
                             <a class="dropdown-item" v-for="sub_menu in item.sub_menu">{{sub_menu.name}}</a>
                         </div>
