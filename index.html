@@ -67,9 +67,12 @@
                             <!--        </router-link>-->
                             <!--    </ul>-->
                             <!--</div>-->
-                           <b-dropdown id="ddown1" text="Dropdown Button" class="m-md-2 " v-if="item.sub_menu">
-                            <b-dropdown-item v-for="sub_menu in item.sub_menu">{{item.name}}</b-dropdown-item>
-                          </b-dropdown>
+                           <b-nav-item-dropdown id="nav7_ddown" text="Dropdown" right>
+    <b-dropdown-item>one</b-dropdown-item>
+    <b-dropdown-item>two</b-dropdown-item>
+    <b-dropdown-divider></b-dropdown-divider>
+    <b-dropdown-item>three</b-dropdown-item>
+  </b-nav-item-dropdown>
                         </router-link>
                     </div>
                 </div>
