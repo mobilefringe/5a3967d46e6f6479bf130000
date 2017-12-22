@@ -170,10 +170,13 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                         id: "stores_link",
                         href: "/map"
                     }
-                ]
+                ],
             }
         ],
-        toggle_sitemap : false
+        toggle_sitemap : false,
+        dropDowns: {
+      ranking: { open: false}  
+    }
       }
     },
     created() {
