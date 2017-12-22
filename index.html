@@ -70,35 +70,6 @@
                            
                     <!--    </router-link>-->
                     <!--</div>-->
-                    <div id="menu" class="row">  
-                        <ul class="menu">
-                            <li class="menu__item">
-                                <a class="menu__link" href="#">Home</a>
-                            </li>
-                        
-                            <li class="menu__item menu__item--dropdown" v-on:click="toggle('ranking')" v-bind:class="{'open' : dropDowns.ranking.open}">
-                                <a class="menu__link menu__link--toggle" href="#">
-                                    <span>Rangliste</span>
-                                    <i class="menu__icon fa fa-angle-down"></i>
-                                </a>
-                        
-                                <ul class="dropdown-menu">
-                                    <li class="dropdown-menu__item">
-                                        <a class="dropdown-menu__link" href="#">Aktuelle Runde</a>
-                                    </li>
-                        
-                                    <li class="dropdown-menu__item">
-                                        <a class="dropdown-menu__link" href="#">Siegerliste</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        
-                            <li class="menu__item">
-                                <a class="menu__link" href="#">Belegungskalender</a>
-                            </li>
-                        </ul>
-  
-                    </div>
                 </div>
             </div>
             <router-view></router-view>
