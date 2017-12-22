@@ -241,7 +241,20 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
       // utility method to allow user to change locale value
       changeLocale: function(val) {
         this.locale = val; // this will update the data store, which in turn will trigger the watcher to update the locale in the system
+      },
+      toggle: function(dropdownName)
+    {
+      //alert(dropdownName)
+       this.dropDowns[dropdownName].open = !this.dropDowns[dropdownName].open;
+    },
+    
+    close: function()
+    {
+      for (dd in this.dropDowns)
+      {
+        this.dropDowns[dd].open = false;    
       }
+    }
     },
     router: router,
     store,
