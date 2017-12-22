@@ -33,7 +33,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
     Vue.use(Vue2Filters);
     Vue.use(VueI18n);
     // Vue.use(Popover)
-    Vue.use(BootstrapVue);
+    Vue.use(VueBootstrap);
   /* initialize router */
   const router = new VueRouter({
     mode: 'history',
