@@ -94,7 +94,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 parent_id: "events",
                 parent_class_list: "menu_item",
                 hover_id: "events_underline",
-                hover_class_list:"menu_underline"
+                hover_class_list:"menu_underline",
                 show_sub_menu : false
             },
             {
@@ -104,7 +104,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 parent_id: "sales",
                 parent_class_list: "menu_item",
                 hover_id: "sales_underline",
-                hover_class_list:"menu_underline"
+                hover_class_list:"menu_underline",
                 show_sub_menu : false
             },
             {
