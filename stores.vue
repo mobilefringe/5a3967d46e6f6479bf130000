@@ -87,7 +87,32 @@
                 },
                 filterByCategory(val) {
                     console.dir(JSON.stringify(val));
-                    this.processedStores = 
+                    if(category_id == "All" || category_id == null ||  category_id == undefined){
+                        category_id = "All";
+                    }
+                    else {
+                        category_id= this.findCategoryByName(category_id).id;
+                    }
+                    
+                    this.breakIntoCol = false;
+                    console.log(category_id);
+                    if(category_id == "All"){
+                        this.processedStores = this.storesByAlphaIndex;//this.storesByAlphaIndex;
+                        // this.breakIntoCol = true;
+                    }
+                    else {
+                        
+                        var find = this.findCategoryById;
+                        var filtered = _.filter(this.allStores, function(o) {return _.indexOf(o.categories, _.toNumber(category_id)) > -1; });
+                        _.forEach(filtered, function(value, i) {
+                            value.currentCategory = find(category_id).name;
+                        });
+                        // console.log(filtered)
+                        sortedCats = _.groupBy(filtered, store => store.currentCategory);
+                        // console.log(sortedCats);
+                        this.processedStores = sortedCats;
+                    }
+                    // this.processedStores = 
                 }
             },
             computed: {
