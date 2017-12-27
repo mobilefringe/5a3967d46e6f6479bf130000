@@ -209,6 +209,9 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             },
             $route: function() {
                 //   menu_items
+                _.forEach({ 'a': 1, 'b': 2 }, function(value, key) {
+                    console.log(key);
+                });
             }
         },
         computed: {
