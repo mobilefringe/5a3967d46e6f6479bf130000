@@ -131,6 +131,18 @@
                 dropDownCats () {
                     console.log(_.map(this.allCatergories, 'name'));
                     return _.map(this.allCatergories, 'name');
+                },
+                storesByCategoryName() {
+                  return this.$store.getters.storesByCategoryName;
+                },
+                findCategoryById () {
+                    return this.$store.getters.findCategoryById;
+                },
+                findCategoryByName (){
+                    return this.$store.getters.findCategoryByName;
+                },
+                svgMapRef() {
+                    return _.filter(this.$children, function(o) { return (o.$el.className == "svg-map") })[0];
                 }
             }
         });
