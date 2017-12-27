@@ -11,7 +11,7 @@
       </div>
     </div>
     <div class="col-md-8">
-    <img :src="currentStore.store_front_url_abs"/>
+    <img src="http://placehold.it/700x460"/>
       <!--<div>-->
       <!--  <p>{{currentStore.description}}</p>-->
       <!--</div>-->
