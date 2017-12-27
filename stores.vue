@@ -101,7 +101,7 @@
                     return this.$store.getters.processedCategories;
                 },
                 dropDownCats () {
-                    console.log(_.map(this.allCatergories, 'name');)
+                    console.log(_.map(this.allCatergories, 'name'))
                     return _.map(this.allCatergories, 'name');
                 }
             }
