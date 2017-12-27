@@ -4,17 +4,10 @@
         <div class="col-md-4">
       <div>
       <img :src="currentStore.store_front_url_abs"  style="width:300px;height:300px"/>
-        <!--<h1>{{currentStore.name}}</h1>-->
-        <!--<p>{{currentStore.category_name}}</p>-->
-        <!--<p>{{currentStore.phone}}</p>-->
-        <!--<a v-bind:href="currentStore.website">{{currentStore.website}}</a>-->
       </div>
     </div>
     <div class="col-md-8">
     <img src="http://placehold.it/620x300"/>
-      <!--<div>-->
-      <!--  <p>{{currentStore.description}}</p>-->
-      <!--</div>-->
     </div>
     </div>
     <div class="row">
