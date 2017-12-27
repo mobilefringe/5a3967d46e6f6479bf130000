@@ -1,7 +1,7 @@
 <template>
   <div class="page_container" v-if="currentStore">
-    <div class="row"></div>
-    <div class="col-md-4">
+    <div class="row">
+        <div class="col-md-4">
       <div>
         <h1>{{currentStore.name}}</h1>
         <p>{{currentStore.category_name}}</p>
@@ -14,6 +14,8 @@
         <p>{{currentStore.description}}</p>
       </div>
     </div>
+    </div>
+    
   </div>
 </template>
 
