@@ -3,7 +3,7 @@
     <div class="row" style="margin-left: inherit;">
         <div class="col-md-4">
       <div>
-      <img :src="currentStore.store_front_url_abs"  style="width:300px;height:300px"/>
+        <img :src="currentStore.store_front_url_abs"  style="width:300px;height:300px"/>
       </div>
     </div>
     <div class="col-md-8">
