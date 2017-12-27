@@ -98,7 +98,7 @@
                   return this.$store.getters.processedStores;
                 },
                 allCatergories() {
-                    console.log(this.$store.getters.processedCategories)
+                    console.log(this.$store.getters.processedCategories);
                     return this.$store.getters.processedCategories;
                 },
                 dropDownCats () {
