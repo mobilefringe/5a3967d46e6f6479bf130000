@@ -208,7 +208,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 // console.log(this.$store.getters.getTodayHours);
             },
             $route: function() {
-                //   menu_items
+                // hide dropdown when route changes
                 _.forEach(this.menu_items, function(value, key) {
                     value.show_sub_menu = false;
                 });
