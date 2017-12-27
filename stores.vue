@@ -79,7 +79,7 @@
                 }
             },
             mounted() {
-                processedStores = this.allStores
+                processedStores = this.allStores;
             },
             methods: {
                 changeMode (mode) {
@@ -87,7 +87,7 @@
                 },
                 filterByCategory(val) {
                     console.dir(JSON.stringify(val));
-                    
+                    this.processedStores = 
                 }
             },
             computed: {
