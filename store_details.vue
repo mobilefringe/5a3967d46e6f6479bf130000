@@ -3,7 +3,7 @@
     <div class="row" style="margin-left: inherit;">
         <div class="col-md-4">
       <div>
-      <img :src="currentStore.store_front_url_abs"/>
+      <img :src="currentStore.store_front_url_abs"  style="margin-left: inherit;"/>
         <!--<h1>{{currentStore.name}}</h1>-->
         <!--<p>{{currentStore.category_name}}</p>-->
         <!--<p>{{currentStore.phone}}</p>-->
