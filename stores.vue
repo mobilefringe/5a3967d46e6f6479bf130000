@@ -132,9 +132,6 @@
                     console.log(_.map(this.allCatergories, 'name'));
                     return _.map(this.allCatergories, 'name');
                 },
-                storesByCategoryName() {
-                  return this.$store.getters.storesByCategoryName;
-                },
                 findCategoryById () {
                     return this.$store.getters.findCategoryById;
                 },
