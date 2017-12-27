@@ -110,7 +110,7 @@
                         // // console.log(filtered)
                         // sortedCats = _.groupBy(filtered, store => store.currentCategory);
                         // console.log(sortedCats);
-                        this.processedStores = sortedCats;
+                        this.processedStores = filtered;
                     }
                     // this.processedStores = 
                 }
