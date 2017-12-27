@@ -9,11 +9,11 @@
                     <div class="dropdown_container hidden-phone">
                         <p class="text_left">Select Category</p>
                         <div class="category-DD-div">
-                            <v-select v-model="selected_cat" :options="dropDownCats" :searchable="false" class="open" :on-change="filterByCategory"></v-select>
+                            <v-select v-model="selectedCat" :options="dropDownCats" :searchable="false" class="open" :on-change="filterByCategory"></v-select>
                         </div>
                     </div>
                     <div class="alphabet-dd visible-phone">
-                        <v-select v-model="selected_cat" :options="dropDownCats"></v-select>
+                        <v-select v-model="selectedCat" :options="dropDownCats"></v-select>
                     </div>
                     
                     <div class="alphabet-dd visible-phone">
@@ -72,9 +72,10 @@
             data: function() {
                 return {
                   listMode: "alphabetical",
-                  selected_cat : "All",
+                  selectedCat : "All",
                   selected_alpha : null,
                   alphabet : ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"],
+                  processedStores
                 }
             },
             mounted() {
