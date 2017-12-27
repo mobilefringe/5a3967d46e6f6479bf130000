@@ -129,8 +129,10 @@
                     return this.$store.getters.processedCategories;
                 },
                 dropDownCats () {
-                    console.log(_.map(this.allCatergories, 'name'));
-                    return _.map(this.allCatergories, 'name');
+                    var cats =_.map(this.$store.getters.processedCategories, 'name');
+                    cats.unshift('All');
+                    console.log(cats);
+                    return cats;
                 },
                 findCategoryById () {
                     return this.$store.getters.findCategoryById;
