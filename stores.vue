@@ -85,8 +85,8 @@
                 changeMode (mode) {
                     this.listMode = mode;
                 },
-                filterByCategory(val) {
-                    console.dir(JSON.stringify(val));
+                filterByCategory(category_id) {
+                    console.dir(JSON.stringify(category_id));
                     if(category_id == "All" || category_id == null ||  category_id == undefined){
                         category_id = "All";
                     }
