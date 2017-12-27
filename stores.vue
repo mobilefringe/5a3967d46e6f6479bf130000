@@ -83,7 +83,7 @@
                 changeMode (mode) {
                     this.listMode = mode;
                 },
-                consoleCallback(val) {
+                filterByCategory(val) {
                     console.dir(JSON.stringify(val))
                 }
             },
