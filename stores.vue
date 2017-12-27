@@ -39,71 +39,74 @@
 </template>
 
 <style>
-  .v-select .open-indicator{
-        right: 0!important;
-        top: 0!important;
-        bottom: initial!important;
-        height: 100%!important;
-        padding: 15px 25px 15px 20px!important;
-        background-color: #9B9B9B!important;
-        border-color: #fff!important;
-        color:#fff!important;
-  }
-    .v-select .open-indicator:before{
-        border-color: #fff!important;
+    .v-select .open-indicator {
+        right: 0 !important;
+        top: 0 !important;
+        bottom: initial !important;
+        height: 100% !important;
+        padding: 15px 25px 15px 20px !important;
+        background-color: #9B9B9B !important;
+        border-color: #fff !important;
+        color: #fff !important;
     }
+
+    .v-select .open-indicator:before {
+        border-color: #fff !important;
+    }
+
     .v-select .dropdown-menu {
         font-family: Helvetica;
         font-size: 14px;
         color: #000000;
         letter-spacing: 1.56px;
-        display:block;
+        display: block;
     }
-    .v-select .dropdown-toggle{
+
+    .v-select .dropdown-toggle {
         text-align: left;
         border-radius: initial;
     }
 </style>
 
 <script>
-    define(["Vue",'vue-select'], function(Vue, VueSelect) {
+    define(["Vue", 'vue-select'], function(Vue, VueSelect) {
         return Vue.component("stores-component", {
             template: template, // the variable template will be injected
             data: function() {
                 return {
-                  listMode: "alphabetical",
-                  selectedCat : "All",
-                  selectedAlpha : null,
-                  alphabet : ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"],
-                  processedStores: null
+                    listMode: "alphabetical",
+                    selectedCat: "All",
+                    selectedAlpha: null,
+                    alphabet: ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"],
+                    processedStores: null
                 }
             },
             mounted() {
                 processedStores = this.allStores;
             },
             methods: {
-                changeMode (mode) {
+                changeMode(mode) {
                     this.listMode = mode;
                 },
                 filterByCategory(category_id) {
                     console.dir(JSON.stringify(category_id));
-                    if(category_id == "All" || category_id == null ||  category_id == undefined){
+                    if (category_id == "All" || category_id == null || category_id == undefined) {
                         category_id = "All";
+                    } else {
+                        category_id = this.findCategoryByName(category_id).id;
                     }
-                    else {
-                        category_id= this.findCategoryByName(category_id).id;
-                    }
-                    
+
                     this.breakIntoCol = false;
                     console.log(category_id);
-                    if(category_id == "All"){
-                        this.processedStores = this.allStores;//this.storesByAlphaIndex;
+                    if (category_id == "All") {
+                        this.processedStores = this.allStores; //this.storesByAlphaIndex;
                         // this.breakIntoCol = true;
-                    }
-                    else {
-                        
+                    } else {
+
                         var find = this.findCategoryById;
-                        var filtered = _.filter(this.allStores, function(o) {return _.indexOf(o.categories, _.toNumber(category_id)) > -1; });
+                        var filtered = _.filter(this.allStores, function(o) {
+                            return _.indexOf(o.categories, _.toNumber(category_id)) > -1;
+                        });
                         // _.forEach(filtered, function(value, i) {
                         //     value.currentCategory = find(category_id).name;
                         // });
@@ -123,25 +126,27 @@
                     return this.$store.getters.storesByCategoryName;
                 },
                 allStores() {
-                  return this.$store.getters.processedStores;
+                    return this.$store.getters.processedStores;
                 },
                 allCatergories() {
                     return this.$store.getters.processedCategories;
                 },
-                dropDownCats () {
-                    var cats =_.map(this.$store.getters.processedCategories, 'name');
+                dropDownCats() {
+                    var cats = _.map(this.$store.getters.processedCategories, 'name');
                     cats.unshift('All');
                     console.log(cats);
                     return cats;
                 },
-                findCategoryById () {
+                findCategoryById() {
                     return this.$store.getters.findCategoryById;
                 },
-                findCategoryByName (){
+                findCategoryByName() {
                     return this.$store.getters.findCategoryByName;
                 },
                 svgMapRef() {
-                    return _.filter(this.$children, function(o) { return (o.$el.className == "svg-map") })[0];
+                    return _.filter(this.$children, function(o) {
+                        return (o.$el.className == "svg-map")
+                    })[0];
                 }
             }
         });
