@@ -84,7 +84,8 @@
                     this.listMode = mode;
                 },
                 filterByCategory(val) {
-                    console.dir(JSON.stringify(val))
+                    console.dir(JSON.stringify(val));
+                    
                 }
             },
             computed: {
