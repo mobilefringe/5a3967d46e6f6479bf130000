@@ -23,7 +23,7 @@
         <h1>{{currentStore.name}}</h1>
         <p>{{currentStore.category_name}}</p>
         <p>{{currentStore.phone}}</p>
-        <a v-bind:href="currentStore.website">{{currentStore.website}}</a>
+        <a v-bind:href="currentStore.website">Visit Store Site</a>
       </div>
     </div>
     <div class="col-md-8">
