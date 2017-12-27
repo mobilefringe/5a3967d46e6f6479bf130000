@@ -21,7 +21,7 @@
                     </div>
               
                     <ul class="store-listing text_left  padding_top_20">
-                        <li v-for="store in allStores">
+                        <li v-for="store in processedStores">
                             <a :href="'/stores/'+store.slug"><p class="directory_store_name">{{store.name}}</p></a>
                         </li>
                     </ul>
