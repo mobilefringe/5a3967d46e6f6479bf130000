@@ -210,7 +210,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             $route: function() {
                 //   menu_items
                 _.forEach(this.menu_items, function(value, key) {
-                    console.log(key);
+                    console.log(value);
                 });
             }
         },
