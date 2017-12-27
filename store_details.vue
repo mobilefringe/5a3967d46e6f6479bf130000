@@ -1,5 +1,6 @@
 <template>
   <div class="page_container" v-if="currentStore">
+    <div class="row"></div>
     <div class="col-md-4">
       <div>
         <h1>{{currentStore.name}}</h1>
