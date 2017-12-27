@@ -27,7 +27,7 @@
       </div>
     </div>
     <div class="col-md-8">
-      <div>
+      <div class="text-left">
         <p>{{currentStore.description}}</p>
       </div>
     </div>
