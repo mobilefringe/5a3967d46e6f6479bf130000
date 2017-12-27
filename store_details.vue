@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-md-4">
       <div>
-      <img :src="currentStore.image_url"/>
+      <img :src="currentStore.store_front_url_abs"/>
         <!--<h1>{{currentStore.name}}</h1>-->
         <!--<p>{{currentStore.category_name}}</p>-->
         <!--<p>{{currentStore.phone}}</p>-->
