@@ -30,7 +30,7 @@
             <div class="store-list-map-block col-sm-8">
                 <div class="main-map">
                     <div id="mapsvg_store_detail">
-                       <!--<img src="http://placehold.it/2000x1000" alt="">-->
+                       <img src="http://placehold.it/2000x1000" alt="">
                     </div>
                 </div>
             </div>
