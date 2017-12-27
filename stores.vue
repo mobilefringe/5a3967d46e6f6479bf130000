@@ -79,6 +79,7 @@
                 }
             },
             mounted() {
+                processedStores = this.allStores
             },
             methods: {
                 changeMode (mode) {
