@@ -17,7 +17,7 @@
                     </div>
                     
                     <div class="alphabet-dd visible-phone">
-                        <v-select v-model="selected_alpha" :options="alphabet"></v-select>
+                        <v-select v-model="selectedAlpha" :options="alphabet"></v-select>
                     </div>
               
                     <ul class="store-listing text_left  padding_top_20">
@@ -73,7 +73,7 @@
                 return {
                   listMode: "alphabetical",
                   selectedCat : "All",
-                  selected_alpha : null,
+                  selectedAlpha : null,
                   alphabet : ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"],
                   processedStores
                 }
