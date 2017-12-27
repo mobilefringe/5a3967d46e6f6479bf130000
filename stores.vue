@@ -98,6 +98,7 @@
                   return this.$store.getters.processedStores;
                 },
                 allCatergories() {
+                    console.log()
                     return this.$store.getters.processedCategories;
                 },
                 dropDownCats () {
