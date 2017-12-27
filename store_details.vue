@@ -10,9 +10,9 @@
       </div>
     </div>
     <div class="col-md-8">
-      <div>
-        <p>{{currentStore.description}}</p>
-      </div>
+      <!--<div>-->
+      <!--  <p>{{currentStore.description}}</p>-->
+      <!--</div>-->
     </div>
     </div>
     <div class="row">
