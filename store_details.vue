@@ -3,10 +3,10 @@
     <div class="row">
         <div class="col-md-4">
       <div>
-        <h1>{{currentStore.name}}</h1>
-        <p>{{currentStore.category_name}}</p>
-        <p>{{currentStore.phone}}</p>
-        <a v-bind:href="currentStore.website">{{currentStore.website}}</a>
+        <!--<h1>{{currentStore.name}}</h1>-->
+        <!--<p>{{currentStore.category_name}}</p>-->
+        <!--<p>{{currentStore.phone}}</p>-->
+        <!--<a v-bind:href="currentStore.website">{{currentStore.website}}</a>-->
       </div>
     </div>
     <div class="col-md-8">
