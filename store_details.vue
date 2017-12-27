@@ -7,7 +7,7 @@
       </div>
     </div>
     <div class="col-md-8">
-    <img src="http://placehold.it/620x300"/>
+        <img src="http://placehold.it/620x300"/>
     </div>
     </div>
     <div class="row">
