@@ -75,6 +75,7 @@
                 selectedDate: function() {
                     // console.log(this.daysInMonth);
                     console.log(this.promotions);
+                    selected = moment(this.selectedDate).tz(this.timezone).format('MMM D, YYYY');
                     var vm = this;
                     vm.processedPromos = _.filter(vm.promotions, function(val){
                         // console.log(val);
