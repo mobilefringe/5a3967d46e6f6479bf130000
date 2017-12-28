@@ -48,6 +48,7 @@
         height:300px
     }
     .promo_container_title{
+        border-top:1px solid #aea99e;
         border-bottom:1px solid #aea99e;
     }
 </style>
