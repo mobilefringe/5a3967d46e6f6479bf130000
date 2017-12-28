@@ -47,9 +47,9 @@
         color:#636363;
     }
     .all_dates span {
-    font-size: 16px;
-    color: #000000;
-    letter-spacing: 1.5px;
+        font-size: 16px;
+        color: #000000;
+        letter-spacing: 1.5px;
     }
 </style>
 
