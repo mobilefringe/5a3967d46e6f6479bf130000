@@ -82,7 +82,7 @@
                         end_date = moment(val.end_date).tz(vm.timezone).format('MMM D, YYYY');
                         // console.log(vm.selectedDate, start_date, end_date);
                         // if(this.selectedDate >= start_date && this.selectedDate <= end_date) return true;
-                        return vm.selectedDate >= start_date && vm.selectedDate <= end_date;
+                        return (vm.selectedDate >= start_date) && (vm.selectedDate <= end_date);
                     });
                     console.log(this.processedPromos);
                 }
