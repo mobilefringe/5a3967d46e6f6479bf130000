@@ -39,6 +39,7 @@
     }
     .store_logo_container{
         border: 1px solid #ccc;
+        width:300px;height:300px
     }
 </style>
 <script>
