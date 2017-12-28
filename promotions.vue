@@ -117,6 +117,7 @@
                     date = moment(this.selectedDate).date();
                     month = moment(this.selectedDate).month();
                     year = moment(this.selectedDate).year();
+                    console.log(this.selectedDate);
                     this.selectedDate = moment(val + "/" + month + "/"+ year).format('MMM D, YYYY');
                     console.log(this.selectedDate);
                 }
