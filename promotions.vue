@@ -52,7 +52,6 @@
             template: template, // the variable template will be injected
             data: function() {
                 return {
-                    daysInMonths: [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31],
                     selectedDate: null
                 }
             },
