@@ -28,7 +28,7 @@
 		<div class="store_promo_container">
 		    <div class="promo_container_title text-left all_caps"> Sales & Promotions</div>
 		    <div class="row store_promo_dets">
-		        <div class="">
+		        <div class="col-sm-7">
 		            
 		        </div>
 		    </div>
