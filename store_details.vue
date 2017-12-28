@@ -37,6 +37,9 @@
     .row{
         margin-left:inherit;
     }
+    .store_logo_container{
+        
+    }
 </style>
 <script>
     define(["Vue"], function(Vue) {
