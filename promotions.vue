@@ -64,12 +64,12 @@
             data: function() {
                 return {
                     selectedDate: null,
-                    processedPromos:[];
+                    processedPromos:[]
                 }
             },
             mounted() {
                 this.selectedDate = moment().tz(this.timezone).format('MMM D, YYYY');
-                console.log(this.selectedDate)
+                console.log(this.selectedDate);
             },
             watch: {
                 selectedDate: function() {
