@@ -63,7 +63,8 @@
             template: template, // the variable template will be injected
             data: function() {
                 return {
-                    selectedDate: null
+                    selectedDate: null,
+                    processedPromos:[];
                 }
             },
             mounted() {
