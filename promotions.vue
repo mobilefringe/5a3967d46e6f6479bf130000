@@ -1,6 +1,6 @@
 <template>
 	<div class="container"><!-- for some reason if you do not put an outer container div this component template will not render -->
-		<div class="date-bar"></div>
+		<div class="date_bar"></div>
 		<div class="promo_container" v-if="promotions">
 			<div class="row promo_dets text-left" v-for="promo in promotions">
 				<div class="col-sm-7" >
