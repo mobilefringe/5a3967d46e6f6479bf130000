@@ -81,7 +81,7 @@
             methods : {
                 beforeDate () {
                     console.log(this.selectedDate);
-                    this.selectedDate
+                    this.selected= Datemoment().subtract(7, 'days');
                 }
             }
         });
