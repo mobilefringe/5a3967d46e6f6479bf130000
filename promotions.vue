@@ -7,7 +7,7 @@
 		    </span>
 		    <span @click="afterDate"> <i class="fa fa-chevron-right"></i></span>
 		</div>
-		<div class="all_dates">
+		<div class="all_dates text-center">
 		    <span v-for="n in daysInMonth">{{n}}</span>
 		</div>
 		<hr/>
@@ -45,9 +45,6 @@
     }
     .current_date{
         color:#636363;
-    }
-    .all_dates {
-        text-align: justify;
     }
     .all_dates span {
         font-size: 16px;
