@@ -52,6 +52,7 @@
         letter-spacing: 1.5px;
         height:30px;
         line-height:30px;
+            padding: 0 2.5px;
     }
 </style>
 
