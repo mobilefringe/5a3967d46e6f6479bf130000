@@ -1,6 +1,6 @@
 <template>
 	<div class="container"><!-- for some reason if you do not put an outer container div this component template will not render -->
-		<div class="store_promo_container" v-if="currentStore && currentStore.total_published_promos > 0">
+		<div class="promo_container" v-if="currentStore && currentStore.total_published_promos > 0">
 			<div class="promo_container_title text-left all_caps"> Sales & Promotions</div>
 			<div class="row store_promo_dets text-left" v-for="promo in promotions">
 				<div class="col-sm-7" >
