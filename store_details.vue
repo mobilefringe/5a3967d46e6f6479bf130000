@@ -29,7 +29,9 @@
 </template>
 <style>
     .store_logo_container,
-    .store_map_container {
+    .store_map_container,
+    .store_details_container,
+    .store_desc_container{
         padding: 20px 10px;
     }
 </style>
