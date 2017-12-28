@@ -33,6 +33,13 @@
 		        </div>
 		        <div class="col-sm-5">
 		            <p class="feature-title">{{item.name}}</p>
+		            <p class="feature-html">{{item.html}}</p>
+						<p class="feature-desc">{{item.short_description}}</p>
+						<span class="feature_read_more">
+							<router-link :to="item.url" class="mobile_readmore" >
+								<p class="feature-readmore">Read More <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></p>
+							</router-link>
+						</span>
 		        </div>
 		    </div>
 		</div>
