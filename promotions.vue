@@ -33,7 +33,7 @@
                     var vm = this;
                     var temp_promo = [];
                     var temp_job = [];
-                    _.forEach(this.currentStore.promotions, function(value, key) {
+                    _.forEach(this.$store.getters.processedPromos, function(value, key) {
                         // console.log(vm.findPromoById(value));
                         var current_promo = vm.findPromoById(value);
                         current_promo.description_short = _.truncate(current_promo.description, {
@@ -41,7 +41,7 @@
                         });
                         temp_promo.push(current_promo);
                     });
-                    return this.$store.getters.processedPromos;
+                    return temp_promo;
                 },
                 timezone() {
                     return this.$store.getters.getTimezone;
