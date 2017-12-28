@@ -80,7 +80,7 @@
             },
             methods : {
                 beforeDate () {
-                    console.log(this.selectedDate)
+                    console.log(this.selectedDate);
                 }
             }
         });
