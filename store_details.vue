@@ -11,7 +11,7 @@
 			</div>
 		</div>
 		<div class="row is-table-row">
-			<div class="col-md-4">
+			<div class="col-md-4 store_details_container">
 				<div>
 					<h1>{{currentStore.name}}</h1>
 					<p>{{currentStore.category_name}}</p>
