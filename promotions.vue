@@ -75,12 +75,12 @@
                 selectedDate: function() {
                     // console.log(this.daysInMonth);
                     console.log(this.promotions);
-                    selected = moment(this.selectedDate).tz(this.timezone).format('MMM D, YYYY');
+                    selected = moment(this.selectedDate).tz(this.timezone).format('MM DD YYYY');
                     var vm = this;
                     vm.processedPromos = _.filter(vm.promotions, function(val){
                         // console.log(val);
-                        start_date = moment(val.start_date).tz(vm.timezone).format('MMM D, YYYY');
-                        end_date = moment(val.end_date).tz(vm.timezone).format('MMM D, YYYY');
+                        start_date = moment(val.start_date).tz(vm.timezone).format('MM DD YYYY');
+                        end_date = moment(val.end_date).tz(vm.timezone).format('MM DD YYYY');
                         console.log(vm.selectedDate, start_date, end_date);
                         console.log((vm.selectedDate >= start_date), vm.selectedDate <= end_date, (vm.selectedDate >= start_date && vm.selectedDate <= end_date));
                         // if(this.selectedDate >= start_date && this.selectedDate <= end_date) return true;
