@@ -72,7 +72,7 @@
             },
             watch: {
                 selectedDate: function() {
-                    console.log(this.daysInMonth);
+                    // console.log(this.daysInMonth);
                 }
             },
             computed: {
