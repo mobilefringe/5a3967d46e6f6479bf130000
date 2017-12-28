@@ -47,7 +47,7 @@
         color:#636363;
     }
     .all_dates {
-        
+        text-align: justify;
     }
     .all_dates span {
         font-size: 16px;
