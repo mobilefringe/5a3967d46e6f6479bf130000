@@ -33,7 +33,6 @@
 		        </div>
 		        <div class="col-sm-5">
 		            <p class="feature-title">{{promo.name}}</p>
-		            <p class="feature-html">{{promo.html}}</p>
 						<p class="feature-desc">{{promo.short_description}}</p>
 						<span class="feature_read_more">
 							<router-link :to="item.url" class="mobile_readmore" >
