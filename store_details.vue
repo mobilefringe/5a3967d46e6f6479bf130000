@@ -32,7 +32,7 @@
 		            <img :src="promo.image_url" alt=""/>
 		        </div>
 		        <div class="col-sm-5">
-		            <p class="promo-title">{{promo.name}}</p>
+		            <p class="promo_div_name">{{promo.name}}</p>
 						<p class="feature-desc">{{promo.description_short}}</p>
 						<span class="feature_read_more">
 							<router-link :to="promo.url" class="mobile_readmore" >
