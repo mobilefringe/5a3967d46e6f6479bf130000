@@ -50,7 +50,7 @@
                 }
             },
             mounted () {
-                selectedDate = moment().format();
+                selectedDate = moment().format('MMM');
                 console.log(selectedDate)
             },
             computed: {
