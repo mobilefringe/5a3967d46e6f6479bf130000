@@ -35,7 +35,10 @@
         background: #D3D3D3;
         height:40px;
         line-height:40px;
-    }    
+    }
+    .current_date{
+        
+    }
 </style>
 
 <script>
