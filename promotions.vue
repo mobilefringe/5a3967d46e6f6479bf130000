@@ -77,7 +77,7 @@
                     console.log(this.promotions);
                     var vm = this;
                     vm.processedPromos = _.filter(vm.promotions, function(val){
-                        console.log(val);
+                        // console.log(val);
                         start_date = moment(val.start_date).tz(vm.timezone).format('MMM D, YYYY');
                         end_date = moment(val.end_date).tz(vm.timezone).format('MMM D, YYYY');
                         // console.log(vm.selectedDate, start_date, end_date);
