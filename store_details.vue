@@ -34,9 +34,7 @@
     .store_desc_container{
         padding: 20px 10px;
     }
-    .row{
-        margin-left:inherit;
-    }
+    
     .store_logo_container img{
         border: 1px solid #ccc;
         width:300px;
