@@ -52,21 +52,21 @@
             template: template, // the variable template will be injected
             data: function() {
                 return {
-                    daysInMonths : [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31],
+                    daysInMonths: [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31],
                     selectedDate: null
                 }
             },
-            mounted () {
+            mounted() {
                 this.selectedDate = moment().tz(this.timezone).format('MMM D, YYYY');
                 console.log(this.selectedDate)
             },
             watch: {
-        // watcher to update vue-i18n when the locale has been changed by the user
-        selectedDate: function (val, oldVal) {
-            this.$i18n.locale = val;
-            moment.locale(val);
-        }
-    },
+
+                selectedDate: function(val, oldVal) {
+                    this.$i18n.locale = val;
+                    moment.locale(val);
+                }
+            },
             computed: {
                 promotions() {
                     var vm = this;
@@ -85,23 +85,23 @@
                     return this.$store.getters.getTimezone;
                 }
             },
-            methods : {
-                beforeDate () {
+            methods: {
+                beforeDate() {
                     console.log(this.selectedDate);
                     selectedDate = this.selectedDate;
                     selectedDate = moment(selectedDate).subtract(1, 'days');
-                    this.selectedDate =moment(selectedDate).tz(this.timezone).format('MMM D, YYYY');
+                    this.selectedDate = moment(selectedDate).tz(this.timezone).format('MMM D, YYYY');
                     console.log(this.selectedDate);
                 },
-                afterDate () {
+                afterDate() {
                     console.log(this.selectedDate);
                     selectedDate = this.selectedDate;
                     selectedDate = moment(selectedDate).add(1, 'days');
-                    this.selectedDate =moment(selectedDate).tz(this.timezone).format('MMM D, YYYY');
+                    this.selectedDate = moment(selectedDate).tz(this.timezone).format('MMM D, YYYY');
                     console.log(this.selectedDate);
                 },
-                daysInMonth () {
-                    return moment(this.selectedDate).daysInMonth() 
+                daysInMonth() {
+                    return moment(this.selectedDate).daysInMonth()
                 }
             }
         });
