@@ -1,109 +1,104 @@
 <!DOCTYPE html>
 <html lang="en" data-vue-meta-server-rendered>
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <link rel="shortcut icon" href="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/vnd.microsoft.icon/1513976137651/favicon (1).ico" type="image/x-icon" />
-
-
-        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css">-->
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-        <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css"/>
-        <link href="https://cdn.jsdelivr.net/npm/animate.css@3.5.1" rel="stylesheet" type="text/css">
-        <link href="https://www.mallmaverick.com/assets/application-4a07a5bfca788b1bba00ed872cb70b2c.css" media="all" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" href="//preview-5a1891476e6f645140560000.codecloudapp.com/agile.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-        <link rel="stylesheet" href="/style.css">
-        
-    </head>
-    <body>
-        <div id="app" v-cloak v-if="dataLoaded">
-            <div class="header-container hidden-phone " id="top">
-                <div class="header page_container">
-                    <div class="col-md-6 text_left no_padding">
-                        <router-link to="/">
-                            <img class="site-logo" src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1513713887462/ES_logo_Colour (1).png">
-                        </router-link>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="social-div social_icons">
-                            <a href="/pages/canyoncrest-contact-us" style="font-size:12px; margin-right:10px; color:#999999;display: inline-block;height: 30px;line-height: 30px;">CONTACT US</a>
-                            <a href="https://www.snapchat.com/" target="_blank" class="social_link_icon social_snapchat">
-                                <!--<img id="Snapchat" class="social_link_icon" src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797672502/snapchat.png">-->
-                            </a>
-                            <a href="http://www.facebook.com/" target="_blank" class="social_link_icon social_fb">
-                                <!--<img id="Facebook" class="social_link_icon" src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797683914/facebook.png">-->
-                            </a>
-                            <a href="http://www.instagram.com/" target="_blank" class="social_link_icon social_insta">
-                                <!--<img id="Instagram" class="social_link_icon" src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797694182/insta.png">-->
-                            </a>
-                            <a href="http://www.twitter.com/" target="_blank" class="social_link_icon social_twitter">
-                                <!--<img id="Twitter" class="social_link_icon" src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797704155/twitter.png">-->
-                            </a>
-                        </div>
-                        <div class="newsletter-div">
-                            <div class="newsletter_box" style="margin-bottom:5px">
-                                <form style="margin:0" action="campaign_monitor_link_here" method="post">
-                                    <div class="input_box">
-                                    <input class="sub_input_text" id="fieldEmail" name="cm-jhithd-jhithd" type="email" required placeholder="ENTER YOUR EMAIL TO SUBSCRIBE"/>
-                                    <button type="submit" style="background-color:transparent;"><img src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797731769/newsletter.png"></button>
-                                    </div>
-                                </form>                                     	
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-container hidden-phone ">
-                <div class="menu-div page_container">
-                    <div v-for="item in menu_items" :id="item.parent_id" :class="item.parent_class_list">
-                        <router-link  :to="item.href" :id="item.id" class="all_caps dropdown">
-                        <a href="" class="menu_link" :id="item.name.id" @click="item.show_sub_menu = !item.show_sub_menu">{{item.name}} </a>
-                        <transition name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">
-                            <div class="dropdown-menu" v-if="item.sub_menu" v-show="item.show_sub_menu" >
-                                <router-link class="dropdown-item" v-for="sub_menu in item.sub_menu" :to="sub_menu.href">{{sub_menu.name}}</router-link>
-                            </div>
-                        </transition>
-                        </router-link>
-                    </div>
-                </div>
-            </div>
-            <router-view></router-view>
-            <div class="mobile-social-div visible-phone">
-                <!--{% for social_link in site.social_links limit:6 %}-->
-                <!--    <a href="{{social_link.url}}" target="_blank">-->
-                <!--        <img id="{{social_link.social_type}}" class="social_link_icon" src="{{social_link.icon_image_url}}">-->
-                <!--    </a>-->
-                <!--{% endfor %}    -->
-            </div>
-            <div class="footer-div hidden-phone" id="footer-div">
-                <div class="footer-top page_container">
-                    <span v-if="property">
-                       <p class="pull-left"> <a href="#" @click="toggle_sitemap = !toggle_sitemap;">Sitemap</a> | <a href="/pages/canyoncrest-terms-of-use">Terms of Use</a> | <a href = "/pages/canyoncrest-center-code-of-conduct">Code of Conduct </a> | <a href="/pages/canyoncrest-privacy-policy">Privacy Policy</a> | <a href="/pages/canyoncrest-contact-us">Contact Us</a> | <a href="/login">Admin Login</a> | <a href="http://www.mallmaverick.com" target="_blank">Powered by Mall Maverick</a>  | </p><p class="pull-right">&copy; Copyright {{copyright_year}} {{property.name}}</p>
-                    </span>
-                        <p class="pull-left" v-if="property"> {{property.address1}} {{property.city}}{{property.province}} {{property.postal_code}} - 214.363.7441</p>      
-                </div>
-                <div class="footer-bottom hidden-phone " v-if="toggle_sitemap">
-                    <div class="footer-bottom-title-div ">
-                        <div class="page_container">
-                        <div v-for="item in menu_items" :id="item.parent_id" class="footer_menu_title col-md-2">
-                            <router-link :to="item.href" :id="item.id" >{{item.name}} </router-link>
-                        </div>&nbsp;</div>
-                        </div>
-                </div>
-            </div>
-        </div>
-        <script data-main="/main" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.3/require.min.js"></script>
-    </body>
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/vnd.microsoft.icon/1513976137651/favicon (1).ico" type="image/x-icon" />
+		<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css">-->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css"/>
+		<link href="https://cdn.jsdelivr.net/npm/animate.css@3.5.1" rel="stylesheet" type="text/css">
+		<link href="https://www.mallmaverick.com/assets/application-4a07a5bfca788b1bba00ed872cb70b2c.css" media="all" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="//preview-5a1891476e6f645140560000.codecloudapp.com/agile.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+		<link rel="stylesheet" href="/style.css">
+	</head>
+	<body>
+		<div id="app" v-cloak v-if="dataLoaded">
+			<div class="header-container hidden-phone " id="top">
+				<div class="header page_container">
+					<div class="col-md-6 text_left no_padding">
+						<router-link to="/">
+							<img class="site-logo" src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1513713887462/ES_logo_Colour (1).png">
+						</router-link>
+					</div>
+					<div class="col-md-6">
+						<div class="social-div social_icons">
+							<a href="/pages/canyoncrest-contact-us" style="font-size:12px; margin-right:10px; color:#999999;display: inline-block;height: 30px;line-height: 30px;">CONTACT US</a>
+							<a href="https://www.snapchat.com/" target="_blank" class="social_link_icon social_snapchat">
+								<!--<img id="Snapchat" class="social_link_icon" src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797672502/snapchat.png">-->
+							</a>
+							<a href="http://www.facebook.com/" target="_blank" class="social_link_icon social_fb">
+								<!--<img id="Facebook" class="social_link_icon" src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797683914/facebook.png">-->
+							</a>
+							<a href="http://www.instagram.com/" target="_blank" class="social_link_icon social_insta">
+								<!--<img id="Instagram" class="social_link_icon" src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797694182/insta.png">-->
+							</a>
+							<a href="http://www.twitter.com/" target="_blank" class="social_link_icon social_twitter">
+								<!--<img id="Twitter" class="social_link_icon" src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797704155/twitter.png">-->
+							</a>
+						</div>
+						<div class="newsletter-div">
+							<div class="newsletter_box" style="margin-bottom:5px">
+								<form style="margin:0" action="campaign_monitor_link_here" method="post">
+									<div class="input_box">
+										<input class="sub_input_text" id="fieldEmail" name="cm-jhithd-jhithd" type="email" required placeholder="ENTER YOUR EMAIL TO SUBSCRIBE"/>
+										<button type="submit" style="background-color:transparent;"><img src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797731769/newsletter.png"></button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="menu-container hidden-phone ">
+				<div class="menu-div page_container">
+					<div v-for="item in menu_items" :id="item.parent_id" :class="item.parent_class_list">
+						<router-link  :to="item.href" :id="item.id" class="all_caps dropdown">
+							<a href="" class="menu_link" :id="item.name.id" @click="item.show_sub_menu = !item.show_sub_menu">{{item.name}} </a>
+							<transition name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">
+								<div class="dropdown-menu" v-if="item.sub_menu" v-show="item.show_sub_menu" >
+									<router-link class="dropdown-item" v-for="sub_menu in item.sub_menu" :to="sub_menu.href">{{sub_menu.name}}</router-link>
+								</div>
+							</transition>
+						</router-link>
+					</div>
+				</div>
+			</div>
+			<router-view></router-view>
+			<div class="mobile-social-div visible-phone">
+				<!--{% for social_link in site.social_links limit:6 %}-->
+				<!--    <a href="{{social_link.url}}" target="_blank">-->
+				<!--        <img id="{{social_link.social_type}}" class="social_link_icon" src="{{social_link.icon_image_url}}">-->
+				<!--    </a>-->
+				<!--{% endfor %}    -->
+			</div>
+			<div class="footer-div hidden-phone" id="footer-div">
+				<div class="footer-top page_container">
+					<span v-if="property">
+						<p class="pull-left"> <a href="#" @click="toggle_sitemap = !toggle_sitemap;">Sitemap</a> | <a href="/pages/canyoncrest-terms-of-use">Terms of Use</a> | <a href = "/pages/canyoncrest-center-code-of-conduct">Code of Conduct </a> | <a href="/pages/canyoncrest-privacy-policy">Privacy Policy</a> | <a href="/pages/canyoncrest-contact-us">Contact Us</a> | <a href="/login">Admin Login</a> | <a href="http://www.mallmaverick.com" target="_blank">Powered by Mall Maverick</a>  | </p>
+						<p class="pull-right">&copy; Copyright {{copyright_year}} {{property.name}}</p>
+					</span>
+					<p class="pull-left" v-if="property"> {{property.address1}} {{property.city}}{{property.province}} {{property.postal_code}} - 214.363.7441</p>
+				</div>
+				<div class="footer-bottom hidden-phone " v-if="toggle_sitemap">
+					<div class="footer-bottom-title-div ">
+						<div class="page_container">
+							<div v-for="item in menu_items" :id="item.parent_id" class="footer_menu_title col-md-2">
+								<router-link :to="item.href" :id="item.id" >{{item.name}} </router-link>
+							</div>
+							&nbsp;
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script data-main="/main" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.3/require.min.js"></script>
+	</body>
 </html>
-
-
-
 <!--<script>-->
 <!--    var p = window.location.pathname;-->
-
 <!--    if (p.length === 0 || p === "/" || p.match(/^\/?index/)) {                -->
 <!--        if (getCookie("visited") != "yes"){-->
 <!--            $(".hidden-popup-bg").show();-->
@@ -112,17 +107,14 @@
 <!--            document.cookie = 'visited=yes; expires='+a.toGMTString()+';'; ;-->
 <!--        }      -->
 <!--    } -->
-    
 <!--    function getCookie(name) {-->
 <!--      var value = "; " + document.cookie;-->
 <!--      var parts = value.split("; " + name + "=");-->
 <!--      if (parts.length == 2) return parts.pop().split(";").shift();-->
 <!--    }-->
-    
 <!--    function close_popup(){-->
 <!--        $(".hidden-popup-bg").hide();-->
 <!--    }-->
-    
 <!--    $(".menu_item").mouseenter(function(){-->
 <!--        $("#"+this.id+"_underline").animate({"top":"-5px"}, "fast");-->
 <!--    });-->
@@ -140,35 +132,25 @@
 <!--            }-->
 <!--        }-->
 <!--    }-->
-
-    
 <!--    function search_site(){-->
-        
 <!--        if($("#SearchTerms").val() != ""){-->
 <!--            window.location.href = "/search?query=" + $("#SearchTerms").val();-->
 <!--        }-->
 <!--    }-->
-    
 <!--    function mobile_search(){-->
-        
 <!--        if($("#MobileSearchTerms").val() != ""){-->
 <!--            window.location.href = "/search?query=" + $("#MobileSearchTerms").val();-->
 <!--        }-->
 <!--    }-->
-    
 <!--    function toggle_search(){-->
 <!--        if ($(".mobile-search-box").is(":visible")) {-->
 <!--            $(".mobile-search-box").slideUp();-->
 <!--            $(".page_content").animate({"margin-top":"65px"}, "fast");-->
-            
 <!--        } else {-->
 <!--            $(".mobile-search-box").slideDown();-->
 <!--            $(".page_content").animate({"margin-top":"103px"}, "fast");-->
-            
 <!--        }-->
-            
 <!--    }-->
-    
 <!--    function slide(){-->
 <!--        $('.custom_modal').fadeOut();-->
 <!--        $('.modal-backdrop').remove();-->
@@ -178,18 +160,14 @@
 <!--           $(".mobile-header").animate({"left":"0"}, "fast");-->
 <!--           $(".mobile-social-div").animate({"left":"0"}, "fast");-->
 <!--           $("body").css("overflow","auto");-->
-           
 <!--        } else {-->
 <!--            $(".slide_in_menu").animate({"right":"0"}, "fast").addClass('visible'); -->
 <!--            $(".page_content").animate({"left":"-81%"}, "fast");-->
 <!--            $(".mobile-social-div").animate({"left":"-81%"}, "fast");-->
 <!--            $(".mobile-header").animate({"left":"-81%"}, "fast");-->
 <!--            $("body").css("overflow","hidden");-->
-            
 <!--        }-->
-        
 <!--    }-->
-    
 <!--    function show_submenu(id){-->
 <!--        if ($("#"+id+"-submenu").is(":visible")){-->
 <!--            $("#"+id+"-submenu").slideUp();-->
@@ -197,7 +175,6 @@
 <!--            $("#"+id+"-submenu").slideDown();-->
 <!--        }-->
 <!--    }-->
-    
 <!--    function toggle_hidden_div(id){-->
 <!--        var altid = id.replace(/ /g, '');-->
 <!--        if ($("#"+altid+"-div").is(":visible")){-->
@@ -207,12 +184,5 @@
 <!--            $("#"+altid+"-button").html(id+"<i class='pull-right fa fa-chevron-up'></i>");-->
 <!--            $("#"+altid+"-div").slideDown();-->
 <!--        }-->
-        
-        
 <!--    }-->
-    
-    
 <!--</script>-->
-
-
-
