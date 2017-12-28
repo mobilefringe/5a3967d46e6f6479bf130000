@@ -51,6 +51,7 @@
             },
             mounted () {
                 selectedDate = moment();
+                console.log(selectedDate)
             },
             computed: {
                 promotions() {
