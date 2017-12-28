@@ -8,7 +8,7 @@
 		    <span @click="afterDate"> <i class="fa fa-chevron-right"></i></span>
 		</div>
 		<div class="all_dates text-center">
-		    <span v-for="n in daysInMonth">{{n}}</span>
+		    <span v-for="n in daysInMonth" @click="newDate">{{n}}</span>
 		</div>
 		<hr/>
 		<div class="promo_container" v-if="promotions">
