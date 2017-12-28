@@ -27,7 +27,11 @@
     </div>
   </div>
 </template>
-
+<style>
+    {
+            padding: 20px 10px;
+    }
+</style>
 <script>
     define(["Vue"], function(Vue) {
         return Vue.component("store-details-component", {
