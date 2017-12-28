@@ -85,6 +85,9 @@
                     selectedDate = moment(selectedDate).subtract(1, 'days');
                     this.selectedDate =moment(selectedDate).tz(this.timezone).format('MMM D, YYYY');
                     console.log(this.selectedDate);
+                },
+                afterDate () {
+                    
                 }
             }
         });
