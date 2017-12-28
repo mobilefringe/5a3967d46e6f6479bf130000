@@ -100,7 +100,7 @@
                     console.log(this.selectedDate);
                 },
                 daysInMonth() {
-                    return moment(this.selectedDate).daysInMonth()
+                    return moment(this.selectedDate).daysInMonth();
                 }
             }
         });
