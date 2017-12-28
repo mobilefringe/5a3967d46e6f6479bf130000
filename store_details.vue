@@ -19,7 +19,7 @@
 					<a v-bind:href="currentStore.website">Visit Store Site</a>
 				</div>
 			</div>
-			<div class="col-md-8 store_details_container">
+			<div class="col-md-8 store_desc_container">
 				<div class="text-left store_description">
 					<p>{{currentStore.description}}</p>
 				</div>
