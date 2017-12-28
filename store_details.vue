@@ -26,7 +26,7 @@
 			</div>
 		</div>
 		<div class="store_promo_container">
-		    <div class=""></div>
+		    <div class="promo_container_title"></div>
 		</div>
 	</div>
 </template>
