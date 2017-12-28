@@ -61,7 +61,7 @@
             },
             watch: {
                 selectedDate: function() {
-                    
+                    this.daysInMonth()
                 }
             },
             computed: {
