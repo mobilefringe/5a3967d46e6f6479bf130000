@@ -35,6 +35,7 @@
         background: #D3D3D3;
         height:40px;
         line-height:40px;
+        margin:auto;
     }
     .current_date{
         color:#000;
