@@ -81,6 +81,7 @@
             methods : {
                 beforeDate () {
                     console.log(this.selectedDate);
+                    this.selectedDate
                 }
             }
         });
