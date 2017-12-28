@@ -27,7 +27,7 @@
 <style>
     .date_bar{
         /* Today: */
-background: #D3D3D3;
+        background: #D3D3D3;
     }    
 </style>
 
