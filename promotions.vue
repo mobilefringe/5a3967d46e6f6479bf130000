@@ -79,7 +79,7 @@
                         console.log(val.start_date, val.end_date);
                         var start_date = moment(val.start_date).format('MMM D, YYYY');
                         // console.log(moment(val.start_date).format('MMM D, YYYY'));
-                        var end_date = moment(val.end_date).tz(this.timezone);
+                        var end_date = moment(val.end_date).format('MMM D, YYYY');
                         console.log(this.selectedDate, start_date, end_date);
                         // if(this.selectedDate >= start_date && this.selectedDate <= end_date) return true;
                         return this.selectedDate >= start_date && this.selectedDate <= end_dat;
