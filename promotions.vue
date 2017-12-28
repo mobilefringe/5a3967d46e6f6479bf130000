@@ -1,7 +1,7 @@
 <template>
 	<div class="container"><!-- for some reason if you do not put an outer container div this component template will not render -->
 		<div class="date_bar">
-		<span></span>
+		<span> <i class="fa fa-chevron-left"></i></span>
 		    
 		    <div class="current_date">
 		        {{selectedDate}}
