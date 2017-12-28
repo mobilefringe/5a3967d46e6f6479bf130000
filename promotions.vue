@@ -46,6 +46,9 @@
     .current_date{
         color:#636363;
     }
+    .all_dates {
+        
+    }
     .all_dates span {
         font-size: 16px;
         color: #000000;
