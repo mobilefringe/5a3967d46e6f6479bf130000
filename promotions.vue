@@ -112,7 +112,7 @@
                     this.selectedDate = moment(selectedDate).tz(this.timezone).format('MMM D, YYYY');
                     console.log(this.selectedDate);
                 },
-                newDate () {
+                newDate (val) {
                     console.log(val)
                 }
             }
