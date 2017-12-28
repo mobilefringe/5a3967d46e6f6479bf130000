@@ -82,6 +82,10 @@
                 },
                 timezone() {
                     return this.$store.getters.getTimezone;
+                },
+                daysInMonth() {
+                    var days = moment(this.selectedDate).daysInMonth();
+                    return days;
                 }
             },
             methods: {
