@@ -54,7 +54,7 @@
             },
             mounted () {
                 this.selectedDate = moment().tz(this.timezone).format('MMM D, YYYY');
-                console.log(selectedDate)
+                console.log(this.selectedDate)
             },
             computed: {
                 promotions() {
