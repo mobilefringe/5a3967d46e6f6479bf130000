@@ -81,6 +81,7 @@
             methods : {
                 beforeDate () {
                     console.log(this.selectedDate);
+                    selectedDate = this.selectedDate;
                     selectedDate = moment(this.selectedDate).subtract(1, 'days');
                     this.selectedDate =moment(selectedDate).tz(this.timezone).format('MMM D, YYYY');
                 }
