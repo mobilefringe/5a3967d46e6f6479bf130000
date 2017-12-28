@@ -91,7 +91,7 @@
                     selectedDate = this.selectedDate;
                     selectedDate = moment(selectedDate).add(1, 'days');
                     this.selectedDate =moment(selectedDate).tz(this.timezone).format('MMM D, YYYY');
-                    console.log(this.selectedDate);
+                    console.log(this.selectedDate, moment(this.selectedDate).daysInMonth() );
                 },
                 daysInMonth () {
                     return moment(this.selectedDate).daysInMonth() 
