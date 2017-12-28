@@ -86,7 +86,7 @@
                 return {
                     currentStore: null,
                     promotions : [],
-                    jobs:[],
+                    jobs:[]
                 }
             },
             beforeRouteEnter(to, from, next) {
