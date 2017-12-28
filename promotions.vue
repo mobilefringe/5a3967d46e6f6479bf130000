@@ -38,7 +38,7 @@
                         value.description_short = _.truncate(value.description, {
                             'length': 70
                         });
-                        temp_promo.push(current_promo);
+                        temp_promo.push(value);
                     });
                     return temp_promo;
                 },
