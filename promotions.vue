@@ -94,7 +94,7 @@
                     console.log(this.selectedDate);
                 },
                 daysInMonth () {
-                    return moment("2012-02", "YYYY-MM").daysInMonth() 
+                    return moment(this.selectedDate).daysInMonth() 
                 }
             }
         });
