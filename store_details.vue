@@ -37,7 +37,7 @@
     .row{
         margin-left:inherit;
     }
-    .store_logo_container{
+    .store_logo_container img{
         border: 1px solid #ccc;
         width:300px;
         height:300px
