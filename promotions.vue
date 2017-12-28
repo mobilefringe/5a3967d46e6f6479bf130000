@@ -12,7 +12,7 @@
 		</div>
 		<hr/>
 		<div class="promo_container" v-if="promotions">
-			<div class="row promo_dets text-left" v-for="promo in promotions">
+			<div class="row promo_dets text-left" v-for="promo in processedPromos">
 				<div class="col-sm-7" >
 					<div class="promo_div_image">
 						<img :src="promo.image_url" alt=""/>
