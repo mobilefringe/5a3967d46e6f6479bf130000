@@ -35,7 +35,7 @@
 		        </div>
 		        <div class="col-sm-5 promo_div_dets">
 		            <p class="promo_div_name">{{promo.name}}</p>
-		            <p class="promo_div_store_name">{{promo.name}}</p>
+		            <p class="promo_div_store_name">{{promo.store.name}}</p>
 		            <p class="promo_div_date">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
 		            
 						<p class="promo_div_description">{{promo.description_short}}</p>
