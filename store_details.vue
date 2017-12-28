@@ -28,6 +28,9 @@
 	</div>
 </template>
 <style>
+    .row{
+        margin-left:inherit;
+    }
     .store_logo_container,
     .store_map_container,
     .store_details_container,
