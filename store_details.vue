@@ -26,9 +26,6 @@
 			</div>
 		</div>
 		<div class="store_promo_container">
-			<div class="menu-div page_container">
-				<div class="menu_item">S</div>
-			</div>
 		</div>
 	</div>
 </template>
