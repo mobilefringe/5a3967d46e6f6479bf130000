@@ -115,8 +115,8 @@
                 newDate (val) {
                     console.log(val);
                     console.log(moment(selectedDate));
-                    console.log(val);
-                    console.log(val);
+                    console.log(moment(selectedDate));
+                    console.log(moment(selectedDate));
                 }
             }
         });
