@@ -31,6 +31,9 @@
 		        <div class="col-sm-7">
 		            
 		        </div>
+		        <div class="col-sm-7">
+		            
+		        </div>
 		    </div>
 		</div>
 	</div>
