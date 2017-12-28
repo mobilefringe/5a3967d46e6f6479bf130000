@@ -101,7 +101,7 @@
                 },
                 daysInMonth() {
                     var days = moment(this.selectedDate).daysInMonth();
-                    return ;
+                    return days;
                 }
             }
         });
