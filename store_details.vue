@@ -50,7 +50,7 @@
     .promo_container_title{
         border-top:1px solid #aea99e;
         border-bottom:1px solid #aea99e;
-            height: 35px;
+        height: 35px;
     }
 </style>
 <script>
