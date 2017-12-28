@@ -25,9 +25,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="menu-container hidden-phone ">
+		<div class="menu-container">
 			<div class="menu-div page_container">
-				<div class="menu_item">Sales & Promotions</div>
+				<div class="menu_item">S</div>
 			</div>
 		</div>
 	</div>
