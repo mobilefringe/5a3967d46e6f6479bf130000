@@ -52,7 +52,7 @@
 		    <div class="row store_promo_dets text-left" v-for="promo in jobs">
 		        <div class="col-sm-7" >
 		        <div class="promo_div_image">
-		            <img :src="promo.image_url" alt=""/>
+		            <img :src="currentStore.image_url" alt=""/>
 		        </div>
 		        </div>
 		        <div class="col-sm-5 promo_div_dets">
