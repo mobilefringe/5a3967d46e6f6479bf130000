@@ -29,10 +29,10 @@
         Vue.use(Meta);
         return Vue.component("promos-component", {
             template: template, // the variable template will be injected
-            data : {
-              return {
-                  daysInMonths : [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-              }  
+            data: function() {
+                return {
+                    daysInMonths : [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+                }
             },
             computed: {
                 promotions() {
