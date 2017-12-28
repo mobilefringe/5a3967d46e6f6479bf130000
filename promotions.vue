@@ -113,6 +113,8 @@
                     console.log(this.selectedDate);
                 },
                 newDate () {
+                    console.log(val)
+                }
             }
         });
     });
