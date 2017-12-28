@@ -116,7 +116,7 @@
                     console.log(val);
                     console.log(moment(selectedDate).day());
                     console.log(moment(selectedDate).month());
-                    console.log(moment(selectedDate));
+                    console.log(moment(selectedDate).year());
                 }
             }
         });
