@@ -78,7 +78,7 @@
                     this.processedPromos = _.filter(this.promotions, function(val){
                         console.log(val.start_date, val.end_date);
                         var start_date = moment(val.start_date).tz(this.timezone);
-                        console.log(moment().tz(this.timezone));
+                        console.log("lo",moment().tz(this.timezone));
                         var end_date = moment(val.end_date).tz(this.timezone);
                         console.log(this.selectedDate, start_date, end_date);
                         // if(this.selectedDate >= start_date && this.selectedDate <= end_date) return true;
