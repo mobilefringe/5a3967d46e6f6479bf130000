@@ -37,7 +37,7 @@
         line-height:40px;
     }
     .current_date{
-        
+        colour:#000
     }
 </style>
 
