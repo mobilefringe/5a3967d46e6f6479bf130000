@@ -51,7 +51,7 @@
             },
             mounted () {
                 selectedDate
-            }
+            },
             computed: {
                 promotions() {
                     var vm = this;
