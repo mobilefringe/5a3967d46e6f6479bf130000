@@ -62,7 +62,7 @@
             },
             watch: {
         // watcher to update vue-i18n when the locale has been changed by the user
-        locale: function (val, oldVal) {
+        selectedDate: function (val, oldVal) {
             this.$i18n.locale = val;
             moment.locale(val);
         }
