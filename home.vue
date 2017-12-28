@@ -1,46 +1,48 @@
 <template>
-    <div class="row page_container">
-        <div class="banner_div">
-            <div class="main_banner">
-                <div  class="prev"></div>
-                <slick ref="slick" :options="slickOptions">
-                    <div class="" v-for="banner in banners">
-                       <img src="http://placehold.it/700x460" class="" alt=""><!--<img :src="banner.image_url" class="" alt="">-->
-                        <div class="banner_text" v-if="banner.description">
-                            <p class="banner-description">{{banner.description}}</p>
-                            <router-link :to="banner.url">
-                                <div class="banner_see_more">  See All <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></div>
-                            </router-link>
-                        </div>
-                    </div>
-                </slick>
-                <div class="next"></div>
-            </div>
-            
-            <div class="top_two hidden-phone">
-                <div class="banner_features"  v-for="feature in banner_features">
-                    <router-link :to="feature.url">
-                        <img class="top_image" src='http://placehold.it/220x220'/><!--<img class="top_image" :src='feature.image_url'/>-->
-                        <div class="feature_overlay">{{feature.name}}</div>
-                    </router-link>
-                </div>
-            </div>
-        </div>
-        
-        <div style="border-top:4px double #aea99e">
-            <div class="feature-div" style="height:580px">
-                <span>
-                    <div class="feature-box" v-for="item in feature_items">
-                        <p class="feature-title">{{item.name}}</p>
-                        <img src="http://placehold.it/300x625" class="feature-image" /><!--<img :src="item.image_url" class="feature-image" />-->
-                        <p class="feature-html">{{item.html}}</p>
-                        <p class="feature-desc">{{item.short_description}}</p>
-                        <span class="feature_read_more"><router-link :to="item.url" class="mobile_readmore" ><p class="feature-readmore">Read More <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></p></router-link></span>
-                    </div>
-                </span>
-            </div>
-        </div>
-    </div>
+	<div class="row page_container">
+		<div class="banner_div">
+			<div class="main_banner">
+				<div  class="prev"></div>
+				<slick ref="slick" :options="slickOptions">
+					<div class="" v-for="banner in banners">
+						<img src="http://placehold.it/700x460" class="" alt=""><!--<img :src="banner.image_url" class="" alt="">-->
+						<div class="banner_text" v-if="banner.description">
+							<p class="banner-description">{{banner.description}}</p>
+							<router-link :to="banner.url">
+								<div class="banner_see_more">  See All <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></div>
+							</router-link>
+						</div>
+					</div>
+				</slick>
+				<div class="next"></div>
+			</div>
+			<div class="top_two hidden-phone">
+				<div class="banner_features"  v-for="feature in banner_features">
+					<router-link :to="feature.url">
+						<img class="top_image" src='http://placehold.it/220x220'/><!--<img class="top_image" :src='feature.image_url'/>-->
+						<div class="feature_overlay">{{feature.name}}</div>
+					</router-link>
+				</div>
+			</div>
+		</div>
+		<div style="border-top:4px double #aea99e">
+			<div class="feature-div" style="height:580px">
+				<span>
+					<div class="feature-box" v-for="item in feature_items">
+						<p class="feature-title">{{item.name}}</p>
+						<img src="http://placehold.it/300x625" class="feature-image" /><!--<img :src="item.image_url" class="feature-image" />-->
+						<p class="feature-html">{{item.html}}</p>
+						<p class="feature-desc">{{item.short_description}}</p>
+						<span class="feature_read_more">
+							<router-link :to="item.url" class="mobile_readmore" >
+								<p class="feature-readmore">Read More <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></p>
+							</router-link>
+						</span>
+					</div>
+				</span>
+			</div>
+		</div>
+	</div>
 </template>
 
 <script>
