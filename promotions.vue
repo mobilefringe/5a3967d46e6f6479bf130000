@@ -7,7 +7,9 @@
 		    </span>
 		    <span @click="afterDate"> <i class="fa fa-chevron-right"></i></span>
 		</div>
-		<div class="all_dates"></div>
+		<div class="all_dates">
+		    <span></span>
+		</div>
 		<div class="promo_container" v-if="promotions">
 			<div class="row promo_dets text-left" v-for="promo in promotions">
 				<div class="col-sm-7" >
