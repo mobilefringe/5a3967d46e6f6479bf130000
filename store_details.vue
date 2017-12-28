@@ -48,7 +48,7 @@
         height:300px
     }
     .promo_container_title{
-        
+        border-bottom:1px solid #aea99e;
     }
 </style>
 <script>
