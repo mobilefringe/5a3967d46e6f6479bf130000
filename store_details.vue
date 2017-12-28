@@ -1,6 +1,6 @@
 <template>
 	<div class="page_container" v-if="currentStore">
-		<div class="row" style="margin-left: inherit;">
+		<div class="row">
 			<div class="col-md-4 store_logo_container">
 				<div>
 					<img :src="currentStore.store_front_url_abs"  style="width:300px;height:300px"/>
