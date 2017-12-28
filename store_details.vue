@@ -32,7 +32,7 @@
 		            <img :src="" alt=""/>
 		        </div>
 		        <div class="col-sm-5">
-		            
+		            <p class="feature-title">{{item.name}}</p>
 		        </div>
 		    </div>
 		</div>
