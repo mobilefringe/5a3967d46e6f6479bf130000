@@ -76,10 +76,9 @@
                     // console.log(this.daysInMonth);
                     console.log(this.promotions);
                     this.processedPromos = _.filter(this.promotions, function(val){
-                        console.log(val.start_date, val.end_date);
-                        var start_date = moment(val.start_date).format('MMM D, YYYY');
-                        // console.log(moment(val.start_date).format('MMM D, YYYY'));
-                        var end_date = moment(val.end_date).format('MMM D, YYYY');
+                        console.log(val);
+                        start_date = moment(val.start_date).tz(this.timezone).format('MMM D, YYYY');
+                        end_date = moment(val.end_date).tz(this.timezone).format('MMM D, YYYY');
                         console.log(this.selectedDate, start_date, end_date);
                         // if(this.selectedDate >= start_date && this.selectedDate <= end_date) return true;
                         return this.selectedDate >= start_date && this.selectedDate <= end_dat;
