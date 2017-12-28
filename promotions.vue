@@ -114,7 +114,7 @@
                 },
                 newDate (val) {
                     console.log(val);
-                    console.log(moment(this.selectedDate).day());
+                    console.log(moment(this.selectedDate).date());
                     console.log(moment(this.selectedDate).month());
                     console.log(moment(this.selectedDate).year());
                 }
