@@ -77,6 +77,9 @@
                 timezone() {
                     return this.$store.getters.getTimezone;
                 }
+            },
+            methods : {
+                
             }
         });
     });
