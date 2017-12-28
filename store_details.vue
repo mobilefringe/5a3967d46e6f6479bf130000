@@ -10,7 +10,7 @@
         <img src="http://placehold.it/620x300"/>
     </div>
     </div>
-    <div class="row">
+    <div class="row is-table-row">
         <div class="col-md-4">
       <div>
         <h1>{{currentStore.name}}</h1>
