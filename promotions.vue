@@ -49,7 +49,7 @@
                     selectedDate: null
                 }
             },
-            mounted () : {
+            mounted () {
                 selectedDate
             }
             computed: {
