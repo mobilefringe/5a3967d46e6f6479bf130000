@@ -28,7 +28,7 @@
   </div>
 </template>
 <style>
-    .store_map_container{
+    .store_logo_container, .store_map_container{
         padding: 20px 10px;
     }
 </style>
