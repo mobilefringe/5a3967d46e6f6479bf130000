@@ -82,7 +82,7 @@
     }
 </style>
 <script>
-    define(["Vue",'moment'], function(Vue) {
+    define(['Vue','moment'], function(Vue) {
         return Vue.component("store-details-component", {
             template: template, // the variable template will be injected,
             data: function() {
