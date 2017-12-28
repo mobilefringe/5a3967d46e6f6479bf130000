@@ -60,10 +60,71 @@
                     });
                 }
             },
-            computed: {
-                findStoreBySlug() {
-                    return this.$store.getters.findStoreBySlug;
+            watch : {
+                map : function (){
+                    var vm = this;
+                    setTimeout(function () {
+                        console.log(this);
+                        vm.dropPin();
+                      }, 500);
+                },
+                currentStore : function (){
+                    console.log("currentStore promo",this.currentStore );
+                    var vm = this;
+                    var temp_promo = [];
+                    var temp_job = [];
+                    _.forEach(this.currentStore.promotions, function(value, key) {
+                        // console.log(vm.findPromoById(value));
+                        var current_promo = vm.findPromoById(value);
+                        current_promo.description_short = _.truncate(current_promo.description, {'length': 70});
+                        temp_promo.push(current_promo);
+                    });
+                    _.forEach(this.currentStore.jobs, function(value, key) {
+                        var current_job = vm.findJobById(value);
+                        current_job.description_short = _.truncate(current_job.description, {'length': 70});
+                        temp_job.push(current_job);
+                        
+                    })
+                    this.promotions = temp_promo;
+                    this.jobs = temp_job;
+                    console.log("promos",this.promotions);
                 }
+            },
+            computed: {
+                findStoreBySlug () {
+                  return this.$store.getters.findStoreBySlug;
+                },
+                findPromoById () {
+                    return this.$store.getters.findPromoById;
+                },
+                findJobById () {
+                    return this.$store.getters.findJobById;
+                },
+                property (){
+                    return this.$store.getters.getProperty;
+                },
+                getSVGurl () {
+                    return "https://www.mallmaverick.com" + this.property.svgmap_url;
+                },
+                svgMapRef () {
+                    return _.filter(this.$children, function(o) { return (o.$el.className == "svg-map") })[0];
+                },
+                timezone () {
+                    return this.$store.getters.getTimezone;
+                }
+            },
+            methods: {
+                updateSVGMap (map) {
+                    this.map = map;
+                    console.log("this",this);
+                },
+                dropPin () {
+                    console.log(this.currentStore);
+                    console.log(this.currentStore.svgmap_region);
+                    // this.svgMapRef.hideMarkers();
+                    this.svgMapRef.addMarker(this.currentStore,'//codecloud.cdn.speedyrails.net/sites/589e308f6e6f641b9f010000/image/png/1484850466000/show_pin.png');
+                    this.svgMapRef.setViewBox(this.currentStore)
+                }   
             }
         });
     });
