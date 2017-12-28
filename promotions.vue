@@ -50,7 +50,7 @@
                 }
             },
             mounted () {
-                selectedDate = moment().format('MMM D, YYYY');
+                selectedDate = moment().format('MMM D, YYYY').tz();
                 console.log(selectedDate)
             },
             computed: {
