@@ -34,6 +34,9 @@
     .store_desc_container{
         padding: 20px 10px;
     }
+    .row{
+        margin-left:inherit;
+    }
 </style>
 <script>
     define(["Vue"], function(Vue) {
