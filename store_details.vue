@@ -35,7 +35,7 @@
 		            <p class="promo_div_name">{{promo.name}}</p>
 						<p class="feature-desc">{{promo.description_short}}</p>
 						<span class="feature_read_more">
-							<router-link :to="promo.url" class="mobile_readmore" >
+							<router-link :to="promo.slug" class="mobile_readmore" >
 								<p class="feature-readmore">Read More <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></p>
 							</router-link>
 						</span>
