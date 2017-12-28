@@ -5,7 +5,7 @@
 		    
 		    <span class="current_date">
 		        {{selectedDate}}
-		    </div>
+		    </span>
 		    <span> <i class="fa fa-chevron-left"></i></span>
 		</div>
 		<div class="promo_container" v-if="promotions">
