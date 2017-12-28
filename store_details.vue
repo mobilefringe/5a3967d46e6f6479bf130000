@@ -33,7 +33,7 @@
 		            <img :src="promo.image_url" alt=""/>
 		        </div>
 		        </div>
-		        <div class="col-sm-5 store_promo_dets">
+		        <div class="col-sm-5 promo_dets">
 		            <p class="promo_div_name">{{promo.name}}</p>
 		            <p class="promo_div_store_name">{{promo.name}}</p>
 		            <p class="promo_div_date">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
