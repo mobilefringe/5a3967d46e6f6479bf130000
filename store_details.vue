@@ -29,7 +29,7 @@
 		    <div class="promo_container_title text-left all_caps"> Sales & Promotions</div>
 		    <div class="row store_promo_dets" v-for="promo in promotions">
 		        <div class="col-sm-7">
-		            <img :src="" alt=""/>
+		            <img :src="promo.image_url" alt=""/>
 		        </div>
 		        <div class="col-sm-5">
 		            <p class="feature-title">{{item.name}}</p>
