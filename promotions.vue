@@ -50,7 +50,7 @@
                 }
             },
             mounted () {
-                selectedDate =moment().year();
+                selectedDate = moment().year();
                 console.log(selectedDate)
             },
             computed: {
