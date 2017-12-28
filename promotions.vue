@@ -61,9 +61,8 @@
                 console.log(this.selectedDate)
             },
             watch: {
-                selectedDate: function(val, oldVal) {
-                    this.$i18n.locale = val;
-                    moment.locale(val);
+                selectedDate: function() {
+                    
                 }
             },
             computed: {
