@@ -26,7 +26,7 @@
 			</div>
 		</div>
 		<div class="store_promo_container">
-		    <div class="promo_container_title"> Sales & Promotions</div>
+		    <div class="promo_container_title text-left"> Sales & Promotions</div>
 		    
 		</div>
 	</div>
