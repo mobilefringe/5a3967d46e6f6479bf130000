@@ -117,7 +117,7 @@
                     date = moment(this.selectedDate).date();
                     month = moment(this.selectedDate).month();
                     year = moment(this.selectedDate).year();
-                    this.selectedDate = moment(val + " "+ " "+ " " ).tz(this.timezone).format('MMM D, YYYY');
+                    this.selectedDate = moment(val + " " + " "+ " " ).tz(this.timezone).format('MMM D, YYYY');
                 }
             }
         });
