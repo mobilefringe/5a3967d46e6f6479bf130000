@@ -51,7 +51,7 @@
         border-top:1px solid #aea99e;
         border-bottom:1px solid #aea99e;
         height: 35px;
-            line-height: 35px;
+        line-height: 35px;
     }
 </style>
 <script>
