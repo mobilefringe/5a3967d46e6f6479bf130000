@@ -158,7 +158,7 @@
                     this.promotions = temp_promo;
                     this.jobs = temp_job;
                     console.log("promos", this.promotions);
-                    console.log("promos", this.promotions);
+                    console.log("jobs", this.jobs);
                 }
             },
             computed: {
