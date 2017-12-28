@@ -74,7 +74,7 @@
             watch: {
                 selectedDate: function() {
                     // console.log(this.daysInMonth);
-                    console.log(this.promotions);
+                    console.log(this.promotions, this.timezone);
                     this.processedPromos = _.filter(this.promotions, function(val){
                         console.log(val.start_date, val.end_date);
                         var start_date = moment(val.start_date).tz(this.timezone);
