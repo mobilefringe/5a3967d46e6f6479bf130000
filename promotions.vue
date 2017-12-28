@@ -60,6 +60,14 @@
                 this.selectedDate = moment().tz(this.timezone).format('MMM D, YYYY');
                 console.log(this.selectedDate)
             },
+            watch: {
+        // watcher to update vue-i18n when the locale has been changed by the user
+        locale: function (val, oldVal) {
+            this.$i18n.locale = val;
+            moment.locale(val);
+        },
+        
+    },
             computed: {
                 promotions() {
                     var vm = this;
