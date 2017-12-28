@@ -11,7 +11,7 @@
 		    <span v-for="n in daysInMonth" @click="newDate(n)">{{n}}</span>
 		</div>
 		<hr/>
-		<div class="promo_container" v-if="promotions">
+		<div class="promo_container" v-if="processedPromos">
 			<div class="row promo_dets text-left" v-for="promo in processedPromos">
 				<div class="col-sm-7" >
 					<div class="promo_div_image">
