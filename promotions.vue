@@ -77,10 +77,8 @@
                     this.processedPromos = _.filter(this.promotions, function(val){
                         start_date = moment(val.start_date).tz(this.timezone).format('MMM D, YYYY');
                         end_date = moment(val.end_date).tz(this.timezone).format('MMM D, YYYY');
-                        
-                        if() {
-                            
-                        }
+                        console.log(start_date, end_date);
+                        if(this.selectedDate >= start_date){}
                     });
                 }
             },
