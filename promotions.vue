@@ -118,6 +118,7 @@
                     month = moment(this.selectedDate).month();
                     year = moment(this.selectedDate).year();
                     this.selectedDate = moment(val + " " + month + " "+ year + " " ).tz(this.timezone).format('MMM D, YYYY');
+                    console.log(this.selectedDate);
                 }
             }
         });
