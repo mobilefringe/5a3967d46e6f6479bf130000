@@ -74,7 +74,9 @@
             watch: {
                 selectedDate: function() {
                     // console.log(this.daysInMonth);
-                    this.processedPromos = this.promotions
+                    this.processedPromos = _.filter(this.promotions, function(){
+                        
+                    });
                 }
             },
             computed: {
