@@ -47,6 +47,9 @@
         width:300px;
         height:300px
     }
+    .promo_container_title{
+        
+    }
 </style>
 <script>
     define(["Vue"], function(Vue) {
