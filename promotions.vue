@@ -84,7 +84,7 @@
                         // if(this.selectedDate >= start_date && this.selectedDate <= end_date) return true;
                         return vm.selectedDate >= start_date && vm.selectedDate <= end_date;
                     });
-                    console.log(this.processedPromos)
+                    console.log(this.processedPromos);
                 }
             },
             computed: {
