@@ -36,7 +36,6 @@
         height:40px;
         line-height:40px;
         margin:auto;
-        
         text-align:center;
     }
     .current_date{
