@@ -1,31 +1,31 @@
 <template>
-   <div class="page_container" v-if="currentStore">
-      <div class="row" style="margin-left: inherit;">
-         <div class="col-md-4 store_logo_container">
-            <div>
-               <img :src="currentStore.store_front_url_abs"  style="width:300px;height:300px"/>
-            </div>
-         </div>
-         <div class="col-md-8 store_map_container">
-            <img src="http://placehold.it/620x300"/>
-         </div>
-      </div>
-      <div class="row is-table-row">
-         <div class="col-md-4">
-            <div>
-               <h1>{{currentStore.name}}</h1>
-               <p>{{currentStore.category_name}}</p>
-               <p>{{currentStore.phone}}</p>
-               <a v-bind:href="currentStore.website">Visit Store Site</a>
-            </div>
-         </div>
-         <div class="col-md-8">
-            <div class="text-left store_description">
-               <p>{{currentStore.description}}</p>
-            </div>
-         </div>
-      </div>
-   </div>
+	<div class="page_container" v-if="currentStore">
+		<div class="row" style="margin-left: inherit;">
+			<div class="col-md-4 store_logo_container">
+				<div>
+					<img :src="currentStore.store_front_url_abs"  style="width:300px;height:300px"/>
+				</div>
+			</div>
+			<div class="col-md-8 store_map_container">
+				<img src="http://placehold.it/620x300"/>
+			</div>
+		</div>
+		<div class="row is-table-row">
+			<div class="col-md-4">
+				<div>
+					<h1>{{currentStore.name}}</h1>
+					<p>{{currentStore.category_name}}</p>
+					<p>{{currentStore.phone}}</p>
+					<a v-bind:href="currentStore.website">Visit Store Site</a>
+				</div>
+			</div>
+			<div class="col-md-8">
+				<div class="text-left store_description">
+					<p>{{currentStore.description}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </template>
 <style>
     .store_logo_container,
