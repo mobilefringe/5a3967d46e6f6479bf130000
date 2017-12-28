@@ -2,9 +2,9 @@
   <div class="page_container" v-if="currentStore">
     <div class="row" style="margin-left: inherit;">
         <div class="col-md-4 store_logo_container">
-          <div>
-            <img :src="currentStore.store_front_url_abs"  style="width:300px;height:300px"/>
-          </div>
+            <div>
+                <img :src="currentStore.store_front_url_abs"  style="width:300px;height:300px"/>
+            </div>
     </div>
     <div class="col-md-8 store_map_container">
         <img src="http://placehold.it/620x300"/>
