@@ -38,7 +38,7 @@
         margin-left:inherit;
     }
     .store_logo_container{
-        
+        border: 1px solid #ccc;
     }
 </style>
 <script>
