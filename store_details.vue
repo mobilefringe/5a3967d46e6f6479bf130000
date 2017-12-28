@@ -36,6 +36,17 @@
 		        </div>
 		    </div>
 		</div>
+		<div class="store_promo_container" v-if="currentStore && currentStore.total_published_promos > 0">
+		    <div class="promo_container_title text-left all_caps"> Sales & Promotions</div>
+		    <div class="row store_promo_dets" v-for="promo in promotions">
+		        <div class="col-sm-7">
+		            <img :src="" alt=""/>
+		        </div>
+		        <div class="col-sm-5">
+		            
+		        </div>
+		    </div>
+		</div>
 	</div>
 </template>
 <style>
