@@ -3,7 +3,7 @@
 		<div class="date_bar">
 		<span> <i class="fa fa-chevron-left"></i></span>
 		    
-		    <div class="current_date">
+		    <span class="current_date">
 		        {{selectedDate}}
 		    </div>
 		    <span> <i class="fa fa-chevron-left"></i></span>
