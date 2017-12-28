@@ -50,7 +50,7 @@
                 }
             },
             mounted () {
-                selectedDate
+                selectedDate = moment();
             },
             computed: {
                 promotions() {
