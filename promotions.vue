@@ -76,7 +76,7 @@
                     // console.log(this.daysInMonth);
                     console.log(this.promotions);
                     this.processedPromos = _.filter(this.promotions, function(val){
-                        console.log(val);
+                        console.log(val.start_date);
                         start_date = moment(val.start_date).tz(this.timezone);
                         end_date = moment(val.end_date).tz(this.timezone);
                         console.log(this.selectedDate, start_date, end_date);
