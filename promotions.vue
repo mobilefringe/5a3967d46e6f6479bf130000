@@ -50,7 +50,7 @@
                 }
             },
             mounted () {
-                selectedDate = moment().tx(this.timezone).format('MMM D, YYYY');
+                selectedDate = moment().tz(this.timezone).format('MMM D, YYYY');
                 console.log(selectedDate)
             },
             computed: {
