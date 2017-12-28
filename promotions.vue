@@ -41,7 +41,7 @@
         text-align:center;
     }
     .current_date{
-        color:#636363
+        color:#636363;
     }
 </style>
 
