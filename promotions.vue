@@ -113,7 +113,8 @@
                     console.log(this.selectedDate);
                 },
                 newDate (val) {
-                    console.log(val)
+                    console.log(val);
+                    
                 }
             }
         });
