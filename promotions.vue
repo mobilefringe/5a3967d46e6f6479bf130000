@@ -1,7 +1,9 @@
 <template>
 	<div class="container"><!-- for some reason if you do not put an outer container div this component template will not render -->
 		<div class="date_bar">
-		    <div></div>
+		    <div>
+		        
+		    </div>
 		    
 		</div>
 		<div class="promo_container" v-if="promotions">
@@ -43,7 +45,8 @@
             template: template, // the variable template will be injected
             data: function() {
                 return {
-                    daysInMonths : [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+                    daysInMonths : [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31],
+                    selectedDare
                 }
             },
             computed: {
