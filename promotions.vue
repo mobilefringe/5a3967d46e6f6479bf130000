@@ -100,6 +100,7 @@
                     console.log(this.selectedDate);
                 },
                 daysInMonth() {
+                    var days = moment(this.selectedDate).daysInMonth();
                     return ;
                 }
             }
