@@ -33,6 +33,8 @@
 		        </div>
 		        <div class="col-sm-5">
 		            <p class="promo_div_name">{{promo.name}}</p>
+		            <p class="promo_div_store_name">{{promo.name}}</p>
+		            
 						<p class="feature-desc">{{promo.description_short}}</p>
 						<span class="feature_read_more">
 							<router-link :to="'promotions/'+promo.slug" class="mobile_readmore" >
