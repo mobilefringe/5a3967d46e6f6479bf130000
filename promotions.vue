@@ -46,6 +46,13 @@
     .current_date{
         color:#636363;
     }
+    .all_dates span {
+        /* 1 2 3 4 5 6 7 8 9 10: */
+font-family: .AppleSystemUIFont;
+font-size: 16px;
+color: #000000;
+letter-spacing: 1.5px;
+    }
 </style>
 
 <script>
