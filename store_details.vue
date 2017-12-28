@@ -1,17 +1,17 @@
 <template>
 	<div class="page_container" v-if="currentStore">
 		<div class="row">
-			<div class="col-md-4 store_logo_container">
+			<div class="col-sm-4 store_logo_container">
 				<div>
 					<img :src="currentStore.store_front_url_abs"/>
 				</div>
 			</div>
-			<div class="col-md-8 store_map_container">
+			<div class="col-sm-8 store_map_container">
 				<img src="http://placehold.it/620x300"/>
 			</div>
 		</div>
 		<div class="row is-table-row">
-			<div class="col-md-4 store_details_container">
+			<div class="col-sm-4 store_details_container">
 				<div>
 					<h1>{{currentStore.name}}</h1>
 					<p>{{currentStore.category_name}}</p>
@@ -19,7 +19,7 @@
 					<a v-bind:href="currentStore.website">Visit Store Site</a>
 				</div>
 			</div>
-			<div class="col-md-8 store_desc_container">
+			<div class="col-sm-8 store_desc_container">
 				<div class="text-left store_description">
 					<p>{{currentStore.description}}</p>
 				</div>
