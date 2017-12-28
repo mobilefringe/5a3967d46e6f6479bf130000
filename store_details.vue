@@ -28,8 +28,8 @@
   </div>
 </template>
 <style>
-    {
-            padding: 20px 10px;
+    .store_map_container{
+        padding: 20px 10px;
     }
 </style>
 <script>
