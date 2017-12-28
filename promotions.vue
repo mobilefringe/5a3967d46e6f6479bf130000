@@ -118,7 +118,6 @@
                     console.log(this.selectedDate);
                 },
                 newDate (val) {
-                    console.log(val);
                     date = moment(this.selectedDate).date();
                     month = moment(this.selectedDate).month();
                     year = moment(this.selectedDate).year();
