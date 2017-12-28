@@ -29,7 +29,7 @@
 		    <div class="promo_container_title text-left all_caps"> Sales & Promotions</div>
 		    <div class="row store_promo_dets">
 		        <div class="col-sm-7">
-		            <img :src=""/>
+		            <img :src="" />
 		        </div>
 		        <div class="col-sm-5">
 		            
