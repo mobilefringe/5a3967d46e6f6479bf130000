@@ -145,7 +145,7 @@
                         value.description_short = _.truncate(value.description, {
                             'length': 70
                         });
-                        temp_promo.push(current_promo);
+                        temp_promo.push(value);
                     });
                     _.forEach(this.currentStore.jobs, function(value, key) {
                         var current_job = vm.findJobById(value);
