@@ -226,7 +226,7 @@
                 },
                 shareURL(slug){
                     // console.log(window.location.host, "\n http://"+ window.location.host);
-                    var share_url = "http://eastgatesquare.ca/promotions/" + slug;
+                    var share_url = "http://eastgatesquare.ca/events/" + slug;
                     return share_url;
                 }
                 // ,
