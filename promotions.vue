@@ -61,7 +61,7 @@
         cursor: pointer;
     }
     .promo_dets {
-        
+        border-bottom: 1px solid #aea99e;
     }
 </style>
 
