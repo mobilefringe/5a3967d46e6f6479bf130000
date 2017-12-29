@@ -192,7 +192,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
 
             // make an async call to load mall data
             this.$store.dispatch('LOAD_MALL_DATA', {
-                url: "https://www.mallmaverick.com/api/v4/eastgate/all.json"
+                url: "https://www.mallmaverick.com/api/v4/twinpines/all.json"
             }).then(response => {
                 this.dataLoaded = true;
             }, error => {
