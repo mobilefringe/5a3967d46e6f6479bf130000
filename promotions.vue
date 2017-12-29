@@ -32,6 +32,7 @@
 			</div>
 		</div>
 		<div class="promo_container" v-else>
+		    <span></span>
 		</div>
 	</div>
 </template>
