@@ -154,10 +154,10 @@
                 var date = moment(this.selectedDate).date();
                 console.log("date is", date);
                 // $("#date_"+ date).addClass('active');
+                $("#date_29").addClass('active');
             },
             watch: {
                 selectedDate: function() {
-                    $("#date_29").addClass('active');
                     selected = moment(this.selectedDate).format('MM DD YYYY');
                     var vm = this;
                     vm.processedPromos = _.filter(vm.promotions, function(val){
