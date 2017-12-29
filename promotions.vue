@@ -84,7 +84,7 @@
                         
                         if(selected >= start_date && selected <= end_date) {
                             console.log(selected, start_date, end_date);
-                            console.log(selected.isAfter(start_date), selected.isBefore(end_date));
+                            console.log(moment().isBetween(moment-like, moment-like););
                         
                         }
                         return (selected >= start_date && selected <= end_date);
