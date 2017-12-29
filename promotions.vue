@@ -60,6 +60,13 @@
 </template>
 
 <style>
+    @media (min-width: 769px){ 
+        .all_dates span {
+            font-size:12px;
+            padding: 0px 4px;
+        }
+        
+    }
     .row{
         margin-left:inherit;
     }
