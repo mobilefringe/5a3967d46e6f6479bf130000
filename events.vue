@@ -96,7 +96,7 @@
     .all_dates span.active { 
         background-color: #bababa;
     }
-    .promo_dets {
+    .events_container .promo_dets {
         border-bottom: 1px solid #aea99e;
     }
     .events_container .row.is-table-row {
