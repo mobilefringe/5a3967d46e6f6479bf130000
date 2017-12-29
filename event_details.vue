@@ -93,7 +93,7 @@
         height:300px
     }
     .event_details_container h1{
-        padding-top: 0;
+        padding-top: inherit;
         padding-bottom: 0;
         padding-top: 0;
         padding-top: 0;
