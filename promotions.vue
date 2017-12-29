@@ -52,7 +52,7 @@
         font-size: 16px;
         color: #000000;
         letter-spacing: 1.5px;
-        height:30px;
+        height: 30px;
         line-height:30px;
         padding: 0 5px;
         cursor: pointer;
