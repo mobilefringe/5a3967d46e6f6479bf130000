@@ -162,7 +162,7 @@
                     //change active class 
                     old_date = moment(this.selectedDate).date();
                     $("#date_"+old_date).removeClass('active');
-                    $("#date_"+val).addClass('active');
+                    $("#date_"+old_date).addClass('active');
                     
                     //sort promos
                     selected = moment(this.selectedDate).format('MM DD YYYY');
