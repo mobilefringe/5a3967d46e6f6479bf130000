@@ -177,7 +177,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                             {
                                 name: "Community",
                                 id: "stores_link",
-                                href: "/map"
+                                href: "/community"
                             }
                         ],
                     }
