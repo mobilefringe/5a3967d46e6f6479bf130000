@@ -30,7 +30,7 @@
 		    <div class="job_container_title text-left all_caps"> OTHER {{currentJob.store.name | uppercase }} Jobs</div>
 		    <div class="row job_job_dets text-left" v-for="job in storeJobs">
 		        <div class="col-sm-7" >
-		        <div class="job_div_image">
+		        <div class="promo_div_image">
 		            <img :src="job.store.store_front_url_abs" alt=""/>
 		        </div>
 		        </div>
