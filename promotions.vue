@@ -76,6 +76,9 @@
     .promo_dets {
         border-bottom: 1px solid #aea99e;
     }
+    .row.is-table-row [class*="col-"] {
+        
+    }
     .feature_read_more {
         width : auto;
     }
