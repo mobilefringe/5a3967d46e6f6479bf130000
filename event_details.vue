@@ -137,30 +137,20 @@
                     }, 500);
                 },
                 currentEvent: function() {
-                    console.log("currentEvent promo", this.currentEvent);
                     var vm = this;
-                    var temp_promo = [];
-                    var temp_job = [];
-                    _.forEach(this.currentEvent.promotions, function(value, key) {
-                        // console.log(vm.findPromoById(value));
-                        var current_promo = vm.findEventById(value);
-                        current_promo.description_short = _.truncate(current_promo.description, {
-                            'length': 70
-                        });
-                        temp_promo.push(current_promo);
-                    });
-                    // _.forEach(this.currentEvent.jobs, function(value, key) {
-                    //     var current_job = vm.findJobById(value);
-                    //     current_job.description_short = _.truncate(current_job.description, {
-                    //         'length': 70
-                    //     });
-                    //     temp_job.push(current_job);
-
-                    // })
-                    this.promotions = temp_promo;
-                    this.jobs = temp_job;
-                    console.log("promos", this.promotions);
-                    console.log("jobs", this.jobs);
+            var temp_promo = [];
+            var current_id =_.toNumber(this.currentEvent.id);
+            console.log(current_id);
+            _.forEach(this.allEvents, function(value, key) {
+                console.log(value)
+                if(_.toNumber(value.id) != current_id){
+                    var current_promo = vm.findEventById(value.id);
+                    current_promo.description_short = _.truncate(current_promo.description, {'length': 70});
+                    temp_promo.push(current_promo);
+                }
+            });
+            this.storePromos = temp_promo;
+            console.log("promos",this.storePromos);
                 }
             },
             computed: {
