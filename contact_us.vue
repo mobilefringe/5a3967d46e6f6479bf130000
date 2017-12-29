@@ -92,7 +92,7 @@
                     dayOfTheWeek : [
                         "Sunday", "Monday","Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
                     ],
-                    currentPage: null,
+                    // currentPage: null,
                     form_data : {},
                     loginPending: null,
                     formSuccess : false,
