@@ -94,6 +94,9 @@
     }
     .event_details_container h1{
         padding-top: 0;
+        padding-top: 0;
+        padding-top: 0;
+        padding-top: 0;
     }
     .event_div_date{
         font-size: 16px;
