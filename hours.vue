@@ -2,7 +2,7 @@
     <div> <!-- for some reason if you do not put an outer container div this component template will not render -->
         <!--<img style= "width: 100%;" src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512574241932/placeholder_insidepage_image.png" alt="plaza" class="show_phone">  -->
         <div class="page_container">
-            <div class="margin_25_across padding_top_40">
+            <div class=">
                 <div class="row">
                     <div class="col-md-5 col-sm-5 col-xs-12">
                         <h3 class="hours_heading text-left" >Regular Shopping Hours</h3>
