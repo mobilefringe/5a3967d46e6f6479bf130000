@@ -109,7 +109,10 @@
         display:inline;
         margin: 0 2px;
     }
+    @media (min-width: 769px){ 
     
+        
+    }
 </style>
 
 <script>
