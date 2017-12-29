@@ -107,6 +107,7 @@
         width : 24px;
         height : 24px;
         display:inline;
+        margin: 0 2px;
     }
     
 </style>
