@@ -159,8 +159,6 @@
             watch: {
                 selectedDate: function() {
                     
-                    
-                    
                     //sort promos
                     selected = moment(this.selectedDate).format('MM DD YYYY');
                     var vm = this;
