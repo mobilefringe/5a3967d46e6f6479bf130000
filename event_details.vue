@@ -27,7 +27,7 @@
 			</div>
 		</div>
 		<div class="event_promo_container" v-if="currentEvent && currentEvent.total_published_promos > 0">
-		    <div class="promo_container_title text-left all_caps"> Sales & Promotions</div>
+		    <div class="promo_container_title text-left all_caps"> OTHER {{property.name | uppercase }} EVENTS</div>
 		    <div class="row event_promo_dets text-left" v-for="promo in promotions">
 		        <div class="col-sm-7" >
 		        <div class="promo_div_image">
