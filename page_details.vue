@@ -11,7 +11,11 @@
         <div style="padding:20px 0;"></div>
     </div>
 </template>
-
+<style>
+    .page_title {
+        
+    }
+</style>
 <script>
     define(["Vue", "moment", "moment-timezone", "vue-moment"], function(Vue, moment, tz, VueMoment) {
         return Vue.component("page-details-component", {
