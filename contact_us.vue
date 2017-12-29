@@ -4,7 +4,9 @@
             <div class="row">
                 <div class="col-md-5 col-sm-5">
                     <div class="col-md-12" v-if="currentPage">
-                        <div class="description_text text_left" v-html="currentPage.body"></div>
+                        <div class="description_text text_left" v-html="currentPage.body">
+                            We value your feedback. Send us your comments or questions by completing the contact form below.
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-7 col-sm-7 hidden_phone">
