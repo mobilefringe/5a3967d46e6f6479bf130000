@@ -76,6 +76,9 @@
     .promo_dets {
         border-bottom: 1px solid #aea99e;
     }
+    .feature_read_more {
+        width : auto;
+    }
     .social_share network {
         display:inline-block;
         width: 24px;
