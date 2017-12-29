@@ -46,7 +46,7 @@
 		<!--				</span>-->
 		<!--        </div>-->
 		<!--    </div>-->
-		</div>
+		<!--</div>-->
 		<div class="store_promo_container" v-if="currentStore && currentStore.total_published_jobs > 0">
 		    <div class="promo_container_title text-left all_caps"> Careers</div>
 		    <div class="row store_promo_dets text-left" v-for="promo in jobs">
