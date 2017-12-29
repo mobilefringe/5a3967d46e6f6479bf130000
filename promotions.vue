@@ -87,7 +87,7 @@
                             console.log(selected >= start_date, selected <= end_date, (selected >= start_date && selected <= end_date));
                         
                         }
-                        return (selected >= start_date) && (selected <= end_date);
+                        return (selected >= start_date && selected <= end_date);
                     });
                     console.log(this.processedPromos);
                 }
