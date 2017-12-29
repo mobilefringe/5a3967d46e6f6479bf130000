@@ -77,8 +77,8 @@
         height: 24px;
     }
     .social_share .social_icons{
-        width : 25px;
-        height : 25px;
+        width : 24px;
+        height : 24px;
         display:inline;
     }
     
