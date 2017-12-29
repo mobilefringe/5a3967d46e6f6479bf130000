@@ -20,7 +20,7 @@
 					
 			<!--	</div>-->
 			<!--</div>-->
-			<div class="col-sm-8 job_desc_container">
+			<div class="col-sm-12 job_desc_container">
 				<div class="text-left job_description">
 					<p>{{currentJob.description}}</p>
 				</div>
