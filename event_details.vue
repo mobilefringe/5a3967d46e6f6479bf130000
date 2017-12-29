@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="col-sm-4 store_logo_container">
 				<div>
-					<img :src="currentEvent.store_front_url_abs"/>
+					<img :src="property.store_front_url_abs"/>
 				</div>
 			</div>
 			<div class="col-sm-8 store_map_container">
