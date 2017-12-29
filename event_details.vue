@@ -95,6 +95,9 @@
     .event_details_container h1{
         padding: 0;
     }
+    .promo_div_date{
+        font-size: 16px;
+    }
     .promo_container_title{
         border-top:1px solid #aea99e;
         border-bottom:1px solid #aea99e;
