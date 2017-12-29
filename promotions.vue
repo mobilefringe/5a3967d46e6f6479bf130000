@@ -152,7 +152,7 @@
                 this.selectedDate = moment().tz(this.timezone).format('MMM D, YYYY');
                 console.log(this.selectedDate);
                 var date = moment(this.selectedDate).date();
-                console.log("date is:,date);
+                console.log("date is", date);
                 $("#date_"+ date).addClass('active');
             },
             watch: {
