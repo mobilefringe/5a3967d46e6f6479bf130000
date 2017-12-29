@@ -6,7 +6,7 @@
 					<img src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1513713887462/ES_logo_Colour (1).png"/>
 				</div>
 			</div>
-			<div class="col-sm-8 store_map_container">
+			<div class="col-sm-8 store_map_container text-left">
 				<!--<img src="http://placehold.it/620x300"/>-->
 				<img :src="currentEvent.image_url"/>
 			</div>
