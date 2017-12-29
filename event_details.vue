@@ -11,7 +11,7 @@
 				<img :src="currentEvent.image_url"/>
 			</div>
 		</div>
-		<div class="row is-table-row">
+		<div class="row is-table-row" style="margin-left:0;">
 			<div class="col-sm-4 event_details_container text-left">
 				<div>
 					<h1>{{currentEvent.name}}</h1>
