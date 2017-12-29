@@ -78,12 +78,12 @@
     .row{
         margin-left:inherit;
     }
-    .event_dets_container .row.is-table-row [class*="col-"] {
-        padding-top: inherit;
-        padding-bottom: inherit;
-        padding-left: 0;
-        padding-right: 0;
-    }
+    /*.event_dets_container .row.is-table-row [class*="col-"] {*/
+    /*    padding-top: inherit;*/
+    /*    padding-bottom: inherit;*/
+    /*    padding-left: 0;*/
+    /*    padding-right: 0;*/
+    /*}*/
     
     .event_logo_container,
     .event_image_container,
