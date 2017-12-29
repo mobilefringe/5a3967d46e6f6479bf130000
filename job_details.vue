@@ -31,7 +31,7 @@
 		    <div class="row job_job_dets text-left" v-for="job in storeJobs">
 		        <div class="col-sm-7" >
 		        <div class="job_div_image">
-		            <img :src="job.image_url" alt=""/>
+		            <img :src="job.store.store_front_url_abs" alt=""/>
 		        </div>
 		        </div>
 		        <div class="col-sm-5 job_div_dets">
