@@ -162,7 +162,7 @@
                 }
             },
             computed: {
-                findStoreBySlug() {
+                findEventBySlug() {
                     return this.$store.getters.findEventBySlug;
                 },
                 findPromoById() {
