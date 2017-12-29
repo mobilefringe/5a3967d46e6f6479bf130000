@@ -158,6 +158,7 @@
             },
             watch: {
                 selectedDate: function() {
+                    
                     //change active class 
                     $("#date_"+old_date).removeClass('active');
                     $("#date_"+val).addClass('active');
@@ -216,7 +217,6 @@
                     month = moment(this.selectedDate).month();
                     year = moment(this.selectedDate).year();
                     this.selectedDate = moment([year, month, val]).format('MMM D, YYYY');
-                    
                 },
                 truncate(val_body){
                     var truncate = _.truncate(val_body, { 'length': 99, 'separator': ' ' });
