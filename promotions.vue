@@ -73,8 +73,6 @@
             },
             watch: {
                 selectedDate: function() {
-                    // console.log(this.daysInMonth);
-                    console.log(this.promotions);
                     selected = moment(this.selectedDate).format('MM DD YYYY');
                     var vm = this;
                     vm.processedPromos = _.filter(vm.promotions, function(val){
