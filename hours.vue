@@ -21,8 +21,8 @@
                         <img src="http://placehold.it/460x300"/>
                     </div> 
                 </div>
-                <div class="padding_top_20 show_phone"></div>
-                <hr/>
+                <!--<div class="padding_top_20 show_phone"></div>-->
+                <!--<hr/>-->
                 <div class="row">
                     <div class="col-md-12 ">
                         <div class="padding_top_20"></div>
