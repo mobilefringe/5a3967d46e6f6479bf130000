@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="col-sm-4 job_logo_container">
 				<div>
-					<img src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1513713887462/ES_logo_Colour (1).png"/>
+					<img :src="promo.store.store_front_url_abs" alt=""/>
 				</div>
 			</div>
 			<div class="col-sm-8 job_image_container text-left">
