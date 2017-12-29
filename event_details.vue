@@ -15,7 +15,7 @@
 			<div class="col-sm-4 store_details_container">
 				<div>
 					<h1>{{currentEvent.name}}</h1>
-					<p>{{currentEvent.category_name}}</p>
+					<!--<p>{{currentEvent.category_name}}</p>-->
 					<p>{{currentEvent.phone}}</p>
 					<a v-bind:href="currentEvent.website">Visit Store Site</a>
 				</div>
