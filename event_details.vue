@@ -79,7 +79,10 @@
         margin-left:inherit;
     }
     .event_dets_container .row.is-table-row [class*="col-"] {
-        padding:0;
+        padding-top: inherit;
+        padding-bottom: inherit;
+        padding-top: 0;
+        padding-top: 0;
     }
     
     .event_logo_container,
