@@ -151,6 +151,7 @@
             mounted() {
                 this.selectedDate = moment().tz(this.timezone).format('MMM D, YYYY');
                 console.log(this.selectedDate);
+                $("#date_"+val).addClass('active');
             },
             watch: {
                 selectedDate: function() {
