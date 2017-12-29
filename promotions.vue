@@ -72,7 +72,7 @@
         border-bottom: 1px solid #aea99e;
     }
     .social_share .social_icons{
-        
+        width : 25px;
     }
 </style>
 
