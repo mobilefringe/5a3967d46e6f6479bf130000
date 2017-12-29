@@ -18,7 +18,7 @@
                         </div>
                     </div>
                     <div class="col-md-7 col-sm-7 hidden_phone">
-                        <img style="margin-bottom:20px; width: 100%;" src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512574241932/placeholder_insidepage_image.png" alt="plaza">
+                        <img src="http://placehold.it/460x300"/>
                     </div> 
                 </div>
                 <div class="padding_top_20 show_phone"></div>
