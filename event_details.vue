@@ -78,7 +78,7 @@
     .row{
         margin-left:inherit;
     }
-    .events_container .row.is-table-row [class*="col-"] {
+    .event_dets_container .row.is-table-row [class*="col-"] {
         padding:0;
     }
     
