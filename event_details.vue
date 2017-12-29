@@ -81,7 +81,7 @@
     .event_dets_container .row.is-table-row [class*="col-"] {
         padding-top: inherit;
         padding-bottom: inherit;
-        padding-top: 0;
+        padding-left: 0;
         padding-top: 0;
     }
     
