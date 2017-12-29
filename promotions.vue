@@ -60,7 +60,6 @@
 </template>
 
 <style>
-    
     .row{
         margin-left:inherit;
     }
