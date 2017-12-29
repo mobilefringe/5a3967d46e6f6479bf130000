@@ -96,7 +96,7 @@
 </style>
 <script>
     define(['Vue','moment'], function(Vue, moment) {
-        return Vue.component("store-details-component", {
+        return Vue.component("event-details-component", {
             template: template, // the variable template will be injected,
             data: function() {
                 return {
