@@ -82,8 +82,8 @@
     .store_desc_container{
         padding: 20px 10px;
     }
-    {
-            max-height: 300px;
+    .store_map_container{
+        max-height: 300px;
     }
     .store_logo_container img{
         border: 1px solid #aea99e;
