@@ -93,7 +93,7 @@
     .all_dates [class*="date_"]:focus, [class*="date_"]:hover { 
         background-color: #D3D3D3;
     }
-    .all_dates span.active { 
+    .events_container .all_dates span.active { 
         background-color: #bababa;
     }
     .events_container .promo_dets {
