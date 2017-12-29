@@ -90,7 +90,7 @@
         padding: 0 5px;
         cursor: pointer;
     }
-    .all_dates span { 
+    .all_dates span:active, span:focus, span:hover { 
     }
     .promo_dets {
         border-bottom: 1px solid #aea99e;
