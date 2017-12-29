@@ -110,7 +110,8 @@
         margin: 0 2px;
     }
     @media (min-width: 769px){ 
-    
+        .all_dates span {
+        }
         
     }
 </style>
