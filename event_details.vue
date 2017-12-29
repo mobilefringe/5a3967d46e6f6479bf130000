@@ -104,8 +104,7 @@
             data: function() {
                 return {
                     currentEvent: null,
-                    promotions : [],
-                    jobs:[]
+                    storePromos : null
                 }
             },
             beforeRouteEnter(to, from, next) {
