@@ -166,7 +166,7 @@
                     return this.$store.getters.findStoreBySlug;
                 },
                 findPromoById() {
-                    return this.$store.getters.findPromoById;
+                    return this.$store.getters.findEventById;
                 },
                 findJobById() {
                     return this.$store.getters.findJobById;
