@@ -17,7 +17,7 @@
 					<h1>{{currentEvent.name}}</h1>
 					<!--<p>{{currentEvent.category_name}}</p>-->
 					<!--<p>{{currentEvent.phone}}</p>-->
-					<p class="">{{currentEvent.start_date | moment("MMM D", timezone)}} - {{currentEvent.end_date | moment("MMM D", timezone)}}</p>
+					<p class="promo_div_date">{{currentEvent.start_date | moment("MMM D", timezone)}} - {{currentEvent.end_date | moment("MMM D", timezone)}}</p>
 				</div>
 			</div>
 			<div class="col-sm-8 event_desc_container">
