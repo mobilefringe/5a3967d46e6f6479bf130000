@@ -7,7 +7,8 @@
 				</div>
 			</div>
 			<div class="col-sm-8 store_map_container">
-				<img src="http://placehold.it/620x300"/>
+				<!--<img src="http://placehold.it/620x300"/>-->
+				<img :src="currentEvent.image_url"/>
 			</div>
 		</div>
 		<div class="row is-table-row">
