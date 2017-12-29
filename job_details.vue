@@ -14,10 +14,7 @@
 		<div class="row" style="margin-left:0;">
 			<div class="col-sm-4 job_details_container text-left">
 				<div>
-					<h1>{{currentJob.name}}</h1>
-					<p class="job_store_name">{{currentJob.store.name}}</p>
-					<!--<p>{{currentJob.phone}}</p>-->
-					<p class="job_div_date">{{currentJob.start_date | moment("MMM D", timezone)}} - {{currentJob.end_date | moment("MMM D", timezone)}}</p>
+					
 				</div>
 			</div>
 			<div class="col-sm-8 job_desc_container">
