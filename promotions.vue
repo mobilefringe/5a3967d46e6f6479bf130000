@@ -71,8 +71,8 @@
         margin: auto;
         text-align: center;
     }
-    .date_bar {
-        
+    .date_bar .fa{
+        cursor: pointer;
     }
     .current_date{
         color: #636363;
