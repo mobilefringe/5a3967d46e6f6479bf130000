@@ -160,6 +160,7 @@
                 selectedDate: function() {
                     
                     //change active class 
+                    old_date = moment(this.selectedDate).date();
                     $("#date_"+old_date).removeClass('active');
                     $("#date_"+val).addClass('active');
                     
