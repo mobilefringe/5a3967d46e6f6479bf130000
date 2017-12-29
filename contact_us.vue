@@ -80,7 +80,11 @@
         </div>
     </div>
 </template>
-
+<style>
+    .row{
+        margin-left:inherit;
+    }
+</style>
 <script>
     define(["Vue", "moment", "moment-timezone", "vue-moment", "vue-meta", 'vee-validate'], function(Vue, moment, tz, VueMoment, Meta, VeeValidate) {
         Vue.use(Meta);
