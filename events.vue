@@ -144,36 +144,36 @@
             template: template, // the variable template will be injected
             data: function() {
                 return {
-                    selectedDate: null,
+                    // selectedDate: null,
                     processedEvents:[]
                 }
             },
             mounted() {
-                this.selectedDate = moment().tz(this.timezone).format('MMM D, YYYY');
-                console.log(this.selectedDate);
-                var date = moment(this.selectedDate).date();
-                console.log("date is", date);
+                // this.selectedDate = moment().tz(this.timezone).format('MMM D, YYYY');
+                // console.log(this.selectedDate);
+                // var date = moment(this.selectedDate).date();
+                // console.log("date is", date);
                 // $("#date_"+ date).addClass('active');
                 // $("#date_29").addClass('active');
             },
             watch: {
-                selectedDate: function() {
+                // selectedDate: function() {
                     
-                    //sort promos
-                    selected = moment(this.selectedDate).format('MM DD YYYY');
-                    var vm = this;
-                    vm.processedEvents = _.filter(vm.promotions, function(val){
-                        start_date = moment(val.start_date).tz(vm.timezone).format('MM DD YYYY');
-                        end_date = moment(val.end_date).tz(vm.timezone).format('MM DD YYYY');
-                        return moment(selected).isBetween(start_date,end_date, null, '[]');
-                    });
-                    console.log(this.processedEvents);
+                //     //sort promos
+                //     selected = moment(this.selectedDate).format('MM DD YYYY');
+                //     var vm = this;
+                //     vm.processedEvents = _.filter(vm.promotions, function(val){
+                //         start_date = moment(val.start_date).tz(vm.timezone).format('MM DD YYYY');
+                //         end_date = moment(val.end_date).tz(vm.timezone).format('MM DD YYYY');
+                //         return moment(selected).isBetween(start_date,end_date, null, '[]');
+                //     });
+                //     console.log(this.processedEvents);
                     
-                    //change active class 
-                    old_date = moment(this.selectedDate).date();
-                    $(".all_dates span").removeClass('active');
-                    $("#date_"+old_date).addClass('active');
-                }
+                //     //change active class 
+                //     old_date = moment(this.selectedDate).date();
+                //     $(".all_dates span").removeClass('active');
+                //     $("#date_"+old_date).addClass('active');
+                // }
             },
             computed: {
                 events() {
@@ -192,33 +192,34 @@
                 },
                 timezone() {
                     return this.$store.getters.getTimezone;
-                },
-                daysInMonth() {
-                    var days = moment(this.selectedDate).daysInMonth();
-                    return days;
                 }
+                // ,
+                // daysInMonth() {
+                //     var days = moment(this.selectedDate).daysInMonth();
+                //     return days;
+                // }
             },
             methods: {
-                beforeDate() {
-                    console.log(this.selectedDate);
-                    selectedDate = this.selectedDate;
-                    selectedDate = moment(selectedDate).subtract(1, 'days');
-                    this.selectedDate = moment(selectedDate).tz(this.timezone).format('MMM D, YYYY');
-                    console.log(this.selectedDate);
-                },
-                afterDate() {
-                    console.log(this.selectedDate);
-                    selectedDate = this.selectedDate;
-                    selectedDate = moment(selectedDate).add(1, 'days');
-                    this.selectedDate = moment(selectedDate).tz(this.timezone).format('MMM D, YYYY');
-                    console.log(this.selectedDate);
-                },
-                newDate (val) {
-                    old_date = moment(this.selectedDate).date();
-                    month = moment(this.selectedDate).month();
-                    year = moment(this.selectedDate).year();
-                    this.selectedDate = moment([year, month, val]).format('MMM D, YYYY');
-                },
+                // beforeDate() {
+                //     console.log(this.selectedDate);
+                //     selectedDate = this.selectedDate;
+                //     selectedDate = moment(selectedDate).subtract(1, 'days');
+                //     this.selectedDate = moment(selectedDate).tz(this.timezone).format('MMM D, YYYY');
+                //     console.log(this.selectedDate);
+                // },
+                // afterDate() {
+                //     console.log(this.selectedDate);
+                //     selectedDate = this.selectedDate;
+                //     selectedDate = moment(selectedDate).add(1, 'days');
+                //     this.selectedDate = moment(selectedDate).tz(this.timezone).format('MMM D, YYYY');
+                //     console.log(this.selectedDate);
+                // },
+                // newDate (val) {
+                //     old_date = moment(this.selectedDate).date();
+                //     month = moment(this.selectedDate).month();
+                //     year = moment(this.selectedDate).year();
+                //     this.selectedDate = moment([year, month, val]).format('MMM D, YYYY');
+                // },
                 truncate(val_body){
                     var truncate = _.truncate(val_body, { 'length': 99, 'separator': ' ' });
                     return truncate;
@@ -227,10 +228,11 @@
                     // console.log(window.location.host, "\n http://"+ window.location.host);
                     var share_url = "http://eastgatesquare.ca/promotions/" + slug;
                     return share_url;
-                },
-                toggle: function (clicked) {
-                    clicked = !clicked
                 }
+                // ,
+                // toggle: function (clicked) {
+                //     clicked = !clicked
+                // }
             }
         });
     });
