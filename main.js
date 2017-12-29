@@ -146,7 +146,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                         sub_menu: [{
                                 name: "Customer Service ",
                                 id: "stores_link",
-                                href: "/contact_us"
+                                href: "/pages/eastgate-customer-service"
                             },
                             {
                                 name: "Find Us",
