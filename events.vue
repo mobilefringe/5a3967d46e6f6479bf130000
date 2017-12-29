@@ -176,7 +176,7 @@
                 }
             },
             computed: {
-                promotions() {
+                events() {
                     var vm = this;
                     var temp_promo = [];
                     var temp_job = [];
