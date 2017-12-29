@@ -157,7 +157,7 @@
                     var temp_job = [];
                     var current_id =_.toNumber(this.currentJob.id);
                     // console.log(x);
-                    _.forEach(this.currentJob.store.jobtions, function(value, key) {
+                    _.forEach(this.currentJob.store.jobs, function(value, key) {
                         if(_.toNumber(value) != current_id){
                             var current_job = vm.findJobById(value);
                             current_job.description_short = _.truncate(current_job.description, {'length': 70});
