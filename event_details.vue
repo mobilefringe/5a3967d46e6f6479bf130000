@@ -28,7 +28,7 @@
 		</div>
 		<div class="event_promo_container" v-if="storePromos">
 		    <div class="promo_container_title text-left all_caps"> OTHER {{property.name | uppercase }} EVENTS</div>
-		    <div class="row event_promo_dets text-left" v-for="promo in promotions">
+		    <div class="row event_promo_dets text-left" v-for="promo in storePromos">
 		        <div class="col-sm-7" >
 		        <div class="promo_div_image">
 		            <img :src="promo.image_url" alt=""/>
