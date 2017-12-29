@@ -158,6 +158,10 @@
             },
             watch: {
                 selectedDate: function() {
+                    //change active class 
+                    $("#date_"+old_date).removeClass('active');
+                    $("#date_"+val).addClass('active');
+                    
                     selected = moment(this.selectedDate).format('MM DD YYYY');
                     var vm = this;
                     vm.processedPromos = _.filter(vm.promotions, function(val){
