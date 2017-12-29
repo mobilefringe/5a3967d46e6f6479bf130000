@@ -93,6 +93,9 @@
     .all_dates span:focus, span:hover { 
         background-color: #D3D3D3;
     }
+    .all_dates span.active { 
+        background-color: #D3D3D3;
+    }
     .promo_dets {
         border-bottom: 1px solid #aea99e;
     }
