@@ -165,7 +165,7 @@
                         }
                     });
                     this.storePromos = temp_promo;
-                    console.log("promos",this.storePromos);
+                    console.log("events",this.storePromos);
                 }
             },
             computed: {
