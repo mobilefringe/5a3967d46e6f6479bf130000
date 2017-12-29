@@ -12,7 +12,7 @@
 			</div>
 		</div>
 		<div class="row is-table-row">
-			<div class="col-sm-4 store_details_container">
+			<div class="col-sm-4 store_details_container text-left">
 				<div>
 					<h1>{{currentEvent.name}}</h1>
 					<!--<p>{{currentEvent.category_name}}</p>-->
