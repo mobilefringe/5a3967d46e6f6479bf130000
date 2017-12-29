@@ -212,8 +212,8 @@
                     return share_url;
                 },
                 toggle: function (clicked) {
-      clicked = !clicked
-    }
+                    clicked = !clicked
+                }
             }
         });
     });
