@@ -11,7 +11,7 @@
 				<img :src="currentPromo.image_url"/>
 			</div>
 		</div>
-		<div class="row is-table-row" style="margin-left:0;">
+		<div class="row" style="margin-left:0;">
 			<div class="col-sm-4 promo_details_container text-left">
 				<div>
 					<h1>{{currentPromo.name}}</h1>
