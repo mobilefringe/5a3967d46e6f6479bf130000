@@ -16,7 +16,7 @@
 				<div>
 					<h1>{{currentEvent.name}}</h1>
 					<!--<p>{{currentEvent.category_name}}</p>-->
-					<p>{{currentEvent.phone}}</p>
+					<!--<p>{{currentEvent.phone}}</p>-->
 					<a v-bind:href="currentEvent.website">Visit Store Site</a>
 				</div>
 			</div>
