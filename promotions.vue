@@ -81,12 +81,6 @@
                         // console.log(val);
                         start_date = moment(val.start_date).tz(vm.timezone).format('MM DD YYYY');
                         end_date = moment(val.end_date).tz(vm.timezone).format('MM DD YYYY');
-                        
-                        // if(selected >= start_date && selected <= end_date) {
-                        //     console.log(selected, start_date, end_date);
-                        //     console.log(moment(selected).isBetween(start_date,end_date));
-                        
-                        // }
                         return moment(selected).isBetween(start_date,end_date);
                     });
                     console.log(this.processedPromos);
