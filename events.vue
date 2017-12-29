@@ -105,16 +105,16 @@
     .events_container .row.is-table-row [class*="col-"] {
         padding:0;
     }
-    .feature_read_more {
+    .events_container .feature_read_more {
         width : auto;
     }
-    .social_share network {
+    .events_container .social_share network {
         display:inline-block;
         width: 24px;
         height: 24px;
         cursor: pointer;
     }
-    .social_share .social_icons{
+    .events_container .social_share .social_icons{
         width : 24px;
         height : 24px;
         display:inline;
