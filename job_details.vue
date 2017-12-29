@@ -27,7 +27,7 @@
 			</div>
 		</div>
 		<div class="job_job_container" v-if="storeJobs.length > 0">
-		    <div class="job_container_title text-left all_caps"> OTHER {{currentJob.store.name | uppercase }} Jobtions</div>
+		    <div class="job_container_title text-left all_caps"> OTHER {{currentJob.store.name | uppercase }} Jobs</div>
 		    <div class="row job_job_dets text-left" v-for="job in storeJobs">
 		        <div class="col-sm-7" >
 		        <div class="job_div_image">
@@ -41,7 +41,7 @@
 		            
 						<p class="job_div_description">{{job.description_short}}</p>
 						<span class="feature_read_more">
-							<router-link :to="'/jobtions/'+job.slug" class="mobile_readmore" >
+							<router-link :to="'/jobs/'+job.slug" class="mobile_readmore" >
 								<p class="feature-readmore">Read More <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></p>
 							</router-link>
 						</span>
