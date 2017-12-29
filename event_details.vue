@@ -1,5 +1,5 @@
 <template>
-	<div class="event_details_container page_container" v-if="currentEvent">
+	<div class="event_dets_container page_container" v-if="currentEvent">
 		<div class="row">
 			<div class="col-sm-4 event_logo_container">
 				<div>
