@@ -31,6 +31,8 @@
 				</div>
 			</div>
 		</div>
+		<div class="promo_container" v-if="processedPromos.length > 0">
+		</div>
 	</div>
 </template>
 
