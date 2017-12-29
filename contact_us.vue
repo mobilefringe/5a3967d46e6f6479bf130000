@@ -14,7 +14,6 @@
                 <!--</div> -->
                 <!--<vue-datepicker-local v-model="time" type="inline"></vue-datepicker-local>-->
             </div>
-            <hr/>
             <div class="row"> 
                 <div class="col-md-12 contact_contents padding_top_20">
                     <form class="form-horizontal" action="form-submit" @submit.prevent="validateBeforeSubmit">
