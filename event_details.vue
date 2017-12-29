@@ -92,6 +92,9 @@
         width:300px;
         height:300px
     }
+    .event_details_container h1{
+        padding: 0;
+    }
     .promo_container_title{
         border-top:1px solid #aea99e;
         border-bottom:1px solid #aea99e;
