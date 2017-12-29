@@ -91,7 +91,7 @@
         cursor: pointer;
     }
     .all_dates span:active, span:focus, span:hover { 
-    
+        background-color: #D3D3D3;
         
     }
     .promo_dets {
