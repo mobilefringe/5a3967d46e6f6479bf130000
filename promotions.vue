@@ -180,6 +180,15 @@
                     month = moment(this.selectedDate).month();
                     year = moment(this.selectedDate).year();
                     this.selectedDate = moment([year, month, val]).format('MMM D, YYYY');
+                },
+                truncate(val_body){
+                    var truncate = _.truncate(val_body, { 'length': 99, 'separator': ' ' });
+                    return truncate;
+                },
+                shareURL(slug){
+                    // console.log(window.location.host, "\n http://"+ window.location.host);
+                    var share_url = "http://www.shopcanyoncrest.com/events/" + slug;
+                    return share_url;
                 }
             }
         });
