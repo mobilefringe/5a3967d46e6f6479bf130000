@@ -85,7 +85,7 @@
     /*    padding-right: 0;*/
     /*}*/
     .job_div_dets {
-        padding:20px auto;
+        margin:20px auto;
     }
     .job_logo_container,
     .job_image_container,
