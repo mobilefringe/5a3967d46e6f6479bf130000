@@ -78,7 +78,6 @@
                     selected = moment(this.selectedDate).format('MM DD YYYY');
                     var vm = this;
                     vm.processedPromos = _.filter(vm.promotions, function(val){
-                        // console.log(val);
                         start_date = moment(val.start_date).tz(vm.timezone).format('MM DD YYYY');
                         end_date = moment(val.end_date).tz(vm.timezone).format('MM DD YYYY');
                         return moment(selected).isBetween(start_date,end_date);
