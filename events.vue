@@ -60,10 +60,10 @@
 </template>
 
 <style>
-    .row{
+    .events_container .row{
         margin-left:inherit;
     }
-    .date_bar{
+    .events_container .date_bar{
         /* Today: */
         background: #D3D3D3;
         height: 40px;
@@ -71,7 +71,7 @@
         margin: auto;
         text-align: center;
     }
-    .date_bar .fa{
+    .events_container .date_bar .fa{
         cursor: pointer;
     }
     .current_date{
@@ -99,10 +99,10 @@
     .promo_dets {
         border-bottom: 1px solid #aea99e;
     }
-    .row.is-table-row {
+    .events_container .row.is-table-row {
         margin: 0;
     }
-    .row.is-table-row [class*="col-"] {
+    .events_container .row.is-table-row [class*="col-"] {
         padding:0;
     }
     .feature_read_more {
