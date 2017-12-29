@@ -197,10 +197,11 @@
                     console.log(this.selectedDate);
                 },
                 newDate (val) {
-                    date = moment(this.selectedDate).date();
+                    old_date = moment(this.selectedDate).date();
                     month = moment(this.selectedDate).month();
                     year = moment(this.selectedDate).year();
                     this.selectedDate = moment([year, month, val]).format('MMM D, YYYY');
+                    
                 },
                 truncate(val_body){
                     var truncate = _.truncate(val_body, { 'length': 99, 'separator': ' ' });
