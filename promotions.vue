@@ -72,7 +72,7 @@
         border-bottom: 1px solid #aea99e;
     }
     .social_share network {
-        display:inline;
+        display:inline-block;
         width: 24px;
         height: 24px;
     }
