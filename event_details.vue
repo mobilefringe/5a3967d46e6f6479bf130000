@@ -108,7 +108,7 @@
             beforeRouteEnter(to, from, next) {
                 next(vm => {
                     // access to component instance via `vm`
-                    vm.currentEvent = vm.findStoreBySlug(to.params.id);
+                    vm.currentEvent = vm.findEventBySlug(to.params.id);
                     console.log(vm.currentEvent);
                     if (vm.currentEvent === null || vm.currentEvent === undefined) {
                         vm.$router.replace({
