@@ -10,7 +10,7 @@
 		<!--<div class="all_dates text-center">-->
 		<!--    <span v-for="n in daysInMonth" :id="'date_'+n" @click="newDate(n)">{{n}}</span>-->
 		<!--</div>-->
-		<div class="promo_container" v-if="processedEvents.length > 0">
+		<div class="promo_container" v-if="events.length > 0">
 			<div class="row promo_dets text-left" v-for="promo in events">
 				<div class="col-sm-7" >
 					<div class="promo_div_image">
