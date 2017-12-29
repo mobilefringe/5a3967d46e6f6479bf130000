@@ -1,5 +1,5 @@
 <template>
-	<div class="page_container events_container"><!-- for some reason if you do not put an outer container div this component template will not render -->
+	<div class="page_container jobs_container"><!-- for some reason if you do not put an outer container div this component template will not render -->
 		<!--<div class="date_bar">-->
 		<!--    <span @click="beforeDate"> <i class="fa fa-chevron-left"></i></span>-->
 		<!--    <span class="current_date">-->
@@ -10,8 +10,8 @@
 		<!--<div class="all_dates text-center">-->
 		<!--    <span v-for="n in daysInMonth" :id="'date_'+n" @click="newDate(n)">{{n}}</span>-->
 		<!--</div>-->
-		<div class="promo_container" v-if="events.length > 0">
-			<div class="row promo_dets is-table-row" v-for="promo in events">
+		<div class="promo_container" v-if="jobs.length > 0">
+			<div class="row promo_dets is-table-row" v-for="promo in jobs">
 				<div class="col-sm-7" >
 					<div class="promo_div_image">
 						<img :src="promo.image_url" alt=""/>
@@ -24,7 +24,7 @@
 					<p class="promo_div_description">{{promo.description_short}}</p>
 					<div class="row is-table-row">
     					<span class="feature_read_more col-sm-6">
-    						<router-link :to="'/events/'+promo.slug" class="mobile_readmore" >
+    						<router-link :to="'/jobs/'+promo.slug" class="mobile_readmore" >
     							<p class="feature-readmore">Read More <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></p>
     						</router-link>
     					</span>
@@ -54,16 +54,16 @@
 			</div>
 		</div>
 		<div class="promo_container" v-else>
-		    <p> Sorry, No sales or events available for this day. </p>
+		    <p> Sorry, No sales or jobs available for this day. </p>
 		</div>
 	</div>
 </template>
 
 <style>
-    .events_container .row{
+    .jobs_container .row{
         margin-left:inherit;
     }
-    .events_container .date_bar{
+    .jobs_container .date_bar{
         /* Today: */
         background: #D3D3D3;
         height: 40px;
@@ -71,17 +71,17 @@
         margin: auto;
         text-align: center;
     }
-    .events_container .date_bar .fa{
+    .jobs_container .date_bar .fa{
         cursor: pointer;
     }
-    .events_container .current_date{
+    .jobs_container .current_date{
         color: #636363;
         padding: 0 10px;
     }
-    .events_container .all_dates {
+    .jobs_container .all_dates {
         border-bottom: 1px solid #aea99e;
     }
-    .events_container .all_dates span {
+    .jobs_container .all_dates span {
         font-size: 16px;
         color: #000000;
         letter-spacing: 1.5px;
@@ -90,31 +90,31 @@
         padding: 0 5px;
         cursor: pointer;
     }
-    .events_container .all_dates [class*="date_"]:focus, [class*="date_"]:hover { 
+    .jobs_container .all_dates [class*="date_"]:focus, [class*="date_"]:hover { 
         background-color: #D3D3D3;
     }
-    .events_container .all_dates span.active { 
+    .jobs_container .all_dates span.active { 
         background-color: #bababa;
     }
-    .events_container .promo_dets {
+    .jobs_container .promo_dets {
         border-bottom: 1px solid #aea99e;
     }
-    .events_container .row.is-table-row {
+    .jobs_container .row.is-table-row {
         margin: 0;
     }
-    .events_container .row.is-table-row [class*="col-"] {
+    .jobs_container .row.is-table-row [class*="col-"] {
         padding:0;
     }
-    .events_container .feature_read_more {
+    .jobs_container .feature_read_more {
         width : auto;
     }
-    .events_container .social_share network {
+    .jobs_container .social_share network {
         display:inline-block;
         width: 24px;
         height: 24px;
         cursor: pointer;
     }
-    .events_container .social_share .social_icons{
+    .jobs_container .social_share .social_icons{
         width : 24px;
         height : 24px;
         display:inline;
@@ -145,7 +145,7 @@
             data: function() {
                 return {
                     // selectedDate: null,
-                    processedEvents:[]
+                    processedJobs:[]
                 }
             },
             mounted() {
@@ -162,12 +162,12 @@
                 //     //sort promos
                 //     selected = moment(this.selectedDate).format('MM DD YYYY');
                 //     var vm = this;
-                //     vm.processedEvents = _.filter(vm.events, function(val){
+                //     vm.processedJobs = _.filter(vm.jobs, function(val){
                 //         start_date = moment(val.start_date).tz(vm.timezone).format('MM DD YYYY');
                 //         end_date = moment(val.end_date).tz(vm.timezone).format('MM DD YYYY');
                 //         return moment(selected).isBetween(start_date,end_date, null, '[]');
                 //     });
-                //     console.log(this.processedEvents);
+                //     console.log(this.processedJobs);
                     
                 //     //change active class 
                 //     old_date = moment(this.selectedDate).date();
@@ -176,11 +176,11 @@
                 // }
             },
             computed: {
-                events() {
+                jobs() {
                     var vm = this;
                     var temp_promo = [];
                     var temp_job = [];
-                    _.forEach(this.$store.getters.processedEvents, function(value, key) {
+                    _.forEach(this.$store.getters.processedJobs, function(value, key) {
                         // var current_promo = vm.findPromoById(value);
                         value.description_short = _.truncate(value.description, {
                             'length': 70
@@ -226,7 +226,7 @@
                 },
                 shareURL(slug){
                     // console.log(window.location.host, "\n http://"+ window.location.host);
-                    var share_url = "http://eastgatesquare.ca/events/" + slug;
+                    var share_url = "http://eastgatesquare.ca/jobs/" + slug;
                     return share_url;
                 }
                 // ,
