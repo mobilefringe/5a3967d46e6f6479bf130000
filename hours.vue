@@ -51,7 +51,11 @@
         </div >
     </div>
 </template>
-
+<style>
+    .row{
+        margin-left:inherit;
+    }
+</style>
 <script>
     define(["Vue", "moment", "moment-timezone", "vue-moment", "vue-meta"], function(Vue, moment, tz, VueMoment, Meta) {
         Vue.use(Meta);
