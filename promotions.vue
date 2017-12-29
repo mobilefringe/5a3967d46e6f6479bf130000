@@ -71,7 +71,7 @@
     .promo_dets {
         border-bottom: 1px solid #aea99e;
     }
-    .social_share social_icons{
+    .social_share .social_icons{
         
     }
 </style>
