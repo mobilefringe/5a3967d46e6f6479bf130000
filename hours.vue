@@ -9,7 +9,7 @@
                             <div class="col-md-12"> 
                                 <h3 class="hours_heading text-left" >Regular Shopping Hours</h3>
                                 <div id="hours_container" class="hours_container">
-                                    <div class="hours_div" v-for="hour in hours">
+                                    <div class="hours_div text-center" v-for="hour in hours">
                                         <span>{{dayOfTheWeek[hour.day_of_week]}}:</span>
                                         <span>{{hour.open_time | moment("h:mm A", timezone)}} - {{hour.close_time | moment("h:mm A", timezone)}}</span>
                                     </div>
