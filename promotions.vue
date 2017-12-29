@@ -157,7 +157,6 @@
             },
             watch: {
                 selectedDate: function() {
-                    
                     $("#date_29").addClass('active');
                     selected = moment(this.selectedDate).format('MM DD YYYY');
                     var vm = this;
