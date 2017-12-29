@@ -1,15 +1,15 @@
 <template>
 	<div class="promotions_container"><!-- for some reason if you do not put an outer container div this component template will not render -->
-		<div class="date_bar">
-		    <span @click="beforeDate"> <i class="fa fa-chevron-left"></i></span>
-		    <span class="current_date">
-		        {{selectedDate}}
-		    </span>
-		    <span @click="afterDate"> <i class="fa fa-chevron-right"></i></span>
-		</div>
-		<div class="all_dates text-center">
-		    <span v-for="n in daysInMonth" :id="'date_'+n" @click="newDate(n)">{{n}}</span>
-		</div>
+		<!--<div class="date_bar">-->
+		<!--    <span @click="beforeDate"> <i class="fa fa-chevron-left"></i></span>-->
+		<!--    <span class="current_date">-->
+		<!--        {{selectedDate}}-->
+		<!--    </span>-->
+		<!--    <span @click="afterDate"> <i class="fa fa-chevron-right"></i></span>-->
+		<!--</div>-->
+		<!--<div class="all_dates text-center">-->
+		<!--    <span v-for="n in daysInMonth" :id="'date_'+n" @click="newDate(n)">{{n}}</span>-->
+		<!--</div>-->
 		<div class="promo_container" v-if="processedEvents.length > 0">
 			<div class="row promo_dets text-left" v-for="promo in processedEvents">
 				<div class="col-sm-7" >
