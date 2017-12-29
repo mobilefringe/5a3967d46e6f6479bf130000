@@ -82,7 +82,7 @@
         padding-top: inherit;
         padding-bottom: inherit;
         padding-left: 0;
-        padding-top: 0;
+        padding-right: 0;
     }
     
     .event_logo_container,
