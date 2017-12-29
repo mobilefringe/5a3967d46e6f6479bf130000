@@ -147,7 +147,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                             {
                                 name: "Contact Us ",
                                 id: "contact_link",
-                                href: "/pages/eastgate-customer-service"
+                                href: "/contact_us"
                             },
                             {
                                 name: "Customer Service ",
