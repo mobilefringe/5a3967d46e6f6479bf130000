@@ -103,6 +103,7 @@
         display:inline-block;
         width: 24px;
         height: 24px;
+        cursor: pointer;
     }
     .social_share .social_icons{
         width : 24px;
