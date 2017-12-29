@@ -39,7 +39,7 @@
 		            <p class="promo_div_job_name">{{job.store.name | uppercase}}</p>
 		            <p class="promo_div_date">{{job.start_date | moment("MMM D", timezone)}} - {{job.end_date | moment("MMM D", timezone)}}</p>
 		            
-						<p class="job_div_description">{{job.description_short}}</p>
+						<p class="promo_div_description">{{job.description_short}}</p>
 						<span class="feature_read_more">
 							<router-link :to="'/jobs/'+job.slug" class="mobile_readmore" >
 								<p class="feature-readmore">Read More <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></p>
