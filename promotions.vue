@@ -32,7 +32,7 @@
 			</div>
 		</div>
 		<div class="promo_container" v-else>
-		    <p></p>
+		    <p> Sorry, No Sales available for this date</p>
 		</div>
 	</div>
 </template>
