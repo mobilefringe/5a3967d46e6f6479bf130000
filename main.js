@@ -143,7 +143,13 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                         hover_id: "stores_underline",
                         hover_class_list: "menu_underline",
                         show_sub_menu: false,
-                        sub_menu: [{
+                        sub_menu: [
+                            {
+                                name: "Contact Us ",
+                                id: "stores_link",
+                                href: "/pages/eastgate-customer-service"
+                            },
+                            {
                                 name: "Customer Service ",
                                 id: "stores_link",
                                 href: "/pages/eastgate-customer-service"
