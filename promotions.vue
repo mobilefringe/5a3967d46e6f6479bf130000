@@ -28,14 +28,14 @@
     							<p class="feature-readmore">Read More <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></p>
     						</router-link>
     					</span>
-    					<!--<div class="blog-social-share social_share text-right  col-sm-6">-->
+    					<div class="text-right  col-sm-6">
          <!--                   <network network="facebook">-->
          <!--                       <img src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797683914/facebook.png" class="social_icons" alt="">-->
          <!--                   </network>-->
          <!--                   <network network="twitter">-->
          <!--                       <img src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797704155/twitter.png" class="social_icons" alt="">-->
          <!--                   </network>-->
-    					<!--</div>-->
+    					</div>
     					<social-sharing :url="shareURL(promo.slug)" :title="promo.title" :description="promo.body" :quote="truncate(promo.description)" twitter-user="EastgateSquare" :media="promo.image_url" inline-template >
                         <div class="blog-social-share">
                             <div class="social_share">
