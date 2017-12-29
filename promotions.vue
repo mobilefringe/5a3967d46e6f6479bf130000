@@ -90,6 +90,8 @@
         padding: 0 5px;
         cursor: pointer;
     }
+    .all_dates span { 
+    }
     .promo_dets {
         border-bottom: 1px solid #aea99e;
     }
