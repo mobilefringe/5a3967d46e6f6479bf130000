@@ -49,7 +49,7 @@
         color: #636363;
     }
     .all_dates {
-        border-bottom:;
+        border-bottom:1px solid #aea99e;
     }
     .all_dates span {
         font-size: 16px;
