@@ -119,8 +119,8 @@
     }
     @media (min-width: 992px){ 
         .all_dates span {
-            font-size:12px;
-            padding: 0px 4px;
+            font-size:16px;
+            padding: 0px 5px;
         }
         
     }
