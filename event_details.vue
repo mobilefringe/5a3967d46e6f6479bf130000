@@ -26,28 +26,28 @@
 				</div>
 			</div>
 		</div>
-		<!--<div class="event_promo_container" v-if="currentEvent && currentEvent.total_published_promos > 0">-->
-		<!--    <div class="promo_container_title text-left all_caps"> Sales & Promotions</div>-->
-		<!--    <div class="row event_promo_dets text-left" v-for="promo in promotions">-->
-		<!--        <div class="col-sm-7" >-->
-		<!--        <div class="promo_div_image">-->
-		<!--            <img :src="promo.image_url" alt=""/>-->
-		<!--        </div>-->
-		<!--        </div>-->
-		<!--        <div class="col-sm-5 promo_div_dets">-->
-		<!--            <p class="promo_div_name">{{promo.name}}</p>-->
-		<!--            <p class="promo_div_event_name">{{currentEvent.name | uppercase}}</p>-->
-		<!--            <p class="promo_div_date">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>-->
+		<div class="event_promo_container" v-if="currentEvent && currentEvent.total_published_promos > 0">
+		    <div class="promo_container_title text-left all_caps"> Sales & Promotions</div>
+		    <div class="row event_promo_dets text-left" v-for="promo in promotions">
+		        <div class="col-sm-7" >
+		        <div class="promo_div_image">
+		            <img :src="promo.image_url" alt=""/>
+		        </div>
+		        </div>
+		        <div class="col-sm-5 promo_div_dets">
+		            <p class="promo_div_name">{{promo.name}}</p>
+		            <p class="promo_div_event_name">{{currentEvent.name | uppercase}}</p>
+		            <p class="promo_div_date">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
 		            
-		<!--				<p class="promo_div_description">{{promo.description_short}}</p>-->
-		<!--				<span class="feature_read_more">-->
-		<!--					<router-link :to="'/promotions/'+promo.slug" class="mobile_readmore" >-->
-		<!--						<p class="feature-readmore">Read More <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></p>-->
-		<!--					</router-link>-->
-		<!--				</span>-->
-		<!--        </div>-->
-		<!--    </div>-->
-		<!--</div>-->
+						<p class="promo_div_description">{{promo.description_short}}</p>
+						<span class="feature_read_more">
+							<router-link :to="'/promotions/'+promo.slug" class="mobile_readmore" >
+								<p class="feature-readmore">Read More <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></p>
+							</router-link>
+						</span>
+		        </div>
+		    </div>
+		</div>
 		<div class="promo_main_header sub_title" v-if="storePromos.length > 0 && property" style="border-top: 1px solid #000;">
                OTHER {{property.name | uppercase }} EVENTS
         </div>
