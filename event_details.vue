@@ -172,7 +172,7 @@
                 findEventBySlug() {
                     return this.$store.getters.findEventBySlug;
                 },
-                findPromoById() {
+                findEventById() {
                     return this.$store.getters.findEventById;
                 },
                 findJobById() {
