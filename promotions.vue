@@ -55,6 +55,7 @@
         height:30px;
         line-height:30px;
         padding: 0 5px;
+        cursor: pointer;
     }
 </style>
 
