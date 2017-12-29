@@ -153,7 +153,7 @@
                 console.log(this.selectedDate);
                 var date = moment(this.selectedDate).date();
                 console.log(date);
-                $("#date_"+ ).addClass('active');
+                $("#date_"+ date).addClass('active');
             },
             watch: {
                 selectedDate: function() {
