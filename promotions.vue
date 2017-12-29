@@ -159,10 +159,7 @@
             watch: {
                 selectedDate: function() {
                     
-                    //change active class 
-                    old_date = moment(this.selectedDate).date();
-                    $(".all_dates span").removeClass('active');
-                    $("#date_"+old_date).addClass('active');
+                    
                     
                     //sort promos
                     selected = moment(this.selectedDate).format('MM DD YYYY');
