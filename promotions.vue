@@ -161,6 +161,7 @@
                     //change active class 
                     $("#date_"+old_date).removeClass('active');
                     $("#date_"+val).addClass('active');
+                    
                     //sort promos
                     selected = moment(this.selectedDate).format('MM DD YYYY');
                     var vm = this;
