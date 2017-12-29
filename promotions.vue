@@ -84,7 +84,7 @@
                         
                         if(selected >= start_date && selected <= end_date) {
                             console.log(selected, start_date, end_date);
-                            console.log(selected.diff(start_date, 'days') >= 0, 0 <= selected.diff(end_date, 'days'), (selected >= start_date && selected <= end_date));
+                            console.log(selected.diff(start_date, 'days') >= 0, 0 <= selected.diff(end_date, 'days'), (selected >= start_date && 0 <= selected.diff(end_date, 'days')));
                         
                         }
                         return (selected >= start_date && selected <= end_date);
