@@ -35,9 +35,9 @@
 		        </div>
 		        </div>
 		        <div class="col-sm-5 job_div_dets">
-		            <p class="job_div_name">{{job.name}}</p>
-		            <p class="job_div_job_name">{{job.store.name | uppercase}}</p>
-		            <p class="job_div_date">{{job.start_date | moment("MMM D", timezone)}} - {{job.end_date | moment("MMM D", timezone)}}</p>
+		            <p class="promo_div_name">{{job.name}}</p>
+		            <p class="promo_div_job_name">{{job.store.name | uppercase}}</p>
+		            <p class="promo_div_date">{{job.start_date | moment("MMM D", timezone)}} - {{job.end_date | moment("MMM D", timezone)}}</p>
 		            
 						<p class="job_div_description">{{job.description_short}}</p>
 						<span class="feature_read_more">
