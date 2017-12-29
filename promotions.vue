@@ -60,6 +60,9 @@
         padding: 0 5px;
         cursor: pointer;
     }
+    .promo_dets {
+        
+    }
 </style>
 
 <script>
