@@ -71,6 +71,9 @@
         margin: auto;
         text-align: center;
     }
+    .date_bar {
+        
+    }
     .current_date{
         color: #636363;
         padding: 0 10px;
