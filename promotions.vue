@@ -1,5 +1,6 @@
 <template>
 	<div class="container"><!-- for some reason if you do not put an outer container div this component template will not render -->
+		<div>
 		<div class="date_bar">
 		    <span @click="beforeDate"> <i class="fa fa-chevron-left"></i></span>
 		    <span class="current_date">
@@ -30,6 +31,7 @@
 					</span>
 				</div>
 			</div>
+		</div>
 		</div>
 	</div>
 </template>
