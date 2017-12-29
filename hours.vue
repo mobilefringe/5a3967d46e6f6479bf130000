@@ -5,17 +5,13 @@
             <div class="margin_25_across padding_top_40">
                 <div class="row">
                     <div class="col-md-5 col-sm-5 col-xs-12">
-                        <!--<div class="row">-->
-                            <!--<div class="col-md-12 col-xs-12"> -->
-                                <h3 class="hours_heading text-left" >Regular Shopping Hours</h3>
-                                <div id="hours_container" class="hours_container">
-                                    <div class="hours_div text-left" v-for="hour in hours">
-                                        <span>{{dayOfTheWeek[hour.day_of_week]}}:</span>
-                                        <span>{{hour.open_time | moment("h:mm A", timezone)}} - {{hour.close_time | moment("h:mm A", timezone)}}</span>
-                                    </div>
-                                </div>
-                            <!--</div>-->
-                        <!--</div>-->
+                        <h3 class="hours_heading text-left" >Regular Shopping Hours</h3>
+                        <div id="hours_container" class="hours_container">
+                            <div class="hours_div text-left" v-for="hour in hours">
+                                <span>{{dayOfTheWeek[hour.day_of_week]}}:</span>
+                                <span>{{hour.open_time | moment("h:mm A", timezone)}} - {{hour.close_time | moment("h:mm A", timezone)}}</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-7 col-sm-7 hidden_phone">
                         <img src="http://placehold.it/460x300"/>
