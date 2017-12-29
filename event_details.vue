@@ -76,7 +76,7 @@
 </template>
 <style>
     .row{
-        margin-left:inherit;
+        margin-left:0;
     }
     .event_dets_container .row.is-table-row [class*="col-"] {
         padding-top: inherit;
