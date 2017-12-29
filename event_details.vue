@@ -1,9 +1,9 @@
 <template>
-	<div class="page_container" v-if="currentStore">
+	<div class="page_container" v-if="currentEvent">
 		<div class="row">
 			<div class="col-sm-4 store_logo_container">
 				<div>
-					<img :src="currentStore.store_front_url_abs"/>
+					<img :src="currentEvent.store_front_url_abs"/>
 				</div>
 			</div>
 			<div class="col-sm-8 store_map_container">
@@ -13,19 +13,19 @@
 		<div class="row is-table-row">
 			<div class="col-sm-4 store_details_container">
 				<div>
-					<h1>{{currentStore.name}}</h1>
-					<p>{{currentStore.category_name}}</p>
-					<p>{{currentStore.phone}}</p>
-					<a v-bind:href="currentStore.website">Visit Store Site</a>
+					<h1>{{currentEvent.name}}</h1>
+					<p>{{currentEvent.category_name}}</p>
+					<p>{{currentEvent.phone}}</p>
+					<a v-bind:href="currentEvent.website">Visit Store Site</a>
 				</div>
 			</div>
 			<div class="col-sm-8 store_desc_container">
 				<div class="text-left store_description">
-					<p>{{currentStore.description}}</p>
+					<p>{{currentEvent.description}}</p>
 				</div>
 			</div>
 		</div>
-		<!--<div class="store_promo_container" v-if="currentStore && currentStore.total_published_promos > 0">-->
+		<!--<div class="store_promo_container" v-if="currentEvent && currentEvent.total_published_promos > 0">-->
 		<!--    <div class="promo_container_title text-left all_caps"> Sales & Promotions</div>-->
 		<!--    <div class="row store_promo_dets text-left" v-for="promo in promotions">-->
 		<!--        <div class="col-sm-7" >-->
@@ -35,7 +35,7 @@
 		<!--        </div>-->
 		<!--        <div class="col-sm-5 promo_div_dets">-->
 		<!--            <p class="promo_div_name">{{promo.name}}</p>-->
-		<!--            <p class="promo_div_store_name">{{currentStore.name | uppercase}}</p>-->
+		<!--            <p class="promo_div_store_name">{{currentEvent.name | uppercase}}</p>-->
 		<!--            <p class="promo_div_date">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>-->
 		            
 		<!--				<p class="promo_div_description">{{promo.description_short}}</p>-->
@@ -47,17 +47,17 @@
 		<!--        </div>-->
 		<!--    </div>-->
 		<!--</div>-->
-		<!--<div class="store_promo_container" v-if="currentStore && currentStore.total_published_jobs > 0">-->
+		<!--<div class="store_promo_container" v-if="currentEvent && currentEvent.total_published_jobs > 0">-->
 		<!--    <div class="promo_container_title text-left all_caps"> Careers</div>-->
 		<!--    <div class="row store_promo_dets text-left" v-for="promo in jobs">-->
 		<!--        <div class="col-sm-7" >-->
 		<!--        <div class="promo_div_image">-->
-		<!--            <img :src="currentStore.store_front_url_abs" alt=""/>-->
+		<!--            <img :src="currentEvent.store_front_url_abs" alt=""/>-->
 		<!--        </div>-->
 		<!--        </div>-->
 		<!--        <div class="col-sm-5 promo_div_dets">-->
 		<!--            <p class="promo_div_name">{{promo.name}}</p>-->
-		<!--            <p class="promo_div_store_name">{{currentStore.name | uppercase}}</p>-->
+		<!--            <p class="promo_div_store_name">{{currentEvent.name | uppercase}}</p>-->
 		<!--            <p class="promo_div_date">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>-->
 		            
 		<!--				<p class="promo_div_description">{{promo.description_short}}</p>-->
@@ -100,7 +100,7 @@
             template: template, // the variable template will be injected,
             data: function() {
                 return {
-                    currentStore: null,
+                    currentEvent: null,
                     promotions : [],
                     jobs:[]
                 }
@@ -108,9 +108,9 @@
             beforeRouteEnter(to, from, next) {
                 next(vm => {
                     // access to component instance via `vm`
-                    vm.currentStore = vm.findStoreBySlug(to.params.id);
-                    console.log(vm.currentStore);
-                    if (vm.currentStore === null || vm.currentStore === undefined) {
+                    vm.currentEvent = vm.findStoreBySlug(to.params.id);
+                    console.log(vm.currentEvent);
+                    if (vm.currentEvent === null || vm.currentEvent === undefined) {
                         vm.$router.replace({
                             name: '404'
                         });
@@ -118,9 +118,9 @@
                 })
             },
             beforeRouteUpdate(to, from, next) {
-                this.currentStore = this.findStoreBySlug(to.params.id);
-                console.log(this.currentStore);
-                if (this.currentStore === null || this.currentStore === undefined) {
+                this.currentEvent = this.findStoreBySlug(to.params.id);
+                console.log(this.currentEvent);
+                if (this.currentEvent === null || this.currentEvent === undefined) {
                     this.$router.replace({
                         name: '404'
                     });
@@ -134,12 +134,12 @@
                         vm.dropPin();
                     }, 500);
                 },
-                currentStore: function() {
-                    console.log("currentStore promo", this.currentStore);
+                currentEvent: function() {
+                    console.log("currentEvent promo", this.currentEvent);
                     var vm = this;
                     var temp_promo = [];
                     var temp_job = [];
-                    _.forEach(this.currentStore.promotions, function(value, key) {
+                    _.forEach(this.currentEvent.promotions, function(value, key) {
                         // console.log(vm.findPromoById(value));
                         var current_promo = vm.findPromoById(value);
                         current_promo.description_short = _.truncate(current_promo.description, {
@@ -147,7 +147,7 @@
                         });
                         temp_promo.push(current_promo);
                     });
-                    _.forEach(this.currentStore.jobs, function(value, key) {
+                    _.forEach(this.currentEvent.jobs, function(value, key) {
                         var current_job = vm.findJobById(value);
                         current_job.description_short = _.truncate(current_job.description, {
                             'length': 70
@@ -192,11 +192,11 @@
                     console.log("this", this);
                 },
                 dropPin() {
-                    console.log(this.currentStore);
-                    console.log(this.currentStore.svgmap_region);
+                    console.log(this.currentEvent);
+                    console.log(this.currentEvent.svgmap_region);
                     // this.svgMapRef.hideMarkers();
-                    this.svgMapRef.addMarker(this.currentStore, '//codecloud.cdn.speedyrails.net/sites/589e308f6e6f641b9f010000/image/png/1484850466000/show_pin.png');
-                    this.svgMapRef.setViewBox(this.currentStore)
+                    this.svgMapRef.addMarker(this.currentEvent, '//codecloud.cdn.speedyrails.net/sites/589e308f6e6f641b9f010000/image/png/1484850466000/show_pin.png');
+                    this.svgMapRef.setViewBox(this.currentEvent)
                 }
             }
         });
