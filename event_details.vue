@@ -82,7 +82,7 @@
     .store_desc_container{
         padding: 20px 10px;
     }
-    .store_map_container{
+    .store_map_container img{
         max-height: 300px;
     }
     .store_logo_container img{
