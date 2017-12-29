@@ -18,6 +18,9 @@
         height: 35px;
         line-height: 35px;
     }
+    a{
+        
+    }
 </style>
 <script>
     define(["Vue", "moment", "moment-timezone", "vue-moment"], function(Vue, moment, tz, VueMoment) {
