@@ -47,7 +47,7 @@
 </template>
 
 <style>
-.row{
+    .row{
         margin-left:inherit;
     }
     .date_bar{
