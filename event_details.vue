@@ -75,7 +75,7 @@
 	</div>
 </template>
 <style>
-    .event_dets_container .row{
+    ..row{
         margin-left:inherit;
     }
     .event_logo_container,
