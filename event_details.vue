@@ -1,7 +1,7 @@
 <template>
 	<div class="page_container" v-if="currentEvent">
 		<div class="row">
-			<div class="col-sm-4 store_logo_container">
+			<div class="col-sm-4 event_logo_container">
 				<div>
 					<img src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1513713887462/ES_logo_Colour (1).png"/>
 				</div>
@@ -12,7 +12,7 @@
 			</div>
 		</div>
 		<div class="row is-table-row">
-			<div class="col-sm-4 store_details_container text-left">
+			<div class="col-sm-4 event_details_container text-left">
 				<div>
 					<h1>{{currentEvent.name}}</h1>
 					<!--<p>{{currentEvent.category_name}}</p>-->
@@ -20,15 +20,15 @@
 					<p class="">{{currentEvent.start_date | moment("MMM D", timezone)}} - {{currentEvent.end_date | moment("MMM D", timezone)}}</p>
 				</div>
 			</div>
-			<div class="col-sm-8 store_desc_container">
-				<div class="text-left store_description">
+			<div class="col-sm-8 event_desc_container">
+				<div class="text-left event_description">
 					<p>{{currentEvent.description}}</p>
 				</div>
 			</div>
 		</div>
-		<!--<div class="store_promo_container" v-if="currentEvent && currentEvent.total_published_promos > 0">-->
+		<!--<div class="event_promo_container" v-if="currentEvent && currentEvent.total_published_promos > 0">-->
 		<!--    <div class="promo_container_title text-left all_caps"> Sales & Promotions</div>-->
-		<!--    <div class="row store_promo_dets text-left" v-for="promo in promotions">-->
+		<!--    <div class="row event_promo_dets text-left" v-for="promo in promotions">-->
 		<!--        <div class="col-sm-7" >-->
 		<!--        <div class="promo_div_image">-->
 		<!--            <img :src="promo.image_url" alt=""/>-->
@@ -36,7 +36,7 @@
 		<!--        </div>-->
 		<!--        <div class="col-sm-5 promo_div_dets">-->
 		<!--            <p class="promo_div_name">{{promo.name}}</p>-->
-		<!--            <p class="promo_div_store_name">{{currentEvent.name | uppercase}}</p>-->
+		<!--            <p class="promo_div_event_name">{{currentEvent.name | uppercase}}</p>-->
 		<!--            <p class="promo_div_date">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>-->
 		            
 		<!--				<p class="promo_div_description">{{promo.description_short}}</p>-->
@@ -55,7 +55,7 @@
             <div class="col-md-6 col-sm-6 no_padding" v-for="promo in storePromos" :data-cat="promo.cat_list">
                 <div class="promo_item cats_row is-table-row">
                     <div class="col-md-5 col-xs-4 no_padding">
-                        <img class="promo_store_image" :src="promo.image_url" :alt="promo.name" />
+                        <img class="promo_event_image" :src="promo.image_url" :alt="promo.name" />
                     </div>
                     <div class="col-md-7 padding_tb_20">
                         <router-link :to="'/events/'+promo.slug" class="">
@@ -78,16 +78,16 @@
     .row{
         margin-left:inherit;
     }
-    .store_logo_container,
+    .event_logo_container,
     .event_image_container,
-    .store_details_container,
-    .store_desc_container{
+    .event_details_container,
+    .event_desc_container{
         padding: 20px 10px;
     }
     .event_image_container img{
         max-height: 300px;
     }
-    .store_logo_container img{
+    .event_logo_container img{
         border: 1px solid #aea99e;
         width:300px;
         height:300px
