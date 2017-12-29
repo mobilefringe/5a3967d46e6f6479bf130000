@@ -73,6 +73,7 @@
     }
     .current_date{
         color: #636363;
+            padding: 0 10px;
     }
     .all_dates {
         border-bottom: 1px solid #aea99e;
