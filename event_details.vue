@@ -163,7 +163,7 @@
             },
             computed: {
                 findStoreBySlug() {
-                    return this.$store.getters.findStoreBySlug;
+                    return this.$store.getters.findEventBySlug;
                 },
                 findPromoById() {
                     return this.$store.getters.findEventById;
