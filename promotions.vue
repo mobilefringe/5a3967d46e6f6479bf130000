@@ -23,19 +23,19 @@
 					<p class="promo_div_date">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
 					<p class="promo_div_description">{{promo.description_short}}</p>
 					<div class="row">
-					<span class="feature_read_more">
-						<router-link :to="'/promotions/'+promo.slug" class="mobile_readmore" >
-							<p class="feature-readmore">Read More <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></p>
-						</router-link>
-					</span>
-					<span class="social_share pull-right">
-                        <network network="facebook">
-                            <img src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797683914/facebook.png" class="social_icons" alt="">
-                        </network>
-                        <network network="twitter">
-                            <img src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797704155/twitter.png" class="social_icons" alt="">
-                        </network>
-					</span>
+    					<span class="feature_read_more">
+    						<router-link :to="'/promotions/'+promo.slug" class="mobile_readmore" >
+    							<p class="feature-readmore">Read More <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></p>
+    						</router-link>
+    					</span>
+    					<span class="social_share pull-right">
+                            <network network="facebook">
+                                <img src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797683914/facebook.png" class="social_icons" alt="">
+                            </network>
+                            <network network="twitter">
+                                <img src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797704155/twitter.png" class="social_icons" alt="">
+                            </network>
+    					</span>
 					</div>
 				</div>
 			</div>
