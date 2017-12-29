@@ -30,7 +30,7 @@
     						</router-link>
     					<!--</span>-->
     					</div>
-    					<div class="col-sm-6">
+    					<div class="col-sm-6 social_share pull-right">
     					<span class="social_share pull-right">
                             <network network="facebook">
                                 <img src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797683914/facebook.png" class="social_icons" alt="">
