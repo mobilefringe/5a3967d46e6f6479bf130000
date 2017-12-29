@@ -87,7 +87,7 @@
                             console.log(moment(selected).isBetween(start_date,end_date));
                         
                         }
-                        return (selected >= start_date && selected <= end_date);
+                        return moment(selected).isBetween(start_date,end_date);
                     });
                     console.log(this.processedPromos);
                 }
