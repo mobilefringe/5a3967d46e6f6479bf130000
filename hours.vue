@@ -27,7 +27,7 @@
                     <div class="col-md-12 ">
                         <div class="padding_top_20"></div>
                         
-                        <h3 class="hours_heading">Reduced Holiday Hours of Operation</h3>
+                        <h3 class="hours_heading text-left">Reduced Holiday Hours of Operation</h3>
                         <div id="holidays_hours_container" class="hours_container">
                             <div class="hours_div"  v-for="hour in reducedHolidays">
                                 <span>{{hour.holiday_name}} <br/>({{hour.holiday_date | moment("MMM D YYYY", timezone)}})</span>
