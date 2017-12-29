@@ -1,7 +1,7 @@
 <template>
     <div>
          <div class="page_container " v-if="currentPage">
-             <div class="page_title text-left all_caps" v-html="currentPage.title"> </div>
+            <div class="page_title text-left all_caps" v-html="currentPage.title"> </div>
             <div class="row padding_30" >
                 <div class="description_text text_left" v-html="currentPage.body">
                     
