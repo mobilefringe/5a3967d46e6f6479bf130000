@@ -73,6 +73,7 @@
     }
     .social_share .social_icons{
         width : 25px;
+        height : 25px;
     }
 </style>
 
