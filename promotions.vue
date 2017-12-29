@@ -73,6 +73,8 @@
     }
     .social_share network {
         display:inline;
+        width: 24px;
+    height: 24px;
     }
     .social_share .social_icons{
         width : 25px;
