@@ -23,14 +23,14 @@
 					<p class="promo_div_date">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
 					<p class="promo_div_description">{{promo.description_short}}</p>
 					<div class="row is-table-row">
-					<div class="col-sm-8">
+					<div class="col-sm-7">
     					<span class="feature_read_more">
     						<router-link :to="'/promotions/'+promo.slug" class="mobile_readmore" >
     							<p class="feature-readmore">Read More <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></p>
     						</router-link>
     					</span>
     					</div>
-    					<div class="col-sm-4">
+    					<div class="col-sm-5">
     					<span class="social_share pull-right">
                             <network network="facebook">
                                 <img src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797683914/facebook.png" class="social_icons" alt="">
