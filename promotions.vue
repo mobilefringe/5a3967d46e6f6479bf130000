@@ -94,7 +94,7 @@
         background-color: #D3D3D3;
     }
     .all_dates span.active { 
-        background-color: #D3D3D3;
+        background-color: #bababa;
     }
     .promo_dets {
         border-bottom: 1px solid #aea99e;
