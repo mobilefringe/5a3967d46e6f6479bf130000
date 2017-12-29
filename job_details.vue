@@ -15,11 +15,11 @@
 			</div>
 		</div>
 		<div class="row" style="margin-left:0;">
-			<div class="col-sm-4 job_details_container text-left">
-				<div>
+			<!--<div class="col-sm-4 job_details_container text-left">-->
+			<!--	<div>-->
 					
-				</div>
-			</div>
+			<!--	</div>-->
+			<!--</div>-->
 			<div class="col-sm-8 job_desc_container">
 				<div class="text-left job_description">
 					<p>{{currentJob.description}}</p>
