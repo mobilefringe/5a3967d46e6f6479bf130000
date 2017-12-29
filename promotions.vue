@@ -110,7 +110,13 @@
         display:inline;
         margin: 0 2px;
     }
-    
+    @media (min-width: 769px){ 
+        .all_dates span {
+            font-size:12px;
+            padding: 0px 4px;
+        }
+        
+    }
     
 </style>
 
