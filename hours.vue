@@ -29,7 +29,7 @@
                         
                         <h3 class="hours_heading text-left">Reduced Holiday Hours of Operation</h3>
                         <div id="holidays_hours_container" class="hours_container">
-                            <div class="hours_div"  v-for="hour in reducedHolidays">
+                            <div class="hours_div text-left"  v-for="hour in reducedHolidays">
                                 <span>{{hour.holiday_name}} <br/>({{hour.holiday_date | moment("MMM D YYYY", timezone)}})</span>
                                 <span>{{hour.open_time | moment("h:mm A", timezone)}} - {{hour.close_time | moment("h:mm A", timezone)}}</span>
                             </div>
@@ -39,7 +39,7 @@
                         
                         <h3 class="hours_heading text-left">Holiday Closures</h3>
                         <div id="closed_hours_container" class="hours_container">
-                            <div class="hours_div" v-for="hour in closeHolidays">
+                            <div class="hours_div text-left" v-for="hour in closeHolidays">
                                 <span>{{hour.holiday_name}} ({{hour.holiday_date | moment("MMM D YYYY", timezone)}})</span>
                             </div>
                         </div>
