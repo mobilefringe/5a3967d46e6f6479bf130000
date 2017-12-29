@@ -55,6 +55,9 @@
     .row{
         margin-left:inherit;
     }
+    .hours_container {
+        
+    }
 </style>
 <script>
     define(["Vue", "moment", "moment-timezone", "vue-moment", "vue-meta"], function(Vue, moment, tz, VueMoment, Meta) {
