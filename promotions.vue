@@ -77,7 +77,7 @@
         border-bottom: 1px solid #aea99e;
     }
     .row.is-table-row {
-        
+        margin: 0;
     }
     .row.is-table-row [class*="col-"] {
         padding:0;
