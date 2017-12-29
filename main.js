@@ -125,7 +125,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                             {
                                 name: "Speciality Leasing",
                                 id: "stores_link",
-                                href: "/http://eastgatesquare.ca/specialty_leasing"
+                                href: "/specialty_leasing"
                             },
                             {
                                 name: "Photos",
