@@ -97,10 +97,7 @@
         height:300px
     }
     .event_details_container h1{
-        padding-top: inherit;
-        padding-bottom: inherit;
-        padding-top: 0;
-        padding-top: 0;
+        padding: 0;
     }
     .event_div_date{
         font-size: 16px;
