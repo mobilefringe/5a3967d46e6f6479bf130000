@@ -120,7 +120,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                         sub_menu: [{
                                 name: "Leasing ",
                                 id: "stores_link",
-                                href: "/leasing"
+                                href: "/pages/eastgate-leasing"
                             },
                             {
                                 name: "Speciality Leasing",
