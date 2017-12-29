@@ -36,7 +36,7 @@
          <!--                       <img src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797704155/twitter.png" class="social_icons" alt="">-->
          <!--                   </network>-->
     					<!--</div>-->
-    					<social-sharing :url="shareURL(promo.slug)" :title="promo.title" :description="promo.body" :quote="truncate(currentEvent.description)" twitter-user="ShopCanyonCrest" :media="promo.image_url" inline-template class="text-right  col-sm-6">
+    					<social-sharing :url="shareURL(promo.slug)" :title="promo.title" :description="promo.body" :quote="truncate(promo.description)" twitter-user="ShopCanyonCrest" :media="promo.image_url" inline-template class="text-right  col-sm-6">
                         <div class="blog-social-share">
                             <div class="social_share">
                                 <network network="facebook">
