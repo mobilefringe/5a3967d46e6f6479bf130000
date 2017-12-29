@@ -15,7 +15,7 @@
 			<div class="col-sm-4 promo_details_container text-left">
 				<div>
 					<h1>{{currentPromo.name}}</h1>
-					<!--<p>{{currentPromo.category_name}}</p>-->
+					<p>{{currentPromo.category_name}}</p>
 					<!--<p>{{currentPromo.phone}}</p>-->
 					<p class="promo_div_date">{{currentPromo.start_date | moment("MMM D", timezone)}} - {{currentPromo.end_date | moment("MMM D", timezone)}}</p>
 				</div>
