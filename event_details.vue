@@ -78,6 +78,10 @@
     .row{
         margin-left:inherit;
     }
+    .events_container .row.is-table-row [class*="col-"] {
+        padding:0;
+    }
+    
     .event_logo_container,
     .event_image_container,
     .event_details_container,
