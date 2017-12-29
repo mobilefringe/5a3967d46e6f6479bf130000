@@ -40,10 +40,10 @@
     .date_bar{
         /* Today: */
         background: #D3D3D3;
-        height:40px;
-        line-height:40px;
-        margin:auto;
-        text-align:center;
+        height: 40px;
+        line-height: 40px;
+        margin: auto;
+        text-align: center;
     }
     .current_date{
         color:#636363;
