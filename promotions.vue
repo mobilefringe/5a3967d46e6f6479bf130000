@@ -165,7 +165,7 @@
                     vm.processedPromos = _.filter(vm.promotions, function(val){
                         start_date = moment(val.start_date).tz(vm.timezone).format('MM DD YYYY');
                         end_date = moment(val.end_date).tz(vm.timezone).format('MM DD YYYY');
-                        return moment(selected).isBetween(start_date,end_date);
+                        return moment(selected).isBetween(start_date,end_date, null, '[]');
                     });
                     console.log(this.processedPromos);
                     
