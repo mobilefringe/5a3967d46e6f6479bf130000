@@ -90,7 +90,7 @@
         padding: 0 5px;
         cursor: pointer;
     }
-    .all_dates span:focus, span:hover { 
+     .all_dates [class*="date_"]:focus, [class*="date_"]:hover { 
         background-color: #D3D3D3;
     }
     .all_dates span.active { 
