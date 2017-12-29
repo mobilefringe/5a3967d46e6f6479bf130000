@@ -168,6 +168,11 @@
                         return moment(selected).isBetween(start_date,end_date);
                     });
                     console.log(this.processedPromos);
+                    
+                    //change active class 
+                    old_date = moment(this.selectedDate).date();
+                    $(".all_dates span").removeClass('active');
+                    $("#date_"+old_date).addClass('active');
                 }
             },
             computed: {
