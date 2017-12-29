@@ -47,6 +47,9 @@
 </template>
 
 <style>
+.row{
+        margin-left:inherit;
+    }
     .date_bar{
         /* Today: */
         background: #D3D3D3;
