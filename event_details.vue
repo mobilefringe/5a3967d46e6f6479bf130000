@@ -6,7 +6,7 @@
 					<img src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1513713887462/ES_logo_Colour (1).png"/>
 				</div>
 			</div>
-			<div class="col-sm-8 store_map_container text-left">
+			<div class="col-sm-8 event_image_container text-left">
 				<!--<img src="http://placehold.it/620x300"/>-->
 				<img :src="currentEvent.image_url"/>
 			</div>
@@ -79,12 +79,12 @@
         margin-left:inherit;
     }
     .store_logo_container,
-    .store_map_container,
+    .event_image_container,
     .store_details_container,
     .store_desc_container{
         padding: 20px 10px;
     }
-    .store_map_container img{
+    .event_image_container img{
         max-height: 300px;
     }
     .store_logo_container img{
