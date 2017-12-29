@@ -1,72 +1,72 @@
 <template>
-	<div class="promo_dets_container page_container" v-if="currentPromo">
+	<div class="job_dets_container page_container" v-if="currentJob">
 		<div class="row">
-			<div class="col-sm-4 promo_logo_container">
+			<div class="col-sm-4 job_logo_container">
 				<div>
 					<img src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1513713887462/ES_logo_Colour (1).png"/>
 				</div>
 			</div>
-			<div class="col-sm-8 promo_image_container text-left">
+			<div class="col-sm-8 job_image_container text-left">
 				<!--<img src="http://placehold.it/620x300"/>-->
-				<img :src="currentPromo.image_url"/>
+				<img :src="currentJob.image_url"/>
 			</div>
 		</div>
 		<div class="row" style="margin-left:0;">
-			<div class="col-sm-4 promo_details_container text-left">
+			<div class="col-sm-4 job_details_container text-left">
 				<div>
-					<h1>{{currentPromo.name}}</h1>
-					<p class="promo_store_name">{{currentPromo.store.name}}</p>
-					<!--<p>{{currentPromo.phone}}</p>-->
-					<p class="promo_div_date">{{currentPromo.start_date | moment("MMM D", timezone)}} - {{currentPromo.end_date | moment("MMM D", timezone)}}</p>
+					<h1>{{currentJob.name}}</h1>
+					<p class="job_store_name">{{currentJob.store.name}}</p>
+					<!--<p>{{currentJob.phone}}</p>-->
+					<p class="job_div_date">{{currentJob.start_date | moment("MMM D", timezone)}} - {{currentJob.end_date | moment("MMM D", timezone)}}</p>
 				</div>
 			</div>
-			<div class="col-sm-8 promo_desc_container">
-				<div class="text-left promo_description">
-					<p>{{currentPromo.description}}</p>
+			<div class="col-sm-8 job_desc_container">
+				<div class="text-left job_description">
+					<p>{{currentJob.description}}</p>
 				</div>
 			</div>
 		</div>
-		<div class="promo_promo_container" v-if="storePromos.length > 0">
-		    <div class="promo_container_title text-left all_caps"> OTHER {{currentPromo.store.name | uppercase }} Promotions</div>
-		    <div class="row promo_promo_dets text-left" v-for="promo in storePromos">
+		<div class="job_job_container" v-if="storeJobs.length > 0">
+		    <div class="job_container_title text-left all_caps"> OTHER {{currentJob.store.name | uppercase }} Jobtions</div>
+		    <div class="row job_job_dets text-left" v-for="job in storeJobs">
 		        <div class="col-sm-7" >
-		        <div class="promo_div_image">
-		            <img :src="promo.image_url" alt=""/>
+		        <div class="job_div_image">
+		            <img :src="job.image_url" alt=""/>
 		        </div>
 		        </div>
-		        <div class="col-sm-5 promo_div_dets">
-		            <p class="promo_div_name">{{promo.name}}</p>
-		            <p class="promo_div_promo_name">{{promo.store.name | uppercase}}</p>
-		            <p class="promo_div_date">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
+		        <div class="col-sm-5 job_div_dets">
+		            <p class="job_div_name">{{job.name}}</p>
+		            <p class="job_div_job_name">{{job.store.name | uppercase}}</p>
+		            <p class="job_div_date">{{job.start_date | moment("MMM D", timezone)}} - {{job.end_date | moment("MMM D", timezone)}}</p>
 		            
-						<p class="promo_div_description">{{promo.description_short}}</p>
+						<p class="job_div_description">{{job.description_short}}</p>
 						<span class="feature_read_more">
-							<router-link :to="'/promotions/'+promo.slug" class="mobile_readmore" >
+							<router-link :to="'/jobtions/'+job.slug" class="mobile_readmore" >
 								<p class="feature-readmore">Read More <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></p>
 							</router-link>
 						</span>
 		        </div>
 		    </div>
 		</div>
-		<!--<div class="promo_main_header sub_title" v-if="storePromos.length > 0 && property" style="border-top: 1px solid #000;">-->
+		<!--<div class="job_main_header sub_title" v-if="storeJobs.length > 0 && property" style="border-top: 1px solid #000;">-->
   <!--             OTHER {{property.name | uppercase }} EVENTS-->
   <!--      </div>-->
-  <!--      <div id="promos_container" v-if="storePromos">-->
-  <!--          <div class="col-md-6 col-sm-6 no_padding" v-for="promo in storePromos" :data-cat="promo.cat_list">-->
-  <!--              <div class="promo_item cats_row is-table-row">-->
+  <!--      <div id="jobs_container" v-if="storeJobs">-->
+  <!--          <div class="col-md-6 col-sm-6 no_padding" v-for="job in storeJobs" :data-cat="job.cat_list">-->
+  <!--              <div class="job_item cats_row is-table-row">-->
   <!--                  <div class="col-md-5 col-xs-4 no_padding">-->
-  <!--                      <img class="promo_promo_image" :src="promo.image_url" :alt="promo.name" />-->
+  <!--                      <img class="job_job_image" :src="job.image_url" :alt="job.name" />-->
   <!--                  </div>-->
   <!--                  <div class="col-md-7 padding_tb_20">-->
-  <!--                      <router-link :to="'/promos/'+promo.slug" class="">-->
-  <!--                          <h2 class="promo_list_name">{{promo.name}}</h2>-->
+  <!--                      <router-link :to="'/jobs/'+job.slug" class="">-->
+  <!--                          <h2 class="job_list_name">{{job.name}}</h2>-->
   <!--                      </router-link>-->
   <!--                      <p>-->
-  <!--                          <span class="promo_dates sub_title">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</span>-->
+  <!--                          <span class="job_dates sub_title">{{job.start_date | moment("MMM D", timezone)}} - {{job.end_date | moment("MMM D", timezone)}}</span>-->
   <!--                      </p>-->
-  <!--                      <div class="promo_list_desc hidden_phone">{{promo.description_short }}</div>-->
+  <!--                      <div class="job_list_desc hidden_phone">{{job.description_short }}</div>-->
   <!--                      <div class="text_center position_relative hidden_phone">-->
-  <!--                          <router-link :to="'/promos/'+promo.slug" class="animated_btn text_center">Read More</router-link>-->
+  <!--                          <router-link :to="'/jobs/'+job.slug" class="animated_btn text_center">Read More</router-link>-->
   <!--                      </div>-->
   <!--                  </div>-->
   <!--              </div>-->
@@ -78,34 +78,34 @@
     .row{
         margin-left:inherit;
     }
-    /*.promo_dets_container .row.is-table-row [class*="col-"] {*/
+    /*.job_dets_container .row.is-table-row [class*="col-"] {*/
     /*    padding-top: inherit;*/
     /*    padding-bottom: inherit;*/
     /*    padding-left: 0;*/
     /*    padding-right: 0;*/
     /*}*/
     
-    .promo_logo_container,
-    .promo_image_container,
-    .promo_details_container,
-    .promo_desc_container{
+    .job_logo_container,
+    .job_image_container,
+    .job_details_container,
+    .job_desc_container{
         padding: 20px 10px;
     }
-    .promo_image_container img{
+    .job_image_container img{
         max-height: 300px;
     }
-    .promo_logo_container img{
+    .job_logo_container img{
         border: 1px solid #aea99e;
         width:300px;
         height:300px
     }
-    .promo_details_container h1{
+    .job_details_container h1{
         padding: 0;
     }
-    .promo_store_name, .promo_div_date{
+    .job_store_name, .job_div_date{
         font-size: 16px;
     }
-    .promo_container_title{
+    .job_container_title{
         border-top:1px solid #aea99e;
         border-bottom:1px solid #aea99e;
         height: 35px;
@@ -114,20 +114,20 @@
 </style>
 <script>
     define(['Vue','moment'], function(Vue, moment) {
-        return Vue.component("promo-details-component", {
+        return Vue.component("job-details-component", {
             template: template, // the variable template will be injected,
             data: function() {
                 return {
-                    currentPromo: null,
-                    storePromos : null
+                    currentJob: null,
+                    storeJobs : null
                 }
             },
             beforeRouteEnter(to, from, next) {
                 next(vm => {
                     // access to component instance via `vm`
-                    vm.currentPromo = vm.findPromoBySlug(to.params.id);
-                    console.log(vm.currentPromo);
-                    if (vm.currentPromo === null || vm.currentPromo === undefined) {
+                    vm.currentJob = vm.findJobBySlug(to.params.id);
+                    console.log(vm.currentJob);
+                    if (vm.currentJob === null || vm.currentJob === undefined) {
                         vm.$router.replace({
                             name: '404'
                         });
@@ -135,9 +135,9 @@
                 })
             },
             beforeRouteUpdate(to, from, next) {
-                this.currentPromo = this.findPromoBySlug(to.params.id);
-                console.log(this.currentPromo);
-                if (this.currentPromo === null || this.currentPromo === undefined) {
+                this.currentJob = this.findJobBySlug(to.params.id);
+                console.log(this.currentJob);
+                if (this.currentJob === null || this.currentJob === undefined) {
                     this.$router.replace({
                         name: '404'
                     });
@@ -151,30 +151,30 @@
                         vm.dropPin();
                     }, 500);
                 },
-                currentPromo : function (){
-                    if(this.currentPromo != null) {
+                currentJob : function (){
+                    if(this.currentJob != null) {
                     var vm = this;
-                    var temp_promo = [];
-                    var current_id =_.toNumber(this.currentPromo.id);
+                    var temp_job = [];
+                    var current_id =_.toNumber(this.currentJob.id);
                     // console.log(x);
-                    _.forEach(this.currentPromo.store.promotions, function(value, key) {
+                    _.forEach(this.currentJob.store.jobtions, function(value, key) {
                         if(_.toNumber(value) != current_id){
-                            var current_promo = vm.findPromoById(value);
-                            current_promo.description_short = _.truncate(current_promo.description, {'length': 70});
-                            temp_promo.push(current_promo);
+                            var current_job = vm.findJobById(value);
+                            current_job.description_short = _.truncate(current_job.description, {'length': 70});
+                            temp_job.push(current_job);
                         }
                     });
-                        this.storePromos = temp_promo;
-                        console.log("promos",this.storePromos);
+                        this.storeJobs = temp_job;
+                        console.log("jobs",this.storeJobs);
                     }
                 }  
             },
             computed: {
-                findPromoBySlug() {
-                    return this.$store.getters.findPromoBySlug;
+                findJobBySlug() {
+                    return this.$store.getters.findJobBySlug;
                 },
-                findPromoById() {
-                    return this.$store.getters.findPromoById;
+                findJobById() {
+                    return this.$store.getters.findJobById;
                 },
                 findJobById() {
                     return this.$store.getters.findJobById;
@@ -182,8 +182,8 @@
                 property() {
                     return this.$store.getters.getProperty;
                 },
-                allPromos() {
-                    return this.$store.getters.processedPromos;
+                allJobs() {
+                    return this.$store.getters.processedJobs;
                 },
                 timezone() {
                     return this.$store.getters.getTimezone;
@@ -195,11 +195,11 @@
                     console.log("this", this);
                 },
                 dropPin() {
-                    console.log(this.currentPromo);
-                    console.log(this.currentPromo.svgmap_region);
+                    console.log(this.currentJob);
+                    console.log(this.currentJob.svgmap_region);
                     // this.svgMapRef.hideMarkers();
-                    this.svgMapRef.addMarker(this.currentPromo, '//codecloud.cdn.speedyrails.net/sites/589e308f6e6f641b9f010000/image/png/1484850466000/show_pin.png');
-                    this.svgMapRef.setViewBox(this.currentPromo)
+                    this.svgMapRef.addMarker(this.currentJob, '//codecloud.cdn.speedyrails.net/sites/589e308f6e6f641b9f010000/image/png/1484850466000/show_pin.png');
+                    this.svgMapRef.setViewBox(this.currentJob)
                 }
             }
         });
