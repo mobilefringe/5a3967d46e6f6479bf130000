@@ -29,6 +29,7 @@
     							<p class="feature-readmore">Read More <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></p>
     						</router-link>
     					</span>
+    					<div class="col-sm-4"></div>
     					<span class="social_share pull-right">
                             <network network="facebook">
                                 <img src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797683914/facebook.png" class="social_icons" alt="">
