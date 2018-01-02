@@ -151,6 +151,7 @@
             mounted () {
               console.log(this.hours);
               console.log(this.holidayHours);
+              //ensuring the variables are created in this order for email
               this.form_data.name = null;
               this.form_data.email = null;
               this.form_data.phone = null;
