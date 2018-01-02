@@ -46,7 +46,7 @@
                         </div>
                         <div class="form-group">
                             <div class="col-xs-12" :class="{'has-error': errors.has('message')}">
-                                <label class="label" for="message">Enter the following number below to proceed: </label> {{correctValNum}}
+                                <label class="label" for="message">Enter the following number below to proceed: {{correctValNum}}</label> 
                                 <input v-model="validaNum" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="message" type="text" placeholder="Enter above number" data-vv-delay="1000">
                                 <span v-show="errors.has('message')" class="form-control-feedback">{{ errors.first('message') }}</span>
                             </div>
