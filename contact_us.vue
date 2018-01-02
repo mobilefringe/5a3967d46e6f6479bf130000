@@ -15,7 +15,7 @@
                 <!--<vue-datepicker-local v-model="time" type="inline"></vue-datepicker-local>-->
             </div>
             <div class="row"> 
-                <div class="col-sm-6 contact_contents padding_top_20">
+                <div class="col-sm-6 contact_contents">
                     <div class="description_text text_left">
                         We value your feedback. Send us your comments or questions by completing the contact form below.
                     </div>
