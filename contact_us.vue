@@ -80,16 +80,6 @@
     #contact_us_container {
         margin: 20px auto 0;
     }
-    /*.form-control{*/
-    /*    background:#eee;*/
-    /*    border-radius:0;*/
-    /*    background: #eee;*/
-    /*    border-radius: 0;*/
-    /*    border: 2px solid #bbb;*/
-    /*    -webkit-box-shadow: none;*/
-    /*    box-shadow: none;*/
-    /*}*/
-    
 </style>
 
 <script>
