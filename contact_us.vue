@@ -74,6 +74,9 @@
                     </div>
                     
                 </div>
+                <div class="col-sm-6 hidden_phone">
+                <img style="margin-bottom:20px;"  src='http://placehold.it/460x300' alt="plaza">
+            </div> 
             </div>
             
             <div class="padding_top_40"></div>    
