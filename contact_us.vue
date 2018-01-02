@@ -19,7 +19,7 @@
                     <div class="description_text text_left">
                         We value your feedback. Send us your comments or questions by completing the contact form below.
                     </div>
-                    <form class="form-horizontal" action="form-submit" @submit.prevent="validateBeforeSubmit">
+                    <form class="form-horizontal padding_top_20" action="form-submit" @submit.prevent="validateBeforeSubmit">
                         <div class="form-group ">
                             <div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('name')}">
                                 <label class="label" for="name">Name</label>
