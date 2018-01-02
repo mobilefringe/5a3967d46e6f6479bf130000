@@ -151,6 +151,11 @@
             mounted () {
               console.log(this.hours);
               console.log(this.holidayHours);
+              this.form_data.name = null;
+              this.form_data.email = null;
+              this.form_data.phone = null;
+              this.form_data.subject = null;
+              this.form_data.message = null;
             },
             computed: {
                 timezone () {
