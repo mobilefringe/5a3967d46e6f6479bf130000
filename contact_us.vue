@@ -68,7 +68,6 @@
                     <img style="margin-bottom:20px;"  src='http://placehold.it/460x300' alt="plaza">
                 </div> 
             </div>
-            
             <div class="padding_top_40"></div>    
         </div>
     </div>
