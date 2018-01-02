@@ -100,7 +100,8 @@
                     loginPending: null,
                     formSuccess : false,
                     formError: false,
-                    validaNum: null
+                    validaNum: null,
+                    correctValNum: null
                 }
             },
             mounted () {
