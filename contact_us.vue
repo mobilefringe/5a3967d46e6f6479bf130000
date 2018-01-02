@@ -65,7 +65,7 @@
                         </div>
                     </form>
                     
-                    <div id="send_contact_success" class="alert alert-success" role="alert" v-show="formSuccess">
+                    <div id="send_contact_success" class="alert alert-success text-left" role="alert" v-show="formSuccess">
                         <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
                         <span class="sr-only">Success</span>
                         Thank you for contacting us. A member from our team will contact you shortly.
