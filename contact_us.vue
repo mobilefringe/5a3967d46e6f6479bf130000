@@ -76,8 +76,8 @@
                 </div>
             </div>
             <div class="col-md-7 col-sm-7 hidden_phone">
-                    <img style="margin-bottom:20px;" src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512580269422/placeholder_contact_image.png" alt="plaza">
-                </div> 
+                <img style="margin-bottom:20px;" src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512580269422/placeholder_contact_image.png" alt="plaza">
+            </div> 
             <div class="padding_top_40"></div>    
         </div>
     </div>
