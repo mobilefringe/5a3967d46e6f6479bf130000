@@ -100,7 +100,7 @@
                     loginPending: null,
                     formSuccess : false,
                     formError: false,
-                    validaNum
+                    validaNum: null
                 }
             },
             mounted () {
