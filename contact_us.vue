@@ -90,10 +90,6 @@
             template: template, // the variable template will be injected
             data: function() {
                 return {
-                    dayOfTheWeek : [
-                        "Sunday", "Monday","Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
-                    ],
-                    // currentPage: null,
                     form_data : {},
                     loginPending: null,
                     formSuccess : false,
