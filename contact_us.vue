@@ -90,7 +90,7 @@
 </style>
 
 <script>
-    define(["Vue", "moment", "moment-timezone", "vue-moment", "vue-meta", 'vee-validate'], function(Vue, moment, tz, VueMoment, Meta, VeeValidate) {
+    define(["Vue", "moment", "moment-timezone", "vue-moment", "vue-meta", 'vee-validate'], function(Vue, moment, tz, VueMoment, Meta, VeeValidate, VueGrecaptcha) {
         Vue.use(Meta);
         Vue.use(VeeValidate);
         Vue.use(VueGrecaptcha, {
