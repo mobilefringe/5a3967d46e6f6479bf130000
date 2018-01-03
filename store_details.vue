@@ -72,7 +72,7 @@
 	</div>
 </template>
 <style>
-    .store_dets_container.row{
+    .store_dets_container .row{
         margin-left:inherit;
     }
     .store_logo_container,
