@@ -80,7 +80,7 @@
 </template>
 
 <style>
-    .row{
+    #contact_us_container .row{
         margin-left:inherit;
     }
     #contact_us_container {
