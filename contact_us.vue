@@ -105,7 +105,7 @@
                     form_data : {},
                     formSuccess : false,
                     formError: false,
-                    validaNum: null,
+                    validaNum: '',
                     correctValNum: null,
                     validNumError: null
                 }
