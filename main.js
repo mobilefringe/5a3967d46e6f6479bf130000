@@ -35,7 +35,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
     Vue.use(Vue2Filters);
     Vue.use(VueI18n);
     Vue.use(SocialSharing);
-    console.log("VueGrecaptcha", VueGrecaptcha);
+    // console.log("VueGrecaptcha", VueGrecaptcha);
     Vue.use(VueGrecaptcha, {
         sitekey: '6Ld7MD8UAAAAAJBuiMVV5YaWsLGpdjq5pcAdvlNW'
     });
