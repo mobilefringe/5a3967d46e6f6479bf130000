@@ -144,7 +144,7 @@ define([], function () {
         {
           path: ':id',
           component: view('find_us'),
-          name: 'pageDetails'
+          name: 'findUs'
         }
       ]
     },
