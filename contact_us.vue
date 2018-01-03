@@ -195,7 +195,7 @@
                             // console.log(this.errors);
                             this.validNumError = true;
                             setTimeout(function(){
-                                this.validNumError = null;
+                                this.validNumError = false;
                             }, 500);
                         }
                 },
