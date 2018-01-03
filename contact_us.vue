@@ -93,8 +93,8 @@
         Vue.use(Meta);
         Vue.use(VeeValidate);
         Vue.use(VueGrecaptcha, {
-  sitekey: 'your_key'
-})
+            sitekey: 'your_key'
+        })
         return Vue.component("contact-us-component", {
             template: template, // the variable template will be injected
             data: function() {
