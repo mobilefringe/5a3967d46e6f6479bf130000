@@ -183,7 +183,7 @@
                             //creating random validation num 
                             console.log(this.errors);
                             this.correctValNum = this.rannumber;
-                            this.errors.push("Please enter correct number");
+                            this.errors.push({field:"validate",id:"6",msg:"Please enter correct number"});
                             console.log(this.errors);
                         }
                 },
