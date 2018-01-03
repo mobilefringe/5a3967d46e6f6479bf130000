@@ -142,7 +142,7 @@ define([], function () {
       redirect: '/404',
       children: [
         {
-          path: ':id',
+          path: '',
           component: view('find_us'),
           name: 'findUs'
         }
