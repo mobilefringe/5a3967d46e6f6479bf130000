@@ -137,12 +137,12 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                         sub_menu: [
                             {
                                 name: "Contact Us ",
-                                id: "contact_link",
+                                // id: "contact_link",
                                 href: "/contact_us"
                             },
                             {
                                 name: "Customer Service ",
-                                id: "stores_link",
+                                // id: "stores_link",
                                 href: "/pages/eastgate-customer-service"
                             },
                             {
@@ -152,22 +152,22 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                             },
                             {
                                 name: "About Us",
-                                id: "stores_link",
+                                // id: "stores_link",
                                 href: "/pages/eastgate-about-us"
                             },
                             {
                                 name: "Jobs",
-                                id: "stores_link",
+                                // id: "stores_link",
                                 href: "/jobs"
                             },
                             {
                                 name: "Shopping Hours",
-                                id: "stores_link",
+                                // id: "stores_link",
                                 href: "/hours"
                             },
                             {
                                 name: "Community",
-                                id: "stores_link",
+                                // id: "stores_link",
                                 href: "/community"
                             }
                         ],
