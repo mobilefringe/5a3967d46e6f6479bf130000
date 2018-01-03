@@ -75,7 +75,7 @@
 	</div>
 </template>
 <style>
-    .row{
+    .event_dets_container .row{
         margin-left:inherit;
     }
     /*.event_dets_container .row.is-table-row [class*="col-"] {*/
