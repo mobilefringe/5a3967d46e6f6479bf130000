@@ -184,6 +184,7 @@
                             console.log(this.errors);
                             this.correctValNum = this.rannumber;
                             this.errors.items.validate = "Please enter correct number";
+                            console.log(this.errors);
                         }
                     })
                 },
