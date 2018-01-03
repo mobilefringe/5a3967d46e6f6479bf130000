@@ -52,6 +52,7 @@
                             </div>
                         </div>
                         <div class="form-group account-btn text-left m-t-10">
+                            <vue-grecaptcha v-model="captchaResponse"></vue-grecaptcha>
                             <div class="col-xs-12">
                                 <button class="feature-readmore" type="submit" :disabled="formSuccess">Submit</button>
                             </div>
