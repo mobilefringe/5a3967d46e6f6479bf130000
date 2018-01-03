@@ -185,6 +185,7 @@
                             this.correctValNum = this.rannumber;
                             temp_error = {};
                             temp_error.field="validate";
+                            temp_error.id="6";
                             temp_error.field
                             // {field:"validate",id:"6",msg:"Please enter correct number"}
                             this.errors.items.push();
