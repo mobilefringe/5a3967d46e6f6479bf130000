@@ -188,7 +188,7 @@
                             // temp_error.id="6";
                             // temp_error.msg = "Please enter correct number";
                             // {field:"validate",id:"6",msg:"Please enter correct number"}
-                            this.errors.items.push(temp_error);
+                            // this.errors.items.push(temp_error);
                             // console.log(this.errors);
                         }
                 },
