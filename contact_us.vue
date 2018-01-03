@@ -195,8 +195,8 @@
                             // console.log(this.errors);
                             this.validNumError = true;
                             setTimeout(function(){
-                self.basketAddSuccess = false;
-            }, 2000);
+                                this.validNumError = null;
+                            }, 500);
                         }
                 },
                 serializeObject (obj) {
