@@ -49,6 +49,13 @@
 								</form>
 							</div>
 						</div>
+						<div id="search-form" class="search-form" >                
+                            <div class="input_box">
+                                <input class="sub_input_text" id="SearchTerms" placeholder="SEARCH" onkeydown="if (event.keyCode ==13) document.getElementById('search_button').click()"/>                    
+                                <button id="search_button" class="search_button" onclick="search_site();"  style="background-color:transparent;"> <img src="{{11003 | get_image_url}}"> </button>
+                            </div>
+                            <div class="input submit"></div>
+                        </div>
 					</div>
 				</div>
 			</div>
