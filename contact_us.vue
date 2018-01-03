@@ -89,6 +89,7 @@
     .form-group .form-control-feedback{
         font-size: 12px;
         top:50px;
+        color: #F44336;
     }
 </style>
 
