@@ -52,7 +52,6 @@
                             </div>
                         </div>
                         <div class="form-group account-btn text-left m-t-10">
-                            <vue-grecaptcha v-model="captchaResponse"></vue-grecaptcha>
                             <div class="col-xs-12">
                                 <button class="feature-readmore" type="submit" :disabled="formSuccess">Submit</button>
                             </div>
@@ -90,13 +89,9 @@
 </style>
 
 <script>
-    define(["Vue", "moment", "moment-timezone", "vue-moment", "vue-meta", 'vee-validate','vue-grecaptcha'], function(Vue, moment, tz, VueMoment, Meta, VeeValidate, VueGrecaptcha) {
+    define(["Vue", "moment", "moment-timezone", "vue-moment", "vue-meta", 'vee-validate'], function(Vue, moment, tz, VueMoment, Meta, VeeValidate) {
         Vue.use(Meta);
         Vue.use(VeeValidate);
-        Vue.use(VueGrecaptcha);
-        // , {
-        //     sitekey: '6Ld7MD8UAAAAAJBuiMVV5YaWsLGpdjq5pcAdvlNW'
-        // }
         return Vue.component("contact-us-component", {
             template: template, // the variable template will be injected
             data: function() {
@@ -106,8 +101,7 @@
                     formSuccess : false,
                     formError: false,
                     validaNum: null,
-                    correctValNum: null,
-                    captchaResponse: null
+                    correctValNum: null
                 }
             },
             mounted () {
