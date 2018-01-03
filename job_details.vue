@@ -75,7 +75,7 @@
 	</div>
 </template>
 <style>
-    .row{
+    .job_dets_container .row{
         margin-left:inherit;
     }
     /*.job_dets_container .row.is-table-row [class*="col-"] {*/
