@@ -25,7 +25,7 @@ require.config({
         'vue-select': 'https://cdn.jsdelivr.net/npm/vue-select@2.3.0/dist/vue-select.min',
         'vue-social-sharing': 'https://cdn.jsdelivr.net/npm/vue-social-sharing@2.3.1/dist/vue-social-sharing.min',
         'vee-validate' : 'https://cdn.jsdelivr.net/npm/vee-validate@latest/dist/vee-validate',
-        '': 'https://www.google.com/recaptcha/api'
+        'vue-recaptcha': 'https://www.google.com/recaptcha/api'
     }
 });
 
