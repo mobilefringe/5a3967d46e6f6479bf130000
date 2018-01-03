@@ -67,7 +67,7 @@
         text-align: left;
         border-radius: initial;
     }
-    .category-DD-div {
+    .category-DD-div .v-select input[type=search] {
         display: none;
     }
 </style>
