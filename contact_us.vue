@@ -88,6 +88,7 @@
     }
     .form-group .form-control-feedback{
         font-size: 12px;
+        top:50px;
     }
 </style>
 
