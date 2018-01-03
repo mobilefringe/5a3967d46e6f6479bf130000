@@ -87,7 +87,7 @@
         margin: 20px auto 0;
     }
     .{
-            font-size: 12px;
+        font-size: 12px;
     }
 </style>
 
