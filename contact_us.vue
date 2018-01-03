@@ -186,7 +186,7 @@
                             temp_error = {};
                             temp_error.field="validate";
                             temp_error.id="6";
-                            temp_error.field
+                            temp_error.msg = "Please enter correct number"
                             // {field:"validate",id:"6",msg:"Please enter correct number"}
                             this.errors.items.push();
                             console.log(this.errors);
