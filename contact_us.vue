@@ -178,7 +178,8 @@
                                 })
                             }
                             else {
-                                
+                                 //creating random validation num 
+                this.correctValNum = this.rannumber;
                             }
                         }
                     })
