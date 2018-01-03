@@ -102,7 +102,6 @@
             data: function() {
                 return {
                     form_data : {},
-                    loginPending: null,
                     formSuccess : false,
                     formError: false,
                     validaNum: null,
