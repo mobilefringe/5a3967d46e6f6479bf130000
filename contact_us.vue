@@ -179,6 +179,7 @@
                             }
                             else {
                                 //creating random validation num 
+                                console.log(this.errors);
                                 this.correctValNum = this.rannumber;
                                 this.errors.has('validate') = "Please enter correct number";
                             }
