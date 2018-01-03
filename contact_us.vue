@@ -151,6 +151,7 @@
             methods: {
                 validateBeforeSubmit() {
                     this.$validator.validateAll().then((result) => {
+                        if(correctValNum === validaNum)
                         if (result) {
                             let errors = this.errors;
                             console.log("sending form data", this.form_data);
