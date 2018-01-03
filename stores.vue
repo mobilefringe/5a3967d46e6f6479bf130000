@@ -68,7 +68,7 @@
         border-radius: initial;
     }
     .category-DD-div {
-            display: none;
+        display: none;
     }
 </style>
 
