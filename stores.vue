@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<div class="page_header all_caps double_border_bottom">
+		<div class="all_caps double_border_bottom">
 			<div class="page_container text_left"> Stores Directory & Map </div>
 		</div>
 		<div class="page_container">
