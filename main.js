@@ -58,15 +58,6 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 dataLoaded: false,
                 test: '',
                 menu_items: [
-                    // {
-                    //     name: "Home",
-                    //     id: "home_link",
-                    //     href: "/",
-                    //     parent_id: "home",
-                    //     parent_class_list: "menu_item",
-                    //     hover_id: "home_underline",
-                    //     hover_class_list:"menu_underline"
-                    // },
                     {
                         name: "Store Directory",
                         id: "stores_link",
