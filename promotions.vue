@@ -60,7 +60,7 @@
 </template>
 
 <style>
-    .row{
+    .promotions_container .row{
         margin-left:inherit;
     }
     .date_bar{
