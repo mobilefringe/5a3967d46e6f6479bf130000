@@ -191,6 +191,7 @@
                             // {field:"validate",id:"6",msg:"Please enter correct number"}
                             // this.errors.items.push(temp_error);
                             // console.log(this.errors);
+                            this.validNumError = "Please enter correct number";
                         }
                 },
                 serializeObject (obj) {
