@@ -86,7 +86,7 @@
     #contact_us_container {
         margin: 20px auto 0;
     }
-    ..form-group .form-control-feedback{
+    .form-group .form-control-feedback{
         font-size: 12px;
     }
 </style>
