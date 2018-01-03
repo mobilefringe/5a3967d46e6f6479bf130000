@@ -1,9 +1,9 @@
 <template>
-    <div>
+    <div  v-if="currentPage">
         <div class="page_header all_caps double_border_bottom">
 			<div class="page_container text_left"> Stores Directory & Map </div>
 		</div>
-         <div class="page_container " v-if="currentPage">
+         <div class="page_container ">
             <div class="page_title text-left all_caps" v-html="currentPage.title"> </div>
             <div class="row padding_30" >
                 <div class="page_body description_text text_left" v-html="currentPage.body">
