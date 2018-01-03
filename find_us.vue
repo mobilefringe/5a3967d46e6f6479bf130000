@@ -14,16 +14,6 @@
 					<h2>Public Transit</h2>
 					<p>Eastgate Square is serviced by the Hamilton Street Railway. The following Routes will get you here: 1 (King), B-Line Express, 55 (Stoney Creek Central), 56 (Centennial), and 58 (Stoney Creek Local). Visit <a href="//www.hamilton.ca/CityServices/transit/">www.hamilton.ca/CityServices/transit/</a> for bus maps and schedules.</p>
 				</div>
-				<div class="right_column">
-					<p class="right_column_header">centre information</p>
-					<div id="centre_info_container">
-						<script id="centre_info_template" type="x-tmpl-mustache/text">
-							<p class="directory_content">{{name}}</p>
-							<p class="directory_content">{{address1}}</p>
-							<p class="directory_content">{{city}}, {{province_state}} {{postal_code}}</p>
-						</script>
-					</div>
-				</div>
 			</div>
 			<div class="padding_top_40"></div>
 		</div>
