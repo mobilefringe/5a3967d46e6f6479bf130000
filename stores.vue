@@ -67,6 +67,9 @@
         text-align: left;
         border-radius: initial;
     }
+    .category-DD-div {
+            display: none;
+    }
 </style>
 
 <script>
