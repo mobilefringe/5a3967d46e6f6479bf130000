@@ -196,7 +196,7 @@
                             this.validNumError = true;
                             setTimeout(function(){
                                 this.validNumError = false;
-                            }, 500);
+                            }, 100);
                         }
                 },
                 serializeObject (obj) {
