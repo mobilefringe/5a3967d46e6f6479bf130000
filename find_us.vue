@@ -2,7 +2,7 @@
 	<div class="page_container" id="contact_us_container">
 		<!-- for some reason if you do not put an outer container div this component template will not render -->
 		<div class="margin_25_across padding_top_40">
-			<div class="row">
+			<div class="row text-left">
 					<iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11627.944033926566!2d-79.765795!3d43.230753!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa964fdbddfdeae60!2sEastgate+Square!5e0!3m2!1sen!2sca!4v1427319653112" style="border:0" title="Map">Directions</iframe>
 					<h2>How to Get Here</h2>
 					<p>Eastgate Square is easy to find and there is plenty of parking once you arrive!</p>
