@@ -94,8 +94,8 @@
         Vue.use(Meta);
         Vue.use(VeeValidate);
         Vue.use(VueGrecaptcha);
-        , {
-            sitekey: '6Ld7MD8UAAAAAJBuiMVV5YaWsLGpdjq5pcAdvlNW'
+        // , {
+        //     sitekey: '6Ld7MD8UAAAAAJBuiMVV5YaWsLGpdjq5pcAdvlNW'
         // }
         return Vue.component("contact-us-component", {
             template: template, // the variable template will be injected
