@@ -180,6 +180,7 @@
                             else {
                                 //creating random validation num 
                                 this.correctValNum = this.rannumber;
+                                errors.has('validate') = "Please enter correct number"
                             }
                         }
                     })
