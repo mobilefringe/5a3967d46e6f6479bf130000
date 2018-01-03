@@ -107,7 +107,7 @@
                     formError: false,
                     validaNum: '',
                     correctValNum: null,
-                    validNumError: null
+                    validNumError: false
                 }
             },
             mounted () {
