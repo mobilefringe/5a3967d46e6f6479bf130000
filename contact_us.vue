@@ -86,6 +86,9 @@
     #contact_us_container {
         margin: 20px auto 0;
     }
+    .{
+            font-size: 12px;
+    }
 </style>
 
 <script>
