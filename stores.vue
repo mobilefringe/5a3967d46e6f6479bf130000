@@ -10,7 +10,7 @@
 					<div class="dropdown_container hidden-phone">
 						<p class="text_left">Select Category</p>
 						<div class="category-DD-div">
-							<v-select v-model="selectedCat" :options="dropDownCats" :searchable="false" class="open" :on-change="filterByCategory"></v-select>
+							<v-select v-model="selectedCat" :options="dropDownCats" :searchable="false"  :on-change="filterByCategory"></v-select>
 						</div>
 					</div>
 					<div class="alphabet-dd visible-phone">
