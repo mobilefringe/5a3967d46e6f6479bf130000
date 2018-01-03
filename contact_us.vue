@@ -49,7 +49,7 @@
                                 <label class="label" for="validate">Enter the following number below to proceed: {{correctValNum}}</label> 
                                 <input v-model="validaNum" v-validate="'required|numeric|min:6|max:6'" class="form-control" :class="{'input': true}" name="validate" type="text" placeholder="Enter above number" data-vv-delay="1000">
                                 <span v-show="errors.has('validate')" class="form-control-feedback">{{ errors.first('validate') }}</span>
-                                <span v-if="validaNum.length === 6 && validaNum !== correctValNum && errors.first('validate') == null" class="form-control-feedback" transition="">Please enter correct number</span>
+                                <span v-if="validaNum.length === 6 && validaNum !== correctValNum && errors.first('validate') == null" class="form-control-feedback" transition="shake">Please enter correct number</span>
                             </div>
                         </div>
                         <div class="form-group account-btn text-left m-t-10">
