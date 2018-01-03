@@ -183,13 +183,13 @@
                         })
                     }
                     else {
-                            console.log(this.errors);
-                            this.correctValNum = this.rannumber;
-                            this.validNumError = true;
-                            setTimeout(function(){
-                                this.validNumError = false;
-                            }, 100);
-                        }
+                        console.log(this.errors);
+                        this.correctValNum = this.rannumber;
+                        this.validNumError = true;
+                        setTimeout(function(){
+                            this.validNumError = false;
+                        }, 100);
+                    }
                 },
                 serializeObject (obj) {
                     console.log(obj);
