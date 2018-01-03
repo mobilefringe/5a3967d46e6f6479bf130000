@@ -93,9 +93,7 @@
     define(["Vue", "moment", "moment-timezone", "vue-moment", "vue-meta", 'vee-validate','vue-grecaptcha'], function(Vue, moment, tz, VueMoment, Meta, VeeValidate, VueGrecaptcha) {
         Vue.use(Meta);
         Vue.use(VeeValidate);
-        Vue.use(VueGrecaptcha, {
-            sitekey: '6Ld7MD8UAAAAAJBuiMVV5YaWsLGpdjq5pcAdvlNW'
-        })
+       
         return Vue.component("contact-us-component", {
             template: template, // the variable template will be injected
             data: function() {
