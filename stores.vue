@@ -53,6 +53,7 @@
 
     .v-select .open-indicator:before {
         border-color: #fff !important;
+            margin-top: -5px;
     }
 
     .v-select .dropdown-menu {
