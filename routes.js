@@ -137,7 +137,7 @@ define([], function () {
       ]
     },
     {
-      path: '/pages',
+      path: '/find_us',
       component: view('default'),
       redirect: '/404',
       children: [
