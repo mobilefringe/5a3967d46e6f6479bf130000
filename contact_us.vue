@@ -183,16 +183,8 @@
                         })
                     }
                     else {
-                            //creating random validation num 
                             console.log(this.errors);
                             this.correctValNum = this.rannumber;
-                            // temp_error = {};
-                            // temp_error.field="validate";
-                            // temp_error.id="6";
-                            // temp_error.msg = "Please enter correct number";
-                            // {field:"validate",id:"6",msg:"Please enter correct number"}
-                            // this.errors.items.push(temp_error);
-                            // console.log(this.errors);
                             this.validNumError = true;
                             setTimeout(function(){
                                 this.validNumError = false;
