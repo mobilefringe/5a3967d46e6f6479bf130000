@@ -99,111 +99,50 @@
         Vue.use(Meta);
         Vue.use(VeeValidate);
         return Vue.component("find-us-component", {
-            template: template, // the variable template will be injected
+            template: template, // the variable template will be injected,
             data: function() {
                 return {
-                    form_data : {},
-                    formSuccess : false,
-                    formError: false,
-                    validaNum: '',
-                    correctValNum: null,
-                    validNumError: false
+                    success_subscribe: false,
+                    currentPage: null
                 }
             },
-            mounted () {
-                //creating random validation num 
-                this.correctValNum = this.rannumber;
-              //ensuring the variables are created in this order for email
-              this.form_data.name = null;
-              this.form_data.email = null;
-              this.form_data.phone = null;
-              this.form_data.subject = null;
-              this.form_data.message = null;
+            beforeRouteEnter(to, from, next) {
+                next(vm => {
+                    // access to component instance via `vm`
+                    vm.$store.dispatch('LOAD_PAGE_DATA', {
+                        url: vm.property.mm_host + "/pages/" + to.params.id + ".json"
+                    }).then(response => {
+
+                        vm.currentPage = response.data;
+                        console.log(vm.currentPage);
+                    }, error => {
+                        console.error("Could not retrieve data from server. Please check internet connection and try again.");
+                        vm.$router.replace({
+                            name: '404'
+                        });
+                    });
+                })
+            },
+            beforeRouteUpdate(to, from, next) {
+                this.$store.dispatch('LOAD_PAGE_DATA', {
+                    url: this.property.mm_host + "/pages/" + to.params.id + ".json"
+                }).then(response => {
+                    // this.dataLoaded = true;
+                    this.currentPage = response.data;
+                    console.log(this.currentPage);
+                }, error => {
+                    console.error("Could not retrieve data from server. Please check internet connection and try again.");
+                    this.$router.replace({
+                        name: '404'
+                    });
+                });
             },
             computed: {
-                timezone () {
-                  return this.$store.getters.getTimezone;
+                timezone() {
+                    return this.$store.getters.getTimezone;
                 },
-                property (){
+                property() {
                     return this.$store.getters.getProperty;
-                },
-                hours () {
-                    return this.$store.getters.getPropertyHours;
-                },
-                holidayHours () {
-                    return this.$store.getters.getPropertyHolidayHours;
-                },
-                reducedHolidays () {
-                    var holidayHours = this.holidayHours;
-                    return _.filter(holidayHours, function(o) { return !o.is_closed; });
-                },
-                closeHolidays () {
-                    var holidayHours = this.holidayHours;
-                    return _.filter(holidayHours, function(o) { return o.is_closed; });
-                },
-                rannumber () {
-                    var rannumber='';
-                    for(ranNum=1; ranNum<=6; ranNum++){
-                      rannumber+=Math.floor(Math.random()*10).toString();
-                    }
-                    return rannumber;
-                }
-            },
-            methods: {
-                validateBeforeSubmit() {
-                    if(this.correctValNum === this.validaNum) {
-                        this.validNumError = false;
-                        this.$validator.validateAll().then((result) => {
-                        if (result) {
-                                let errors = this.errors;
-                                console.log("sending form data", this.form_data);
-                                send_data = {};
-                                send_data.form_data = JSON.stringify(this.serializeObject(this.form_data));
-                                console.log(send_data.form_data);
-                                this.$store.dispatch("CONTACT_US", send_data).then(res => {
-                                    this.formSuccess = true;
-                                }).catch(error => {
-                                    try {
-                                        if (error.response.status == 401) {
-                                            console.log("Data load error: " + error.message);
-                                            this.formError = true;
-                                        } 
-                                        else {
-                                            console.log("Data load error: " + error.message);
-                                            this.formError = true;
-                                        }
-                                    } 
-                                    catch (e) {
-                                        console.log("Data load error: " + error.message);
-                                        this.formError = true;
-                                    }
-                                })
-                            }
-                        
-                        })
-                    }
-                    else {
-                        console.log(this.errors);
-                        this.correctValNum = this.rannumber;
-                        this.validNumError = true;
-                        setTimeout(function(){
-                            this.validNumError = false;
-                        }, 100);
-                    }
-                },
-                serializeObject (obj) {
-                    console.log(obj);
-                    var newObj = [];
-                    // var counter = 0;
-                    _.forEach(obj, function(value, key) {
-                        var tempVal = {};
-                        tempVal.name = key;
-                        tempVal.value = value;
-                        // console.log(key);
-                        // counter ++;
-                        newObj.push(tempVal);
-                    });
-                    return newObj;
                 }
             }
         });
