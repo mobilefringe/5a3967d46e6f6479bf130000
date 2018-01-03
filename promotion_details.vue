@@ -75,7 +75,7 @@
 	</div>
 </template>
 <style>
-    .row{
+    .promo_dets_container .row{
         margin-left:inherit;
     }
     /*.promo_dets_container .row.is-table-row [class*="col-"] {*/
