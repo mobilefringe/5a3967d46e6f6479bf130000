@@ -105,7 +105,8 @@
                     formSuccess : false,
                     formError: false,
                     validaNum: null,
-                    correctValNum: null
+                    correctValNum: null,
+                    validNumError: null
                 }
             },
             mounted () {
