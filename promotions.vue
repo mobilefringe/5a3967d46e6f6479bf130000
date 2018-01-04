@@ -153,6 +153,7 @@
                 console.log(this.selectedDate);
                 var date = moment(this.selectedDate).date();
                 console.log("date is", date);
+                console.log(this.beforeDate('el'));
                 // $("#date_"+ date).addClass('active');
                 // $("#date_29").addClass('active');
             },
