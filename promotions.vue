@@ -148,7 +148,7 @@
                     processedPromos:[]
                 }
             },
-            mounted() {
+            created() {
                 this.selectedDate = moment().tz(this.timezone).format('MMM D, YYYY');
                 console.log(this.selectedDate);
                 var date = moment(this.selectedDate).date();
