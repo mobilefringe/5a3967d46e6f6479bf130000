@@ -29,18 +29,18 @@
     						</router-link>
     					</span>
     					<div class="text-right  col-sm-6" v-if="promo">
-        					<social-sharing :url="shareURL(promo.slug)" :title="promo.title" :description="promo.body" :quote="truncate(promo.description)" twitter-user="EastgateSquare" :media="promo.image_url" inline-template >
-                            <div class="blog-social-share">
-                                <div class="social_share">
-                                    <network network="facebook">
-                                    <img src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797683914/facebook.png" class="social_icons" alt="">
-                                </network>
-                                <network network="twitter">
-                                    <img src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797704155/twitter.png" class="social_icons" alt="">
-                                </network>
-                                </div>
-                            </div>
-                        </social-sharing>
+        					<!--<social-sharing :url="shareURL(promo.slug)" :title="promo.title" :description="promo.body" :quote="truncate(promo.description)" twitter-user="EastgateSquare" :media="promo.image_url" inline-template >-->
+             <!--               <div class="blog-social-share">-->
+             <!--                   <div class="social_share">-->
+             <!--                       <network network="facebook">-->
+             <!--                       <img src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797683914/facebook.png" class="social_icons" alt="">-->
+             <!--                   </network>-->
+             <!--                   <network network="twitter">-->
+             <!--                       <img src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797704155/twitter.png" class="social_icons" alt="">-->
+             <!--                   </network>-->
+             <!--                   </div>-->
+             <!--               </div>-->
+             <!--           </social-sharing>-->
          <!--                   <network network="facebook">-->
          <!--                       <img src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797683914/facebook.png" class="social_icons" alt="">-->
          <!--                   </network>-->
