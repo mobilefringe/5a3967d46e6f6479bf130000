@@ -7,7 +7,7 @@
 					<div class="page_header all_caps double_border_bottom">
             			<div class="page_container text_left">How to Get Here</div>
             		</div>
-					<div class="row">
+					<div  class="directions">
 					    <p>Eastgate Square is easy to find and there is plenty of parking once you arrive!</p>
     					<p><strong>From the Queen Elizabeth Way (QEW)</strong></p>
     					<p>Simply follow the QEW, take the Centennial Pkwy N. exit, and continue south. We will be on the right hand side of the road.</p>
