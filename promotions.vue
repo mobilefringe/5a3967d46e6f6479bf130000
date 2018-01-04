@@ -8,7 +8,9 @@
 		    <span @click="afterDate"> <i class="fa fa-chevron-right"></i></span>
 		</div>
 		<div class="all_dates text-center">
-		    <span v-for="n in daysInMonth" :id="'date_'+n" @click="newDate(n)">{{n}}</span>
+		    <div v-for="n in daysInMonth">
+		        <span :id="'date_'+n" @click="newDate(n)">{{n}}</span>
+		    </div> 
 		</div>
 		<div class="promo_container" v-if="processedPromos.length > 0">
 			<div class="row promo_dets text-left" v-for="promo in processedPromos">
