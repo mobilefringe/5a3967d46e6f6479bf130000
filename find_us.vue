@@ -14,6 +14,9 @@
 					<p><strong>From the Red Hill Expressway</strong></p>
 					<p>Take the Queenston Rd. exit and head eastbound. You will find Eastgate Square on the left hand side, just before the intersection with Centennial Pkwy N.</p>
 					<h2>Public Transit</h2>
+					<div class="page_header all_caps double_border_bottom">
+            			<div class="page_container text_left"> <h2>How to Get Here</h2></div>
+            		</div>
 					<p>Eastgate Square is serviced by the Hamilton Street Railway. The following Routes will get you here: 1 (King), B-Line Express, 55 (Stoney Creek Central), 56 (Centennial), and 58 (Stoney Creek Local). Visit <a href="//www.hamilton.ca/CityServices/transit/">www.hamilton.ca/CityServices/transit/</a> for bus maps and schedules.</p>
 			</div>
 			<div class="padding_top_40"></div>
