@@ -158,7 +158,7 @@
                                 let errors = this.errors;
                                 console.log("sending form data", this.form_data);
                                 send_data = {};
-                                send_data.form_data = JSON.stringify(this.serializeObject(this.form_data));
+                                send_data.form_data = this.form_data;//JSON.stringify(this.serializeObject(this.form_data));
                                 console.log(send_data.form_data);
                                 this.$store.dispatch("POST_TO_MM", send_data).then(res => {
                                     this.formSuccess = true;
