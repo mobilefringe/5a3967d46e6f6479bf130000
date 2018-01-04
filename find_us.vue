@@ -36,6 +36,9 @@
     #find_us_container {
         margin: 20px auto 0;
     }
+    #find_us_container .directions {
+        
+    }
     .form-group .form-control-feedback{
         font-size: 12px;
         top:50px;
