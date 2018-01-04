@@ -216,6 +216,7 @@
                     console.log(this.selectedDate);
                 },
                 newDate (val) {
+                    console.log('clicked on newdate ' + val);
                     old_date = moment(this.selectedDate).date();
                     month = moment(this.selectedDate).month();
                     year = moment(this.selectedDate).year();
