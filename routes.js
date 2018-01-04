@@ -149,7 +149,7 @@ define([], function () {
       ]
     },
     {
-      path: '/find_us',
+      path: '/community',
       component: view('default'),
       redirect: '/404',
       children: [
