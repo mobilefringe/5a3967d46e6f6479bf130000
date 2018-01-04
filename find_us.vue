@@ -37,7 +37,7 @@
         margin: 20px auto 0;
     }
     #find_us_container .directions {
-        
+        padding: 10px 0;   
     }
     .form-group .form-control-feedback{
         font-size: 12px;
