@@ -1,5 +1,5 @@
 <template>
-	<div class="page_container" id="contact_us_container">
+	<div class="page_container" id="find_us_container">
 		<!-- for some reason if you do not put an outer container div this component template will not render -->
 		<div class="margin_25_across padding_top_40">
 			<div class="row text-left">
@@ -27,10 +27,10 @@
 </template>
 
 <style>
-    #contact_us_container .row{
+    #find_us_container .row{
         margin-left:inherit;
     }
-    #contact_us_container {
+    #find_us_container {
         margin: 20px auto 0;
     }
     .form-group .form-control-feedback{
