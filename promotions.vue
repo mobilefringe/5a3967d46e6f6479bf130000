@@ -1,7 +1,7 @@
 <template>
 	<div class="page_container promotions_container"><!-- for some reason if you do not put an outer container div this component template will not render -->
 		<div class="date_bar">
-		    <span @click="beforeDate"> <i class="fa fa-chevron-left"></i></span>
+		    <span @click="beforeDate" class="some_class"> <i class="fa fa-chevron-left"></i></span>
 		    <span class="current_date">
 		        {{selectedDate}}
 		    </span>
