@@ -5,7 +5,7 @@
 		    <span class="current_date">
 		        {{selectedDate}}
 		    </span>
-		    <span @click="afterDate"> <i class="fa fa-chevron-right"></i></span>
+		    <span @click="afterDate" class="some_class"> <i class="fa fa-chevron-right"></i></span>
 		</div>
 		<div class="all_dates text-center">
 		    <span v-for="n in daysInMonth" :id="'date_'+n" @click="newDate(n)">{{n}}</span>
