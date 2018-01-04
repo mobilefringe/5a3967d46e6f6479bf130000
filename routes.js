@@ -149,6 +149,18 @@ define([], function () {
       ]
     },
     {
+      path: '/find_us',
+      component: view('default'),
+      redirect: '/404',
+      children: [
+        {
+          path: '',
+          component: view('find_us'),
+          name: 'findUs'
+        }
+      ]
+    },
+    {
       path: '/404',
       name: '404',
       component: view('notfoundcomponent')
