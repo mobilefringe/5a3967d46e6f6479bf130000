@@ -9,10 +9,10 @@
             		</div>
 					<div>
 					    <p>Eastgate Square is easy to find and there is plenty of parking once you arrive!</p>
-					<p><strong>From the Queen Elizabeth Way (QEW)</strong></p>
-					<p>Simply follow the QEW, take the Centennial Pkwy N. exit, and continue south. We will be on the right hand side of the road.</p>
-					<p><strong>From the Red Hill Expressway</strong></p>
-					<p>Take the Queenston Rd. exit and head eastbound. You will find Eastgate Square on the left hand side, just before the intersection with Centennial Pkwy N.</p>
+    					<p><strong>From the Queen Elizabeth Way (QEW)</strong></p>
+    					<p>Simply follow the QEW, take the Centennial Pkwy N. exit, and continue south. We will be on the right hand side of the road.</p>
+    					<p><strong>From the Red Hill Expressway</strong></p>
+    					<p>Take the Queenston Rd. exit and head eastbound. You will find Eastgate Square on the left hand side, just before the intersection with Centennial Pkwy N.</p>
 					</div>
 					
 					
