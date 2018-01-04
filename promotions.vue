@@ -1,11 +1,11 @@
 <template>
 	<div class="page_container promotions_container"><!-- for some reason if you do not put an outer container div this component template will not render -->
 		<div class="date_bar">
-		    <span @click="beforeDate" class="some_class"> <i class="fa fa-chevron-left"></i></span>
+		    <span @click="beforeDate"> <i class="fa fa-chevron-left"></i></span>
 		    <span class="current_date">
 		        {{selectedDate}}
 		    </span>
-		    <span @click="afterDate" class="some_class"> <i class="fa fa-chevron-right"></i></span>
+		    <span @click="afterDate"> <i class="fa fa-chevron-right"></i></span>
 		</div>
 		<div class="all_dates text-center">
 		    <span v-for="n in daysInMonth" :id="'date_'+n" @click="newDate(n)">{{n}}</span>
@@ -144,7 +144,7 @@
             template: template, // the variable template will be injected
             data: function() {
                 return {
-                    selectedDate: '',
+                    selectedDate: null,
                     processedPromos:[]
                 }
             },
