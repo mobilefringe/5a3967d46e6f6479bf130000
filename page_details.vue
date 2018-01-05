@@ -1,5 +1,5 @@
 <template>
-    <div class="pages_contaienr" v-if="currentPage">
+    <div class="pages_container" v-if="currentPage">
         <div class="page_header all_caps double_border_bottom">
 			<div class="page_container text_left" v-html="currentPage.title"> </div>
 		</div>
