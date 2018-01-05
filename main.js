@@ -25,7 +25,8 @@ require.config({
         'vue-select': 'https://cdn.jsdelivr.net/npm/vue-select@2.3.0/dist/vue-select.min',
         'vue-social-sharing': 'https://cdn.jsdelivr.net/npm/vue-social-sharing@2.3.1/dist/vue-social-sharing.min',
         'vee-validate' : 'https://cdn.jsdelivr.net/npm/vee-validate@latest/dist/vee-validate',
-        'v-calendar': 'https://unpkg.com/v-calendar@0.5.1/lib/v-calendar.min'
+        'v-calendar': 'https://unpkg.com/v-calendar@0.5.1/lib/v-calendar.min',
+        'lightbox': 'https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min'
     }
 });
 
