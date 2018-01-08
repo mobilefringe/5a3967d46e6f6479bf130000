@@ -173,6 +173,18 @@ define([], function () {
       ]
     },
     {
+      path: '/thank_you',
+      component: view('default'),
+      redirect: '/404',
+      children: [
+        {
+          path: '',
+          component: view('photos'),
+          name: 'photos'
+        }
+      ]
+    },
+    {
       path: '/404',
       name: '404',
       component: view('notfoundcomponent')
