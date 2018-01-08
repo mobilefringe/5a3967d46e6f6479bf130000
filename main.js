@@ -29,7 +29,6 @@ require.config({
         'lightbox': 'https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min',
         'Raphael': 'https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min', //'http://mallmaverick.com/javascripts/mapsvg/raphael',
         'mousewheel': 'https://mallmaverick.com/javascripts/mapsvg/jquery.mousewheel',
-        'mapsvg': 'https://mallmaverick.com/javascripts/mapsvg/mapsvg',
         'mm_mapsvg': 'https://mmvue.codecloudapp.com/mallmaverick_svgmap',
         'svg-map' : 'https://mmvue.codecloudapp.com/svg_map.vue?noext'
     }
