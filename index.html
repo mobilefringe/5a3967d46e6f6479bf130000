@@ -1,117 +1,114 @@
 <!DOCTYPE html>
 <html lang="en" data-vue-meta-server-rendered>
-
-<head>
-    <title></title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/vnd.microsoft.icon/1513976137651/favicon (1).ico" type="image/x-icon" />
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css">-->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    <!--<link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css"/>-->
-    <link href="https://cdn.jsdelivr.net/npm/animate.css@3.5.1" rel="stylesheet" type="text/css">
-    <link href="https://www.mallmaverick.com/assets/application-4a07a5bfca788b1bba00ed872cb70b2c.css" media="all" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="//preview-5a1891476e6f645140560000.codecloudapp.com/agile.css">
-    <link href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/v-calendar@0.5.2/lib/v-calendar.min.css'>
-    <link rel="stylesheet" href="/style.css">
-</head>
-
-<body>
-    <div id="app" v-cloak v-if="dataLoaded">
-        <div class="header-container hidden-phone " id="top">
-            <div class="header page_container">
-                <div class="col-sm-6 text_left no_padding">
-                    <router-link to="/" exact>
-                        <img class="site-logo" src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1513713887462/ES_logo_Colour (1).png">
-                    </router-link>
-                </div>
-                <div class="col-sm-6">
-                    <div class="social-div social_icons">
-                        <router-link to="/contact_us" style="font-size:12px; margin-right:10px; color:#999999;display: inline-block;height: 30px;line-height: 30px;">CONTACT US</router-link>
-                        <a href="https://www.snapchat.com/" target="_blank" class="social_link_icon social_snapchat">
-                            <!--<img id="Snapchat" class="social_link_icon" src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797672502/snapchat.png">-->
-                        </a>
-                        <a href="http://www.facebook.com/" target="_blank" class="social_link_icon social_fb">
-                            <!--<img id="Facebook" class="social_link_icon" src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797683914/facebook.png">-->
-                        </a>
-                        <!--<a href="http://www.instagram.com/" target="_blank" class="social_link_icon social_insta">-->
-                        <!--<img id="Instagram" class="social_link_icon" src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797694182/insta.png">-->
-                        <!--</a>-->
-                        <a href="http://www.twitter.com/" target="_blank" class="social_link_icon social_twitter">
-                            <!--<img id="Twitter" class="social_link_icon" src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797704155/twitter.png">-->
-                        </a>
-                    </div>
-                    <div class="newsletter-div">
-                        <div class="newsletter_box" style="margin-bottom:5px">
-                            <form style="margin:0" action="//mobilefringe.createsend.com/t/d/s/irudui/" method="post">
-                                <div class="input_box">
-                                    <input class="sub_input_text" id="fieldEmail" name="cm-irudui-irudui" type="email" required placeholder="ENTER YOUR EMAIL TO SUBSCRIBE" />
-                                    <button type="submit" style="background-color:transparent;" v-on:click="warn($event)"><img src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797731769/newsletter.png"></button>
-                                </div>
-                            </form>
-                        </div>
-                        <div id="search-form" class="search-form">
-                            <div class="input_box">
-                                <input class="sub_input_text" id="SearchTerms" placeholder="SEARCH" onkeydown="if (event.keyCode ==13) document.getElementById('search_button').click()" />
-                                <button id="search_button" class="search_button" onclick="search_site();" style="background-color:transparent;"> <img src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1514998294110/search_icon.png"> </button>
-                            </div>
-                            <div class="input submit"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="menu-container hidden-phone ">
-            <div class="menu-div page_container">
-                <div v-for="item in menu_items" :class="item.parent_class_list" style="display: inline-block;padding: 0 20px;">
-                    <router-link :to="item.href" class="all_caps" exact v-if="item.sub_menu == undefined">
-                        <a href="" class="menu_link" :id="item.name.id">{{item.name}} </a>
-                    </router-link>
-                    <div v-else class="all_caps dropdown">
-                        <div class="menu_link" :id="item.name.id" @click="item.show_sub_menu = !item.show_sub_menu">{{item.name}} </div>
-                        <transition name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">
-                            <div class="dropdown-menu" v-if="item.sub_menu" v-show="item.show_sub_menu">
-                                <router-link class="dropdown-item" v-for="sub_menu in item.sub_menu" :to="sub_menu.href">{{sub_menu.name}}</router-link>
-                            </div>
-                        </transition>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <router-view></router-view>
-        <div class="mobile-social-div visible-phone">
-        </div>
-        <div class="footer-div hidden-phone" id="footer-div">
-            <div class="footer-top page_container">
-                <div class="row">
-                    <span>
-				        <p class="pull-left"> <a href="#" @click="toggle_sitemap = !toggle_sitemap;">Sitemap</a> | <a href="/pages/eastgate-privacy-policy">Privacy Policy</a> | <a href="/pages/canyoncrest-contact-us">Contact Us</a> | <a href="/login">Admin Login</a> | <a href="http://www.mallmaverick.com" target="_blank">Powered by Mall Maverick</a>  | </p>
-				    </span>
-                    <span>
-				        <p class="pull-right">&copy; Copyright {{copyright_year}} {{property.name}}</p>
-				    </span>
-                </div>
-                <div>
-                    <span>
-				        <p class="pull-left" v-if="property"> {{property.address1}} {{property.city}}{{property.province}} {{property.postal_code}} - 214.363.7441</p>
-				    </span>
-                </div>
-            </div>
-            <div class="footer-bottom hidden-phone " v-if="toggle_sitemap">
-                <div class="footer-bottom-title-div ">
-                    <div class="page_container">
-                        <div v-for="item in menu_items" :id="item.parent_id" class="footer_menu_title col-sm-2">
-                            <router-link :to="item.href" :id="item.id">{{item.name}} </router-link>
-                        </div>
-                        &nbsp;
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script data-main="/main" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.3/require.min.js"></script>
-</body>
-
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/vnd.microsoft.icon/1513976137651/favicon (1).ico" type="image/x-icon" />
+		<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css">-->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+		<!--<link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css"/>-->
+		<link href="https://cdn.jsdelivr.net/npm/animate.css@3.5.1" rel="stylesheet" type="text/css">
+		<link href="https://www.mallmaverick.com/assets/application-4a07a5bfca788b1bba00ed872cb70b2c.css" media="all" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="//preview-5a1891476e6f645140560000.codecloudapp.com/agile.css">
+		<link href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+		<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/v-calendar@0.5.2/lib/v-calendar.min.css'>
+		<link rel="stylesheet" href="/style.css">
+	</head>
+	<body>
+		<div id="app" v-cloak v-if="dataLoaded">
+			<div class="header-container hidden-phone " id="top">
+				<div class="header page_container">
+					<div class="col-sm-6 text_left no_padding">
+						<router-link to="/" exact>
+							<img class="site-logo" src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1513713887462/ES_logo_Colour (1).png">
+						</router-link>
+					</div>
+					<div class="col-sm-6">
+						<div class="social-div social_icons">
+							<router-link to="/contact_us" style="font-size:12px; margin-right:10px; color:#999999;display: inline-block;height: 30px;line-height: 30px;">CONTACT US</router-link>
+							<a href="https://www.snapchat.com/" target="_blank" class="social_link_icon social_snapchat">
+								<!--<img id="Snapchat" class="social_link_icon" src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797672502/snapchat.png">-->
+							</a>
+							<a href="http://www.facebook.com/" target="_blank" class="social_link_icon social_fb">
+								<!--<img id="Facebook" class="social_link_icon" src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797683914/facebook.png">-->
+							</a>
+							<!--<a href="http://www.instagram.com/" target="_blank" class="social_link_icon social_insta">-->
+							<!--<img id="Instagram" class="social_link_icon" src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797694182/insta.png">-->
+							<!--</a>-->
+							<a href="http://www.twitter.com/" target="_blank" class="social_link_icon social_twitter">
+								<!--<img id="Twitter" class="social_link_icon" src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797704155/twitter.png">-->
+							</a>
+						</div>
+						<div class="newsletter-div">
+							<div class="newsletter_box" style="margin-bottom:5px">
+								<form style="margin:0" action="//mobilefringe.createsend.com/t/d/s/irudui/" method="post">
+									<div class="input_box">
+										<input class="sub_input_text" id="fieldEmail" name="cm-irudui-irudui" type="email" required placeholder="ENTER YOUR EMAIL TO SUBSCRIBE" />
+										<button type="submit" style="background-color:transparent;" v-on:click="warn($event)"><img src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797731769/newsletter.png"></button>
+									</div>
+								</form>
+							</div>
+							<div id="search-form" class="search-form">
+								<div class="input_box">
+									<input class="sub_input_text" id="SearchTerms" placeholder="SEARCH" onkeydown="if (event.keyCode ==13) document.getElementById('search_button').click()" />
+									<button id="search_button" class="search_button" onclick="search_site();" style="background-color:transparent;"> <img src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1514998294110/search_icon.png"> </button>
+								</div>
+								<div class="input submit"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="menu-container hidden-phone ">
+				<div class="menu-div page_container">
+					<div v-for="item in menu_items" :class="item.parent_class_list" style="display: inline-block;padding: 0 20px;">
+						<router-link :to="item.href" class="all_caps" exact v-if="item.sub_menu == undefined">
+							<a href="" class="menu_link" :id="item.name.id">{{item.name}} </a>
+						</router-link>
+						<div v-else class="all_caps dropdown">
+							<div class="menu_link" :id="item.name.id" @click="item.show_sub_menu = !item.show_sub_menu">{{item.name}} </div>
+							<transition name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">
+								<div class="dropdown-menu" v-if="item.sub_menu" v-show="item.show_sub_menu">
+									<router-link class="dropdown-item" v-for="sub_menu in item.sub_menu" :to="sub_menu.href">{{sub_menu.name}}</router-link>
+								</div>
+							</transition>
+						</div>
+					</div>
+				</div>
+			</div>
+			<router-view></router-view>
+			<div class="mobile-social-div visible-phone">
+			</div>
+			<div class="footer-div hidden-phone" id="footer-div">
+				<div class="footer-top page_container">
+					<div class="row">
+						<span>
+							<p class="pull-left"> <a href="#" @click="toggle_sitemap = !toggle_sitemap;">Sitemap</a> | <a href="/pages/eastgate-privacy-policy">Privacy Policy</a> | <a href="/pages/canyoncrest-contact-us">Contact Us</a> | <a href="/login">Admin Login</a> | <a href="http://www.mallmaverick.com" target="_blank">Powered by Mall Maverick</a>  | </p>
+						</span>
+						<span>
+							<p class="pull-right">&copy; Copyright {{copyright_year}} {{property.name}}</p>
+						</span>
+					</div>
+					<div>
+						<span>
+							<p class="pull-left" v-if="property"> {{property.address1}} {{property.city}}{{property.province}} {{property.postal_code}} - 214.363.7441</p>
+						</span>
+					</div>
+				</div>
+				<div class="footer-bottom hidden-phone " v-if="toggle_sitemap">
+					<div class="footer-bottom-title-div ">
+						<div class="page_container">
+							<div v-for="item in menu_items" :id="item.parent_id" class="footer_menu_title col-sm-2">
+								<router-link :to="item.href" :id="item.id">{{item.name}} </router-link>
+							</div>
+							&nbsp;
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script data-main="/main" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.3/require.min.js"></script>
+	</body>
 </html>
