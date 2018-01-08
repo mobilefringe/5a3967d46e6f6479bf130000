@@ -31,7 +31,7 @@ require.config({
         'mousewheel': 'https://mallmaverick.com/javascripts/mapsvg/jquery.mousewheel',
         'mapsvg': 'https://mallmaverick.com/javascripts/mapsvg/mapsvg',
         'mm_mapsvg': 'https://mmvue.codecloudapp.com/mallmaverick_svgmap',
-        'svg-map' : 'https://mmvue.codecloudapp.com/svg-map.vue?noext'
+        'svg-map' : 'https://mmvue.codecloudapp.com/svg_map.vue?noext'
     }
 });
 
