@@ -75,7 +75,7 @@
 </style>
 
 <script>
-    define(["Vue", 'vue-select'], function(Vue, VueSelect) {
+    define(["Vue", 'vue-select',jquery", "Raphael", "mm_mapsvg","mousewheel", "vue!svg-map"], function(Vue, VueSelect) {
         return Vue.component("stores-component", {
             template: template, // the variable template will be injected
             data: function() {
