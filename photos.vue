@@ -16,9 +16,7 @@
       data: function() {
         return {
           meta: {
-            meta_title: "",
-            meta_description: "",
-            meta_keywords: ""
+              all_photos : nu;;
           }
         }
       },
