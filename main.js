@@ -29,6 +29,7 @@ require.config({
         'lightbox': 'https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min',
         //png-map dependencies
         'smooth-zoom' : 'https://codecloud.cdn.speedyrails.net/sites/59035a6c6e6f645a5b420000/application/x-javascript/1503602727000/smoothZoomA24',
+        'png-map' : ''
         
     }
 });
