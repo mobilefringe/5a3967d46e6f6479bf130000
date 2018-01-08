@@ -100,7 +100,7 @@
         line-height: 35px;
     }
     #zoom_container {
-            height: 300px;
+        height: 300px;
     }
 </style>
 <script>
