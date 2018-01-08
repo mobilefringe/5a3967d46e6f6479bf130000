@@ -257,6 +257,24 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             changeLocale: function(val) {
                 this.locale = val; // this will update the data store, which in turn will trigger the watcher to update the locale in the system
             }
+            onOptionSelect(option) {
+            console.log('Selected option:', option);
+            
+            console.log(this.is_searching);
+            
+            // var userId = option.slug;
+            // this.$router.push({ name: 'storeDetails', params: { userId }})
+            this.$nextTick(function(){
+                //clear search when changing routes
+                this.show_mobile_search = false;
+                this.is_searching = false;
+                // $(".bannerSearch .options-list").hide();
+                this.mobile_search = "";
+                this.desktop_search = "";
+            });
+            this.$router.push("/stores/"+option.slug);
+            console.log(this.$router);
+        },
             //,
             // toggle: function(dropdownName) {
             //     //alert(dropdownName)
