@@ -8,7 +8,11 @@
         </div>
     </div>
 </template>
-
+<style>
+    #thank_you_container {
+        
+    }
+</style>
 <script>
   define(["Vue"], function(Vue) {
     return Vue.component("thank-you-component", {
