@@ -20,12 +20,12 @@
 		<div id="app" v-cloak v-if="dataLoaded">
 			<div class="header-container hidden-phone " id="top">
 				<div class="header page_container">
-					<div class="col-md-6 text_left no_padding">
+					<div class="col-sm-6 text_left no_padding">
 						<router-link to="/" exact>
 							<img class="site-logo" src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1513713887462/ES_logo_Colour (1).png">
 						</router-link>
 					</div>
-					<div class="col-md-6">
+					<div class="col-sm-6">
 						<div class="social-div social_icons">
 							<router-link to="/contact_us" style="font-size:12px; margin-right:10px; color:#999999;display: inline-block;height: 30px;line-height: 30px;">CONTACT US</router-link>
 							<a href="https://www.snapchat.com/" target="_blank" class="social_link_icon social_snapchat">
@@ -97,7 +97,7 @@
 				<div class="footer-bottom hidden-phone " v-if="toggle_sitemap">
 					<div class="footer-bottom-title-div ">
 						<div class="page_container">
-							<div v-for="item in menu_items" :id="item.parent_id" class="footer_menu_title col-md-2">
+							<div v-for="item in menu_items" :id="item.parent_id" class="footer_menu_title col-sm-2">
 								<router-link :to="item.href" :id="item.id" >{{item.name}} </router-link>
 							</div>
 							&nbsp;
