@@ -1,5 +1,5 @@
 <template>
-    <div class="page_container">
+    <div class="page_container" id="thank_you_container">
     <div class="row">
         <img src="http://placehold.it/700x300" class="" alt="">
     </div>
