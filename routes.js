@@ -168,7 +168,7 @@ define([], function () {
         {
           path: '',
           component: view('photos'),
-          name: 'community'
+          name: 'photos'
         }
       ]
     },
