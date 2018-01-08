@@ -137,13 +137,6 @@
                 }
             },
             watch: {
-                map: function() {
-                    var vm = this;
-                    setTimeout(function() {
-                        console.log(this);
-                        vm.addLandmark(vm.currentStore);
-                    }, 500);
-                },
                 currentStore: function() {
                     console.log("currentStore promo", this.currentStore);
                     var vm = this;
