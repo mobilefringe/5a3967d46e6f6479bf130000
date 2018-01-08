@@ -160,6 +160,10 @@
                 findCategoryByName() {
                     return this.$store.getters.findCategoryByName;
                 },
+                getSVGurl () {
+                    return "https://www.mallmaverick.com" + this.property.svgmap_url;
+                    // return "//www.mallmaverick.com/system/site_images/photos/000/035/014/original/Canyon_Crest_-_Map.svg?1512066588";
+                },
                 svgMapRef() {
                     return _.filter(this.$children, function(o) {
                         return (o.$el.className == "svg-map")
