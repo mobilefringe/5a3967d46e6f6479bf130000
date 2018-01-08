@@ -208,7 +208,7 @@
                 },
                 addLandmark(store) {
                     // this.svgMapRef.hideMarkers();
-                    console.log("Adding Marker for" ,store.name);
+                    console.log("Adding Marker for" ,store);
                     this.svgMapRef.addMarker(store);
                     // this.svgMapRef.setViewBox(store);
                     // (store_x_coordinate, store_y_coordinate, pin_id, store_name) {
