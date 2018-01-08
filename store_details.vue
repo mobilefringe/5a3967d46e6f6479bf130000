@@ -141,7 +141,7 @@
                     var vm = this;
                     setTimeout(function() {
                         console.log(this);
-                        vm.dropPin(this.currentStore);
+                        vm.addLandmark(this.currentStore);
                     }, 500);
                 },
                 currentStore: function() {
