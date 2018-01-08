@@ -1,3 +1,5 @@
 <template>
-    <div class="page_container"></div>
+    <div class="page_container">
+        
+    </div>
 </template>
