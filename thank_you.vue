@@ -10,7 +10,7 @@
 </template>
 <style>
     #thank_you_container {
-        
+        padding: 20pc;
     }
 </style>
 <script>
