@@ -145,7 +145,7 @@
                     }, 500);
                 },
                 currentStore: function() {
-                    if(this.currentStore !=null && this.currentStore != undefined){
+                    if(this.currentStore != null && this.currentStore != undefined){
                         console.log("currentStore promo", this.currentStore);
                         var vm = this;
                         var temp_promo = [];
