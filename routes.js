@@ -179,7 +179,7 @@ define([], function () {
       children: [
         {
           path: '',
-          component: view('thank-you'),
+          component: view('thank_you'),
           name: 'photos'
         }
       ]
