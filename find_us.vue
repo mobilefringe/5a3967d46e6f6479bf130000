@@ -16,7 +16,7 @@
 					</div>
 					
 					
-					<div class="page_header all_caps double_border_bottom">
+					<div class="page_header all_caps double_border_top double_border_bottom">
             			<div class="page_container text_left"> Public Transit</div>
             		</div>
             		<div class="directions">
