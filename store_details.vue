@@ -99,7 +99,7 @@
         height: 35px;
         line-height: 35px;
     }
-    .map {
+    #store_dets_container .map {
         height: 300px;
         overflow:hidden;
     }
