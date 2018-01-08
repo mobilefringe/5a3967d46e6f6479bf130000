@@ -169,6 +169,11 @@
                     this.jobs = temp_job;
                     console.log("promos", this.promotions);
                     console.log("jobs", this.jobs);
+                    
+                    setTimeout(function() {
+                        console.log(this);
+                        vm.addLandmark(vm.currentStore);
+                    }, 500);
                 }
             },
             computed: {
