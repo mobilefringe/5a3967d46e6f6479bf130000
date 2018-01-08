@@ -197,7 +197,7 @@
             methods: {
                 updateSVGMap(map) {
                     this.map = map;
-                    console.log("this", this);
+                    // console.log("this", this);
                 },
                 addLandmark(store) {
                     // this.svgMapRef.hideMarkers();
