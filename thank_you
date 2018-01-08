@@ -11,11 +11,7 @@
       template: template, // the variable template will be injected
       data: function() {
         return {
-          meta: {
-            meta_title: "",
-            meta_description: "",
-            meta_keywords: ""
-          }
+            
         }
       },
       beforeRouteEnter (to, from, next) {
