@@ -3,7 +3,7 @@
 <!--                		        </a>-->
 
 <template>
-    <div>
+    <div class="page_container">
         
     </div>
 </template>
