@@ -141,41 +141,34 @@
                     var vm = this;
                     setTimeout(function() {
                         console.log(this);
-                        vm.addLandmark(vm.currentStore);
+                        vm.addLandmark(this.currentStore);
                     }, 500);
                 },
                 currentStore: function() {
-                    if(this.currentStore != null && this.currentStore != undefined){
-                        console.log("currentStore promo", this.currentStore);
-                        var vm = this;
-                        var temp_promo = [];
-                        var temp_job = [];
-                        _.forEach(this.currentStore.promotions, function(value, key) {
-                            // console.log(vm.findPromoById(value));
-                            var current_promo = vm.findPromoById(value);
-                            current_promo.description_short = _.truncate(current_promo.description, {
-                                'length': 70
-                            });
-                            temp_promo.push(current_promo);
+                    console.log("currentStore promo", this.currentStore);
+                    var vm = this;
+                    var temp_promo = [];
+                    var temp_job = [];
+                    _.forEach(this.currentStore.promotions, function(value, key) {
+                        // console.log(vm.findPromoById(value));
+                        var current_promo = vm.findPromoById(value);
+                        current_promo.description_short = _.truncate(current_promo.description, {
+                            'length': 70
                         });
-                        _.forEach(this.currentStore.jobs, function(value, key) {
-                            var current_job = vm.findJobById(value);
-                            current_job.description_short = _.truncate(current_job.description, {
-                                'length': 70
-                            });
-                            temp_job.push(current_job);
-    
-                        })
-                        this.promotions = temp_promo;
-                        this.jobs = temp_job;
-                        console.log("promos", this.promotions);
-                        console.log("jobs", this.jobs);
-                        
-                        setTimeout(function() {
-                            console.log(this);
-                            vm.addLandmark(vm.currentStore);
-                        }, 500);
-                    }
+                        temp_promo.push(current_promo);
+                    });
+                    _.forEach(this.currentStore.jobs, function(value, key) {
+                        var current_job = vm.findJobById(value);
+                        current_job.description_short = _.truncate(current_job.description, {
+                            'length': 70
+                        });
+                        temp_job.push(current_job);
+
+                    })
+                    this.promotions = temp_promo;
+                    this.jobs = temp_job;
+                    console.log("promos", this.promotions);
+                    console.log("jobs", this.jobs);
                 }
             },
             computed: {
@@ -210,7 +203,7 @@
                 },
                 addLandmark(store) {
                     // this.svgMapRef.hideMarkers();
-                    console.log("Adding Marker for" ,store);
+                    console.log("Adding Marker for" ,store.name);
                     this.svgMapRef.addMarker(store);
                     // this.svgMapRef.setViewBox(store);
                     // (store_x_coordinate, store_y_coordinate, pin_id, store_name) {
