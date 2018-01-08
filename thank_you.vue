@@ -1,5 +1,8 @@
 <template>
     <div class="page_container">
+    <div class="row">
+        
+    </div>
         <div class="row">
             Your subscription has been confirmed. You've been added to our list and will hear from us soon.
         </div>
