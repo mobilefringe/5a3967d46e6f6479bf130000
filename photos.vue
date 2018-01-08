@@ -3,7 +3,7 @@
 <!--                		        </a>-->
 
 <template>
-    <div class="page_container">
+    <div class="page_container" id="photos_container">
         
     </div>
 </template>
