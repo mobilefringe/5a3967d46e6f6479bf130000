@@ -55,14 +55,14 @@
 									<!--<input class="sub_input_text" id="SearchTerms" placeholder="SEARCH" onkeydown="if (event.keyCode ==13) document.getElementById('search_button').click()" />-->
 									<!--<button id="search_button" class="search_button" onclick="search_site();" style="background-color:transparent;"> <img src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1514998294110/search_icon.png"> </button>-->
 									<search-component :list="allStores" placeholder="Find Your Store" :suggestion-attribute="suggestionAttribute" v-model="mobile_search" @select="onOptionSelect" class="">
-                        <template slot="item" scope="option" class="manual">
-                            <article class="media">
-                                <p>
-                                    <strong>{{ option.data.name }}</strong>
-                                </p>
-                            </article>
-                        </template>
-                    </search-component>
+                                        <template slot="item" scope="option" class="manual">
+                                            <article class="media">
+                                                <p>
+                                                    <strong>{{ option.data.name }}</strong>
+                                                </p>
+                                            </article>
+                                        </template>
+                                    </search-component>
 								</div>
 								<div class="input submit"></div>
 							</div>
