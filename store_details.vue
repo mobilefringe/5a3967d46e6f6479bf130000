@@ -10,7 +10,7 @@
 				<!--<img src="http://placehold.it/620x300"/>-->
 				<!--<div class="main-map">-->
 					<div id="mapsvg_store_detail">
-						<png-map v-bind:png-map-url="getPNGurl" v-bind:initial-position="'0 0'"></png-map>
+						<png-map v-bind:png-map-url="getPNGurl" v-bind:initial-position="'150 150'"></png-map>
 						 <!--v-bind:zoom-max="300" v-bind:initial-zoom="50" v-bind:zoom-min="50" v-bind:zoom-out-to-fit="'YES'" -->
 					</div>
 				<!--</div>-->
