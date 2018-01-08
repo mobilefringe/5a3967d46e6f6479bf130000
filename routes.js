@@ -156,7 +156,19 @@ define([], function () {
         {
           path: '',
           component: view('community'),
-          name: 'findUs'
+          name: 'community'
+        }
+      ]
+    },
+    {
+      path: '/community',
+      component: view('default'),
+      redirect: '/404',
+      children: [
+        {
+          path: '',
+          component: view('community'),
+          name: 'community'
         }
       ]
     },
