@@ -6,7 +6,6 @@
 
 <script>
   define(["Vue"], function(Vue) {
-    Vue.use(Meta);
     return Vue.component("thank-you-component", {
       template: template, // the variable template will be injected
       data: function() {
