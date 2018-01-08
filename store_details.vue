@@ -201,13 +201,13 @@
                     this.map = map;
                     console.log("this", this);
                 },
-                dropPin() {
-                    console.log(this.currentStore);
-                    console.log(this.currentStore.svgmap_region);
+                addLandmark(store) {
                     // this.svgMapRef.hideMarkers();
-                    this.svgMapRef.addMarker(this.currentStore, '//codecloud.cdn.speedyrails.net/sites/589e308f6e6f641b9f010000/image/png/1484850466000/show_pin.png');
-                    this.svgMapRef.setViewBox(this.currentStore)
-                }
+                    console.log("Adding Marker for" ,store.name);
+                    this.svgMapRef.addMarker(store);
+                    // this.svgMapRef.setViewBox(store);
+                    // (store_x_coordinate, store_y_coordinate, pin_id, store_name) {
+                },
             }
         });
     });
