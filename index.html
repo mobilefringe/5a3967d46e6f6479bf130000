@@ -98,16 +98,16 @@
 					</div>
 				</div>
 				<transition>
-				<div class="footer-bottom hidden-phone " v-if="toggle_sitemap">
-					<div class="footer-bottom-title-div ">
-						<div class="page_container">
-							<div v-for="item in menu_items" :id="item.parent_id" class="footer_menu_title col-sm-2">
-								<router-link :to="item.href" :id="item.id">{{item.name}} </router-link>
-							</div>
-							&nbsp;
-						</div>
-					</div>
-				</div>
+    				<div class="footer-bottom hidden-phone " v-if="toggle_sitemap">
+    					<div class="footer-bottom-title-div ">
+    						<div class="page_container">
+    							<div v-for="item in menu_items" :id="item.parent_id" class="footer_menu_title col-sm-2">
+    								<router-link :to="item.href" :id="item.id">{{item.name}} </router-link>
+    							</div>
+    							&nbsp;
+    						</div>
+    					</div>
+    				</div>
 				</transition>
 			</div>
 		</div>
