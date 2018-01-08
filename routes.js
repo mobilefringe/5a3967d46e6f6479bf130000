@@ -161,7 +161,7 @@ define([], function () {
       ]
     },
     {
-      path: '/community',
+      path: '/photos',
       component: view('default'),
       redirect: '/404',
       children: [
