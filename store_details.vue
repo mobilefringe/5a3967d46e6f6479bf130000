@@ -173,7 +173,7 @@
                         
                         setTimeout(function() {
                             console.log(this);
-                            vm.addLandmark(this.currentStore);
+                            vm.addLandmark(vm.currentStore);
                         }, 500);
                     }
                 }
