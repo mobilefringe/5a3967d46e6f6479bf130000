@@ -11,7 +11,7 @@
       template: template, // the variable template will be injected
       data: function() {
         return {
-            
+            title: "title"
         }
       }
     //   beforeRouteEnter (to, from, next) {
