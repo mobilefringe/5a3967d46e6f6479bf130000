@@ -99,8 +99,9 @@
         height: 35px;
         line-height: 35px;
     }
-    #zoom_container {
+    .map {
         height: 300px;
+        overflow:hidden;
     }
 </style>
 <script>
