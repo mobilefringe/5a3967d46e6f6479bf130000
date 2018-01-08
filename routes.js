@@ -180,7 +180,7 @@ define([], function () {
         {
           path: '',
           component: view('thank_you'),
-          name: 'thankYOu'
+          name: 'thankYou'
         }
       ]
     },
