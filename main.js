@@ -27,7 +27,7 @@ require.config({
         'vee-validate' : 'https://cdn.jsdelivr.net/npm/vee-validate@latest/dist/vee-validate',
         'v-calendar': 'https://unpkg.com/v-calendar@0.5.1/lib/v-calendar.min',
         'lightbox': 'https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min',
-        '' : 'https://mmvue.codecloudapp.com/search-component.vue?noext'
+        '' : 'https://mmvue.codecloudapp.com/svg-map.vue?noext'
     }
 });
 
