@@ -9,7 +9,7 @@
     </div>
 </template>
 <style>
-    #thank_you_container {
+    #thank_you_container div{
         padding: 20px;
     }
 </style>
