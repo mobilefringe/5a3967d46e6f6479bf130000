@@ -99,6 +99,9 @@
         height: 35px;
         line-height: 35px;
     }
+    #zoom_container {
+            height: 300px;
+    }
 </style>
 <script>
     define(['Vue','moment', "jquery", "smooth-zoom", "vue!png-map"], function(Vue, moment, $, smoothZoom, PNGMapComponent) {
