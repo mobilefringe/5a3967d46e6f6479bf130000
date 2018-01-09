@@ -30,7 +30,7 @@
 				<span>
 					<div class="feature-box" v-for="item in feature_items">
 						<p class="feature-title">{{item.name}}</p>
-						<img src="http://placehold.it/300x625" class="feature-image" /><!--<img :src="item.image_url" class="feature-image" />-->
+						<img src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1515525622000/item1.png" class="feature-image" /><!--<img :src="item.image_url" class="feature-image" />-->
 						<p class="feature-html">{{item.html}}</p>
 						<p class="feature-desc">{{item.short_description}}</p>
 						<span class="feature_read_more">
