@@ -21,7 +21,7 @@
         height: 35px;
         line-height: 35px;
     }
-    #pages_containerimg{
+    #pages_container img{
         width: 100%;
     }
 </style>
