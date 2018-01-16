@@ -115,7 +115,7 @@
     }
 </style>
 <script>
-    define(['Vue', 'vuex', 'moment'], function(Vue, moment) {
+    define(['Vue', 'vuex', 'moment'], function(Vue, Vuex, moment) {
         return Vue.component("job-details-component", {
             template: template, // the variable template will be injected,
             data: function() {
