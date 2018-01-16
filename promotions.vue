@@ -1,5 +1,5 @@
 <template>
-	<div class="page_container promotions_container"><!-- for some reason if you do not put an outer container div this component template will not render -->
+	<div class="page_container promotions_container" v-if="dataloaded"><!-- for some reason if you do not put an outer container div this component template will not render -->
 		<div class="date_bar">
 		    <span v-on:click="beforeDate()"> <i class="fa fa-chevron-left"></i></span>
 		    <span class="current_date">
