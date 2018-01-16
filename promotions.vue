@@ -10,8 +10,8 @@
 		<div class="all_dates text-center">
 		    <span v-for="n in daysInMonth" :id="'date_'+n" v-on:click="newDate(n)">{{n}}</span>
 		</div>
-		<div class="promo_container" v-if="processedPromos.length > 0">
-			<div class="row promo_dets text-left" v-for="promo in processedPromos">
+		<div class="promo_container" v-if="filteredPromos.length > 0">
+			<div class="row promo_dets text-left" v-for="promo in filteredPromos">
 				<div class="col-sm-7" >
 					<div class="promo_div_image">
 						<img :src="promo.image_url" alt=""/>
@@ -163,12 +163,12 @@
                     //sort promos
                     selected = moment(this.selectedDate).format('MM DD YYYY');
                     var vm = this;
-                    vm.processedPromos = _.filter(vm.promotions, function(val){
+                    vm.filteredPromos = _.filter(vm.promotions, function(val){
                         start_date = moment(val.start_date).tz(vm.timezone).format('MM DD YYYY');
                         end_date = moment(val.end_date).tz(vm.timezone).format('MM DD YYYY');
                         return moment(selected).isBetween(start_date,end_date, null, '[]');
                     });
-                    console.log(this.processedPromos);
+                    console.log(this.filteredPromos);
                     
                     //change active class 
                     old_date = moment(this.selectedDate).date();
@@ -181,7 +181,7 @@
                     var vm = this;
                     var temp_promo = [];
                     var temp_job = [];
-                    _.forEach(this.$store.getters.processedPromos, function(value, key) {
+                    _.forEach(this.$store.getters.filteredPromos, function(value, key) {
                         // var current_promo = vm.findPromoById(value);
                         value.description_short = _.truncate(value.description, {
                             'length': 70
