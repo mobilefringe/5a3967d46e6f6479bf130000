@@ -116,6 +116,8 @@
                     dataLoaded: false
                 }
             },
+            ,
+            props:['id'],
             created (){
                 this.loadData().then(response => {
                     this.dataLoaded = true;
