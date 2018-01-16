@@ -122,6 +122,7 @@
                     storePromos : null
                 }
             },
+            props:['id'],
             beforeRouteEnter(to, from, next) {
                 next(vm => {
                     // access to component instance via `vm`
