@@ -164,6 +164,11 @@
                 // $("#date_"+ date).addClass('active');
                 // $("#date_29").addClass('active');
             },
+            mounted () {
+                var date = moment(this.selectedDate).date();
+                console.log("date is", date);
+                $("#date_"+ date).addClass('active');  
+            },
             watch: {
                 selectedDate: function() {
                     //sort promos
