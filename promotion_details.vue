@@ -198,6 +198,12 @@
                 }
             },
             methods: {
+                updateCurrentPromo (id) {
+                    this.currentPromo = this.findPromoBySlug(id);
+                    if (this.currentPromo === null || this.currentPromo === undefined){
+                        this.$router.replace({ name: '404'});
+                    }
+                },
                 updateSVGMap(map) {
                     this.map = map;
                     console.log("this", this);
