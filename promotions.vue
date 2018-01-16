@@ -138,7 +138,7 @@
 </style>
 
 <script>
-    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "vue-meta"], function(Vue,Vuex, moment, tz, VueMoment, Meta) {
+    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "vue-meta"], function(Vue, Vuex, moment, tz, VueMoment, Meta) {
         Vue.use(Meta);
         return Vue.component("promos-component", {
             template: template, // the variable template will be injected
@@ -148,6 +148,7 @@
                     processedPromos:[]
                 }
             },
+            props:['id'],
             created() {
                 this.selectedDate = moment().tz(this.timezone).format('MMM D, YYYY');
                 console.log(this.selectedDate);
