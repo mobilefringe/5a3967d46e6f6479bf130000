@@ -202,9 +202,9 @@
                     _.sortBy(temp_promo, [function(o) { return o.start_date; }]);
                     return temp_promo;
                 },
-                timezone() {
-                    return this.$store.getters.getTimezone;
-                },
+                // timezone() {
+                //     return this.$store.getters.getTimezone;
+                // },
                 daysInMonth() {
                     var days = moment(this.selectedDate).daysInMonth();
                     return days;
