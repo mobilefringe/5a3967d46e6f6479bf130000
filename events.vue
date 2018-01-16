@@ -185,6 +185,11 @@
                 // }
             },
             computed: {
+                ...Vuex.mapGetters([
+                    'property',
+                    'timezone',
+                    'processedEvents'
+                ])
                 events() {
                     var vm = this;
                     var temp_promo = [];
