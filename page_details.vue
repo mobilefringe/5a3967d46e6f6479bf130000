@@ -77,7 +77,7 @@
             },
             methods: {
                 updateCurrentPage (id) {
-                        this.$store.dispatch('LOAD_PAGE_DATA', {
+                    this.$store.dispatch('LOAD_PAGE_DATA', {
                         url: this.property.mm_host + "/pages/" + to.params.id + ".json"
                     }).then(response => {
                         // this.dataLoaded = true;
