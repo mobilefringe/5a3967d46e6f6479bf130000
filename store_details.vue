@@ -112,7 +112,8 @@
                 return {
                     currentStore: null,
                     promotions : [],
-                    jobs:[]
+                    jobs:[],
+                    dataLoaded: false
                 }
             },
             created (){
