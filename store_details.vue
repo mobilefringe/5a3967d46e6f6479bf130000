@@ -115,27 +115,6 @@
                     jobs:[]
                 }
             },
-            // beforeRouteEnter(to, from, next) {
-            //     next(vm => {
-            //         // access to component instance via `vm`
-            //         vm.currentStore = vm.findStoreBySlug(to.params.id);
-            //         console.log(vm.currentStore);
-            //         if (vm.currentStore === null || vm.currentStore === undefined) {
-            //             vm.$router.replace({
-            //                 name: '404'
-            //             });
-            //         }
-            //     })
-            // },
-            // beforeRouteUpdate(to, from, next) {
-            //     this.currentStore = this.findStoreBySlug(to.params.id);
-            //     console.log(this.currentStore);
-            //     if (this.currentStore === null || this.currentStore === undefined) {
-            //         this.$router.replace({
-            //             name: '404'
-            //         });
-            //     }
-            // },
             created (){
                 this.loadData().then(response => {
                     this.dataLoaded = true;
@@ -172,6 +151,9 @@
                     setTimeout(function() {
                         vm.addLandmark(vm.currentStore);
                     }, 500);
+                },
+                $route : function () {
+                    this.updateCurrentStore(this.$route.params.id);
                 }
             },
             computed: {
