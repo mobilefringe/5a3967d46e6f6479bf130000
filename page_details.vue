@@ -74,12 +74,10 @@
                 }  
             },
             computed: {
-                timezone() {
-                    return this.$store.getters.getTimezone;
-                },
-                property() {
-                    return this.$store.getters.getProperty;
-                }
+                ...Vuex.mapGetters([
+                    'property',
+                    'timezone'
+                ])
             },
             methods: {
                 updateCurrentPage (id) {
