@@ -46,7 +46,7 @@
 </template>
 
 <script>
-    define(["Vue", "vue!today_hours", "vue!search-component", 'vue!vue-slick'], function(Vue, TodayHoursComponent, SearchComponent, slick) {
+    define(["Vue", "vuex", "vue!today_hours", "vue!search-component", 'vue!vue-slick'], function(Vue, Vuex, TodayHoursComponent, SearchComponent, slick) {
         return Vue.component("home-component", {
             template: template, // the variable template will be injected
             data: function() {
