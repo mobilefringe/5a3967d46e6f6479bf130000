@@ -150,6 +150,12 @@
                 }
             },
             created() {
+                this.$store.dispatch("getData", "promotions").then(response => {
+                    this.dataloaded = true;
+                }, error => {
+                  console.error("Could not retrieve data from server. Please check internet connection and try again.");
+                });
+                
                 this.selectedDate = moment().tz(this.timezone).format('MMM D, YYYY');
                 console.log(this.selectedDate);
                 var date = moment(this.selectedDate).date();
