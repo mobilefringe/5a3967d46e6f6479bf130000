@@ -175,7 +175,10 @@
                         this.storePromos = temp_promo;
                         console.log("promos",this.storePromos);
                     }
-                }  
+                },
+                $route : function () {
+                    this.updateCurrentPromo(this.$route.params.id);
+                }
             },
             computed: {
                 findPromoBySlug() {
