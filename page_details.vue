@@ -67,6 +67,12 @@
             //         });
             //     });
             // },
+            watch: {
+                $route : function () {
+                    console.log("$route",this.$route);
+                    this.updateCurrentEvent(this.$route.params.id);
+                }  
+            },
             computed: {
                 timezone() {
                     return this.$store.getters.getTimezone;
