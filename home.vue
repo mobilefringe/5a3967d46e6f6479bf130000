@@ -61,7 +61,8 @@
                         nextArrow: '.next',
                         autoplay: false
                         // Any other options that can be got from plugin documentation
-                    }
+                    },
+                    dataLoaded: false
                 }
             },
             computed: {
