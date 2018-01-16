@@ -201,11 +201,11 @@
                 //     return this.$store.getters.getProperty;
                 // },
                 allPromos() {
-                    return this.$store.getters.processedPromos;
+                    return this.processedPromos;
                 },
-                timezone() {
-                    return this.$store.getters.getTimezone;
-                }
+                // timezone() {
+                //     return this.$store.getters.getTimezone;
+                // }
             },
             methods: {
                 updateCurrentPromo (id) {
