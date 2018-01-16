@@ -74,6 +74,14 @@
                 property() {
                     return this.$store.getters.getProperty;
                 }
+            },
+            methods: {
+                updateCurrentEvent (id) {
+                    this.currentEvent = this.findEventBySlug(id);
+                    if (this.currentEvent === null || this.currentEvent === undefined){
+                        this.$router.replace({ name: '404'});
+                    }
+                },
             }
         });
     });
