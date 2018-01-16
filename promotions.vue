@@ -179,6 +179,7 @@
                     //change active class 
                     old_date = moment(this.selectedDate).date();
                     $(".all_dates span").removeClass('active');
+                    console.log($("#date_"+old_date));
                     $("#date_"+old_date).addClass('active');
                 }
             },
