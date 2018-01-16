@@ -145,13 +145,13 @@
             //     }
             // },
             watch: {
-                map: function() {
-                    var vm = this;
-                    setTimeout(function() {
-                        console.log(this);
-                        vm.dropPin();
-                    }, 500);
-                },
+                // map: function() {
+                //     var vm = this;
+                //     setTimeout(function() {
+                //         console.log(this);
+                //         vm.dropPin();
+                //     }, 500);
+                // },
                 currentPromo : function (){
                     if(this.currentPromo != null) {
                     var vm = this;
