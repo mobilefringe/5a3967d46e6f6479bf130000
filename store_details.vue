@@ -198,6 +198,12 @@
                         console.log("Error loading data: " + e.message);
                     }
                 },
+                updateCurrentStore (id) {
+                    this.currentStore = this.findStoreBySlug(id);
+                    if (this.currentStore === null || this.currentStore === undefined){
+                        this.$router.replace({ name: '404'});
+                    }
+                },
                 updateSVGMap(map) {
                     this.map = map;
                     // console.log("this", this);
