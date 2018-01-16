@@ -184,7 +184,6 @@
             },
             computed: {
                 ...Vuex.mapGetters([
-                    'property',
                     'timezone',
                     'processedPromos',
                 ]),
