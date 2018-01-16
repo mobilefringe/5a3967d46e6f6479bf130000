@@ -186,7 +186,9 @@
                     $("#date_"+old_date).addClass('active');
                 },
                 dataLoaded () {
-                    
+                     var date = moment(this.selectedDate).date();
+                    console.log("date is", date);
+                    $("#date_"+ date).addClass('active');  
                 }
             },
             computed: {
