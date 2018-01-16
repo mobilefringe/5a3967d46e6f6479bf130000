@@ -152,6 +152,7 @@
             created() {
                 this.$store.dispatch("getData", "promotions").then(response => {
                     this.dataloaded = true;
+                    console.log("Data is loaded")
                 }, error => {
                   console.error("Could not retrieve data from server. Please check internet connection and try again.");
                 });
