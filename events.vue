@@ -148,6 +148,15 @@
                     processedEvents:[]
                 }
             },
+            created () {
+                this.$store.dispatch("getData", "events").then(response => {
+                    // console.log(response);
+                   this.dataLoaded = true;
+                }, error => {
+                    console.error("Could not retrieve data from server. Please check internet connection and try again.");
+                    this.$router.replace({ name: '404'});
+                });
+            },
             mounted() {
                 // this.selectedDate = moment().tz(this.timezone).format('MMM D, YYYY');
                 // console.log(this.selectedDate);
