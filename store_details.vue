@@ -1,5 +1,5 @@
 <template>
-	<div class="page_container store_dets_container" v-if="currentStore" id="store_dets_container">
+	<div class="page_container store_dets_container" v-if="dataLoaded" id="store_dets_container">
 		<div class="row">
 			<div class="col-sm-4 store_logo_container">
 				<div>
