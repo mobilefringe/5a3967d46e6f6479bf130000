@@ -113,7 +113,7 @@
     }
 </style>
 <script>
-    define(['Vue','moment'], function(Vue, moment) {
+    define(['Vue', 'vuex', 'moment'], function(Vue, Vuex, moment) {
         return Vue.component("event-details-component", {
             template: template, // the variable template will be injected,
             data: function() {
