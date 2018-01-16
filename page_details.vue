@@ -67,6 +67,9 @@
             //         });
             //     });
             // },
+            created(){
+               this.updateCurrentEvent(this.id);
+            },
             watch: {
                 $route : function () {
                     console.log("$route",this.$route);
