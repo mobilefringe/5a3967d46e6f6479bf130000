@@ -192,7 +192,7 @@
                     var vm = this;
                     var temp_promo = [];
                     var temp_job = [];
-                    _.forEach(this.$store.getters.filteredPromos, function(value, key) {
+                    _.forEach(this.processedPromos, function(value, key) {
                         // var current_promo = vm.findPromoById(value);
                         value.description_short = _.truncate(value.description, {
                             'length': 70
