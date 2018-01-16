@@ -189,7 +189,7 @@
                     var date = moment(this.selectedDate).date();
                     console.log("date is", date);
                     $("#date_"+ date).addClass('active');  
-                    console.log($("#date_"+ date));
+                    console.log("data loaded", $("#date_"+ date));
                 }
             },
             computed: {
