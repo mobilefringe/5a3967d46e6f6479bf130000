@@ -185,7 +185,7 @@
                     console.log($("#date_"+old_date));
                     $("#date_"+old_date).addClass('active');
                 },
-                dataLoaded () {
+                dataloaded () {
                     var date = moment(this.selectedDate).date();
                     console.log("date is", date);
                     $("#date_"+ date).addClass('active');  
