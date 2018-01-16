@@ -1,5 +1,5 @@
 <template>
-	<div class="row page_container">
+	<div class="row page_container" v-if="dataLoaded">
 		<div class="banner_div">
 			<div class="main_banner">
 				<div  class="prev"></div>
