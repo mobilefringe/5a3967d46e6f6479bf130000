@@ -181,18 +181,25 @@
                 }
             },
             computed: {
+                ...Vuex.mapGetters([
+                    'property',
+                    'processedPromos',
+                    'findPromoBySlug',
+                    'findPromoById',
+                    'timezone'
+                ]),
                 findPromoBySlug() {
                     return this.$store.getters.findPromoBySlug;
                 },
                 findPromoById() {
                     return this.$store.getters.findPromoById;
                 },
-                findJobById() {
-                    return this.$store.getters.findJobById;
-                },
-                property() {
-                    return this.$store.getters.getProperty;
-                },
+                // findJobById() {
+                //     return this.$store.getters.findJobById;
+                // },
+                // property() {
+                //     return this.$store.getters.getProperty;
+                // },
                 allPromos() {
                     return this.$store.getters.processedPromos;
                 },
