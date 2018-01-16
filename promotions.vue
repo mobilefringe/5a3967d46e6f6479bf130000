@@ -152,15 +152,14 @@
             created() {
                 this.$store.dispatch("getData", "promotions").then(response => {
                     this.dataloaded = true;
-                    this.selectedDate = moment().tz(this.timezone).format('MMM D, YYYY');
-                    console.log(this.selectedDate);
-                    var date = moment(this.selectedDate).date();
-                    console.log("date is", date);
                 }, error => {
                   console.error("Could not retrieve data from server. Please check internet connection and try again.");
                 });
                 
-                
+                this.selectedDate = moment().tz(this.timezone).format('MMM D, YYYY');
+                console.log(this.selectedDate);
+                var date = moment(this.selectedDate).date();
+                console.log("date is", date);
                 // $("#date_"+ date).addClass('active');
                 // $("#date_29").addClass('active');
             },
@@ -169,8 +168,7 @@
                     
                     //sort promos
                     selected = moment(this.selectedDate).format('MM DD YYYY');
-                    console.log("selected",selected);
-                    console.log("vm.promotions",vm.promotions)
+                    var vm = this;
                     vm.filteredPromos = _.filter(vm.promotions, function(val){
                         start_date = moment(val.start_date).tz(vm.timezone).format('MM DD YYYY');
                         end_date = moment(val.end_date).tz(vm.timezone).format('MM DD YYYY');
@@ -193,7 +191,6 @@
                     var vm = this;
                     var temp_promo = [];
                     var temp_job = [];
-                    console.log(this.processedPromos);
                     _.forEach(this.processedPromos, function(value, key) {
                         // var current_promo = vm.findPromoById(value);
                         value.description_short = _.truncate(value.description, {
