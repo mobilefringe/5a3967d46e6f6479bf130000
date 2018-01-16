@@ -74,6 +74,7 @@
                 ...Vuex.mapGetters([
                     'property',
                     'timezone',
+                    'processedStores'
                 ]),
                 property(){
                   return this.$store.getters.getProperty;
