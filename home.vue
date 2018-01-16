@@ -65,7 +65,21 @@
                     dataLoaded: false
                 }
             },
+            created () {
+                this.$store.dispatch("getData", "banners").then(response => {
+                   this.dataLoaded = true;
+                }, error => {
+                    console.error("Could not retrieve data from server. Please check internet connection and try again.");
+                    this.$router.replace({ name: '404'});
+                });
+                this.$store.dispatch("getData", "feature_items");
+                this.$store.dispatch("getData", "promotions");
+            },
             computed: {
+                ...Vuex.mapGetters([
+                    'property',
+                    'timezone',
+                ]),
                 property(){
                   return this.$store.getters.getProperty;
                 },
