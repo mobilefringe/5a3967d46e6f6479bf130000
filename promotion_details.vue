@@ -150,7 +150,7 @@
                 }, error => {
                   console.error("Could not retrieve data from server. Please check internet connection and try again.");
                 });
-              },
+            },
             watch: {
                 // map: function() {
                 //     var vm = this;
