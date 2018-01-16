@@ -83,17 +83,17 @@
                 //   return this.$store.getters.processedStores;
                 // },
                 banners () {
-                    console.log(_.orderBy(this.$store.state.results.banners, ['position'], ['asc']));
-                    return _.orderBy(this.$store.state.results.banners, ['position'], ['asc']);
+                    console.log(_.orderBy(this.$store.state.banners, ['position'], ['asc']));
+                    return _.orderBy(this.$store.state.banners, ['position'], ['asc']);
                     // banners: ['http://placehold.it/700x460','http://placehold.it/700x460','http://placehold.it/700x460']
                 },
                 banner_features () {
-                   return  _.slice(this.$store.state.results.feature_items, 0, 2);
+                   return  _.slice(this.$store.state.feature_items, 0, 2);
                 },
                 feature_items () {
-                    console.log(this.$store.state.results.feature_items);
+                    console.log(this.$store.state.feature_items);
                     // return _.slice(this.$store.state.results.feature_items, 2,this.$store.state.results.feature_items.length );
-                    new_features = _.slice(this.$store.state.results.feature_items, 2,this.$store.state.results.feature_items.length );
+                    new_features = _.slice(this.$store.state.feature_items, 2,this.$store.state.feature_items.length );
                     
                     var temp_val = {};
                     temp_val.name = "Temp Feature";
