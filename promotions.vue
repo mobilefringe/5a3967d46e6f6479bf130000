@@ -168,6 +168,7 @@
                     
                     //sort promos
                     selected = moment(this.selectedDate).format('MM DD YYYY');
+                    console.log("selected",selected);
                     var vm = this;
                     vm.filteredPromos = _.filter(vm.promotions, function(val){
                         start_date = moment(val.start_date).tz(vm.timezone).format('MM DD YYYY');
