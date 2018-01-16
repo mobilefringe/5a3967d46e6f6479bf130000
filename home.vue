@@ -76,12 +76,6 @@
                     'timezone',
                     'processedStores'
                 ]),
-                // property(){
-                //   return this.$store.getters.getProperty;
-                // },
-                // processedStores() {
-                //   return this.$store.getters.processedStores;
-                // },
                 banners () {
                     console.log(_.orderBy(this.$store.state.banners, ['position'], ['asc']));
                     return _.orderBy(this.$store.state.banners, ['position'], ['asc']);
