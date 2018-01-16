@@ -157,18 +157,26 @@
                 }
             },
             computed: {
-                findStoreBySlug() {
-                    return this.$store.getters.findStoreBySlug;
-                },
-                findPromoById() {
-                    return this.$store.getters.findPromoById;
-                },
-                findJobById() {
-                    return this.$store.getters.findJobById;
-                },
-                property() {
-                    return this.$store.getters.getProperty;
-                },
+                ...Vuex.mapGetters([
+                    'property',
+                    'timezone',
+                    'processedStores',
+                    'findStoreBySlug',
+                    'findPromoById',
+                    'findJobById',
+                ]),
+                // findStoreBySlug() {
+                //     return this.$store.getters.findStoreBySlug;
+                // },
+                // findPromoById() {
+                //     return this.$store.getters.findPromoById;
+                // },
+                // findJobById() {
+                //     return this.$store.getters.findJobById;
+                // },
+                // property() {
+                //     return this.$store.getters.getProperty;
+                // },
                 getPNGurl () {
                     return "https://www.mallmaverick.com" + this.property.map_url;
                 },
