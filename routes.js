@@ -16,7 +16,8 @@ define([], function () {
         {
           path: ':id',
           component: view('store_details'),
-          name: 'storeDetails'
+          name: 'storeDetails',
+            props: true
         }
       ]
     },
@@ -32,7 +33,9 @@ define([], function () {
         {
           path: ':id',
           component: view('promotion_details'),
-          name: 'promotionDetails'
+          name: 'promotionDetails',
+                    props: true
+          
         }
       ]
     },
@@ -48,7 +51,8 @@ define([], function () {
         {
           path: ':id',
           component: view('event_details'),
-          name: 'eventDetails'
+          name: 'eventDetails',
+                    props: true
         }
       ]
     },
@@ -64,7 +68,8 @@ define([], function () {
         {
           path: ':id',
           component: view('job_details'),
-          name: 'jobDetails'
+          name: 'jobDetails',
+                    props: true
         }
       ]
     },
@@ -132,7 +137,8 @@ define([], function () {
         {
           path: ':id',
           component: view('page_details'),
-          name: 'pageDetails'
+          name: 'pageDetails',
+                    props: true
         }
       ]
     },
