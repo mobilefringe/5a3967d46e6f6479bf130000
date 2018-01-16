@@ -188,12 +188,12 @@
                     'findPromoById',
                     'timezone'
                 ]),
-                findPromoBySlug() {
-                    return this.$store.getters.findPromoBySlug;
-                },
-                findPromoById() {
-                    return this.$store.getters.findPromoById;
-                },
+                // findPromoBySlug() {
+                //     return this.$store.getters.findPromoBySlug;
+                // },
+                // findPromoById() {
+                //     return this.$store.getters.findPromoById;
+                // },
                 // findJobById() {
                 //     return this.$store.getters.findJobById;
                 // },
