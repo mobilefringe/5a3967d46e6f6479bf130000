@@ -159,9 +159,9 @@
                   console.error("Could not retrieve data from server. Please check internet connection and try again.");
                 });
                 
-                var date = moment(this.selectedDate).date();
-                console.log("date is", date);
-                $("#date_"+ date).addClass('active');
+                // var date = moment(this.selectedDate).date();
+                // console.log("date is", date);
+                // $("#date_"+ date).addClass('active');
                 // $("#date_29").addClass('active');
             },
             watch: {
