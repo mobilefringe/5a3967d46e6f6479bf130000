@@ -83,7 +83,7 @@
 							<!--</a>-->
 						</router-link>
 						<div v-else class="all_caps dropdown">
-							<div class="menu_link" :id="item.name.id" @click="toggleSubmenu()">{{item.name}} </div>
+							<div class="menu_link" :id="item.name.id" @click="toggleSubmenu(); item.show_sub_menu = !item.show_sub_menu">{{item.name}} </div>
 							<transition name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">
 								<div class="dropdown-menu" v-if="item.sub_menu" v-show="item.show_sub_menu">
 									<router-link tag="li" class="dropdown-item" v-for="sub_menu in item.sub_menu" :to="sub_menu.href">{{sub_menu.name}}</router-link>
