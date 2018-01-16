@@ -145,7 +145,8 @@
             data: function() {
                 return {
                     selectedDate: null,
-                    processedPromos:[]
+                    processedPromos:[],
+                    dataloaded: false
                 }
             },
             created() {
