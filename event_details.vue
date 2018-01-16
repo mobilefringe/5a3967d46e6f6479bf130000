@@ -180,8 +180,19 @@
                     this.storePromos = temp_promo;
                     console.log("events",this.storePromos);
                 }
-            },
+                $route : function () {
+                        console.log("$route",this.$route);
+                        this.updateCurrentEvent(this.$route.params.id);
+                    }
+                },
             computed: {
+                ...Vuex.mapGetters([
+                    'property',
+                    'timezone',
+                    'processedEvents',
+                    'findEventBySlug',
+                    'findEventById'
+                ]),
                 findEventBySlug() {
                     return this.$store.getters.findEventBySlug;
                 },
