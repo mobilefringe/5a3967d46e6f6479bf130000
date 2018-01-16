@@ -120,6 +120,12 @@
               this.form_data.subject = null;
               this.form_data.message = null;
             },
+            watch: {
+                $route: function() {
+                    console.log("$route", this.$route);
+                    this.updateCurrentEvent(this.$route.params.id);
+                }
+            }
             computed: {
                 timezone () {
                   return this.$store.getters.getTimezone;
