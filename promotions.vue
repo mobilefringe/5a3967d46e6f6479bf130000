@@ -186,6 +186,9 @@
                     $(".all_dates span").removeClass('active');
                     console.log($("#date_"+old_date));
                     $("#date_"+old_date).addClass('active');
+                },
+                dataLoaded () {
+                    
                 }
             },
             computed: {
