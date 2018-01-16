@@ -161,7 +161,7 @@
                 
                 var date = moment(this.selectedDate).date();
                 console.log("date is", date);
-                // $("#date_"+ date).addClass('active');
+                $("#date_"+ date).addClass('active');
                 // $("#date_29").addClass('active');
             },
             watch: {
