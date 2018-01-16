@@ -152,15 +152,11 @@
             created() {
                 this.$store.dispatch("getData", "promotions").then(response => {
                     this.dataloaded = true;
-                    console.log("Data is loaded")
                 }, error => {
                   console.error("Could not retrieve data from server. Please check internet connection and try again.");
                 });
                 
-                this.selectedDate = moment().tz(this.timezone).format('MMM D, YYYY');
-                console.log(this.selectedDate);
-                var date = moment(this.selectedDate).date();
-                console.log("date is", date);
+                
                 // $("#date_"+ date).addClass('active');
                 // $("#date_29").addClass('active');
             },
@@ -170,8 +166,6 @@
                     //sort promos
                     selected = moment(this.selectedDate).format('MM DD YYYY');
                     console.log("selected",selected);
-                    
-                    var vm = this;
                     console.log("vm.promotions",vm.promotions)
                     vm.filteredPromos = _.filter(vm.promotions, function(val){
                         start_date = moment(val.start_date).tz(vm.timezone).format('MM DD YYYY');
