@@ -95,7 +95,7 @@
                     temp_images = ["//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/jpeg/1516038406000/  HPHERO 2018 a -1.jpg", "//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/jpeg/1516038406000/  HPHERO 2018 b -1.jpg", "//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/jpeg/1516038405000/  HPHERO 2018 c -1.jpg", "//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/jpeg/1516038407000/  HPHERO 2018 d .jpg"];
                     var i  = 0;
                     banners.map(banner => {
-                        banner.image_url = temp_banners[i];
+                        banner.image_url = temp_images[i];
                         i ++;
                     });
                     return  _.slice(this.$store.state.feature_items, 0, 2);
