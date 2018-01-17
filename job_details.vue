@@ -166,9 +166,6 @@
                 findJobBySlug() {
                     return this.$store.getters.findJobBySlug;
                 },
-                findJobBySlug() {
-                    return this.$store.getters.findJobById;
-                },
                 findJobById() {
                     return this.$store.getters.findJobById;
                 },
