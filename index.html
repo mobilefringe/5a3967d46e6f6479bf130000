@@ -20,6 +20,12 @@
 	</head>
 	<body>
 		<div id="app" v-cloak v-if="dataLoaded">
+		    <transition name="fade">
+                <div class="loading-container" v-if="!dataLoaded">
+                    <vue-simple-spinner size="huge" message="NorthPark Center is loading..."></vue-simple-spinner>    
+                </div>
+                <router-view v-if="dataLoaded" class="content"></router-view>
+            </transition>
 			<div class="header-container hidden-phone " id="top">
 				<div class="header page_container">
 					<div class="col-sm-6 text_left no_padding">
