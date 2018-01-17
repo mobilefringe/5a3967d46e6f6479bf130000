@@ -166,7 +166,7 @@
                 jobs() {
                     var vm = this;
                     this.processedJobs.map(job => {
-                        job.short_description = _.truncate(job.description,{'length': 70});
+                        job.description_short = _.truncate(job.description,{'length': 70});
                     });
                     var temp_promo = [];
                     var temp_job = [];
