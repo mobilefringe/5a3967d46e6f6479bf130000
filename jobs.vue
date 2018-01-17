@@ -158,6 +158,11 @@
                 });
             },
             computed: {
+                ...Vuex.mapGetters([
+                    'property',
+                    'timezone',
+                    'processedEvents'
+                ]),
                 jobs() {
                     var vm = this;
                     var temp_promo = [];
