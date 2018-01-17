@@ -7,7 +7,7 @@
             <div class="row"> 
                 <div class="col-sm-12 contact_contents">
                     <div class="page_header all_caps double_border_top double_border_bottom">
-						<div class="text_left">{{currentContest.name}}</div>
+						<div class="text_left" style="padding-top:20px">{{currentContest.name}}</div>
 					</div>
                     <div class="description_text text_left">
                         {{currentContest.description}}
