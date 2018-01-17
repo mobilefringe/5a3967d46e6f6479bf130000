@@ -12,20 +12,11 @@
                     <div class="description_text text_left" style="padding-top:20px">
                         {{currentContest.description}}
                     </div>
-                    <form class="form-horizontal padding_top_20" action="form-submit" @submit.prevent="validateBeforeSubmit">
-                        <div class="form-group ">
-                            <div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('name')}">
-                                <label class="label" for="name">Name</label>
-                                <input v-model="form_data.name" v-validate="'required|alpha_spaces'" class="form-control" :class="{'input': true}" name="name" type="text" placeholder="Name" data-vv-delay="500">
-                                <span v-show="errors.has('name')" class="form-control-feedback">{{ errors.first('name') }}</span>
-                            </div>
-                            <div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('email')}">
-                                <label class="label" for="email">Email</label>
-                                <input v-model="form_data.email" v-validate="'required|email'" class="form-control" :class="{'input': true}" name="email" type="email" placeholder="Email" data-vv-delay="500">
-                                <span v-show="errors.has('email')" class="form-control-feedback">{{ errors.first('email') }}</span>
-                            </div>
-                        </div>
-                        <div class="form-group ">
+                    <form class="form-horizontal padding_top_20" action="form-submit" v-on:submit.prevent="validateBeforeSubmit">
+						<div class="page_header all_caps double_border_top double_border_bottom">
+							<div class="page_container text_left">Business Contact Info</div>
+						</div>
+						<div class="form-group ">
 							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('legalName')}">
 								<label class="label" for="legalName">Legal Name of Organization</label>
 								<input v-model="form_data.legalName" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="legalName" type="text" placeholder="Legal Name of Organization" data-vv-delay="500">
@@ -62,20 +53,98 @@
 							</div>
 							
 						</div>
-                        <div class="form-group">
-                            <div class="col-xs-6" :class="{'has-error': errors.has('message')}">
-                                <label class="label" for="validate">Enter the following number below to proceed: {{correctValNum}}</label> 
-                                <input v-model="validaNum" v-validate="'required|numeric|min:6|max:6'" class="form-control" :class="{'input': true}" name="validate" type="text" placeholder="Enter above number" data-vv-delay="500">
-                                <span v-show="errors.has('validate')" class="form-control-feedback">{{ errors.first('validate') }}</span>
-                                <span v-if="validaNum.length === 6 && validaNum !== correctValNum && errors.first('validate') == null" class="form-control-feedback" :class="{shake_element : validNumError}">Please enter correct number</span>
-                            </div>
-                        </div>
-                        <div class="form-group account-btn text-left m-t-10">
-                            <div class="col-xs-12">
-                                <button class="feature-readmore" type="submit" :disabled="formSuccess">Submit</button>
-                            </div>
-                        </div>
-                    </form>
+						<div class="form-group">
+							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('email')}">
+								<label class="label" for="email">Email</label>
+								<input v-model="form_data.email" v-validate="'required|email'" class="form-control" :class="{'input': true}" name="email" type="email" placeholder="Email" data-vv-delay="500">
+								<span v-show="errors.has('email')" class="form-control-feedback">{{ errors.first('email') }}</span>
+							</div>
+							<div class="col-sm-6 col-xs-12 no_padding" >
+								<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('phone')}">
+									<label class="label" for="phone">Telephone Number</label>
+									<input v-model="form_data.phone" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="phone" type="text" placeholder="Phone number" data-vv-delay="500">
+									<span v-show="errors.has('phone')" class="form-control-feedback">{{ errors.first('phone') }}</span>
+								</div>
+								<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('fax')}">
+									<label class="label" for="fax">Fax Number</label>
+									<input v-model="form_data.fax" class="form-control" :class="{'input': true}" name="fax" type="text" placeholder="Fax" data-vv-delay="500">
+									<span v-show="errors.has('fax')" class="form-control-feedback">{{ errors.first('fax') }}</span>
+								</div>
+							</div>
+						</div>
+						<div class="page_header all_caps double_border_top double_border_bottom">
+							<div class="page_container text_left">Contact Info</div>
+						</div>
+						<div class="form-group ">
+							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('contactName')}">
+								<label class="label" for="contactName">Authorized Contact Person</label>
+								<input v-model="form_data.contactName" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="contactName" type="text" placeholder="Contact Person" data-vv-delay="500">
+								<span v-show="errors.has('contactName')" class="form-control-feedback">{{ errors.first('contactName') }}</span>
+							</div>
+							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('insurer')}">
+								<label class="label" for="insurer">Name of Insurer</label>
+								<input v-model="form_data.insurer"  v-validate="'required:true'" class="form-control" :class="{'input': true}" name="insurer" type="text" placeholder="Name of Insurer" data-vv-delay="500">
+								<span v-show="errors.has('insurer')" class="form-control-feedback">{{ errors.first('insurer') }}</span>
+							</div>
+						</div>
+						<div class="form-group ">
+							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('cnpNum')}">
+								<label class="label" for="cnpNum">Registered Charitable Number Not for Profit Number</label>
+								<input v-model="form_data.cnpNum" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="cnpNum" type="text" placeholder="Charitable Number" data-vv-delay="500">
+								<span v-show="errors.has('cnpNum')" class="form-control-feedback">{{ errors.first('cnpNum') }}</span>
+							</div>
+							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('lLicense')}">
+								<label class="label" for="lLicense">Lottery License #</label>
+								<input v-model="form_data.lLicense" class="form-control" :class="{'input': true}" name="lLicense" type="text" placeholder="Lottery License #" data-vv-delay="500">
+								<span v-show="errors.has('lLicense')" class="form-control-feedback">{{ errors.first('lLicense') }}</span>
+							</div>
+						</div>
+						<div class="form-group ">
+							<div class="col-sm-3 col-xs-12" :class="{'has-error': errors.has('fromDate')}">
+								<label class="label" for="fromDate">From Date</label>
+								<!--<input v-model="form_data.fromDate" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="fromDate" type="text" placeholder="From Date" data-vv-delay="500">-->
+								<!--<v-calendar></v-calendar>-->
+                                <v-date-picker mode='single' v-model='fromDate'  v-validate="'required:true'" :available-dates='{ start: new Date(), end: null }' select-color='green' :theme-styles='themeStyles'></v-date-picker>
+								<span v-show="errors.has('fromDate')" class="form-control-feedback">{{ errors.first('fromDate') }}</span>
+							</div>
+							<div class="col-sm-3 col-xs-12" :class="{'has-error': errors.has('toDate')}">
+								<label class="label" for="toDate">To Date</label>
+								<!--<input v-model="form_data.toDate" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="toDate" type="text" placeholder="To Date" data-vv-delay="500">-->
+								<v-date-picker mode='single' v-model='toDate'  v-validate="'required:true'" :available-dates='{ start: fromDate, end: null }'></v-date-picker>
+								<span v-show="errors.has('toDate')" class="form-control-feedback">{{ errors.first('toDate') }}</span>
+							</div>
+							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('aAttendance')}">
+								<label class="label" for="aAttendance"> Anticipated Attendance</label>
+								<input v-model="form_data.aAttendance" class="form-control" :class="{'input': true}" name="aAttendance" type="text" placeholder="Anticipated Attendance" data-vv-delay="500">
+								<span v-show="errors.has('aAttendance')" class="form-control-feedback">{{ errors.first('aAttendance') }}</span>
+							</div>
+						</div>
+						<div class="form-group">
+						    <div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('purpose')}">
+								<label class="label" for="purpose">Purpose for use of in-mall space</label>
+								<textarea v-model="form_data.purpose" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="purpose" type="text" placeholder="Purpose" data-vv-delay="500" rows="5"></textarea>
+								<span v-show="errors.has('purpose')" class="form-control-feedback">{{ errors.first('descrpurposeiption') }}</span>
+							</div>
+							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('requirement')}">
+								<label class="label" for="requirement">Please specify any other requirements</label>
+								<textarea v-model="form_data.requirement" class="form-control" :class="{'input': true}" name="requirement" type="text" placeholder="Requirements" data-vv-delay="500" rows="5"></textarea>
+								<span v-show="errors.has('requirement')" class="form-control-feedback">{{ errors.first('requirement') }}</span>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-xs-6" :class="{'has-error': errors.has('validate')}">
+								<label class="label" for="validate">Enter the following number below to proceed: {{correctValNum}}</label> 
+								<input v-model="validaNum" v-validate="'required|numeric|min:6|max:6'" class="form-control col-xs-3" :class="{'input': true}" name="validate" type="text" placeholder="Enter above number" data-vv-delay="500">
+								<span v-show="errors.has('validate')" class="form-control-feedback">{{ errors.first('validate') }}</span>
+								<span v-if="validaNum.length === 6 && validaNum !== correctValNum && errors.first('validate') == null" class="form-control-feedback" :class="{shake_element : validNumError}">Please enter correct number</span>
+							</div>
+						</div>
+						<div class="form-group account-btn text-left m-t-10">
+							<div class="col-xs-12">
+								<button class="feature-readmore" type="submit" :disabled="formSuccess">Submit</button>
+							</div>
+						</div>
+					</form>
                     
                     <div id="send_contact_success" class="alert alert-success text-left" role="alert" v-show="formSuccess">
                         <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
