@@ -94,11 +94,11 @@
                     temp_features = _.slice(this.$store.state.feature_items, 0, 2);
                     temp_images = ["",""];
                     var i  = 0;
-                    banners.map(banner => {
+                    temp_features.map(banner => {
                         banner.image_url = temp_images[i];
                         i ++;
                     });
-                    return  _.slice(this.$store.state.feature_items, 0, 2);
+                    return temp_features ;
                 },
                 feature_items () {
                     console.log(this.$store.state.feature_items);
