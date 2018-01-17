@@ -133,13 +133,6 @@
                 });
             },
             watch: {
-                map: function() {
-                    var vm = this;
-                    setTimeout(function() {
-                        console.log(this);
-                        vm.dropPin();
-                    }, 500);
-                },
                 currentJob : function (){
                     if(this.currentJob != null) {
                     var vm = this;
