@@ -71,30 +71,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="form-group ">
-							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('contactName')}">
-								<label class="label" for="contactName">Authorized Contact Person</label>
-								<input v-model="form_data.contactName" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="contactName" type="text" placeholder="Contact Person" data-vv-delay="500">
-								<span v-show="errors.has('contactName')" class="form-control-feedback">{{ errors.first('contactName') }}</span>
-							</div>
-							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('insurer')}">
-								<label class="label" for="insurer">Name of Insurer</label>
-								<input v-model="form_data.insurer"  v-validate="'required:true'" class="form-control" :class="{'input': true}" name="insurer" type="text" placeholder="Name of Insurer" data-vv-delay="500">
-								<span v-show="errors.has('insurer')" class="form-control-feedback">{{ errors.first('insurer') }}</span>
-							</div>
-						</div>
-						<div class="form-group ">
-							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('cnpNum')}">
-								<label class="label" for="cnpNum">Registered Charitable Number Not for Profit Number</label>
-								<input v-model="form_data.cnpNum" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="cnpNum" type="text" placeholder="Charitable Number" data-vv-delay="500">
-								<span v-show="errors.has('cnpNum')" class="form-control-feedback">{{ errors.first('cnpNum') }}</span>
-							</div>
-							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('lLicense')}">
-								<label class="label" for="lLicense">Lottery License #</label>
-								<input v-model="form_data.lLicense" class="form-control" :class="{'input': true}" name="lLicense" type="text" placeholder="Lottery License #" data-vv-delay="500">
-								<span v-show="errors.has('lLicense')" class="form-control-feedback">{{ errors.first('lLicense') }}</span>
-							</div>
-						</div>
+					
 						<div class="form-group">
 							<div class="col-xs-6" :class="{'has-error': errors.has('validate')}">
 								<label class="label" for="validate">Enter the following number below to proceed: {{correctValNum}}</label> 
