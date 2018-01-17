@@ -160,13 +160,13 @@
                     'property',
                     'timezone',
                     'processedEvents',
-                    'findEventBySlug',
-                    'findEventById'
+                    'findJobBySlug',
+                    'findJobBySlug'
                 ]),
                 findJobBySlug() {
                     return this.$store.getters.findJobBySlug;
                 },
-                findJobById() {
+                findJobBySlug() {
                     return this.$store.getters.findJobById;
                 },
                 findJobById() {
