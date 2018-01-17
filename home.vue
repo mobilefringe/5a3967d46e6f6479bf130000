@@ -81,7 +81,7 @@
                     //  return _.orderBy(this.$store.state.banners, ['position'], ['asc']);
                     banners = _.orderBy(this.$store.state.banners, ['position'], ['asc']);
                     banners.map(banner => {
-                        banner.short_description = _.truncate(banner.description,{'length': 50});
+                        banner.image_url = _.truncate(banner.description,{'length': 50});
                     });
                 },
                 banner_features () {
