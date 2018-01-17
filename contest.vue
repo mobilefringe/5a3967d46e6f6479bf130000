@@ -2,7 +2,7 @@
     <div class="page_container" id="contact_us_container" v-if="currentContest"> <!-- for some reason if you do not put an outer container div this component template will not render -->
         <div class="margin_25_across padding_top_40">
             <div class="row">
-                    <img style="margin-bottom:20px;"  src='currentContest.image_url' alt="plaza">
+                    <img style="margin-bottom:20px;"  :src='currentContest.image_url' alt="contest image">
                 </div> 
             <div class="row"> 
                 <div class="col-sm-12 contact_contents">
