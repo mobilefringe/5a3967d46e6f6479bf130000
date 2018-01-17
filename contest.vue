@@ -1,7 +1,7 @@
 <template>
     <div class="page_container" id="contact_us_container"> <!-- for some reason if you do not put an outer container div this component template will not render -->
         <div class="margin_25_across padding_top_40">
-            <div class="row hidden_phone">
+            <div class="row">
                     <img style="margin-bottom:20px;"  src='//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/jpeg/1516038406000/Contact 2018.jpg' alt="plaza">
                 </div> 
             <div class="row"> 
