@@ -119,7 +119,8 @@
                     formError: false,
                     validaNum: '',
                     correctValNum: null,
-                    validNumError: false
+                    validNumError: false,
+                    currentContest: null
                 }
             },
             created() {
