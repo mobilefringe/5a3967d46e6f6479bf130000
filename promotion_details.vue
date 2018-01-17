@@ -188,24 +188,9 @@
                     'findPromoById',
                     'timezone'
                 ]),
-                // findPromoBySlug() {
-                //     return this.$store.getters.findPromoBySlug;
-                // },
-                // findPromoById() {
-                //     return this.$store.getters.findPromoById;
-                // },
-                // findJobById() {
-                //     return this.$store.getters.findJobById;
-                // },
-                // property() {
-                //     return this.$store.getters.getProperty;
-                // },
                 allPromos() {
                     return this.processedPromos;
                 },
-                // timezone() {
-                //     return this.$store.getters.getTimezone;
-                // }
             },
             methods: {
                 updateCurrentPromo (id) {
