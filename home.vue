@@ -111,7 +111,7 @@
                     temp_val.url = "/promotions";
                     new_features.push(temp_val, temp_val);
                     
-                    temp_images = ["",""];
+                    temp_images = ["//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/jpeg/1516038403000/ Gift Card Home Page.jpg","//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/jpeg/1516038406000/Customer Service 1-1.jpg","//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/jpeg/1516038407000/ Hours Home Page-1.jpg"];
                     var i  = 0;
                     
                     new_features.map(feature => {
