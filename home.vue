@@ -90,6 +90,8 @@
                     return banners;
                 },
                 banner_features () {
+                    // return  _.slice(this.$store.state.feature_items, 0, 2);
+                    temp_features = _.slice(this.$store.state.feature_items, 0, 2);
                    return  _.slice(this.$store.state.feature_items, 0, 2);
                 },
                 feature_items () {
