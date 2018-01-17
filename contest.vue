@@ -142,7 +142,7 @@
                     if(this.birthday !=  null) {
                         console.log("this.birthday", this.birthday);
                         console.log("this.birthday format", moment(this.birthday).format("MM/DD/YYYY"));
-                        this.form_data.birthday = this.birthday;
+                        this.form_data.birthday = moment(this.birthday).format("MM/DD/YYYY"));
                         // this.form_data.toDate = ;
                     }
                 }
