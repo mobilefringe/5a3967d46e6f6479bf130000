@@ -80,7 +80,7 @@
                     // console.log(_.orderBy(this.$store.state.banners, ['position'], ['asc']));
                     //  return _.orderBy(this.$store.state.banners, ['position'], ['asc']);
                     banners = _.orderBy(this.$store.state.banners, ['position'], ['asc']);
-                    temp_banners = [""];
+                    temp_banners = ["//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/jpeg/1516038406000/  HPHERO 2018 a -1.jpg", "//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/jpeg/1516038406000/  HPHERO 2018 b -1.jpg", "//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/jpeg/1516038405000/  HPHERO 2018 c -1.jpg", "//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/jpeg/1516038407000/  HPHERO 2018 d .jpg"];
                     banners.map(banner => {
                         banner.image_url = _.truncate(banner.description,{'length': 50});
                     });
