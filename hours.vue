@@ -57,13 +57,6 @@
         Vue.use(Meta);
         return Vue.component("hours-component", {
             template: template, // the variable template will be injected
-            data: function() {
-                return {
-                    dayOfTheWeek : [
-                        "Sunday", "Monday","Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
-                    ]
-                }
-            },
             mounted () {
               console.log(this.hours);
               console.log(this.holidayHours);
