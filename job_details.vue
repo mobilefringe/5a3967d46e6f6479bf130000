@@ -161,7 +161,7 @@
                     'timezone',
                     'processedEvents',
                     'findJobBySlug',
-                    'findJobBySlug'
+                    'findJobById'
                 ]),
                 findJobBySlug() {
                     return this.$store.getters.findJobBySlug;
