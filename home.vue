@@ -119,6 +119,7 @@
                         feature.image_url = temp_images[i];
                         i ++;
                     });
+                    console.log(new_features);
                     return new_features;
                 }
             },
