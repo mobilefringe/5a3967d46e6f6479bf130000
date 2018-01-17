@@ -54,7 +54,7 @@
 							<div class="col-sm-3 col-xs-12" :class="{'has-error': errors.has('birthday')}">
 								<label class="label" for="birthday">From Date</label>
                                 <v-date-picker mode='single' v-model='birthday'  v-validate="'required:true'" :available-dates='{ start: new Date(), end: null }' select-color='green' :theme-styles='themeStyles'></v-date-picker>
-								<span v-show="errors.has('birthday')" class="form-control-feedback">{{ errors.first('fromDate') }}</span>
+								<span v-show="errors.has('birthday')" class="form-control-feedback">{{ errors.first('birthday') }}</span>
 							</div>
 						</div>
 						<div class="form-group">
@@ -136,6 +136,23 @@
               this.form_data.phone = null;
               this.form_data.subject = null;
               this.form_data.message = null;
+            },
+            watch: {
+                birthday () {
+                    if(this.toDate !=  null) {
+                        console.log("this.fromDate", this.fromDate);
+                        console.log("this.fromDate format", moment(this.fromDate).format("MM/DD/YYYY"));
+                        this.form_data.fromDate = this.fromDate;
+                        // this.form_data.toDate = ;
+                    }
+                },
+                toDate (){
+                    if(this.toDate !=  null) {
+                        console.log("this.toDate", this.toDate);
+                        console.log("this.toDate format", moment(this.toDate).format("MM/DD/YYYY"));
+                        this.form_data.toDate = this.toDate;
+                    }
+                }
             },
             computed: {
                 ...Vuex.mapGetters([
