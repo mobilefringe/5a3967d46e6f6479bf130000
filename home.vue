@@ -78,6 +78,7 @@
                 ]),
                 banners () {
                     // console.log(_.orderBy(this.$store.state.banners, ['position'], ['asc']));
+                    //  return _.orderBy(this.$store.state.banners, ['position'], ['asc']);
                     banners = _.orderBy(this.$store.state.banners, ['position'], ['asc']);
                    
                     // banners: ['http://placehold.it/700x460','http://placehold.it/700x460','http://placehold.it/700x460']
