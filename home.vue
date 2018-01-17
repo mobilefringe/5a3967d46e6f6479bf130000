@@ -86,6 +86,7 @@
                         banner.image_url = temp_banners[i];
                         i ++;
                     });
+                    console.log(banners);
                     return banners;
                 },
                 banner_features () {
