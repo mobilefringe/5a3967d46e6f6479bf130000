@@ -170,7 +170,7 @@
             methods: {
                 updateCurrentJob(id) {
                     this.currentEvent = this.findEventBySlug(id);
-                    if (this.currentEvent === null || this.currentEvent === undefined) {
+                    if (this.currentJob === null || this.currentJob === undefined) {
                         this.$router.replace({
                             name: '404'
                         });
