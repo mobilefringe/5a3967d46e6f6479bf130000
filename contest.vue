@@ -123,7 +123,7 @@
                 }
             },
             created() {
-                this.$store.dispatch("getData", "repos").then(response => {
+                this.$store.dispatch("getData", "contest").then(response => {
                     this.dataloaded = true;
                     this.all_photos = this.findRepoByName('photos').images;
                     console.log(this.all_photos);
