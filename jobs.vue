@@ -161,7 +161,7 @@
                 ...Vuex.mapGetters([
                     'property',
                     'timezone',
-                    'processedEvents'
+                    'processedJobs'
                 ]),
                 jobs() {
                     var vm = this;
