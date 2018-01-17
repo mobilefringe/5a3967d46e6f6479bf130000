@@ -122,14 +122,14 @@
                     validNumError: false
                 }
             },
-            created(){
-               this.updateCurrentPage(this.id);
-            },
-            watch: {
-                $route : function () {
-                    console.log("$route",this.$route);
-                    this.updateCurrentPage(this.$route.params.id);
-                }  
+            created() {
+                this.$store.dispatch("getData", "repos").then(response => {
+                    this.dataloaded = true;
+                    this.all_photos = this.findRepoByName('photos').images;
+                    console.log(this.all_photos);
+                }, error => {
+                    console.error("Could not retrieve data from server. Please check internet connection and try again.");
+                });
             },
             mounted () {
                 //creating random validation num 
