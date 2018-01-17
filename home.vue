@@ -84,6 +84,7 @@
                     var i  = 0;
                     banners.map(banner => {
                         banner.image_url = temp_banners[i];
+                        i ++;
                     });
                 },
                 banner_features () {
