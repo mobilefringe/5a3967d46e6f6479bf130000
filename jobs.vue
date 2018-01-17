@@ -165,6 +165,9 @@
                 ]),
                 jobs() {
                     var vm = this;
+                    this.processedJobs.map(feature => {
+                        feature.short_description = _.truncate(feature.description,{'length': 50});
+                    });
                     var temp_promo = [];
                     var temp_job = [];
                     _.forEach(this.processedJobs, function(value, key) {
