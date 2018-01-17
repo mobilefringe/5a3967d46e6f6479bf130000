@@ -13,9 +13,6 @@
                         {{currentContest.description}}
                     </div>
                     <form class="form-horizontal padding_top_20" action="form-submit" v-on:submit.prevent="validateBeforeSubmit">
-						<div class="page_header all_caps double_border_top double_border_bottom">
-							<div class="page_container text_left">Business Contact Info</div>
-						</div>
 						<div class="form-group ">
 							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('legalName')}">
 								<label class="label" for="legalName">Legal Name of Organization</label>
