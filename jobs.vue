@@ -180,9 +180,6 @@
                     _.sortBy(this.processedJobs, [function(o) { return o.start_date; }]);
                     return this.processedJobs;
                 },
-                timezone() {
-                    return this.$store.getters.getTimezone;
-                }
                 // ,
                 // daysInMonth() {
                 //     var days = moment(this.selectedDate).daysInMonth();
