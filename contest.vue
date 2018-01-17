@@ -83,9 +83,7 @@
                     </div>
                     
                 </div>
-                <div class="col-sm-6 hidden_phone">
-                    <img style="margin-bottom:20px;"  src='//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/jpeg/1516038406000/Contact 2018.jpg' alt="plaza">
-                </div> 
+                
             </div>
             <div class="padding_top_40"></div>    
         </div>
