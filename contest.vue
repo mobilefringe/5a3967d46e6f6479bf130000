@@ -52,9 +52,9 @@
 								<span v-show="errors.has('postal')" class="form-control-feedback">{{ errors.first('postal') }}</span>
 							</div>
 							<div class="col-sm-3 col-xs-12" :class="{'has-error': errors.has('birthday')}">
-								<label class="label" for="fromDate">From Date</label>
-                                <v-date-picker mode='single' v-model='fromDate'  v-validate="'required:true'" :available-dates='{ start: new Date(), end: null }' select-color='green' :theme-styles='themeStyles'></v-date-picker>
-								<span v-show="errors.has('fromDate')" class="form-control-feedback">{{ errors.first('fromDate') }}</span>
+								<label class="label" for="birthday">From Date</label>
+                                <v-date-picker mode='single' v-model='birthday'  v-validate="'required:true'" :available-dates='{ start: new Date(), end: null }' select-color='green' :theme-styles='themeStyles'></v-date-picker>
+								<span v-show="errors.has('birthday')" class="form-control-feedback">{{ errors.first('fromDate') }}</span>
 							</div>
 						</div>
 						<div class="form-group">
