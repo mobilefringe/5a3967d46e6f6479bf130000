@@ -152,7 +152,7 @@
                 },
                 $route: function() {
                     console.log("$route", this.$route);
-                    this.updateCurrentEvent(this.$route.params.id);
+                    this.updateCurrentJob(this.$route.params.id);
                 }
             },
             computed: {
