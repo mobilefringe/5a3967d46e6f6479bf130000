@@ -125,7 +125,7 @@
             },
             created() {
                 this.$store.dispatch("getData", "contests").then(response => {
-                    this.dataloaded = true;
+                    // this.dataloaded = true;
                     this.currentContest = this.findContestBySlug('eastgate-enter-to-win');
                     console.log(this.currentContest);
                 }, error => {
