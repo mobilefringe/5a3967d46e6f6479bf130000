@@ -198,18 +198,7 @@
                     if (this.currentPromo === null || this.currentPromo === undefined){
                         this.$router.replace({ name: '404'});
                     }
-                },
-                // updateSVGMap(map) {
-                //     this.map = map;
-                //     console.log("this", this);
-                // },
-                // dropPin() {
-                //     console.log(this.currentPromo);
-                //     console.log(this.currentPromo.svgmap_region);
-                //     // this.svgMapRef.hideMarkers();
-                //     this.svgMapRef.addMarker(this.currentPromo, '//codecloud.cdn.speedyrails.net/sites/589e308f6e6f641b9f010000/image/png/1484850466000/show_pin.png');
-                //     this.svgMapRef.setViewBox(this.currentPromo)
-                // }
+                }
             }
         });
     });
