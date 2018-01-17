@@ -51,6 +51,13 @@
 								<input v-model="form_data.postal" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="postal" type="text" placeholder="Postal Code" data-vv-delay="500">
 								<span v-show="errors.has('postal')" class="form-control-feedback">{{ errors.first('postal') }}</span>
 							</div>
+							<div class="col-sm-3 col-xs-12" :class="{'has-error': errors.has('fromDate')}">
+								<label class="label" for="fromDate">From Date</label>
+								<!--<input v-model="form_data.fromDate" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="fromDate" type="text" placeholder="From Date" data-vv-delay="500">-->
+								<!--<v-calendar></v-calendar>-->
+                                <v-date-picker mode='single' v-model='fromDate'  v-validate="'required:true'" :available-dates='{ start: new Date(), end: null }' select-color='green' :theme-styles='themeStyles'></v-date-picker>
+								<span v-show="errors.has('fromDate')" class="form-control-feedback">{{ errors.first('fromDate') }}</span>
+							</div>
 						</div>
 						<div class="form-group">
 							<div class="col-xs-6" :class="{'has-error': errors.has('validate')}">
