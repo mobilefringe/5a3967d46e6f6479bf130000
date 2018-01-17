@@ -168,16 +168,13 @@
                 }
             },
             methods: {
-                updateSVGMap(map) {
-                    this.map = map;
-                    console.log("this", this);
-                },
-                dropPin() {
-                    console.log(this.currentJob);
-                    console.log(this.currentJob.svgmap_region);
-                    // this.svgMapRef.hideMarkers();
-                    this.svgMapRef.addMarker(this.currentJob, '//codecloud.cdn.speedyrails.net/sites/589e308f6e6f641b9f010000/image/png/1484850466000/show_pin.png');
-                    this.svgMapRef.setViewBox(this.currentJob)
+                updateCurrentJob(id) {
+                    this.currentEvent = this.findEventBySlug(id);
+                    if (this.currentEvent === null || this.currentEvent === undefined) {
+                        this.$router.replace({
+                            name: '404'
+                        });
+                    }
                 }
             }
         });
