@@ -122,6 +122,15 @@
                     validNumError: false
                 }
             },
+            created(){
+               this.updateCurrentPage(this.id);
+            },
+            watch: {
+                $route : function () {
+                    console.log("$route",this.$route);
+                    this.updateCurrentPage(this.$route.params.id);
+                }  
+            },
             mounted () {
                 //creating random validation num 
                 this.correctValNum = this.rannumber;
