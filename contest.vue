@@ -139,10 +139,10 @@
             },
             watch: {
                 birthday () {
-                    if(this.toDate !=  null) {
-                        console.log("this.fromDate", this.fromDate);
-                        console.log("this.fromDate format", moment(this.fromDate).format("MM/DD/YYYY"));
-                        this.form_data.fromDate = this.fromDate;
+                    if(this.birthday !=  null) {
+                        console.log("this.birthday", this.birthday);
+                        console.log("this.birthday format", moment(this.birthday).format("MM/DD/YYYY"));
+                        this.form_data.birthday = this.birthday;
                         // this.form_data.toDate = ;
                     }
                 }
