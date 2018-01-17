@@ -149,9 +149,20 @@
                         this.storeJobs = temp_job;
                         console.log("jobs",this.storeJobs);
                     }
-                }  
+                },
+                $route: function() {
+                    console.log("$route", this.$route);
+                    this.updateCurrentEvent(this.$route.params.id);
+                }
             },
             computed: {
+                ...Vuex.mapGetters([
+                    'property',
+                    'timezone',
+                    'processedEvents',
+                    'findEventBySlug',
+                    'findEventById'
+                ]),
                 findJobBySlug() {
                     return this.$store.getters.findJobBySlug;
                 },
