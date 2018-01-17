@@ -7,7 +7,7 @@
             <div class="row"> 
                 <div class="col-sm-12 contact_contents">
                     <div class="description_text text_left">
-                        We value your feedback. Send us your comments or questions by completing the contact form below.
+                        {{currentContest.description}}
                     </div>
                     <form class="form-horizontal padding_top_20" action="form-submit" @submit.prevent="validateBeforeSubmit">
                         <div class="form-group ">
