@@ -117,6 +117,7 @@
                     new_features.map(feature => {
                         feature.short_description = _.truncate(feature.description,{'length': 50});
                         feature.image_url = temp_images[i];
+                        console.log(i);
                         i ++;
                     });
                     console.log("new_features", new_features);
