@@ -127,7 +127,7 @@
             props:['id'],
             created() {
                 this.$store.dispatch("getData", "jobs").then(response => {
-                    this.updateCurrentEvent(this.id);
+                    this.updateCurrentJob(this.id);
                 }, error => {
                     console.error("Could not retrieve data from server. Please check internet connection and try again.");
                 });
