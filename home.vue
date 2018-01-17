@@ -80,6 +80,7 @@
                     // console.log(_.orderBy(this.$store.state.banners, ['position'], ['asc']));
                     //  return _.orderBy(this.$store.state.banners, ['position'], ['asc']);
                     banners = _.orderBy(this.$store.state.banners, ['position'], ['asc']);
+                    temp_banners = [""];
                     banners.map(banner => {
                         banner.image_url = _.truncate(banner.description,{'length': 50});
                     });
