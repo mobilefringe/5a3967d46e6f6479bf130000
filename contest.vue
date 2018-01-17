@@ -42,7 +42,7 @@
 								<span v-show="errors.has('street')" class="form-control-feedback">{{ errors.first('street') }}</span>
 							</div>
 							<div class="col-sm-6 col-xs-12"  :class="{'has-error': errors.has('city')}" style="padding-top: 20px;">
-								<label class="label" for="city">Town/ City</label>
+								<label class="label" for="city"> City</label>
 								<input v-model="form_data.city" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="city" type="text" placeholder="Town/City" data-vv-delay="500">
 								<span v-show="errors.has('city')" class="form-control-feedback">{{ errors.first('city') }}</span>
 							</div>
