@@ -86,8 +86,8 @@
                                     <li v-for="item in menu_items">
                                         <router-link :to="item.href" :id="item.id" class="all_caps">{{item.name}} </router-link>
                                         <div v-for="sub_menu in item.sub_menu">
-    								    <router-link :to="sub_menu.href" :id="sub_menu.id" exact>{{sub_menu.name}} </router-link>
-    								</div>
+        								    <router-link :to="sub_menu.href" :id="sub_menu.id" exact>{{sub_menu.name}} </router-link>
+        								</div>
                                     </li>
                                 </ul>
                                 <div class="tel_num" v-if="property">
