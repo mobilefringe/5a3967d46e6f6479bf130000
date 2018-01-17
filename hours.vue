@@ -69,14 +69,17 @@
               console.log(this.holidayHours);
             },
             computed: {
-                timezone () {
-                  return this.$store.getters.getTimezone;
-                },
+                ...Vuex.mapGetters([
+                    'property',
+                    'timezone',
+                    'getPropertyHours',
+                    'getPropertyHolidayHours'
+                ]),
                 hours () {
-                    return this.$store.getters.getPropertyHours;
+                    return this.getPropertyHours;
                 },
                 holidayHours () {
-                    return this.$store.getters.getPropertyHolidayHours;
+                    return this.getPropertyHolidayHours;
                 },
                 reducedHolidays () {
                     var holidayHours = this.holidayHours;
