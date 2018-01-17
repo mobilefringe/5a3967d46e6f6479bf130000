@@ -1,6 +1,6 @@
 <template>
     <div class="hours_page_container"> <!-- for some reason if you do not put an outer container div this component template will not render -->
-        <!--<img style= "width: 100%;" src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512574241932/placeholder_insidepage_image.png" alt="plaza" class="show_phone">  -->
+        <img style= "width: 100%;" src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/jpeg/1516038406000/HOURS 2018.jpg" alt="plaza" class="show_phone">  
         <div class="page_container">
             <div class="all_hours_container">
                 <div class="row">
