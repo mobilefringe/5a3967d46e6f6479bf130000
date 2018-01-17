@@ -22,28 +22,43 @@
                         <!--<div class="form-group">-->
                             
                         <!--</div>-->
-                        <div class="form-group">
-                            <div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('phone')}">
-                                <label class="label" for="phone">Phone</label>
-                                <input v-model="form_data.phone" v-validate="'required|alpha_dash'" class="form-control" :class="{'input': true}" name="phone" type="phone" placeholder="Phone" data-vv-delay="500">
-                                <span v-show="errors.has('phone')" class="form-control-feedback">{{ errors.first('phone') }}</span>
-                            </div>
-                            <div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('subject')}">
-                                <label class="label" for="subject">Subject</label>
-                                <input v-model="form_data.subject" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="subject" type="text" placeholder="Subject" data-vv-delay="500">
-                                <span v-show="errors.has('subject')" class="form-control-feedback">{{ errors.first('subject') }}</span>
-                            </div>
-                        </div>
-                        <!--<div class="form-group ">-->
-                            
-                        <!--</div>-->
-                        <div class="form-group">
-                            <div class="col-xs-12" :class="{'has-error': errors.has('message')}">
-                                <label class="label" for="message">Message</label>
-                                <textarea v-model="form_data.message" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="message" type="text" placeholder="Message" data-vv-delay="500"></textarea>
-                                <span v-show="errors.has('message')" class="form-control-feedback">{{ errors.first('message') }}</span>
-                            </div>
-                        </div>
+                        <div class="form-group ">
+							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('legalName')}">
+								<label class="label" for="legalName">Legal Name of Organization</label>
+								<input v-model="form_data.legalName" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="legalName" type="text" placeholder="Legal Name of Organization" data-vv-delay="500">
+								<span v-show="errors.has('legalName')" class="form-control-feedback">{{ errors.first('name') }}</span>
+							</div>
+							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('operatingName')}">
+								<label class="label" for="operatingName">Operating Name of Organization(if different)</label>
+								<input v-model="form_data.operatingName" class="form-control" :class="{'input': true}" name="operatingName" type="text" placeholder="Operating Name of Organization" data-vv-delay="500">
+								<span v-show="errors.has('operatingName')" class="form-control-feedback">{{ errors.first('operatingName') }}</span>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('description')}">
+								<label class="label" for="description">Description of Organization</label>
+								<textarea v-model="form_data.description" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="description" type="text" placeholder="Description" data-vv-delay="500" rows="5"></textarea>
+								<span v-show="errors.has('description')" class="form-control-feedback">{{ errors.first('description') }}</span>
+							</div>
+							<div class="col-sm-6 col-xs-12 no_padding" >
+								<div class="col-xs-12" :class="{'has-error': errors.has('street')}">
+									<label class="label" for="street">Street Address</label>
+									<input v-model="form_data.street" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="street" type="text" placeholder="Street Address" data-vv-delay="500">
+									<span v-show="errors.has('street')" class="form-control-feedback">{{ errors.first('street') }}</span>
+								</div>
+								<div class="col-sm-6 col-xs-12 " :class="{'has-error': errors.has('city')}" style="padding-top: 20px;">
+									<label class="label" for="city">Town/ City</label>
+									<input v-model="form_data.city" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="city" type="text" placeholder="Town/City" data-vv-delay="500">
+									<span v-show="errors.has('city')" class="form-control-feedback">{{ errors.first('city') }}</span>
+								</div>
+								<div class="col-sm-6 col-xs-12 " :class="{'has-error': errors.has('postal')}"  style="padding-top: 20px;">
+									<label class="label" for="postal">Postal Code</label>
+									<input v-model="form_data.postal" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="postal" type="text" placeholder="Postal Code" data-vv-delay="500">
+									<span v-show="errors.has('postal')" class="form-control-feedback">{{ errors.first('postal') }}</span>
+								</div>
+							</div>
+							
+						</div>
                         <div class="form-group">
                             <div class="col-xs-12" :class="{'has-error': errors.has('message')}">
                                 <label class="label" for="validate">Enter the following number below to proceed: {{correctValNum}}</label> 
