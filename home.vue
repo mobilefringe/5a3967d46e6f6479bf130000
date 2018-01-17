@@ -86,6 +86,7 @@
                         banner.image_url = temp_banners[i];
                         i ++;
                     });
+                    return banners;
                 },
                 banner_features () {
                    return  _.slice(this.$store.state.feature_items, 0, 2);
