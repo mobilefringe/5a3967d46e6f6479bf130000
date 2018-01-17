@@ -168,15 +168,15 @@
                     this.processedJobs.map(job => {
                         job.description_short = _.truncate(job.description,{'length': 70});
                     });
-                    var temp_promo = [];
-                    var temp_job = [];
-                    _.forEach(this.processedJobs, function(value, key) {
-                        // var current_promo = vm.findPromoById(value);
-                        value.description_short = _.truncate(value.description, {
-                            'length': 70
-                        });
-                        temp_promo.push(value);
-                    });
+                    // var temp_promo = [];
+                    // var temp_job = [];
+                    // _.forEach(this.processedJobs, function(value, key) {
+                    //     // var current_promo = vm.findPromoById(value);
+                    //     value.description_short = _.truncate(value.description, {
+                    //         'length': 70
+                    //     });
+                    //     temp_promo.push(value);
+                    // });
                     _.sortBy(temp_promo, [function(o) { return o.start_date; }]);
                     console.log(temp_promo);
                     return temp_promo;
