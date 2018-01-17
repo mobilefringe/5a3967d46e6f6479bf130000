@@ -123,27 +123,6 @@
                 }
             },
             props:['id'],
-            // beforeRouteEnter(to, from, next) {
-            //     next(vm => {
-            //         // access to component instance via `vm`
-            //         vm.currentPromo = vm.findPromoBySlug(to.params.id);
-            //         console.log(vm.currentPromo);
-            //         if (vm.currentPromo === null || vm.currentPromo === undefined) {
-            //             vm.$router.replace({
-            //                 name: '404'
-            //             });
-            //         }
-            //     })
-            // },
-            // beforeRouteUpdate(to, from, next) {
-            //     this.currentPromo = this.findPromoBySlug(to.params.id);
-            //     console.log(this.currentPromo);
-            //     if (this.currentPromo === null || this.currentPromo === undefined) {
-            //         this.$router.replace({
-            //             name: '404'
-            //         });
-            //     }
-            // },
             created(){
                 this.$store.dispatch("getData", "promotions").then(response => {
                     this.updateCurrentPromo(this.id);
