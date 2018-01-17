@@ -86,9 +86,6 @@
                                     <li v-for="item in menu_items">
                                         <router-link :to="item.href" :id="item.id" class="all_caps">{{item.name}} </router-link>
                                     </li>
-                                    <li>
-                                        <router-link to="/map" id="map_link" class="all_caps"> Centre Map </router-link>
-                                    </li>
                                 </ul>
                                 <div class="tel_num" v-if="property">
                                     <a :href="'tel:'+property.contact_phone">{{property.contact_phone}}</a>
