@@ -94,8 +94,8 @@
                     temp_features = _.slice(this.$store.state.feature_items, 0, 2);
                     temp_images = ["",""];
                     var i  = 0;
-                    temp_features.map(banner => {
-                        banner.image_url = temp_images[i];
+                    temp_features.map(feature => {
+                        feature.image_url = temp_images[i];
                         i ++;
                     });
                     return temp_features ;
