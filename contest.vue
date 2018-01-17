@@ -123,9 +123,9 @@
                 }
             },
             created() {
-                this.$store.dispatch("getData", "contest").then(response => {
+                this.$store.dispatch("getData", "contests").then(response => {
                     this.dataloaded = true;
-                    this.all_photos = this.findRepoByName('photos').images;
+                    this.all_photos = this.getContestBySlug('photos').images;
                     console.log(this.all_photos);
                 }, error => {
                     console.error("Could not retrieve data from server. Please check internet connection and try again.");
