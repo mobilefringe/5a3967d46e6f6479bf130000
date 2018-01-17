@@ -93,7 +93,12 @@
 					</div>
 				</div>
 			</div>
-			<router-view></router-view>
+			<transition name="fade">
+                <div class="loading-container" v-if="!dataLoaded">
+                    <vue-simple-spinner size="huge" message="Eastgate Square is loading..."></vue-simple-spinner>    
+                </div>
+			    <router-view></router-view>
+			</transition>
 			<div class="mobile-social-div visible-phone">
 			</div>
 			<div class="footer-div hidden-phone" id="footer-div">
