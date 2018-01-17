@@ -145,13 +145,6 @@
                         this.form_data.fromDate = this.fromDate;
                         // this.form_data.toDate = ;
                     }
-                },
-                toDate (){
-                    if(this.toDate !=  null) {
-                        console.log("this.toDate", this.toDate);
-                        console.log("this.toDate format", moment(this.toDate).format("MM/DD/YYYY"));
-                        this.form_data.toDate = this.toDate;
-                    }
                 }
             },
             computed: {
