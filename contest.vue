@@ -95,38 +95,6 @@
 								<span v-show="errors.has('lLicense')" class="form-control-feedback">{{ errors.first('lLicense') }}</span>
 							</div>
 						</div>
-						<div class="form-group ">
-							<div class="col-sm-3 col-xs-12" :class="{'has-error': errors.has('fromDate')}">
-								<label class="label" for="fromDate">From Date</label>
-								<!--<input v-model="form_data.fromDate" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="fromDate" type="text" placeholder="From Date" data-vv-delay="500">-->
-								<!--<v-calendar></v-calendar>-->
-                                <v-date-picker mode='single' v-model='fromDate'  v-validate="'required:true'" :available-dates='{ start: new Date(), end: null }' select-color='green' :theme-styles='themeStyles'></v-date-picker>
-								<span v-show="errors.has('fromDate')" class="form-control-feedback">{{ errors.first('fromDate') }}</span>
-							</div>
-							<div class="col-sm-3 col-xs-12" :class="{'has-error': errors.has('toDate')}">
-								<label class="label" for="toDate">To Date</label>
-								<!--<input v-model="form_data.toDate" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="toDate" type="text" placeholder="To Date" data-vv-delay="500">-->
-								<v-date-picker mode='single' v-model='toDate'  v-validate="'required:true'" :available-dates='{ start: fromDate, end: null }'></v-date-picker>
-								<span v-show="errors.has('toDate')" class="form-control-feedback">{{ errors.first('toDate') }}</span>
-							</div>
-							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('aAttendance')}">
-								<label class="label" for="aAttendance"> Anticipated Attendance</label>
-								<input v-model="form_data.aAttendance" class="form-control" :class="{'input': true}" name="aAttendance" type="text" placeholder="Anticipated Attendance" data-vv-delay="500">
-								<span v-show="errors.has('aAttendance')" class="form-control-feedback">{{ errors.first('aAttendance') }}</span>
-							</div>
-						</div>
-						<div class="form-group">
-						    <div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('purpose')}">
-								<label class="label" for="purpose">Purpose for use of in-mall space</label>
-								<textarea v-model="form_data.purpose" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="purpose" type="text" placeholder="Purpose" data-vv-delay="500" rows="5"></textarea>
-								<span v-show="errors.has('purpose')" class="form-control-feedback">{{ errors.first('descrpurposeiption') }}</span>
-							</div>
-							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('requirement')}">
-								<label class="label" for="requirement">Please specify any other requirements</label>
-								<textarea v-model="form_data.requirement" class="form-control" :class="{'input': true}" name="requirement" type="text" placeholder="Requirements" data-vv-delay="500" rows="5"></textarea>
-								<span v-show="errors.has('requirement')" class="form-control-feedback">{{ errors.first('requirement') }}</span>
-							</div>
-						</div>
 						<div class="form-group">
 							<div class="col-xs-6" :class="{'has-error': errors.has('validate')}">
 								<label class="label" for="validate">Enter the following number below to proceed: {{correctValNum}}</label> 
