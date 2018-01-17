@@ -127,7 +127,7 @@
                 this.$store.dispatch("getData", "contests").then(response => {
                     this.dataloaded = true;
                     this.currentContest = this.findContestBySlug('eastgate-enter-to-win');
-                    console.log(this.all_photos);
+                    console.log(this.currentContest);
                 }, error => {
                     console.error("Could not retrieve data from server. Please check internet connection and try again.");
                 });
