@@ -175,6 +175,20 @@
                 }
             },
             methods: {
+                updateCurrentPage (id) {
+                    this.$store.dispatch('LOAD_PAGE_DATA', {
+                        url: this.property.mm_host + "/pages/" + id + ".json"
+                    }).then(response => {
+                        // this.dataLoaded = true;
+                        this.currentPage = response.data;
+                        console.log(this.currentPage);
+                    }, error => {
+                        console.error("Could not retrieve data from server. Please check internet connection and try again.");
+                        this.$router.replace({
+                            name: '404'
+                        });
+                    });
+                },
                 validateBeforeSubmit() {
                     if(this.correctValNum === this.validaNum) {
                         this.validNumError = false;
