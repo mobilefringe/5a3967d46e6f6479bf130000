@@ -111,6 +111,9 @@
                     temp_val.url = "/promotions";
                     new_features.push(temp_val, temp_val);
                     
+                    temp_images = ["",""];
+                    var i  = 0;
+                    
                     new_features.map(feature => {
                         feature.short_description = _.truncate(feature.description,{'length': 50});
                     });
