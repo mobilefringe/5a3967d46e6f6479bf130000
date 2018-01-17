@@ -15,7 +15,7 @@
                     <form class="form-horizontal padding_top_20" action="form-submit" v-on:submit.prevent="validateBeforeSubmit">
 						<div class="form-group ">
 							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('legalName')}">
-								<label class="label" for="legalName">Legal Name of Organization</label>
+								<label class="label" for="legalName">First Name</label>
 								<input v-model="form_data.legalName" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="legalName" type="text" placeholder="Legal Name of Organization" data-vv-delay="500">
 								<span v-show="errors.has('legalName')" class="form-control-feedback">{{ errors.first('name') }}</span>
 							</div>
