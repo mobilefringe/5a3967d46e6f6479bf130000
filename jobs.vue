@@ -145,7 +145,7 @@
             data: function() {
                 return {
                     // selectedDate: null,
-                    processedJobs:[]
+                    filteredJobs:[]
                 }
             },
             created () {
