@@ -69,9 +69,6 @@
 								</div>
 							</div>
 						</div>
-						<div class="page_header all_caps double_border_top double_border_bottom">
-							<div class="page_container text_left">Contact Info</div>
-						</div>
 						<div class="form-group ">
 							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('contactName')}">
 								<label class="label" for="contactName">Authorized Contact Person</label>
