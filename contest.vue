@@ -6,6 +6,9 @@
                 </div> 
             <div class="row"> 
                 <div class="col-sm-12 contact_contents">
+                    <div class="page_header all_caps double_border_top double_border_bottom">
+						<div class="page_container text_left">Business Contact Info</div>
+					</div>
                     <div class="description_text text_left">
                         {{currentContest.description}}
                     </div>
