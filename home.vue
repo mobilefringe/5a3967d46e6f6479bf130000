@@ -80,7 +80,9 @@
                     // console.log(_.orderBy(this.$store.state.banners, ['position'], ['asc']));
                     //  return _.orderBy(this.$store.state.banners, ['position'], ['asc']);
                     banners = _.orderBy(this.$store.state.banners, ['position'], ['asc']);
-                    
+                    banners.map(banner => {
+                        feature.short_description = _.truncate(feature.description,{'length': 50});
+                    });
                 },
                 banner_features () {
                    return  _.slice(this.$store.state.feature_items, 0, 2);
