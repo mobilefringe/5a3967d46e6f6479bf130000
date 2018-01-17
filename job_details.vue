@@ -164,7 +164,7 @@
                     'findJobById'
                 ]),
                 allJobs() {
-                    return this.$store.getters.processedJobs;
+                    return this.processedJobs;
                 },
                 timezone() {
                     return this.$store.getters.getTimezone;
