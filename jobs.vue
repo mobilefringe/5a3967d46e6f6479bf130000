@@ -148,32 +148,14 @@
                     processedJobs:[]
                 }
             },
-            mounted() {
-                // this.selectedDate = moment().tz(this.timezone).format('MMM D, YYYY');
-                // console.log(this.selectedDate);
-                // var date = moment(this.selectedDate).date();
-                // console.log("date is", date);
-                // $("#date_"+ date).addClass('active');
-                // $("#date_29").addClass('active');
-            },
-            watch: {
-                // selectedDate: function() {
-                    
-                //     //sort promos
-                //     selected = moment(this.selectedDate).format('MM DD YYYY');
-                //     var vm = this;
-                //     vm.processedJobs = _.filter(vm.jobs, function(val){
-                //         start_date = moment(val.start_date).tz(vm.timezone).format('MM DD YYYY');
-                //         end_date = moment(val.end_date).tz(vm.timezone).format('MM DD YYYY');
-                //         return moment(selected).isBetween(start_date,end_date, null, '[]');
-                //     });
-                //     console.log(this.processedJobs);
-                    
-                //     //change active class 
-                //     old_date = moment(this.selectedDate).date();
-                //     $(".all_dates span").removeClass('active');
-                //     $("#date_"+old_date).addClass('active');
-                // }
+            created () {
+                this.$store.dispatch("getData", "events").then(response => {
+                    // console.log(response);
+                   this.dataLoaded = true;
+                }, error => {
+                    console.error("Could not retrieve data from server. Please check internet connection and try again.");
+                    this.$router.replace({ name: '404'});
+                });
             },
             computed: {
                 jobs() {
