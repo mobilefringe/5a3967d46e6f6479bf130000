@@ -53,26 +53,6 @@
 							</div>
 						</div>
 						<div class="form-group">
-							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('email')}">
-								<label class="label" for="email">Email</label>
-								<input v-model="form_data.email" v-validate="'required|email'" class="form-control" :class="{'input': true}" name="email" type="email" placeholder="Email" data-vv-delay="500">
-								<span v-show="errors.has('email')" class="form-control-feedback">{{ errors.first('email') }}</span>
-							</div>
-							<div class="col-sm-6 col-xs-12 no_padding" >
-								<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('phone')}">
-									<label class="label" for="phone">Telephone Number</label>
-									<input v-model="form_data.phone" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="phone" type="text" placeholder="Phone number" data-vv-delay="500">
-									<span v-show="errors.has('phone')" class="form-control-feedback">{{ errors.first('phone') }}</span>
-								</div>
-								<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('fax')}">
-									<label class="label" for="fax">Fax Number</label>
-									<input v-model="form_data.fax" class="form-control" :class="{'input': true}" name="fax" type="text" placeholder="Fax" data-vv-delay="500">
-									<span v-show="errors.has('fax')" class="form-control-feedback">{{ errors.first('fax') }}</span>
-								</div>
-							</div>
-						</div>
-					
-						<div class="form-group">
 							<div class="col-xs-6" :class="{'has-error': errors.has('validate')}">
 								<label class="label" for="validate">Enter the following number below to proceed: {{correctValNum}}</label> 
 								<input v-model="validaNum" v-validate="'required|numeric|min:6|max:6'" class="form-control col-xs-3" :class="{'input': true}" name="validate" type="text" placeholder="Enter above number" data-vv-delay="500">
