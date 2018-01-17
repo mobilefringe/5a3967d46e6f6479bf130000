@@ -92,7 +92,7 @@
                 banner_features () {
                     // return  _.slice(this.$store.state.feature_items, 0, 2);
                     temp_features = _.slice(this.$store.state.feature_items, 0, 2);
-                    temp_images = ["",""];
+                    temp_images = ["//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/jpeg/1516038407000/Find your Store.jpg","//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/jpeg/1516038405000/Shopping Hours-1.jpg"];
                     var i  = 0;
                     temp_features.map(feature => {
                         feature.image_url = temp_images[i];
