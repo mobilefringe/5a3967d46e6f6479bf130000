@@ -54,7 +54,7 @@
 			</div>
 		</div>
 		<div class="promo_container" v-else>
-		    <p> Sorry, No sales or jobs available for this day. </p>
+		    <p style="padding:20px">  Sorry, No sales or jobs available for this day. </p>
 		</div>
 	</div>
 </template>
