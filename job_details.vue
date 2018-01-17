@@ -125,27 +125,13 @@
                 }
             },
             props:['id'],
-            // beforeRouteEnter(to, from, next) {
-            //     next(vm => {
-            //         // access to component instance via `vm`
-            //         vm.currentJob = vm.findJobBySlug(to.params.id);
-            //         console.log(vm.currentJob);
-            //         if (vm.currentJob === null || vm.currentJob === undefined) {
-            //             vm.$router.replace({
-            //                 name: '404'
-            //             });
-            //         }
-            //     })
-            // },
-            // beforeRouteUpdate(to, from, next) {
-            //     this.currentJob = this.findJobBySlug(to.params.id);
-            //     console.log(this.currentJob);
-            //     if (this.currentJob === null || this.currentJob === undefined) {
-            //         this.$router.replace({
-            //             name: '404'
-            //         });
-            //     }
-            // },
+            created() {
+                this.$store.dispatch("getData", "events").then(response => {
+                    this.updateCurrentEvent(this.id);
+                }, error => {
+                    console.error("Could not retrieve data from server. Please check internet connection and try again.");
+                });
+            },
             watch: {
                 map: function() {
                     var vm = this;
