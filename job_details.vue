@@ -159,19 +159,10 @@
                 ...Vuex.mapGetters([
                     'property',
                     'timezone',
-                    'processedEvents',
+                    'processedJobs',
                     'findJobBySlug',
                     'findJobById'
                 ]),
-                findJobBySlug() {
-                    return this.$store.getters.findJobBySlug;
-                },
-                findJobById() {
-                    return this.$store.getters.findJobById;
-                },
-                property() {
-                    return this.$store.getters.getProperty;
-                },
                 allJobs() {
                     return this.$store.getters.processedJobs;
                 },
