@@ -177,7 +177,7 @@
                     //     });
                     //     temp_promo.push(value);
                     // });
-                    _.sortBy(temp_promo, [function(o) { return o.start_date; }]);
+                    _.sortBy(this.processedJobs, [function(o) { return o.start_date; }]);
                     console.log(temp_promo);
                     return temp_promo;
                 },
