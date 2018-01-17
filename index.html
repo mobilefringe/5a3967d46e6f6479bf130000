@@ -21,114 +21,113 @@
 	<body>
 		<div id="app" v-cloak v-if="dataLoaded">
 		    <div class="header-container hidden-phone " id="top">
-    				<div class="header page_container">
-    					<div class="col-sm-6 text_left no_padding">
-    						<router-link to="/" exact>
-    							<img class="site-logo" src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1513713887462/ES_logo_Colour (1).png">
-    						</router-link>
-    					</div>
-    					<div class="col-sm-6">
-    						<div class="social-div social_icons">
-    							<router-link to="/contact_us" style="font-size:12px; margin-right:10px; color:#999999;display: inline-block;height: 30px;line-height: 30px;">CONTACT US</router-link>
-    							<a href="https://www.snapchat.com/" target="_blank" class="social_link_icon social_snapchat">
-    								<!--<img id="Snapchat" class="social_link_icon" src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797672502/snapchat.png">-->
-    							</a>
-    							<a href="http://www.facebook.com/" target="_blank" class="social_link_icon social_fb">
-    								<!--<img id="Facebook" class="social_link_icon" src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797683914/facebook.png">-->
-    							</a>
-    							<!--<a href="http://www.instagram.com/" target="_blank" class="social_link_icon social_insta">-->
-    							<!--<img id="Instagram" class="social_link_icon" src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797694182/insta.png">-->
-    							<!--</a>-->
-    							<a href="http://www.twitter.com/" target="_blank" class="social_link_icon social_twitter">
-    								<!--<img id="Twitter" class="social_link_icon" src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797704155/twitter.png">-->
-    							</a>
-    						</div>
-    						<div class="newsletter-div">
-    							<div class="newsletter_box" style="margin-bottom:5px">
-    								<form style="margin:0" action="//mobilefringe.createsend.com/t/d/s/irudui/" method="post">
-    									<div class="input_box">
-    										<input class="sub_input_text" id="fieldEmail" name="cm-irudui-irudui" type="email" required placeholder="ENTER YOUR EMAIL TO SUBSCRIBE" />
-    										<button type="submit" style="background-color:transparent;" v-on:click="warn($event)"><img src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797731769/newsletter.png"></button>
-    									</div>
-    								</form>
-    							</div>
-    							<div id="search-form" class="search-form">
-    								<div class="input_box">
-    									<!--<input class="sub_input_text" id="SearchTerms" placeholder="SEARCH" onkeydown="if (event.keyCode ==13) document.getElementById('search_button').click()" />-->
-    									<!--<button id="search_button" class="search_button" onclick="search_site();" style="background-color:transparent;"> <img src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1514998294110/search_icon.png"> </button>-->
-    									<search-component :list="allStores" placeholder="SEARCH" :suggestion-attribute="suggestionAttribute" v-model="search_result" @select="onOptionSelect" class="text-left">
-                                            <template slot="item" scope="option" class="manual">
-                                                <article class="media">
-                                                    <p>
-                                                        <strong>{{ option.data.name }}</strong>
-                                                    </p>
-                                                </article>
-                                            </template>
-                                        </search-component>
-                                        <img src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1514998294110/search_icon.png" id="search_icon"> 
+				<div class="header page_container">
+					<div class="col-sm-6 text_left no_padding">
+						<router-link to="/" exact>
+							<img class="site-logo" src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1513713887462/ES_logo_Colour (1).png">
+						</router-link>
+					</div>
+					<div class="col-sm-6">
+						<div class="social-div social_icons">
+							<router-link to="/contact_us" style="font-size:12px; margin-right:10px; color:#999999;display: inline-block;height: 30px;line-height: 30px;">CONTACT US</router-link>
+							<a href="https://www.snapchat.com/" target="_blank" class="social_link_icon social_snapchat">
+								<!--<img id="Snapchat" class="social_link_icon" src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797672502/snapchat.png">-->
+							</a>
+							<a href="http://www.facebook.com/" target="_blank" class="social_link_icon social_fb">
+								<!--<img id="Facebook" class="social_link_icon" src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797683914/facebook.png">-->
+							</a>
+							<!--<a href="http://www.instagram.com/" target="_blank" class="social_link_icon social_insta">-->
+							<!--<img id="Instagram" class="social_link_icon" src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797694182/insta.png">-->
+							<!--</a>-->
+							<a href="http://www.twitter.com/" target="_blank" class="social_link_icon social_twitter">
+								<!--<img id="Twitter" class="social_link_icon" src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797704155/twitter.png">-->
+							</a>
+						</div>
+						<div class="newsletter-div">
+							<div class="newsletter_box" style="margin-bottom:5px">
+								<form style="margin:0" action="//mobilefringe.createsend.com/t/d/s/irudui/" method="post">
+									<div class="input_box">
+										<input class="sub_input_text" id="fieldEmail" name="cm-irudui-irudui" type="email" required placeholder="ENTER YOUR EMAIL TO SUBSCRIBE" />
+										<button type="submit" style="background-color:transparent;" v-on:click="warn($event)"><img src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1511797731769/newsletter.png"></button>
+									</div>
+								</form>
+							</div>
+							<div id="search-form" class="search-form">
+								<div class="input_box">
+									<!--<input class="sub_input_text" id="SearchTerms" placeholder="SEARCH" onkeydown="if (event.keyCode ==13) document.getElementById('search_button').click()" />-->
+									<!--<button id="search_button" class="search_button" onclick="search_site();" style="background-color:transparent;"> <img src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1514998294110/search_icon.png"> </button>-->
+									<search-component :list="allStores" placeholder="SEARCH" :suggestion-attribute="suggestionAttribute" v-model="search_result" @select="onOptionSelect" class="text-left">
+                                        <template slot="item" scope="option" class="manual">
+                                            <article class="media">
+                                                <p>
+                                                    <strong>{{ option.data.name }}</strong>
+                                                </p>
+                                            </article>
+                                        </template>
+                                    </search-component>
+                                    <img src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1514998294110/search_icon.png" id="search_icon"> 
+								</div>
+								<div class="input submit"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="menu-container hidden-phone ">
+				<div class="menu-div page_container">
+					<div v-for="item in menu_items" :class="item.parent_class_list" style="display: inline-block;padding: 0 20px;">
+						<router-link :to="item.href" class="all_caps menu_link"  :id="item.name.id" exact v-if="item.sub_menu == undefined">
+							<!--<a href="" class="menu_link" :id="item.name.id">-->
+							{{item.name}} 
+							    
+							<!--</a>-->
+						</router-link>
+						<div v-else class="all_caps dropdown">
+							<div class="menu_link" :id="item.name.id" @click="item.show_sub_menu = !item.show_sub_menu">{{item.name}} </div>
+							<transition name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">
+								<div class="dropdown-menu" v-if="item.sub_menu" v-show="item.show_sub_menu">
+									<router-link tag="li" class="dropdown-item" v-for="sub_menu in item.sub_menu" :to="sub_menu.href">{{sub_menu.name}}</router-link>
+								</div>
+							</transition>
+						</div>
+					</div>
+				</div>
+			</div>
+			<router-view></router-view>
+			<div class="mobile-social-div visible-phone">
+			</div>
+			<div class="footer-div hidden-phone" id="footer-div">
+				<div class="footer-top page_container">
+					<div class="row" style="margin:auto">
+						<span>
+							<p class="pull-left"> <span href="" @click="toggle_sitemap = !toggle_sitemap;">Sitemap</span> | <a href="/pages/eastgate-privacy-policy">Privacy Policy</a> | <a href="/pages/canyoncrest-contact-us">Contact Us</a> | <a href="/login">Admin Login</a> | <a href="http://www.mallmaverick.com" target="_blank">Powered by Mall Maverick</a>  | </p>
+						</span>
+						<span>
+							<p class="pull-right">&copy; Copyright {{copyright_year}} {{property.name}}</p>
+						</span>
+					</div>
+					<div>
+						<span>
+							<p class="pull-left" v-if="property"> {{property.address1}} {{property.city}}{{property.province}} {{property.postal_code}} - 214.363.7441</p>
+						</span>
+					</div>
+				</div>
+				<transition  name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">
+    				<div class="footer-bottom hidden-phone " v-if="toggle_sitemap">
+    					<div class="footer-bottom-title-div ">
+    						<div class="page_container">
+    							<div v-for="item in menu_items" :id="item.parent_id" class="footer_menu_title col-sm-2">
+    								<router-link :to="item.href" :id="item.id" exact>{{item.name}} </router-link>
+    								<div v-for="sub_menu in item.sub_menu">
+    								    <router-link :to="sub_menu.href" :id="sub_menu.id" exact>{{sub_menu.name}} </router-link>
     								</div>
-    								<div class="input submit"></div>
     							</div>
+    							&nbsp;
     						</div>
     					</div>
     				</div>
-    			</div>
-    			<div class="menu-container hidden-phone ">
-    				<div class="menu-div page_container">
-    					<div v-for="item in menu_items" :class="item.parent_class_list" style="display: inline-block;padding: 0 20px;">
-    						<router-link :to="item.href" class="all_caps menu_link"  :id="item.name.id" exact v-if="item.sub_menu == undefined">
-    							<!--<a href="" class="menu_link" :id="item.name.id">-->
-    							{{item.name}} 
-    							    
-    							<!--</a>-->
-    						</router-link>
-    						<div v-else class="all_caps dropdown">
-    							<div class="menu_link" :id="item.name.id" @click="item.show_sub_menu = !item.show_sub_menu">{{item.name}} </div>
-    							<transition name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">
-    								<div class="dropdown-menu" v-if="item.sub_menu" v-show="item.show_sub_menu">
-    									<router-link tag="li" class="dropdown-item" v-for="sub_menu in item.sub_menu" :to="sub_menu.href">{{sub_menu.name}}</router-link>
-    								</div>
-    							</transition>
-    						</div>
-    					</div>
-    				</div>
-    			</div>
-    			<router-view></router-view>
-    			<div class="mobile-social-div visible-phone">
-    			</div>
-    			<div class="footer-div hidden-phone" id="footer-div">
-    				<div class="footer-top page_container">
-    					<div class="row" style="margin:auto">
-    						<span>
-    							<p class="pull-left"> <span href="" @click="toggle_sitemap = !toggle_sitemap;">Sitemap</span> | <a href="/pages/eastgate-privacy-policy">Privacy Policy</a> | <a href="/pages/canyoncrest-contact-us">Contact Us</a> | <a href="/login">Admin Login</a> | <a href="http://www.mallmaverick.com" target="_blank">Powered by Mall Maverick</a>  | </p>
-    						</span>
-    						<span>
-    							<p class="pull-right">&copy; Copyright {{copyright_year}} {{property.name}}</p>
-    						</span>
-    					</div>
-    					<div>
-    						<span>
-    							<p class="pull-left" v-if="property"> {{property.address1}} {{property.city}}{{property.province}} {{property.postal_code}} - 214.363.7441</p>
-    						</span>
-    					</div>
-    				</div>
-    				<transition  name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">
-        				<div class="footer-bottom hidden-phone " v-if="toggle_sitemap">
-        					<div class="footer-bottom-title-div ">
-        						<div class="page_container">
-        							<div v-for="item in menu_items" :id="item.parent_id" class="footer_menu_title col-sm-2">
-        								<router-link :to="item.href" :id="item.id" exact>{{item.name}} </router-link>
-        								<div v-for="sub_menu in item.sub_menu">
-        								    <router-link :to="sub_menu.href" :id="sub_menu.id" exact>{{sub_menu.name}} </router-link>
-        								</div>
-        							</div>
-        							&nbsp;
-        						</div>
-        					</div>
-        				</div>
-    				</transition>
-    			</div>
-    		</transition>
+				</transition>
+			</div>
     	</div>
 		<script src="https://unpkg.com/babel-polyfill@6.26.0/dist/polyfill.min.js"></script>
         <script src="https://unpkg.com/es6-shim@0.35.3/es6-shim.min.js"></script>
