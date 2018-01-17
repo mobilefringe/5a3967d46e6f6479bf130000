@@ -37,10 +37,10 @@
 								<span v-show="errors.has('phone')" class="form-control-feedback">{{ errors.first('phone') }}</span>
 							</div>
 							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('street')}">
-									<label class="label" for="street">Street Address</label>
-									<input v-model="form_data.street" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="street" type="text" placeholder="Street Address" data-vv-delay="500">
-									<span v-show="errors.has('street')" class="form-control-feedback">{{ errors.first('street') }}</span>
-								</div>
+								<label class="label" for="street">Street Address</label>
+								<input v-model="form_data.street" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="street" type="text" placeholder="Street Address" data-vv-delay="500">
+								<span v-show="errors.has('street')" class="form-control-feedback">{{ errors.first('street') }}</span>
+							</div>
 							<div class="col-sm-6 col-xs-12 no_padding" >
 								<div class="col-xs-12" :class="{'has-error': errors.has('street')}">
 									<label class="label" for="street">Street Address</label>
