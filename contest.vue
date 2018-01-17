@@ -144,7 +144,8 @@
             computed: {
                 ...Vuex.mapGetters([
                     'property',
-                    'timezone'
+                    'timezone',
+                    'findContestBySlug'
                 ]),
                 // timezone () {
                 //   return this.$store.getters.getTimezone;
