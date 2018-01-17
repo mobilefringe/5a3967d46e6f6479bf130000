@@ -22,14 +22,19 @@
 							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('last_name')}">
 								<label class="label" for="last_name">Last Name</label>
 								<input v-model="form_data.last_name" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="last_name" type="text" placeholder="Last Name" data-vv-delay="500">
-								<span v-show="errors.has('last_name')" class="form-control-feedback">{{ errors.first('first_name') }}</span>
+								<span v-show="errors.has('last_name')" class="form-control-feedback">{{ errors.first('last_name') }}</span>
 							</div>
 						</div>
 						<div class="form-group">
-							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('description')}">
-								<label class="label" for="description">Description of Organization</label>
-								<textarea v-model="form_data.description" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="description" type="text" placeholder="Description" data-vv-delay="500" rows="5"></textarea>
-								<span v-show="errors.has('description')" class="form-control-feedback">{{ errors.first('description') }}</span>
+							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('email')}">
+								<label class="label" for="email">Email</label>
+								<input v-model="form_data.email" v-validate="'required|email'" class="form-control" :class="{'input': true}" name="email" type="email" placeholder="Email" data-vv-delay="500">
+								<span v-show="errors.has('email')" class="form-control-feedback">{{ errors.first('email') }}</span>
+							</div>
+							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('email')}">
+								<label class="label" for="email">Email</label>
+								<input v-model="form_data.email" v-validate="'required|email'" class="form-control" :class="{'input': true}" name="email" type="email" placeholder="Email" data-vv-delay="500">
+								<span v-show="errors.has('email')" class="form-control-feedback">{{ errors.first('email') }}</span>
 							</div>
 							<div class="col-sm-6 col-xs-12 no_padding" >
 								<div class="col-xs-12" :class="{'has-error': errors.has('street')}">
