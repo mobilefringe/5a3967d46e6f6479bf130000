@@ -1,5 +1,5 @@
 <template>
-    <div class=" page_container" id="promotions_container"> <!-- for some reason if you do not put an outer container div this component template will not render -->
+    <div class="page_container" id="promotions_container"> <!-- for some reason if you do not put an outer container div this component template will not render -->
         <div class="margin_25_across padding_top_40">
             <div class="row">
                 <div class="col-md-12 text-center">
@@ -55,7 +55,11 @@
         </div>
     </div>
 </template>
-
+<Style>
+    .checkbox {
+        font-weight: normal;
+    }
+</Style>
 <script>
     define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "vue-meta", 'vee-validate'], function(Vue, Vuex, moment, tz, VueMoment, Meta, VeeValidate) {
         Vue.use(Meta);
