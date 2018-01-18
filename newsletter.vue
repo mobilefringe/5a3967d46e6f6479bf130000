@@ -55,11 +55,11 @@
         </div>
     </div>
 </template>
-<Style>
+<style>
     .checkbox {
         font-weight: normal;
     }
-</Style>
+</style>
 <script>
     define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "vue-meta", 'vee-validate'], function(Vue, Vuex, moment, tz, VueMoment, Meta, VeeValidate) {
         Vue.use(Meta);
