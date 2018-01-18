@@ -26,7 +26,7 @@
                         </div>
                         <div class="col-xs-12" :class="{'has-error': errors.has('agree_newsletter')}">
 					        <label class="checkbox">
-                                <input name="agree_newsletter"  type="checkbox">
+                                <input name="agree_newsletter" v-validate="'required'"  type="checkbox">
                                     Yes, I would like to receive ongoing news related to events, promotions and special announcements from Eastgate Square. 
                             </label>
                             <span v-show="errors.has('agree_newsletter')" class="form-control-feedback text-left">{{ errors.first('agree_newsletter') }}</span>
