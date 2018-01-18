@@ -111,7 +111,8 @@ define([], function() {
             children: [{
                 path: '',
                 component: view('newsletter'),
-                name: 'newsletter'
+                name: 'newsletter',
+                props: true
             }]
         },
         {
