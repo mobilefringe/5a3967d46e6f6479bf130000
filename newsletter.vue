@@ -125,6 +125,7 @@
                             //         this.formError = true;
                             //     }
                             // })
+                            if(errors.length > 0)
                         }
                     })
                 }
