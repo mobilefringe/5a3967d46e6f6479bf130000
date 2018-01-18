@@ -9,7 +9,7 @@
             <hr/>
             <div class="row"> 
                 <div class="col-md-12 contact_contents padding_top_20">
-                    <form class="form-horizontal" action="form-submit" @submit.prevent="validateBeforeSubmit">
+                    <form class="form-horizontal" action="form-submit" action="//mobilefringe.createsend.com/t/d/s/irudui/" method="post">
                         <div class="form-group ">
                             <div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('name')}">
                                 <label class="label" for="name">Name</label>
