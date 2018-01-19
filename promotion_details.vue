@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="col-sm-4 promo_logo_container hidden_phone">
 				<div>
-					<img src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1513713887462/ES_logo_Colour (1).png"/>
+					<img :src="currentPromo.store.image_url"/>
 				</div>
 			</div>
 			<div class="col-sm-8 promo_image_container text-left">
