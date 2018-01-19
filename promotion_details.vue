@@ -76,9 +76,6 @@
 	</div>
 </template>
 <style>
-    .promo_dets_container .row{
-        margin-left:inherit;
-    }
     /*.promo_dets_container .row.is-table-row [class*="col-"] {*/
     /*    padding-top: inherit;*/
     /*    padding-bottom: inherit;*/
