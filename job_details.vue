@@ -112,12 +112,12 @@
             watch: {
                 currentJob : function (){
                     if(this.currentJob != null) {
-                        if (this.currentPromo.store != null && this.currentPromo.store != undefined && _.includes(this.currentPromo.store.image_url, 'missing')) {
-                            this.currentPromo.store.image_url = "//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1513713762402/ES_logo_Colour.png";
+                        if (this.currentJob.store != null && this.currentJob.store != undefined && _.includes(this.currentJob.store.image_url, 'missing')) {
+                            this.currentJob.store.image_url = "//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1513713762402/ES_logo_Colour.png";
                         }
-                        else if (this.currentPromo.store == null || this.currentPromo.store == undefined) {
-                            this.currentPromo.store = {};
-                            this.currentPromo.store.image_url =  "//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1513713762402/ES_logo_Colour.png";
+                        else if (this.currentJob.store == null || this.currentJob.store == undefined) {
+                            this.currentJob.store = {};
+                            this.currentJob.store.image_url =  "//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1513713762402/ES_logo_Colour.png";
                         }
                     var vm = this;
                     var temp_job = [];
