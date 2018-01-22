@@ -24,8 +24,6 @@
                 <div class="loading-container" v-if="!dataLoaded">
                    <vue-simple-spinner size="huge" message="Eastgate Square is loading..."></vue-simple-spinner>
                 </div>
-                <router-view class="content"></router-view>
-            </transition>
          <div class="header-container hidden-phone " id="top">
             <div class="header page_container">
                <div class="col-sm-6 text_left no_padding">
@@ -161,6 +159,8 @@
                </div>
             </transition>
          </div>
+         
+            </transition>
       </div>
       <div class='modal-backdrop custom_backdrop hidden_now' id="popup_backdrop"></div>
       <script src="https://unpkg.com/babel-polyfill@6.26.0/dist/polyfill.min.js"></script>
