@@ -112,7 +112,7 @@
                         }
                         else if (this.currentPromo.store == null || this.currentPromo.store == undefined) {
                             this.currentPromo.store = {};
-                            this.currentPromo.store.image_url =  "//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1516375860488/eslogosq@2x.png";
+                            this.currentPromo.store.image_url =  "//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1516652189884/ES_logo_red2.png";
                         }
                     var vm = this;
                     var temp_promo = [];
