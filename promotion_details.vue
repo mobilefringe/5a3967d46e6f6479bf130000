@@ -49,30 +49,6 @@
 		        </div>
 		    </div>
 		</div>
-		<!--<div class="promo_main_header sub_title" v-if="storePromos.length > 0 && property" style="border-top: 1px solid #000;">-->
-  <!--             OTHER {{property.name | uppercase }} EVENTS-->
-  <!--      </div>-->
-  <!--      <div id="promos_container" v-if="storePromos">-->
-  <!--          <div class="col-md-6 col-sm-6 no_padding" v-for="promo in storePromos" :data-cat="promo.cat_list">-->
-  <!--              <div class="promo_item cats_row is-table-row">-->
-  <!--                  <div class="col-md-5 col-xs-4 no_padding">-->
-  <!--                      <img class="promo_promo_image" :src="promo.image_url" :alt="promo.name" />-->
-  <!--                  </div>-->
-  <!--                  <div class="col-md-7 padding_tb_20">-->
-  <!--                      <router-link :to="'/promos/'+promo.slug" class="">-->
-  <!--                          <h2 class="promo_list_name">{{promo.name}}</h2>-->
-  <!--                      </router-link>-->
-  <!--                      <p>-->
-  <!--                          <span class="promo_dates sub_title">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</span>-->
-  <!--                      </p>-->
-  <!--                      <div class="promo_list_desc hidden_phone">{{promo.description_short }}</div>-->
-  <!--                      <div class="text_center position_relative hidden_phone">-->
-  <!--                          <router-link :to="'/promos/'+promo.slug" class="animated_btn text_center">Read More</router-link>-->
-  <!--                      </div>-->
-  <!--                  </div>-->
-  <!--              </div>-->
-  <!--          </div>-->
-  <!--      </div>-->
 	</div>
 </template>
 <style>
