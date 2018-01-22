@@ -108,7 +108,7 @@
                 currentPromo : function (){
                     if(this.currentPromo != null) {
                         if (this.currentPromo.store != null && this.currentPromo.store != undefined && _.includes(this.currentPromo.store.image_url, 'missing')) {
-                            this.currentPromo.store.image_url = "//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1516375860488/eslogosq@2x.png";
+                            this.currentPromo.store.image_url = "//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1516652189884/ES_logo_red2.png";
                         }
                         else if (this.currentPromo.store == null || this.currentPromo.store == undefined) {
                             this.currentPromo.store = {};
