@@ -23,6 +23,7 @@
     }
     #pages_container img{
         width: 100%;
+        height: auto;
     }
 </style>
 <script>
