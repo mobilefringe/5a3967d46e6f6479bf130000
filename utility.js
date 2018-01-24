@@ -1,4 +1,4 @@
-define(['json!en-ca.json', 'json!fr-ca.json'], function (en, fr) {
+define([], function (en, fr) {
   return {
     rannumber() {
         var randnumber = '';
