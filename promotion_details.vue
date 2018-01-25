@@ -114,7 +114,6 @@
                     var vm = this;
                     var temp_promo = [];
                     var current_id =_.toNumber(this.currentPromo.id);
-                    // console.log(x);
                     _.forEach(this.currentPromo.store.promotions, function(value, key) {
                         if(_.toNumber(value) != current_id){
                             var current_promo = vm.findPromoById(value);
