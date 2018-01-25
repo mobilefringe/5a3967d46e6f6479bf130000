@@ -17,11 +17,6 @@ define([], function () {
                 newObj.push(tempVal);
             });
             return newObj;
-        },
-        shareURL(slug, page) {
-            // console.log(window.location.host, "\n http://"+ window.location.host);
-            var share_url = "http://eastgatesquare.ca/"+page +"/" + slug;
-            return share_url;
         }
     }
 });
