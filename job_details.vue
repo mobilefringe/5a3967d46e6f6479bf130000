@@ -85,7 +85,7 @@
             },
             props:['id'],
             beforeRouteUpdate(to, from, next) {
-                this.currentEvent = this.findEventBySlug(to.params.id);
+                this.currentEvent = this.updateCurrentJob(to.params.id);
                 if (this.currentEvent === null || this.currentEvent === undefined) {
                     this.$router.replace({
                         name: '404'
