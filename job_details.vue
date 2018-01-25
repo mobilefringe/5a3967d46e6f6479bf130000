@@ -85,8 +85,8 @@
             },
             props:['id'],
             beforeRouteUpdate(to, from, next) {
-                this.currentJob = this.findJobBySlug(id);
-                if (this.currentJob === null || this.currentJob === undefined) {
+                this.currentEvent = this.findJobBySlug(to.params.id);
+                if (this.currentEvent === null || this.currentEvent === undefined) {
                     this.$router.replace({
                         name: '404'
                     });
@@ -123,6 +123,9 @@
                         this.storeJobs = temp_job;
                     }
                 },
+                $route: function() {
+                    this.updateCurrentJob(this.$route.params.id);
+                }
             },
             computed: {
                 ...Vuex.mapGetters([
