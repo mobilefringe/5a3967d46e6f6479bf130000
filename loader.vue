@@ -1,7 +1,7 @@
 <template>
     <div id="overlay">
         <div class="loading-container">
-            <vue-simple-spinner size="huge" message="Eastgate Square Center is loading..."></vue-simple-spinner>
+            <vue-simple-spinner size="huge" message="Eastgate Square is loading..."></vue-simple-spinner>
         </div>
     </div>
 </template>
@@ -9,7 +9,7 @@
 <script>
     define(["Vue", "vue-simple-spinner"], function (Vue, Spinner) {
         Vue.component("vue-simple-spinner", Spinner);
-        return Vue.component("np-loader", {
+        return Vue.component("loader", {
             template: template, // the variable template will be injected,
             data: function () {
                 return {};
