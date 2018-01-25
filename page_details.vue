@@ -36,6 +36,15 @@
                 }
             },
             props:['id'],
+            beforeRouteUpdate(to, from, next) {
+                this.currentJob = this.findJobBySlug(id);
+                if (this.currentJob === null || this.currentJob === undefined) {
+                    this.$router.replace({
+                        name: '404'
+                    });
+                }
+                next();
+            },
             created(){
                this.updateCurrentPage(this.id);
             },
