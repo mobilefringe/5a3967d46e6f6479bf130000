@@ -112,7 +112,6 @@
                         }
                     });
                         this.storeJobs = temp_job;
-                        console.log("jobs",this.storeJobs);
                     }
                 },
                 $route: function() {
