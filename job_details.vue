@@ -43,12 +43,6 @@
 	</div>
 </template>
 <style>
-    /*.job_dets_container .row.is-table-row [class*="col-"] {*/
-    /*    padding-top: inherit;*/
-    /*    padding-bottom: inherit;*/
-    /*    padding-left: 0;*/
-    /*    padding-right: 0;*/
-    /*}*/
     .job_div_dets {
         margin:20px auto;
     }
