@@ -134,7 +134,7 @@
     				<!--</div>-->
     				<router-view class="content" v-if="dataLoaded"></router-view>
     			</transition>
-    			<div class="footer-div hidden-phone" id="footer-div">
+    			<div class="footer-div hidden-phone" id="footer-div" v-if="dataLoaded">
     				<div class="footer-top page_container">
     					<div class="row" style="margin:auto">
     						<div class="col-sm-6 text-left">
