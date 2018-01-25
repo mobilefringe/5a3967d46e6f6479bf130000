@@ -70,14 +70,12 @@
                 },
                 reducedHolidays () {
                     var holidayHours = this.holidayHours;
-                    console.log(_.filter(holidayHours, function(o) { return !o.is_closed; }));
-                    return _.sortBy(_.filter(holidayHours, function(o) { return !o.is_closed; }), [function(o) { return o.start_date; }]);
+                    return _.filter(holidayHours, function(o) { return !o.is_closed; });
                 },
                 closeHolidays () {
                     var holidayHours = this.holidayHours;
-                    
-                    console.log(_.filter(holidayHours, function(o) { return o.is_closed; }));
-                    return _.filter(holidayHours, function(o) { return o.is_closed; });
+                    // return _.filter(holidayHours, function(o) { return o.is_closed; });
+                    return _.sortBy(_.filter(holidayHours, function(o) { return o.is_closed; }), [function(o) { return o.start_date; }]);
                 }
             }
         });
