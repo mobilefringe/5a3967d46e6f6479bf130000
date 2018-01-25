@@ -75,6 +75,8 @@
                 },
                 closeHolidays () {
                     var holidayHours = this.holidayHours;
+                    
+                    console.log(_.filter(holidayHours, function(o) { return o.is_closed; }));
                     return _.filter(holidayHours, function(o) { return o.is_closed; });
                 }
             }
