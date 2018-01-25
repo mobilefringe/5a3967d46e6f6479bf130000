@@ -37,12 +37,16 @@
             },
             props:['id'],
             beforeRouteUpdate(to, from, next) {
-                this.currentJob = this.findJobBySlug(id);
-                if (this.currentJob === null || this.currentJob === undefined) {
+                this.$store.dispatch('LOAD_PAGE_DATA', {
+                    url: this.property.mm_host + "/pages/" + id + ".json"
+                }).then(response => {
+                    this.currentPage = response.data;
+                }, error => {
+                    console.error("Could not retrieve data from server. Please check internet connection and try again.");
                     this.$router.replace({
                         name: '404'
                     });
-                }
+                });
                 next();
             },
             created(){
