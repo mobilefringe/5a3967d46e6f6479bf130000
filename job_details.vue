@@ -7,7 +7,6 @@
 				</div>
 			</div>
 			<div class="col-sm-8 job_image_container text-left">
-				<!--<img src="http://placehold.it/620x300"/>-->
 				<h1>{{currentJob.name}}</h1>
 					<p class="job_store_name">{{currentJob.store.name}}</p>
 					<!--<p>{{currentJob.phone}}</p>-->
