@@ -17,8 +17,6 @@
                         <img src="//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/jpeg/1516038406000/HOURS 2018.jpg"/>
                     </div> 
                 </div>
-                <!--<div class="padding_top_20 show_phone"></div>-->
-                <!--<hr/>-->
                 <div class="row">
                     <div class="col-md-12 ">
                         <div class="padding_top_20"></div>
