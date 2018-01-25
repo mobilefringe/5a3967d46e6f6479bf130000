@@ -124,9 +124,6 @@
                     });
                         this.storePromos = temp_promo;
                     }
-                },
-                $route : function () {
-                    this.updateCurrentPromo(this.$route.params.id);
                 }
             },
             computed: {
