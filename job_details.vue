@@ -16,7 +16,6 @@
 			<div class="col-sm-12 job_desc_container">
 				<div class="text-left job_description">
 					<p v-html="currentJob.rich_description"></p>
-					<!--<p>{{currentJob.description}}</p>-->
 				</div>
 			</div>
 		</div>
