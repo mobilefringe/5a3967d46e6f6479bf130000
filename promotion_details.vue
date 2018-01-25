@@ -115,7 +115,6 @@
                         }
                     });
                         this.storePromos = temp_promo;
-                        console.log("promos",this.storePromos);
                     }
                 },
                 $route : function () {
