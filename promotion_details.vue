@@ -54,21 +54,21 @@
     #promo_dets_container .promo_desc_container{
         padding: 20px 10px;
     }
-    .promo_image_container img{
+    #promo_dets_container .promo_image_container img{
         max-height: 300px;
     }
-    .promo_logo_container img{
+    #promo_dets_container .promo_logo_container img{
         border: 1px solid #aea99e;
         width:300px;
         height:300px
     }
-    .promo_details_container h1{
+    #promo_dets_container .promo_details_container h1{
         padding: 0;
     }
-    .promo_store_name, .promo_div_date{
+    #promo_dets_container .promo_store_name, .promo_div_date{
         font-size: 16px;
     }
-    .promo_container_title{
+    #promo_dets_container .promo_container_title{
         border-top:1px solid #aea99e;
         border-bottom:1px solid #aea99e;
         height: 35px;
