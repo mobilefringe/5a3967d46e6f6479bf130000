@@ -48,13 +48,6 @@
 	</div>
 </template>
 <style>
-    /*.promo_dets_container .row.is-table-row [class*="col-"] {*/
-    /*    padding-top: inherit;*/
-    /*    padding-bottom: inherit;*/
-    /*    padding-left: 0;*/
-    /*    padding-right: 0;*/
-    /*}*/
-    
     .promo_logo_container,
     .promo_image_container,
     .promo_details_container,
