@@ -31,7 +31,7 @@
    </head>
    <body>
       <div id="app" v-cloak>
-         <div class="header-container hidden-phone " id="top">
+         <div class="header-container hidden-phone " id="top" v-if="dataLoaded">
             <div class="header page_container">
                <div class="col-sm-6 text_left no_padding">
                   <router-link to="/" exact>
