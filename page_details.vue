@@ -4,7 +4,6 @@
 			<div class="page_container text_left" v-html="currentPage.title"> </div>
 		</div>
          <div class="page_container">
-            <!--<div class="page_title text-left all_caps" v-html="currentPage.title"> </div>-->
             <div class="row padding_30" >
                 <div class="page_body description_text text_left" v-html="currentPage.body">
                     
