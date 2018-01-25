@@ -48,10 +48,10 @@
 	</div>
 </template>
 <style>
-    .promo_logo_container,
-    .promo_image_container,
-    .promo_details_container,
-    .promo_desc_container{
+    #promo_dets_container .promo_logo_container,
+    #promo_dets_container .promo_image_container,
+    #promo_dets_container .promo_details_container,
+    #promo_dets_container .promo_desc_container{
         padding: 20px 10px;
     }
     .promo_image_container img{
