@@ -38,7 +38,7 @@
             props:['id'],
             beforeRouteUpdate(to, from, next) {
                 this.$store.dispatch('LOAD_PAGE_DATA', {
-                    url: this.property.mm_host + "/pages/" + id + ".json"
+                    url: this.property.mm_host + "/pages/" + to.params.id + ".json"
                 }).then(response => {
                     this.currentPage = response.data;
                 }, error => {
