@@ -52,11 +52,6 @@
             created(){
                this.updateCurrentPage(this.id);
             },
-            watch: {
-                $route : function () {
-                    this.updateCurrentPage(this.$route.params.id);
-                }  
-            },
             computed: {
                 ...Vuex.mapGetters([
                     'property',
