@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="col-sm-4 job_logo_container">
 				<div>
-					<img :src="currentJob.store.store_front_url_abs" alt=""/>
+					<img v-lazy="currentJob.store.store_front_url_abs" alt=""/>
 				</div>
 			</div>
 			<div class="col-sm-8 job_image_container text-left">
