@@ -123,9 +123,6 @@
                         this.storeJobs = temp_job;
                     }
                 },
-                $route: function() {
-                    this.updateCurrentJob(this.$route.params.id);
-                }
             },
             computed: {
                 ...Vuex.mapGetters([
