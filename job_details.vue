@@ -84,6 +84,15 @@
                 }
             },
             props:['id'],
+            beforeRouteUpdate(to, from, next) {
+                this.currentEvent = this.findEventBySlug(to.params.id);
+                if (this.currentEvent === null || this.currentEvent === undefined) {
+                    this.$router.replace({
+                        name: '404'
+                    });
+                }
+                next();
+            },
             created() {
                 this.$store.dispatch("getData", "jobs").then(response => {
                     this.updateCurrentJob(this.id);
