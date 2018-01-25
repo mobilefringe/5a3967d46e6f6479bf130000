@@ -74,12 +74,8 @@
                 },
                 closeHolidays () {
                     var holidayHours = this.holidayHours;
-                    // return _.filter(holidayHours, function(o) { return o.is_closed; });
-                    console.log(_.sortBy(_.filter(holidayHours, function(o) { return o.is_closed; }), [function(o) { return o.holiday_date; }]));
                     var filtered = _.sortBy(_.filter(holidayHours, function(o) { return o.is_closed; }), [function(o) { return o.holiday_date; }]);
-                    // var reverse_order = _.reverse(filtered);
-                    console.log(reverse_order);
-                    return filtered;//_.sortBy(_.filter(holidayHours, function(o) { return o.is_closed; }), [function(o) { return o.holiday_date; }]).reverse();
+                    return _.sortBy(_.filter(holidayHours, function(o) { return o.is_closed; }), [function(o) { return o.holiday_date; }]);
                 }
             }
         });
