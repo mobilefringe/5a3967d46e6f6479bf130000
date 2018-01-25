@@ -77,7 +77,7 @@
                     // return _.filter(holidayHours, function(o) { return o.is_closed; });
                     console.log(_.sortBy(_.filter(holidayHours, function(o) { return o.is_closed; }), [function(o) { return o.start_date; }]));
                     var filtered = _.sortBy(_.filter(holidayHours, function(o) { return o.is_closed; }), [function(o) { return o.start_date; }]);
-                    var reverse_order = _.reverse(array);
+                    var reverse_order = _.reverse(filtered);
                     return _.sortBy(_.filter(holidayHours, function(o) { return o.is_closed; }), [function(o) { return o.holiday_date; }]).reverse();
                 }
             }
