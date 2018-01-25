@@ -30,8 +30,8 @@
 	<body>
 		<div id="app" v-cloak>
 			<loader v-if="!dataLoaded"></loader>
-			<div >
-    			<div class="header-container hidden-phone " id="top" v-if="dataLoaded">
+			<div v-if="dataLoaded">
+    			<div class="header-container hidden-phone " id="top" >
     				<div class="header page_container">
     					<div class="col-sm-6 text_left no_padding">
     						<router-link to="/" exact>
@@ -109,7 +109,7 @@
     					</transition>
     				</div>
     			</div>
-    			<div class="menu-container hidden-phone " v-if="dataLoaded">
+    			<div class="menu-container hidden-phone ">
     				<div class="menu-div page_container">
     					<div v-for="item in menu_items" :class="item.parent_class_list" style="display: inline-block;padding: 0 20px;">
     						<router-link :to="item.href" class="all_caps menu_link"  :id="item.name.id" exact v-if="item.sub_menu == undefined">
@@ -132,9 +132,9 @@
     				<!--<div class="loading-container" v-if="!dataLoaded">-->
     				<!--   <vue-simple-spinner size="huge" message="Eastgate Square is loading..."></vue-simple-spinner>-->
     				<!--</div>-->
-    				<router-view class="content" v-if="dataLoaded"></router-view>
+    				<router-view class="content"></router-view>
     			</transition>
-    			<div class="footer-div hidden-phone" id="footer-div" v-if="dataLoaded">
+    			<div class="footer-div hidden-phone" id="footer-div">
     				<div class="footer-top page_container">
     					<div class="row" style="margin:auto">
     						<div class="col-sm-6 text-left">
