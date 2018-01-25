@@ -13,11 +13,6 @@
 			</div>
 		</div>
 		<div class="row" style="margin-left:0;">
-			<!--<div class="col-sm-4 job_details_container text-left">-->
-			<!--	<div>-->
-					
-			<!--	</div>-->
-			<!--</div>-->
 			<div class="col-sm-12 job_desc_container">
 				<div class="text-left job_description">
 					<p v-html="currentJob.rich_description"></p>
