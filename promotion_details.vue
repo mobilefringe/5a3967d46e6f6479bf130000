@@ -21,7 +21,6 @@
 			<div class="col-sm-8 promo_desc_container">
 				<div class="text-left promo_description">
 				<p v-html="currentPromo.rich_description"></p>
-					<!--<p>{{currentPromo.description}}</p>-->
 				</div>
 			</div>
 		</div>
