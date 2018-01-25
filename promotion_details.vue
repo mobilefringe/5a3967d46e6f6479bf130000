@@ -7,7 +7,6 @@
 				</div>
 			</div>
 			<div class="col-sm-8 promo_image_container text-left">
-				<!--<img src="http://placehold.it/620x300"/>-->
 				<img :src="currentPromo.image_url"/>
 			</div>
 		</div>
