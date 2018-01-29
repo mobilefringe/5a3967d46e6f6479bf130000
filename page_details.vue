@@ -62,7 +62,7 @@
                 updateCurrentPage (id) {
                     host_name = this.property.mm_host.replace("http:", "");
                     this.$store.dispatch('LOAD_PAGE_DATA', {
-                        url: this.property.mm_host + "/pages/" + id + ".json"
+                        url: host_name + "/pages/" + id + ".json"
                     }).then(response => {
                         this.currentPage = response.data;
                     }, error => {
