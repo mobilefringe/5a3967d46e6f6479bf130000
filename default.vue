@@ -20,6 +20,7 @@
         next(vm => {
           // access to component instance via `vm`
           vm.meta = vm.findMetaDataByPath(to.path);
+          console.log(vm.meta);
         })
       },
       beforeRouteUpdate (to, from, next) {
