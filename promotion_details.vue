@@ -10,7 +10,7 @@
 				<img :src="currentPromo.image_url"/>
 			</div>
 		</div>
-		<div class="row" style="margin-left:0;">
+		<div class="row" style="margin-left:0; margin-top: 20px;"">
 			<div class="col-sm-4 promo_details_container text-left">
 				<div>
 					<h1>{{currentPromo.name}}</h1>
@@ -109,7 +109,7 @@
                         }
                         else if (this.currentPromo.store == null || this.currentPromo.store == undefined) {
                             this.currentPromo.store = {};
-                            this.currentPromo.store.image_url =  "//codecloud.cdn.speedyrails.net/sites/5a3967d46e6f6479bf130000/image/png/1516652189884/ES_logo_red2.png";
+                            this.currentPromo.store.image_url =  this.property.default_logo_url;
                         }
                     var vm = this;
                     var temp_promo = [];
