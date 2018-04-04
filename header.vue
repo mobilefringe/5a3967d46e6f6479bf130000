@@ -1,5 +1,5 @@
 <template>
-    <div></div>
+    <div>
         <div class="header-container hidden-phone " id="top" >
     		<div class="header page_container">
     			<div class="col-sm-6 text_left no_padding">
@@ -105,8 +105,9 @@
             data: function() {
                 return {
                     dataLoaded: false,
-                    show_mobile_menu: false,
-                    property_logo: "//codecloud.cdn.speedyrails.net/sites/5a9714046e6f644dc3160000/image/png/1520457420000/whitelogo1@2x.png",
+                    search_result : null,
+                    suggestionAttribute: 'name',
+                    newsletter_email: ""
                     menu_items: MenuItems,
                 }
             },
