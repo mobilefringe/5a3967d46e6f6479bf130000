@@ -3,8 +3,7 @@
 </template>
 
 <script>
-    define(["Vue", "vuex", 'vue!social_links.vue', "bootstrap-vue", 'json!menu_items.json'], function (Vue, Vuex, SocialLinks, BootstrapVue, MenuItems) {
-        Vue.use(BootstrapVue);
+    define(["Vue", "vuex", 'json!menu_items.json'], function (Vue, Vuex, MenuItems) {
         return Vue.component("header-component", {
             template: template, // the variable template will be injected,
             data: function() {
