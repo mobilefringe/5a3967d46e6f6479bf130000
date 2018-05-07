@@ -60,7 +60,7 @@
 								</div>
 								<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('fax')}">
 									<label class="label" for="fax">Fax Number</label>
-									<input v-model="form_data.fax" class="form-control" :class="{'input': true}" name="fax" type="text" placeholder="Fax" data-vv-delay="500" id="fax>
+									<input v-model="form_data.fax" class="form-control" :class="{'input': true}" name="fax" type="text" placeholder="Fax" data-vv-delay="500" id="fax">
 									<span v-show="errors.has('fax')" class="form-control-feedback">{{ errors.first('fax') }}</span>
 								</div>
 							</div>
@@ -71,7 +71,7 @@
 						<div class="form-group ">
 							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('contactName')}">
 								<label class="label" for="contactName">Authorized Contact Person<span class="req_star"> *</span></label>
-								<input v-model="form_data.contactName" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="contactName" type="text" placeholder="Contact Person" data-vv-delay="500" data-vv-as="Authorized Contact Person">
+								<input v-model="form_data.contactName" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="contactName" type="text" placeholder="Contact Person" data-vv-delay="500" data-vv-as="Authorized Contact Person" id="contactName>
 								<span v-show="errors.has('contactName')" class="form-control-feedback">{{ errors.first('contactName') }}</span>
 							</div>
 							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('insurer')}">
