@@ -14,7 +14,7 @@
     			<div class="col-sm-6 hidden_phone">
     				<div class="social-div social_icons">
     					<router-link to="/contact_us" style="font-size:12px; margin-right:10px; color:#999999;display: inline-block;height: 30px;line-height: 30px;">CONTACT US</router-link>
-    					<a href="http://www.facebook.com/eastgatesquaremall" target="_blank" class="social_link_icon social_fb"></a>
+    					<a href="http://www.facebook.com/eastgatesquaremall" target="_blank" class="social_link_icon social_fb" alt="Eastgte Facebbook"></a>
     					<a href="http://www.twitter.com/EastgateSquare" target="_blank" class="social_link_icon social_twitter"></a>
     				</div>
     				<div class="newsletter-div">
@@ -22,7 +22,7 @@
     						<!--<form style="margin:0" action="//mobilefringe.createsend.com/t/d/s/irudui/" method="post">-->
     						<div class="input_box">
     							<input class="sub_input_text" id="fieldEmail" name="cm-irudui-irudui" type="email" v-model="newsletter_email" required placeholder="ENTER YOUR EMAIL TO SUBSCRIBE" />
-    							<router-link style="background-color:transparent;" :to="'/newsletter?email='+ newsletter_email" ><img src="//codecloud.cdn.speedyrails.net/sites/5af082f76e6f6450e9040000/image/png/1511797731769/newsletter.png" alt="Newsletter Signup icon"></router-link>
+    							<router-link style="background-color:transparent;" :to="'/newsletter?email='+ newsletter_email" ><img src="//codecloud.cdn.speedyrails.net/sites/5af082f76e6f6450e9040000/image/png/1511797731769/newsletter.png" alt="Newsletter signup icon"></router-link>
     						</div>
     						<!--</form>-->
     					</div>
