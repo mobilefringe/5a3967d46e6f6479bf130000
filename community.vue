@@ -99,7 +99,7 @@
 							</div>
 							<div class="col-sm-3 col-xs-12" :class="{'has-error': errors.has('toDate')}">
 								<label class="label" for="toDate">To Date<span class="req_star"> *</span></label>
-								<input v-model="form_data.toDate" class="form-control" v-validate="'required|date_format:MM/DD/YYYY'" :class="{'input': true}" name="toDate" type="text" placeholder="mm/dd/yyyy" data-vv-delay="500" data-vv-as="To date">
+								<input v-model="form_data.toDate" class="form-control" v-validate="'required|date_format:MM/DD/YYYY'" :class="{'input': true}" name="toDate" type="text" placeholder="mm/dd/yyyy" data-vv-delay="500" data-vv-as="To date" id="toDate">
 								<span v-show="errors.has('toDate')" class="form-control-feedback">{{ errors.first('toDate') }}</span>
 							</div>
 							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('aAttendance')}">
