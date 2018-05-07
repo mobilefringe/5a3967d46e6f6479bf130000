@@ -39,7 +39,7 @@
 		            <p class="promo_div_description">{{promo.description_short}}</p>
 					<span class="feature_read_more">
 						<router-link :to="'/promotions/'+promo.slug" class="mobile_readmore" >
-							<p class="feature-readmore">View Promotion Details <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></p>
+							<p class="feature-readmore" :aria="promo.name">View Promotion Details <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></p>
 						</router-link>
 					</span>
 		        </div>
