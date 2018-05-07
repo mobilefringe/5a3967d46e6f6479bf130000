@@ -4,7 +4,7 @@
 			<div class="page_container text_left" v-html="currentPage.title"> </div>
 		</div>
         <div class="page_container">
-            <div class="row padding_30" >
+            <div class="row padding_tb_30" >
                 <div class="page_body description_text text_left" v-html="currentPage.body">
                     
                 </div>
