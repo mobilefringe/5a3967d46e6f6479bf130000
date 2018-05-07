@@ -66,7 +66,7 @@
         cursor: pointer;
     }
     .current_date{
-        color: #636363;
+        color: #4a4a4a;
         padding: 0 10px;
     }
     .all_dates {
