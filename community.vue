@@ -24,7 +24,7 @@
 						<div class="form-group">
 							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('description')}">
 								<label class="label" for="description">Description of Organization<span class="req_star"> *</span></label>
-								<textarea v-model="form_data.description" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="description" type="text" placeholder="Description" data-vv-delay="500" rows="5"></textarea>
+								<textarea v-model="form_data.description" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="description" type="text" placeholder="Description" data-vv-delay="500" rows="5" id="description"></textarea>
 								<span v-show="errors.has('description')" class="form-control-feedback">{{ errors.first('description') }}</span>
 							</div>
 							<div class="col-sm-6 col-xs-12 no_padding" >
