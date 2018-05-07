@@ -28,7 +28,7 @@
         color: #000; 
         font-size: 24px; 
         font-weight: inherit; 
-        font-family: arial; 
+        font-family: inherit; 
     }
 </style>
 <script>
