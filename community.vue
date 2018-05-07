@@ -104,7 +104,7 @@
 							</div>
 							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('aAttendance')}">
 								<label class="label" for="aAttendance"> Anticipated Attendance</label>
-								<input v-model="form_data.aAttendance" class="form-control" :class="{'input': true}" name="aAttendance" type="text" placeholder="Anticipated Attendance" data-vv-delay="500">
+								<input v-model="form_data.aAttendance" class="form-control" :class="{'input': true}" name="aAttendance" type="text" placeholder="Anticipated Attendance" data-vv-delay="500" id="aAttendance">
 								<span v-show="errors.has('aAttendance')" class="form-control-feedback">{{ errors.first('aAttendance') }}</span>
 							</div>
 						</div>
