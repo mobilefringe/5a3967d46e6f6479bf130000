@@ -27,14 +27,14 @@
                                 <span v-show="errors.has('phone')" class="form-control-feedback">{{ errors.first('phone') }}</span>
                             </div>
                             <div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('subject')}">
-                                <label class="label" for="subject">Subject</label>
+                                <label class="label" for="form_subject">Subject</label>
                                 <input v-model="form_data.subject" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="subject" type="text" placeholder="Subject" data-vv-delay="500" id="form_subject">
                                 <span v-show="errors.has('subject')" class="form-control-feedback">{{ errors.first('subject') }}</span>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-xs-12" :class="{'has-error': errors.has('message')}">
-                                <label class="label" for="message">Message</label>
+                                <label class="label" for="form_message">Message</label>
                                 <textarea v-model="form_data.message" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="message" type="text" placeholder="Message" data-vv-delay="500"></textarea>
                                 <span v-show="errors.has('message')" class="form-control-feedback">{{ errors.first('message') }}</span>
                             </div>
