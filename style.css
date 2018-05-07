@@ -900,7 +900,7 @@ ul.nav li.dropdown:hover > .dropdown-menu-hover {
 }
 .feature-readmore{
     float: none;//left;
-    background:#aea99e;
+    background:##666666;
     font-family:$font_family;
     font-size: 14px;
     color: #FFFFFF;
