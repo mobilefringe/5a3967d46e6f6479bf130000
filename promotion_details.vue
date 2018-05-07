@@ -6,7 +6,7 @@
 					<img v-lazy="currentPromo.store.image_url"/>
 				</div>
 			</div>
-			<div class="col-sm-8 event_image_container text-left">
+			<div class="col-sm-8 promo_image_container text-left">
 				<img :src="currentPromo.image_url"/>
 			</div>
 		</div>
