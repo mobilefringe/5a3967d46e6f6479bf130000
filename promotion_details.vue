@@ -7,7 +7,7 @@
 				</div>
 			</div>
 			<div class="col-sm-8 event_image_container text-left">
-				<img :src="currentPromo.image_url" :alt="currentPromo.store.name"/>
+				<img :src="currentPromo.image_url" :alt="currentPromo.name"/>
 			</div>
 		</div>
 		<div class="row" style="margin-left:0; margin-top: 20px;">
