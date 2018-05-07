@@ -27,7 +27,7 @@
     #pages_container h3{
         color: #000; 
         font-size: 24px; 
-        font-weight: normal; 
+        font-weight: inherit; 
         font-family: arial; 
     }
 </style>
