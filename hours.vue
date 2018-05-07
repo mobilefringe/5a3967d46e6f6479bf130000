@@ -5,7 +5,7 @@
             <div class="all_hours_container">
                 <div class="row">
                     <div class="col-md-5 col-sm-5 col-xs-12">
-                        <h3 class="hours_heading text-left" >Regular Shopping Hours</h3>
+                        <h2 class="hours_heading text-left" >Regular Shopping Hours</h2>
                         <div id="hours_container" class="hours_container">
                             <div class="hours_div text-left" v-for="hour in hours">
                                 <span>{{hour.day_of_week | moment("dddd", timezone)}}:</span>
@@ -21,7 +21,7 @@
                     <div class="col-md-12 ">
                         <div class="padding_top_20"></div>
                         
-                        <h3 class="hours_heading text-left">Extended Holiday Hours</h3>
+                        <h2 class="hours_heading text-left">Extended Holiday Hours</h2>
                         <div id="holidays_hours_container" class="hours_container">
                             <div class="hours_div text-left"  v-for="hour in reducedHolidays">
                                 <span>{{hour.holiday_name}} <br/>({{hour.holiday_date | moment("MMM D YYYY", timezone)}})</span>
