@@ -6,7 +6,7 @@
 					<img v-if="property.default_logo_url" :src="property.default_logo_url" alt=""/>
 				</div>
 				<div v-else>
-				    <img v-lazy="currentEvent.store.image_url">
+				    <img v-lazy="currentEvent.store.image_url" :alt="urrentEvent.store.name">
 				</div>
 			</div>
 			<div class="col-sm-8 event_image_container text-left">
