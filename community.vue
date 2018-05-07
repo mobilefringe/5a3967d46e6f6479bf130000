@@ -71,12 +71,12 @@
 						<div class="form-group ">
 							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('contactName')}">
 								<label class="label" for="contactName">Authorized Contact Person<span class="req_star"> *</span></label>
-								<input v-model="form_data.contactName" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="contactName" type="text" placeholder="Contact Person" data-vv-delay="500" data-vv-as="Authorized Contact Person" id="contactName>
+								<input v-model="form_data.contactName" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="contactName" type="text" placeholder="Contact Person" data-vv-delay="500" data-vv-as="Authorized Contact Person" id="contactName">
 								<span v-show="errors.has('contactName')" class="form-control-feedback">{{ errors.first('contactName') }}</span>
 							</div>
 							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('insurer')}">
 								<label class="label" for="insurer">Name of Insurer<span class="req_star"> *</span></label>
-								<input v-model="form_data.insurer"  v-validate="'required:true'" class="form-control" :class="{'input': true}" name="insurer" type="text" placeholder="Name of Insurer" data-vv-delay="500" data-vv-as="Name of Insurer">
+								<input v-model="form_data.insurer"  v-validate="'required:true'" class="form-control" :class="{'input': true}" name="insurer" type="text" placeholder="Name of Insurer" data-vv-delay="500" data-vv-as="Name of Insurer" id="insurer">
 								<span v-show="errors.has('insurer')" class="form-control-feedback">{{ errors.first('insurer') }}</span>
 							</div>
 						</div>
