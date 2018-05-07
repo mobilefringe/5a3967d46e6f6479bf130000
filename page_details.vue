@@ -25,8 +25,8 @@
         height: auto;
     }
     #pages_container h3{
-        color: #00; 
-        font-size: 21px; 
+        color: #000; 
+        font-size: 24px; 
         font-weight: normal; 
         font-family: arial; 
     }
