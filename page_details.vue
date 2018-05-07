@@ -24,7 +24,7 @@
         width: 100%;
         height: auto;
     }
-    #pages_container {
+    #pages_container h3{
         
     }
 </style>
