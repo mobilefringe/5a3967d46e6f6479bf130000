@@ -122,7 +122,7 @@
 						<div class="form-group">
 							<div class="col-xs-6" :class="{'has-error': errors.has('validate')}">
 								<label class="label" for="validate">Enter the following number below to proceed: {{correctValNum}}</label> 
-								<input v-model="validaNum" v-validate="'required|numeric|min:6|max:6'" class="form-control col-xs-3" :class="{'input': true}" name="validate" type="text" placeholder="Enter above number" data-vv-delay="500">
+								<input v-model="validaNum" v-validate="'required|numeric|min:6|max:6'" class="form-control col-xs-3" :class="{'input': true}" name="validate" type="text" placeholder="Enter above number" data-vv-delay="500" id="validate">
 								<span v-show="errors.has('validate')" class="form-control-feedback">{{ errors.first('validate') }}</span>
 								<span v-if="validaNum.length === 6 && validaNum !== correctValNum && errors.first('validate') == null" class="form-control-feedback" :class="{shake_element : validNumError}">Please enter correct number</span>
 							</div>
