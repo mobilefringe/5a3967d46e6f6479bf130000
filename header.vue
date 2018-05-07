@@ -20,7 +20,7 @@
     				<div class="newsletter-div">
     					<div class="newsletter_box" style="margin-bottom:5px">
     						<div class="input_box">
-    						    <lable style="display:none;">Enter Email Address</lable>
+    						    <lable for="fieldEmail" style="display:none;">Enter Email Address</lable>
     							<input class="sub_input_text" id="fieldEmail" name="cm-irudui-irudui" type="email" v-model="newsletter_email" required placeholder="ENTER YOUR EMAIL TO SUBSCRIBE" />
     							<router-link style="background-color:transparent;" :to="'/newsletter?email='+ newsletter_email" ><img src="//codecloud.cdn.speedyrails.net/sites/5af082f76e6f6450e9040000/image/png/1511797731769/newsletter.png" alt="Newsletter signup icon"></router-link>
     						</div>
