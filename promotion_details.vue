@@ -18,7 +18,7 @@
 					<p class="promo_div_date">{{currentPromo.start_date | moment("MMM D", timezone)}} - {{currentPromo.end_date | moment("MMM D", timezone)}}</p>
 				</div>
 			</div>
-			<div class="col-sm-8 promo_desc_container">
+			<div class="col-sm-8 event_desc_container">
 				<div class="text-left promo_description">
 				    <p v-html="currentPromo.rich_description"></p>
 				</div>
