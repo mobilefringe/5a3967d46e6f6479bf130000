@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="col-sm-4 event_logo_container hidden_phone">
 				<div>
-					<img v-lazy="currentPromo.store.image_url"/>
+					<img v-lazy="currentPromo.store.image_url" :alt="currentPromo.store.name"/>
 				</div>
 			</div>
 			<div class="col-sm-8 event_image_container text-left">
