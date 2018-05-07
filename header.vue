@@ -8,7 +8,7 @@
     				</router-link>
     				<span class="pull-right show_phone">
     					<router-link style="background-color:transparent;" to="/newsletter" ><img src="//codecloud.cdn.speedyrails.net/sites/5af082f76e6f6450e9040000/image/png/1511797731769/newsletter.png" class="mobile_newsletter_btn"></router-link>
-    					<img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1455905827000/icon_menu.png" class="open_menu show_phone" alt="Menu"  id="open_menu"  @click="show_mobile_menu = !show_mobile_menu">
+    					<img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1455905827000/icon_menu.png" class="open_menu show_phone" alt="Mobile Menu"  id="open_menu"  @click="show_mobile_menu = !show_mobile_menu">
     				</span>
     			</div>
     			<div class="col-sm-6 hidden_phone">
