@@ -40,7 +40,7 @@
 								</div>
 								<div class="col-sm-6 col-xs-12 " :class="{'has-error': errors.has('postal')}"  style="padding-top: 20px;">
 									<label class="label" for="postal">Postal Code<span class="req_star"> *</span></label>
-									<input v-model="form_data.postal" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="postal" type="text" placeholder="Postal Code" data-vv-delay="500" data-vv-as="Postal Code">
+									<input v-model="form_data.postal" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="postal" type="text" placeholder="Postal Code" data-vv-delay="500" data-vv-as="Postal Code" id="postal">
 									<span v-show="errors.has('postal')" class="form-control-feedback">{{ errors.first('postal') }}</span>
 								</div>
 							</div>
