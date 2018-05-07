@@ -41,7 +41,7 @@
     {
         "name": "Contact Us",
         "id": "contact_link",
-        "href": "",
+        "href": "#",
         "show_sub_menu": false,
         "sub_menu": [
             {
