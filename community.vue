@@ -83,7 +83,7 @@
 						<div class="form-group ">
 							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('cnpNum')}">
 								<label class="label" for="cnpNum">Registered Charitable Number Not for Profit Number<span class="req_star"> *</span></label>
-								<input v-model="form_data.cnpNum" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="cnpNum" type="text" placeholder="Charitable Number" data-vv-delay="500" data-vv-as="Registered charitable number">
+								<input v-model="form_data.cnpNum" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="cnpNum" type="text" placeholder="Charitable Number" data-vv-delay="500" data-vv-as="Registered charitable number" id="cnpNum">
 								<span v-show="errors.has('cnpNum')" class="form-control-feedback">{{ errors.first('cnpNum') }}</span>
 							</div>
 							<div class="col-sm-6 col-xs-12" >
