@@ -116,7 +116,7 @@
 							</div>
 							<div class="col-sm-6 col-xs-12">
 								<label class="label" for="requirement">Please specify any other requirements</label>
-								<textarea v-model="form_data.requirement" class="form-control" :class="{'input': true}" name="requirement" type="text" placeholder="Requirements" data-vv-delay="500" rows="5"></textarea>
+								<textarea v-model="form_data.requirement" class="form-control" :class="{'input': true}" name="requirement" type="text" placeholder="Requirements" data-vv-delay="500" rows="5" id="requirement"></textarea>
 							</div>
 						</div>
 						<div class="form-group">
