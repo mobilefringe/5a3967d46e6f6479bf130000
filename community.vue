@@ -55,12 +55,12 @@
 							<div class="col-sm-6 col-xs-12 no_padding" >
 								<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('phone')}">
 									<label class="label" for="phone">Telephone Number<span class="req_star"> *</span></label>
-									<input v-model="form_data.phone" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="phone" type="text" placeholder="Phone number" data-vv-delay="500" data-vv-as="Telephone Number" id="phone>
+									<input v-model="form_data.phone" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="phone" type="text" placeholder="Phone number" data-vv-delay="500" data-vv-as="Telephone Number" id="phone">
 									<span v-show="errors.has('phone')" class="form-control-feedback">{{ errors.first('phone') }}</span>
 								</div>
 								<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('fax')}">
 									<label class="label" for="fax">Fax Number</label>
-									<input v-model="form_data.fax" class="form-control" :class="{'input': true}" name="fax" type="text" placeholder="Fax" data-vv-delay="500">
+									<input v-model="form_data.fax" class="form-control" :class="{'input': true}" name="fax" type="text" placeholder="Fax" data-vv-delay="500" id="fax>
 									<span v-show="errors.has('fax')" class="form-control-feedback">{{ errors.first('fax') }}</span>
 								</div>
 							</div>
