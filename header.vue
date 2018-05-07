@@ -67,10 +67,10 @@
     						<div class="social_icons_menu show_phone text-center">
     							<!--<p>Follow us on</p>-->
     							<a href="https://www.facebook.com/eastgatesquaremall/" target="_blank">
-    							<img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512590798000/fb.png" class="" alt="Eastgate Square">
+    							<img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512590798000/fb.png" class="" alt="Eastgate Facebook">
     							</a>
     							<a href="https://twitter.com/EastgateSquare" target="_blank">
-    							<img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512590798000/twt.png" class="" alt="">
+    							<img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1512590798000/twt.png" class="" alt="Eastgate Twitter">
     							</a>
     						</div>
     					</div>
