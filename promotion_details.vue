@@ -11,7 +11,7 @@
 			</div>
 		</div>
 		<div class="row" style="margin-left:0; margin-top: 20px;">
-			<div class="col-sm-4 promo_details_container text-left">
+			<div class="col-sm-4 event_details_container text-left">
 				<div>
 					<h1>{{currentPromo.name}}</h1>
 					<p class="promo_store_name">{{currentPromo.store.name}}</p>
