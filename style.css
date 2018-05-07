@@ -913,7 +913,7 @@ ul.nav li.dropdown:hover > .dropdown-menu-hover {
     margin: 15px 0;
     text-decoration:none;
     .fa-chevron-right {
-        line-height: 20px;
+        line-height: 25px;
     }
     a, p{
             text-decoration:none;
