@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="col-sm-4 event_logo_container hidden_phone">
 				<div v-if="currentEvent.eventable_type == 'Property'">
-					<img v-if="property.default_logo_url" :src="property.default_logo_url" :alt=""/>
+					<img v-if="property.default_logo_url" :src="property.default_logo_url" :alt="property.name"/>
 				</div>
 				<div v-else>
 				    <img v-lazy="currentEvent.store.image_url" :alt="urrentEvent.store.name">
