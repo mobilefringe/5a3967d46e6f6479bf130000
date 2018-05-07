@@ -58,7 +58,7 @@
         				<div  class="prev"></div>
         				<slick ref="slick" :options="slickOptions">
         					<div class="" v-for="banner in banners" v-if="banners">
-        						<img :src="banner.image_url" class="" alt="">
+        						<img :src="banner.image_url" class="" alt="banner.name">
         					</div>
         				</slick>
         				<div class="next"></div>
@@ -77,7 +77,7 @@
         				<span>
         					<div class="feature-box col-sm-4" v-for="item in feature_items">
         						<p class="feature-title">{{item.name}}</p>
-        						<img :src="item.image_url" class="feature-image" :alt="item.name/>
+        						<img :src="item.image_url" class="feature-image" :alt="item.name"/>
         						<p class="feature-html">{{item.html}}</p>
         						<span class="feature_read_more">
         							<router-link :to="item.url" class="mobile_readmore" >
