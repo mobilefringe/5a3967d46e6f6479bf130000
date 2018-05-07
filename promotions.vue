@@ -23,9 +23,9 @@
 					<p class="promo_div_date">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
 					<p class="promo_div_description">{{promo.description_short}}</p>
 					<div class="promo_feature_share row is-table-row">
-    					<span class="feature_read_more col-sm-2">
+    					<span class="feature_read_more col-sm-8">
     						<router-link :to="'/promotions/'+promo.slug" class="mobile_readmore" >
-    							<p class="feature-readmore">View Promotion Details <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></p>
+    							<p class="feature-readmore" :aria="promo.name">View Promotion Details <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></p>
     						</router-link>
     					</span>
     					<div class="text-right  col-sm-4" v-if="promo">
