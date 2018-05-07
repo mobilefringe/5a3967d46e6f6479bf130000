@@ -37,7 +37,7 @@
     									</article>
     								</template>
     							</search-component>
-    							<img src="//codecloud.cdn.speedyrails.net/sites/5af082f76e6f6450e9040000/image/png/1514998294110/search_icon.png" id="search_icon"> 
+    							<img src="//codecloud.cdn.speedyrails.net/sites/5af082f76e6f6450e9040000/image/png/1514998294110/search_icon.png" id="search_icon" alt="search icon"> 
     						</div>
     						<div class="input submit"></div>
     					</div>
