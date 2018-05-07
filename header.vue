@@ -1,6 +1,7 @@
 <template>
     <div>
         <div class="header-container hidden-phone " id="top" >
+            <h1 v-if="property"></h1>
     		<div class="header page_container">
     			<div class="col-sm-6 text_left no_padding">
     				<router-link to="/" exact>
