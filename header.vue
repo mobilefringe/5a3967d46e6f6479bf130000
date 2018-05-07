@@ -14,7 +14,7 @@
     			<div class="col-sm-6 hidden_phone">
     				<div class="social-div social_icons">
     					<router-link to="/contact_us" style="font-size:12px; margin-right:10px; color:#999999;display: inline-block;height: 30px;line-height: 30px;">CONTACT US</router-link>
-    					<a href="http://www.facebook.com/eastgatesquaremall" target="_blank" class="social_link_icon social_fb" alt="Eastgate Facebook"></a>
+    					<a href="http://www.facebook.com/eastgatesquaremall" target="_blank" class="social_link_icon social_fb" alt="Eastgate Facebook"><p style="display:none;"></p></a>
     					<a href="http://www.twitter.com/EastgateSquare" target="_blank" class="social_link_icon social_twitter" alt="Eastgate Twitter"></a>
     				</div>
     				<div class="newsletter-div">
