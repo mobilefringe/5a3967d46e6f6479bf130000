@@ -28,7 +28,7 @@
                             </div>
                             <div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('subject')}">
                                 <label class="label" for="subject">Subject</label>
-                                <input v-model="form_data.subject" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="subject" type="text" placeholder="Subject" data-vv-delay="500">
+                                <input v-model="form_data.subject" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="subject" type="text" placeholder="Subject" data-vv-delay="500" id="form_subject">
                                 <span v-show="errors.has('subject')" class="form-control-feedback">{{ errors.first('subject') }}</span>
                             </div>
                         </div>
