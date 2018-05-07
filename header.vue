@@ -47,7 +47,7 @@
     				<div class="mobile_menu_container" v-show="show_mobile_menu">
     					<div class="opened_mobile_menu" >
     						<div class="text-left" style="padding-bottom: 20px;border-bottom: 1px solid #fff;">
-    							<img src="//codecloud.cdn.speedyrails.net/sites/5af082f76e6f6450e9040000/image/png/1513713349903/ES_logo_2.png"  alt="Eastgate Square">
+    							<img src="//codecloud.cdn.speedyrails.net/sites/5af082f76e6f6450e9040000/image/png/1513713349903/ES_logo_2.png"  alt="Eastgate Square Mobile Logo">
     							<img src="//codecloud.cdn.speedyrails.net/sites/5a1f136e6e6f6472c6240000/image/png/1513274154350/close_menu_icon.png" class="pull-right" alt="" style="margin-top: 10px;" id="close_menu" @click="show_mobile_menu = !show_mobile_menu">
     						</div>
     						<ul>
