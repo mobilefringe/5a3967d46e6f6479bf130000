@@ -88,7 +88,7 @@
 							</div>
 							<div class="col-sm-6 col-xs-12" >
 								<label class="label" for="lLicense">Lottery License #</label>
-								<input v-model="form_data.lLicense" class="form-control" :class="{'input': true}" name="lLicense" type="text" placeholder="Lottery License #" data-vv-delay="500">
+								<input v-model="form_data.lLicense" class="form-control" :class="{'input': true}" name="lLicense" type="text" placeholder="Lottery License #" data-vv-delay="500" id="lLicense">
 							</div>
 						</div>
 						<div class="form-group ">
