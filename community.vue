@@ -111,7 +111,7 @@
 						<div class="form-group">
 						    <div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('purpose')}">
 								<label class="label" for="purpose">Purpose for use of in-mall space<span class="req_star"> *</span></label>
-								<textarea v-model="form_data.purpose" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="purpose" type="text" placeholder="Purpose" data-vv-delay="500" rows="5" data-vv-as="purpose"></textarea>
+								<textarea v-model="form_data.purpose" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="purpose" type="text" placeholder="Purpose" data-vv-delay="500" rows="5" data-vv-as="purpose" id="purpose"></textarea>
 								<span v-show="errors.has('purpose')" class="form-control-feedback">{{ errors.first('purpose') }}</span>
 							</div>
 							<div class="col-sm-6 col-xs-12">
