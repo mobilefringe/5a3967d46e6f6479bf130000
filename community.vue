@@ -166,7 +166,7 @@
     .form-group .form-control-feedback{
         font-size: 12px;
         /*top: 60px;*/
-        color: #F44336;
+        color: #cb1014;
         top: initial;
         bottom: -27px;
     }
