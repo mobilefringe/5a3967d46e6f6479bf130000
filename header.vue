@@ -91,7 +91,6 @@
     						    <li>
     						        <router-link tag="a" class="dropdown-item" v-for="sub_menu in item.sub_menu" :to="sub_menu.href">{{sub_menu.name}}</router-link>
     						    </li>
-    							
     						</div>
     					</transition>
     				</div>
