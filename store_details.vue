@@ -24,7 +24,7 @@
 					
 					<div v-if="currentStore.store_hours">
 					    <p>Store Hours</p>
-					    <ul class="details-hours-list">
+					    <ul class="store_details_hours">
                             <li v-if="!hour.is_closed" v-for="hour in hours">
                                 {{hour.day_of_week | moment("dddd", timezone)}}: {{hour.open_time | moment("h:mma", timezone)}} - {{hour.close_time | moment("h:mma", timezone)}}
                             </li>
