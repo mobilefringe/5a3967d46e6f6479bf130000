@@ -19,6 +19,13 @@
 					<p>{{currentStore.category_name}}</p>
 					<p>{{currentStore.phone}}</p>
 					<a v-bind:href="'//'+currentStore.website" target="_blank">Visit Store Site</a>
+					<div v-if="">
+					    <p>Store Hours</p>
+					    <ul>
+					        <li></li>
+					    </ul>
+					    
+					</div>
 				</div>
 			</div>
 			<div class="col-sm-8 store_desc_container">
@@ -110,6 +117,7 @@
                     currentStore: null,
                     promotions : [],
                     jobs:[],
+                    hours: [],
                     dataLoaded: false
                 }
             },
@@ -132,7 +140,15 @@
                     if ( _.includes(this.currentStore.store_front_url_abs, 'missing')) {
                         this.currentStore.store_front_url_abs = this.property.default_logo_url;
                     }
+                    
                     var vm = this;
+                    var storeHours = [];
+                    _.forEach(this.currentStore.store_hours, function (value, key) {
+                        storeHours.push(vm.findHourById(value));
+                    });
+                    this.hours = storeHours;
+                    
+                  
                     var temp_promo = [];
                     var temp_job = [];
                     _.forEach(this.currentStore.promotions, function(value, key) {
@@ -164,6 +180,7 @@
                     'timezone',
                     'processedStores',
                     'findStoreBySlug',
+                    'findHourById',
                     'findPromoById',
                     'findJobById',
                 ]),
