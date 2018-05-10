@@ -144,6 +144,7 @@
             },
             watch: {
                 currentStore: function() {
+                    console.log(this.currentStore)
                     if ( _.includes(this.currentStore.store_front_url_abs, 'missing')) {
                         this.currentStore.store_front_url_abs = this.property.default_logo_url;
                     }
