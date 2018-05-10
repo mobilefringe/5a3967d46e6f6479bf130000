@@ -21,10 +21,14 @@
 					<a v-bind:href="'//'+currentStore.website" target="_blank">Visit Store Site</a>
 					<div v-if="">
 					    <p>Store Hours</p>
-					    <ul>
-					        <li></li>
-					    </ul>
-					    
+					    <ul class="details-hours-list">
+                            <li v-if="!hour.is_closed" v-for="hour in hours">
+                                {{hour.day_of_week | moment("dddd", timezone)}}: {{hour.open_time | moment("hA", timezone)}}-{{hour.close_time | moment("hA", timezone)}}
+                            </li>
+                            <li v-else>
+                                {{hour.day_of_week | moment("dddd", timezone)}}: CLOSED
+                            </li>
+                        </ul>
 					</div>
 				</div>
 			</div>
