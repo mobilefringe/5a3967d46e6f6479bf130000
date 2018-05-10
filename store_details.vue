@@ -18,7 +18,10 @@
 					<h1>{{currentStore.name}}</h1>
 					<p>{{currentStore.category_name}}</p>
 					<p>{{currentStore.phone}}</p>
-					<a v-bind:href="'//'+currentStore.website" target="_blank">Visit Store Site</a>
+					<div class="margin_20">
+					    <a v-bind:href="'//'+currentStore.website" target="_blank">Visit Store Site</a>    
+					</div>
+					
 					<div v-if="">
 					    <p>Store Hours</p>
 					    <ul class="details-hours-list">
