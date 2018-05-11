@@ -116,7 +116,7 @@
 		min-height: 787px;
 	}
 	.mapplic-popup-link {
-	    display:none;
+	    display:none!important;
 	}
 </style>
 <script>
