@@ -199,6 +199,9 @@
                 pngMapRef() {
                     return this.$refs.pngmapref;
                 },
+                allStores() {
+                    return this.processedStores;
+                },
                 floorList () {
                     var floor_list = [];
                     
