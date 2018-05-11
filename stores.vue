@@ -29,7 +29,7 @@
 					
 					<ul class="store-listing text_left  padding_top_20">
 						<li v-for="store in filteredStores" class="pointer">
-							<p class="directory_store_name" v-on:click="addLandmark(store)">{{store.name}}</p>
+							<p class="directory_store_name" v-on:click="dropPin(store)">{{store.name}}</p>
 						</li>
 					</ul>
 				</div>
