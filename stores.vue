@@ -201,6 +201,10 @@
                 getWindowWidth(event) {
                     this.windowWidth = window.innerWidth;
                 },
+                dropPin(store) {
+                    // console.log("store.svgmap_region",store.svgmap_region);
+                    this.$refs.mapplic_ref.showLocation(store.svgmap_region);
+                },
             },
             computed: {
                 ...Vuex.mapGetters([
