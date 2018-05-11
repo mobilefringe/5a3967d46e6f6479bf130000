@@ -222,6 +222,9 @@
 
                 ]),
                 allStores() {
+                    this.processedStores.map(function(){
+                        
+                    })
                     return this.processedStores;
                 },
                 allCatergories() {
