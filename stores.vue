@@ -140,7 +140,7 @@
                     }
                 },
                 selectedStore () {
-                    this.addLandmark(this.selectedStore);
+                    this.dropPin(this.selectedStore);
                 }
             },
             mounted() {
