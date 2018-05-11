@@ -116,7 +116,7 @@
 	}
 </style>
 <script>
-    define(['Vue', 'vuex', 'moment', "jquery", "smooth-zoom", "vue!png-map"], function(Vue, Vuex, moment, $, smoothZoom, PNGMapComponent) {
+    define(['Vue', 'vuex', 'moment', "vue!mapplic-png-map"], function(Vue, Vuex, VueSelect, MapplicComponent) {
         return Vue.component("store-details-component", {
             template: template, // the variable template will be injected,
             data: function() {
