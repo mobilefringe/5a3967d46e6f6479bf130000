@@ -1,10 +1,9 @@
 <template>
-	<div v-if="dataloaded">
+	<div v-if="dataloaded"><!-- for some reason if you do not put an outer container div this component template will not render -->
 		<div class="page_header all_caps double_border_bottom">
 			<div class="page_container text_left"> Stores Directory & Map </div>
 		</div>
 		<div class="page_container">
-			<!-- for some reason if you do not put an outer container div this component template will not render -->
 			<div class="store-list-left-block col-sm-4 padding_top_20">
 			    <div style="position:relative; z-index:999999999;">
     			    <p class="text_left">Select Stores: </p>
