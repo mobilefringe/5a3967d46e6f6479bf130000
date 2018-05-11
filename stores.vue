@@ -41,7 +41,7 @@
 			<div class="col-sm-8">
 				<div id="mapsvg_store_detail" class="padding_top_20">
 					<!--<png-map v-bind:png-map-url="getPNGurl" v-bind:initial-position="'500 450'" v-if="!mobile_store"></png-map>-->
-					<mapplic-map ref="mapplic_ref" :height="800" :minimap= "false" :deeplinking="false" :sidebar="false" :hovertip="true" :maxscale= "5" :storelist="allStores" :floorlist="floorList" :bindLocationOpened="true" :svgId="'Layer_1'"></mapplic-map>
+					<mapplic-png-map ref="mapplic_ref" :height="800" :minimap= "false" :deeplinking="false" :sidebar="false" :hovertip="true" :maxscale= "5" :storelist="allStores" :floorlist="floorList" :bindLocationOpened="true" :svgId="'Layer_1'"></mapplic-png-map>
 				</div>
 			</div>
 		</div>
