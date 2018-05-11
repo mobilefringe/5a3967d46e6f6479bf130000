@@ -9,7 +9,7 @@
 			<div class="col-sm-8 store_map_container">
 				<div id="mapsvg_store_detail">
 					<!--<png-map ref="pngmapref" v-bind:png-map-url="getPNGurl" v-bind:initial-position="'500 400'" @updateMap="updatePNGMap" :key="currentStore.id"></png-map>-->
-					<mapplic-png-map ref="pngmap_ref" :height="500" :minimap= "false" :deeplinking="false" :sidebar="false" :hovertip="true" :storelist="allStores" :floorlist="floorList" :bindLocationOpened="true" :svgWidth="property.map_image_width" :svgHeight="property.map_image_height" :showPin="true"></mapplic-png-map>
+					<mapplic-png-map ref="pngmap_ref" :height="500" :minimap= "false" :deeplinking="false" :sidebar="false" :hovertip="true" :storelist="allStores" :floorlist="floorList" :svgWidth="property.map_image_width" :svgHeight="property.map_image_height" :showPin="true"></mapplic-png-map>
 				</div>
 			</div>
 		</div>
