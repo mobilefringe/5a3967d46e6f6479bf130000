@@ -223,7 +223,7 @@
                 ]),
                 allStores() {
                     this.processedStores.map(function(store){
-                        
+                        store.zoom = 2;
                     })
                     return this.processedStores;
                 },
