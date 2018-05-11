@@ -199,7 +199,7 @@
                 },
                 dropPin(store) {
                     // console.log("store.svgmap_region",store.svgmap_region);
-                    this.$refs.mapplic_ref.showLocation(store.id);
+                    // this.$refs.mapplic_ref.showLocation(store.id);
                      if(this.windowWidth <= 768 && this.selectedStore) {
                         this.pngMapRef.showLocation(store.id);
                     }
