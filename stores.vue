@@ -16,7 +16,7 @@
 					<!--<png-map :png-map-url="getPNGurl" v-bind:initial-position="'500 450'" v-if="mobile_store"></png-map>-->
 					<mapplic-png-map ref="mapplic_ref" :height="500" :minimap= "false" :deeplinking="false" :sidebar="false" :hovertip="true" :storelist="allStores" :floorlist="floorList" :bindLocationOpened="true" :svgId="'Layer_1'" :svgWidth="1300" :svgHeight="787"  v-if="mobile_store"></mapplic-png-map>
 				</div>
-				<div class="store-list-container">
+				<div class="store-list-container hidden_phone">
 					<div class="dropdown_container hidden_phone">
 						<p class="text_left">Select Category</p>
 						<div class="category-DD-div">
@@ -27,20 +27,10 @@
 							<v-select v-model="selectedAlpha" :options="alphabet" :searchable="false" :on-change="filterStores"></v-select>
 						</div>
 					</div>
-					<div class="show_phone" style="margin-top:20px">
-					    <p class="text_left">Sort By Category :</p>
-					    <div class="alphabet-dd  " >
-    						<v-select v-model="selectedCat" :options="dropDownCats" :searchable="false" :on-change="filterByCategory" id="mobile_cat_list"></v-select>
-    					</div>
-					    <p class="text_left">Sort Alphabetically :</p>
-    					<div class="alphabet-dd show_phone" >
-						    <v-select v-model="selectedAlpha" :options="alphabet" :searchable="false" :on-change="filterStores" id="mobile_alpha_list"></v-select>
-					    </div>
-					</div>
 					
 					<ul class="store-listing text_left  padding_top_20">
 						<li v-for="store in filteredStores" class="pointer">
-							<p class="directory_store_name" v-on:click="dropPin(store)">{{store.name}}</p>
+							<p class="directory_store_name" v-on:click="addLandmark(store)">{{store.name}}</p>
 						</li>
 					</ul>
 				</div>
