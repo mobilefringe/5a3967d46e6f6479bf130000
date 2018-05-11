@@ -221,7 +221,7 @@
                 updatePNGMap(map) {
                     this.map = map;
                     // console.log("in updatepng");
-                    this.addLandmark(this.currentStore);
+                    this.dropPin(this.currentStore);
                 },
                 dropPin(store) {
                     this.$refs.mapplic_ref.showLocation(store.svgmap_region);
