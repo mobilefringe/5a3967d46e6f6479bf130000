@@ -259,32 +259,29 @@
                         this.filteredStores = filtered;
                     }
                 },
-                // filterByCategory() {
-                //     category_id = this.selectedCat;
-                //     if (category_id == "All" || category_id == null || category_id == undefined) {
-                //         category_id = "All";
-                //     } else {
-                //         category_id = this.findCategoryByName(category_id).id;
-                //     }
-
-                //     if (category_id == "All") {
-                //         this.filteredStores = this.allStores;
-                //     } else {
-
-                //         var find = this.findCategoryById;
-                //         var filtered = _.filter(this.allStores, function(o) {
-                //             return _.indexOf(o.categories, _.toNumber(category_id)) > -1;
-                //         });
+                floorList () {
+                    var floor_list = [];
                     
-                //         this.filteredStores = filtered;
-                //     }
-                //     var el = document.getElementById("selectByCat");
-                //     if(el) {
-                //         el.classList.remove("open");
-                //         // console.log(el.classList);
-                //     }
+                    var floor_1 = {};
+                    floor_1.id = "first-floor";
+                    floor_1.title = "Floor 1";
+                    floor_1.map = "//www.mallmaverick.com/system/site_images/photos/000/037/418/original/Regent_Mall_-_Map_-_March-08-2018.svg";
+                    // floor_1.minimap = "//codecloud.cdn.speedyrails.net/sites/5a4bb6d36e6f6473fa0a0000/image/png/1513365138000/NorthPark - Dec-15-2017 - Floor 1.png";
+                    floor_1.z_index = 1;
+                    floor_1.show = true;
                     
-                // },
+                    floor_list.push(floor_1);
+                    // var floor_2 = {};
+                    // floor_2.id = "second-floor";
+                    // floor_2.title = "Floor 2";
+                    // floor_2.map = "//mallmaverick.com/system/site_images/photos/000/035/873/original/NorthPark_-_Dec-15-2017_-_Floor_2.svg";
+                    // floor_2.minimap = "//codecloud.cdn.speedyrails.net/sites/5a4bb6d36e6f6473fa0a0000/image/png/1513365146000/NorthPark - Dec-15-2017 - Floor 2.png";
+                    // floor_2.z_index = 2;
+                    // floor_2.show = false;
+                    
+                    // floor_list.push(floor_2);
+                    return floor_list;
+                }
                 
             },
             beforeDestroy: function() {
