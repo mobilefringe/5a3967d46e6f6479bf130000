@@ -269,7 +269,7 @@
                     var floor_1 = {};
                     floor_1.id = "first-floor";
                     floor_1.title = "Floor 1";
-                    floor_1.map = this.getPNGurl();;
+                    floor_1.map = this.getPNGurl;
                     // floor_1.minimap = "//codecloud.cdn.speedyrails.net/sites/5a4bb6d36e6f6473fa0a0000/image/png/1513365138000/NorthPark - Dec-15-2017 - Floor 1.png";
                     floor_1.z_index = 1;
                     floor_1.show = true;
