@@ -115,6 +115,9 @@
 		min-width:1300px;
 		min-height: 787px;
 	}
+	.mapplic-popup-link {
+	    display:none;
+	}
 </style>
 <script>
     define(['Vue', 'vuex', 'moment', "vue!mapplic-png-map"], function(Vue, Vuex, moment, MapplicComponent) {
