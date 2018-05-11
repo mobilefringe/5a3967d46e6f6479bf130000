@@ -242,7 +242,7 @@
                     this.dropPin(this.currentStore);
                 },
                 dropPin(store) {
-                    this.$refs.mapplic_ref.showLocation(store.id);
+                    this.$refs.pngmap_ref.showLocation(store.id);
                 },
             }
         });
