@@ -112,5 +112,184 @@
 </style>
 
 <script>
-var _extends=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var r=arguments[t];for(var i in r)Object.prototype.hasOwnProperty.call(r,i)&&(e[i]=r[i])}return e};define(["Vue","vuex","vue-select","jquery","smooth-zoom","vue!png-map"],function(e,t){return e.component("stores-component",{template:template,data:function(){return{listMode:"alphabetical",selectedCat:"All",selectedAlpha:"All",alphabet:["All","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"],filteredStores:null,dataloaded:!1,mobile_store:!1,windowWidth:0}},created:function(){var e=this;this.$store.dispatch("getData","categories").then(function(){e.dataloaded=!0,e.filteredStores=e.allStores},function(){console.error("Could not retrieve data from server. Please check internet connection and try again.")})},watch:{windowWidth:function(){this.mobile_store=this.windowWidth<=768?!0:!1}},mounted:function(){this.$nextTick(function(){window.addEventListener("resize",this.getWindowWidth),this.getWindowWidth()})},methods:{changeMode:function(e){this.listMode=e},updateSVGMap:function(e){this.map=e},addLandmark:function(e){this.svgMapRef.addMarker(e)},getWindowWidth:function(){this.windowWidth=window.innerWidth}},computed:_extends({},t.mapGetters(["property","timezone","processedStores","processedCategories","storesByAlphaIndex","storesByCategoryName","findCategoryById","findCategoryByName"]),{allStores:function(){return this.processedStores},allCatergories:function(){return this.processedCategories},dropDownCats:function(){var e=_.map(this.processedCategories,"name");return e.unshift("All"),e},getPNGurl:function(){return"https://www.mallmaverick.com"+this.property.map_url},svgMapRef:function(){return _.filter(this.$children,function(e){return"svg-map"==e.$el.className})[0]},filterStores:function(){if(letter=this.selectedAlpha,"All"==letter)this.filteredStores=this.allStores;else{var e=_.filter(this.allStores,function(e){return _.lowerCase(e.name)[0]==_.lowerCase(letter)});this.filteredStores=e}},filterByCategory:function(){if(category_id=this.selectedCat,category_id="All"==category_id||null==category_id||void 0==category_id?"All":this.findCategoryByName(category_id).id,this.breakIntoCol=!1,"All"==category_id)this.filteredStores=this.allStores;else{var e=(this.findCategoryById,_.filter(this.allStores,function(e){return _.indexOf(e.categories,_.toNumber(category_id))>-1}));this.filteredStores=e}}}),beforeDestroy:function(){window.removeEventListener("resize",this.getWindowWidth)}})});
+    define(["Vue", "vuex", "vue-select", "jquery", "smooth-zoom", "vue!png-map"], function(Vue, Vuex, VueSelect, $, smoothZoom, PNGMapComponent) {
+        return Vue.component("stores-component", {
+            template: template, // the variable template will be injected
+            data: function() {
+                return {
+                    dataloaded: false,
+                    selectedCat: "All",
+                    selectedAlpha: null,
+                    alphabet: ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"],
+                    filteredStores: null,
+                    selectedStore: null,
+                    mobile_store: false,
+                    windowWidth: 0
+                }
+            },
+            created (){
+                this.loadData().then(response => {
+                    this.dataloaded = true;
+                    this.filteredStores = this.allStores;
+                    
+                    this.$on('updateMap', this.updatePNGMap);
+                });
+            },
+            watch: {
+                windowWidth: function() {
+                    if (this.windowWidth <= 768) {
+                        this.mobile_store = true;
+                    } else {
+                        this.mobile_store = false;
+                    }
+                },
+                selectedStore () {
+                    this.addLandmark(this.selectedStore);
+                }
+            },
+            mounted() {
+                this.$nextTick(function() {
+                    window.addEventListener('resize', this.getWindowWidth);
+                    //Init
+                    this.getWindowWidth();
+                });
+            },
+            methods: {
+                loadData: async function() {
+                    try {
+                        // avoid making LOAD_META_DATA call for now as it will cause the entire Promise.all to fail since no meta data is set up.
+                        let results = await Promise.all([this.$store.dispatch("getData", "categories")]);
+                    } catch (e) {
+                        console.log("Error loading data: " + e.message);
+                    }
+                },
+                filterByCategory(category_id) {
+                    console.dir(JSON.stringify(category_id));
+                    if (category_id == "All" || category_id == null || category_id == undefined) {
+                        category_id = "All";
+                    } else {
+                        category_id = this.findCategoryByName(category_id).id;
+                    }
+
+                    this.breakIntoCol = false;
+                    console.log(category_id);
+                    if (category_id == "All") {
+                        this.filteredStores = this.allStores; //this.storesByAlphaIndex;
+                        // this.breakIntoCol = true;
+                    } else {
+
+                        var find = this.findCategoryById;
+                        var filtered = _.filter(this.allStores, function(o) {
+                            return _.indexOf(o.categories, _.toNumber(category_id)) > -1;
+                        });
+                        this.filteredStores = filtered;
+                    }
+                    // this.filteredStores = 
+                },
+                updatePNGMap(map) {
+                    this.map = map;
+                    // console.log("in updatepng")
+                },
+                addLandmark(store) {
+                    if(this.windowWidth <= 768 && this.selectedStore) {
+                        this.pngMapRef.addMarker(store);
+                    }
+                    else if(this.windowWidth > 768) {
+                        this.pngMapRef.addMarker(store);
+                    }
+                },
+                getWindowWidth(event) {
+                    this.windowWidth = window.innerWidth;
+                },
+            },
+            computed: {
+                ...Vuex.mapGetters([
+                    'property',
+                    'timezone',
+                    'processedStores',
+                    'processedCategories',
+                    'storesByAlphaIndex',
+                    'storesByCategoryName',
+                    'findCategoryById',
+                    'findCategoryByName',
+                    'findRepoByName'
+
+                ]),
+                allStores() {
+                    return this.processedStores;
+                },
+                allCatergories() {
+                    return this.processedCategories;
+                },
+                dropDownCats() {
+                    var cats = _.map(this.$store.getters.processedCategories, 'name');
+                    cats.unshift('All');
+                    return cats;
+                },
+                findCategoryById() {
+                    return this.$store.getters.findCategoryById;
+                },
+                findCategoryByName() {
+                    return this.$store.getters.findCategoryByName;
+                },
+                getPNGurl() {
+                    return "https://www.mallmaverick.com" + this.property.map_url;
+                },
+                storeNames () {
+                    return _.map(this.filteredStores, 'name');
+                },
+                pngMapRef() {
+                    var reference = null; 
+                    if(this.windowWidth <= 768) {
+                        reference = this.$refs.pngmaprefmobile;
+                    }
+                    else {
+                        reference = this.$refs.pngmap_ref;
+                    }
+                    return reference;
+                },
+                filterStores() {
+                    letter = this.selectedAlpha;
+                    if (letter == "All") {
+                        this.filteredStores = this.allStores;
+                    } else {
+                        var filtered = _.filter(this.allStores, function(o, i) {
+                            return _.lowerCase(o.name)[0] == _.lowerCase(letter);
+                        });
+                        this.filteredStores = filtered;
+                    }
+                },
+                // filterByCategory() {
+                //     category_id = this.selectedCat;
+                //     if (category_id == "All" || category_id == null || category_id == undefined) {
+                //         category_id = "All";
+                //     } else {
+                //         category_id = this.findCategoryByName(category_id).id;
+                //     }
+
+                //     if (category_id == "All") {
+                //         this.filteredStores = this.allStores;
+                //     } else {
+
+                //         var find = this.findCategoryById;
+                //         var filtered = _.filter(this.allStores, function(o) {
+                //             return _.indexOf(o.categories, _.toNumber(category_id)) > -1;
+                //         });
+                    
+                //         this.filteredStores = filtered;
+                //     }
+                //     var el = document.getElementById("selectByCat");
+                //     if(el) {
+                //         el.classList.remove("open");
+                //         // console.log(el.classList);
+                //     }
+                    
+                // },
+                
+            },
+            beforeDestroy: function() {
+                window.removeEventListener('resize', this.getWindowWidth);
+            }
+        });
+    });
 </script>
