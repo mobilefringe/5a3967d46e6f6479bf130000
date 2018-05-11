@@ -7,7 +7,7 @@
 			<!-- for some reason if you do not put an outer container div this component template will not render -->
 			<div class="store-list-left-block col-sm-4 padding_top_20">
 		        <div id="mapsvg_store_detail_1" class="show_phone">
-					<png-map :png-map-url="getPNGurl" v-bind:initial-position="'500 450'" v-if="mobile_store"></png-map>
+					<!--<png-map :png-map-url="getPNGurl" v-bind:initial-position="'500 450'" v-if="mobile_store"></png-map>-->
 				</div>
 				<div class="store-list-container">
 					<div class="dropdown_container hidden_phone">
