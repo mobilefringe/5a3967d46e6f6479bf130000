@@ -34,6 +34,7 @@ require.config({
         //png-map dependencies
         'smooth-zoom' : 'https://codecloud.cdn.speedyrails.net/sites/59035a6c6e6f645a5b420000/application/x-javascript/1503602727000/smoothZoomA24',
         'png-map' : 'https://mmvue.codecloudapp.com/png-map.vue?noext',
+        //mappplic-png--map dependencies
         'vue-simple-spinner': 'https://cdn.jsdelivr.net/npm/vue-simple-spinner@1.2.8/dist/vue-simple-spinner.min',
         'vue-lazy-load': 'https://unpkg.com/vue-lazyload/vue-lazyload'
         
