@@ -35,7 +35,7 @@
 				</div>
 			</div>
 			<div class="col-sm-8">
-				<div id="mapsvg_store_detail" class="padding_top_20">
+				<div id="mapsvg_store_detail map" class="padding_top_20">
 					<!--<png-map v-bind:png-map-url="getPNGurl" v-bind:initial-position="'500 450'" v-if="!mobile_store"></png-map>-->
 					<mapplic-png-map ref="pngmap_ref" :height="500" :minimap= "false" :deeplinking="false" :sidebar="false" :hovertip="true" :storelist="allStores" :floorlist="floorList" :bindLocationOpened="true" :svgWidth="property.map_image_width" :svgHeight="property.map_image_height" :showPin="true" v-if="!mobile_store"></mapplic-png-map>
 				</div>
