@@ -222,7 +222,7 @@
 
                 ]),
                 allStores() {
-                    this.processedStores.map(function(){
+                    this.processedStores.map(function(store){
                         
                     })
                     return this.processedStores;
