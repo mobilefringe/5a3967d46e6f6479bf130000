@@ -236,9 +236,6 @@
                         this.$router.replace({ path: '/'});
                     }
                 },
-                addLandmark(store) {
-                    this.pngMapRef.addMarker(store);
-                },
                 updatePNGMap(map) {
                     this.map = map;
                     // console.log("in updatepng");
