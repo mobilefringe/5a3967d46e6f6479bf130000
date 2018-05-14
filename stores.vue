@@ -186,14 +186,14 @@
                     this.map = map;
                     // console.log("in updatepng")
                 },
-                addLandmark(store) {
-                    if(this.windowWidth <= 768 && this.selectedStore) {
-                        this.pngMapRef.addMarker(store);
-                    }
-                    else if(this.windowWidth > 768) {
-                        this.pngMapRef.addMarker(store);
-                    }
-                },
+                // addLandmark(store) {
+                //     if(this.windowWidth <= 768 && this.selectedStore) {
+                //         this.pngMapRef.addMarker(store);
+                //     }
+                //     else if(this.windowWidth > 768) {
+                //         this.pngMapRef.addMarker(store);
+                //     }
+                // },
                 getWindowWidth(event) {
                     this.windowWidth = window.innerWidth;
                 },
