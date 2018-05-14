@@ -275,20 +275,10 @@
                     floor_1.id = "first-floor";
                     floor_1.title = "Floor 1";
                     floor_1.map = this.getPNGurl;
-                    // floor_1.minimap = "//codecloud.cdn.speedyrails.net/sites/5a4bb6d36e6f6473fa0a0000/image/png/1513365138000/NorthPark - Dec-15-2017 - Floor 1.png";
                     floor_1.z_index = 1;
                     floor_1.show = true;
                     
                     floor_list.push(floor_1);
-                    // var floor_2 = {};
-                    // floor_2.id = "second-floor";
-                    // floor_2.title = "Floor 2";
-                    // floor_2.map = "//mallmaverick.com/system/site_images/photos/000/035/873/original/NorthPark_-_Dec-15-2017_-_Floor_2.svg";
-                    // floor_2.minimap = "//codecloud.cdn.speedyrails.net/sites/5a4bb6d36e6f6473fa0a0000/image/png/1513365146000/NorthPark - Dec-15-2017 - Floor 2.png";
-                    // floor_2.z_index = 2;
-                    // floor_2.show = false;
-                    
-                    // floor_list.push(floor_2);
                     return floor_list;
                 }
                 
