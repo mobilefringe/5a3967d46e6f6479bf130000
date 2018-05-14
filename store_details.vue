@@ -238,7 +238,6 @@
                 },
                 updatePNGMap(map) {
                     this.map = map;
-                    // console.log("in updatepng");
                     this.dropPin(this.currentStore);
                 },
                 dropPin(store) {
