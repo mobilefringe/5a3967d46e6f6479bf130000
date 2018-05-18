@@ -106,7 +106,7 @@
         line-height: 35px;
     }
     #store_dets_container .mapsvg_store_detail {
-        
+        border: 1px solid #aea99e;
     }
     #store_dets_container .map {
         height: 300px;
@@ -121,6 +121,18 @@
 	.mapplic-popup-link {
 	    display:none!important;
 	}
+	<style>
+	#store_dets_container .mapplic-popup-link, .mapplic-tooltip-close {
+	    display:none!important;
+	}
+	#store_dets_container .mapplic-tooltip-content {
+	    margin-right: auto;
+	}
+	#store_dets_container .mapplic-tooltip-title {
+        text-align: center;
+        margin: auto!important;
+	}
+</style>
 </style>
 <script>
     define(['Vue', 'vuex', 'moment', "vue!mapplic-png-map"], function(Vue, Vuex, moment, MapplicComponent) {
