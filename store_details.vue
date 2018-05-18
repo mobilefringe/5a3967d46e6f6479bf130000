@@ -112,12 +112,6 @@
         height: 300px;
         overflow:hidden;
     }
-    #png_map{
-	    width:1300px;
-		height: 787px;
-		min-width:1300px;
-		min-height: 787px;
-	}
 	.mapplic-popup-link {
 	    display:none!important;
 	}
