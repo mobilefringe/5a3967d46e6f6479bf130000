@@ -121,7 +121,6 @@
 	.mapplic-popup-link {
 	    display:none!important;
 	}
-	<style>
 	#store_dets_container .mapplic-popup-link, .mapplic-tooltip-close {
 	    display:none!important;
 	}
@@ -132,7 +131,6 @@
         text-align: center;
         margin: auto!important;
 	}
-</style>
 </style>
 <script>
     define(['Vue', 'vuex', 'moment', "vue!mapplic-png-map"], function(Vue, Vuex, moment, MapplicComponent) {
