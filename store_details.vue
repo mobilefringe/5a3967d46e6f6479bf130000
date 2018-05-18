@@ -105,6 +105,9 @@
         height: 35px;
         line-height: 35px;
     }
+    #store_dets_container .mapsvg_store_detail {
+        
+    }
     #store_dets_container .map {
         height: 300px;
         overflow:hidden;
