@@ -235,7 +235,7 @@
                             send_data = {};
                             send_data.url = "http://www.mallmaverick.com/send_contact_email";
                             var formatted_formdata = {}; //JSON.stringify(this.serializeObject(this.form_data));
-                            formatted_formdata.send_to = "BMiele@Bentallkennedy.com,kkelly@bentallkennedy.com";
+                            formatted_formdata.send_to = "BMiele@Bentallkennedy.com,kkelly@bentallkennedy.com,swhitaker@bentallkennedy.com";
                             formatted_formdata.subject = "Eastgate Community Rental Form Application"; 
                             formatted_formdata.body = {};
                             formatted_formdata.body["Legal Name of Organization"] =  this.form_data.legalName;
