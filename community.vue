@@ -369,9 +369,7 @@
                                    vm.formError = true;
                                 }
                             });
-                        }
-                        
-                        else {
+                        }else {
                             console.log("please enter all required data");
                             // alert("Please enter all required data marked by *");
                             this.showErrorModal = true;
