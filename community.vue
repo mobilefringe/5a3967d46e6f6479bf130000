@@ -256,7 +256,8 @@
                     validaNum: '',
                     correctValNum: null,
                     validNumError: false,
-                    currentPage: null
+                    currentPage: null,
+                    showErrorModal: false
                 }
             },
             beforeRouteEnter(to, from, next) {
