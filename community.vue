@@ -202,7 +202,7 @@
     }
     #community_container .modal-header h2 {
         margin: 0 auto;
-        color: #ed2227;
+        color: #cb1014;
         border-bottom: none;
         font-family: Helvetica,Arial,sans-serif;
         font-weight: bold;
