@@ -152,7 +152,7 @@
             },
             methods: {
                 shareURL(slug){
-                    var share_url = "http://eastgatesquare.ca/events/" + slug;
+                    var share_url = "https://eastgatesquare.ca/events/" + slug;
                     return share_url;
                 }
             }
