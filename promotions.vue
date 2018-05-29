@@ -217,7 +217,7 @@
                     this.selectedDate = moment([year, month, val]).format('MMM D, YYYY');
                 },
                 shareURL(slug){
-                    var share_url = "http://eastgatesquare.ca/promotions/" + slug;
+                    var share_url = "https://eastgatesquare.ca/promotions/" + slug;
                     return share_url;
                 },
             }
