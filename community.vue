@@ -233,7 +233,7 @@
                             let errors = this.errors;
                             //format email
                             send_data = {};
-                            send_data.url = "http://www.mallmaverick.com/send_contact_email";
+                            send_data.url = "https://www.mallmaverick.com/send_contact_email";
                             var formatted_formdata = {}; 
                             formatted_formdata.send_to = "BMiele@Bentallkennedy.com,kkelly@bentallkennedy.com,swhitaker@bentallkennedy.com";
                             formatted_formdata.subject = "Eastgate Community Rental Form Application"; 
