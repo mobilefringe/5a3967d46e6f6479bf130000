@@ -147,6 +147,33 @@
 			</div>
 			<div class="padding_top_40"></div>
 		</div>
+		<transition name="modal">
+            <div class="modal-mask" v-if="showErrorModal">
+              <div class="modal-wrapper">
+                <div class="modal-container">
+        
+                  <div class="modal-header">
+                    <slot name="header">
+                       <h2>Error!</h2>
+                    </slot>
+                  </div>
+        
+                  <div class="modal-body">
+                    <slot name="body">
+                        Please enter all required fields <span class="req_star"> *</span>
+                    </slot>
+                  </div>
+                  <div class="modal-footer">
+                    <slot name="footer">
+                      <button class="modal-default-button feature-readmore" @click="showErrorModal = false">
+                        OK
+                      </button>
+                    </slot>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </transition>
 	</div>
 </template>
 
