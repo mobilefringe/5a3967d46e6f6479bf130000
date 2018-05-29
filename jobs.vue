@@ -119,7 +119,7 @@
             },
             methods: {
                 shareURL(slug) {
-                    var share_url = "http://eastgatesquare.ca/jobs/" + slug;
+                    var share_url = "https://eastgatesquare.ca/jobs/" + slug;
                     return share_url;
                 }
             }
