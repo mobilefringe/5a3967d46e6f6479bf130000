@@ -183,7 +183,8 @@
                 ...Vuex.mapGetters([
                     'property',
                     'timezone',
-                    'findContestBySlug'
+                    'findContestBySlug',
+                    'findContestByShowOnSlug'
                 ]),
             },
             methods: {
