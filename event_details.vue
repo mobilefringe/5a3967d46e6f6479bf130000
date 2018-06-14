@@ -33,7 +33,7 @@
 		        <div class="promo_div_image text-left" v-if="_.includes(promo.image_url, 'missing')">
 		            <img :src="property.default_logo_url"/>
 		        </div>
-		        <div class="promo_div_image text-left" v-else v-lazy-container="{ selector: 'img' }">
+		        <div class="promo_div_image text-left" v-else>
 		            <img :src="promo.image_url" data-loading='//codecloud.cdn.speedyrails.net/sites/5af082f76e6f6450e9040000/image/png/1521035009104/Screen Shot 2018-03-14 at 9.43.24 AM.png' alt=""/>
 		        </div>
 		        </div>
