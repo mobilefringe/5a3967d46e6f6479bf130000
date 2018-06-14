@@ -58,12 +58,12 @@ define([], function() {
             children: [{
                     path: '',
                     component: view('sustainability_and_wellness_program'),
-                    name: 'eventList'
+                    name: 'ustainabilityList'
                 },
                 {
                     path: ':id',
                     component: view('sustainability_and_wellness_program_details'),
-                    name: 'ustainabilityDetails',
+                    name: 'sustainabilityDetails',
                     props: true
                 }
             ]
