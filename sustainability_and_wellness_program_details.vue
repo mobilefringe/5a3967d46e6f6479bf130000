@@ -128,11 +128,11 @@
                     'property',
                     'timezone',
                     'processedPromos',
-                    'findEventBySlug',
+                    'findPromoBySlug',
                     'findEventById'
                 ]),
                 allEvents() {
-                    var events = this.processedEvents;
+                    var events = this.processedPromos;
                     var vm = this;
                     events.map(event => {
                         if(event.store != null && event.store != undefined && _.includes(event.store.image_url, 'missing')){
