@@ -114,10 +114,14 @@
                     var temp_promo = [];
                     var current_id =_.toNumber(this.currentEvent.id);
                     _.forEach(this.allEvents, function(value, key) {
-                        if(_.toNumber(value.id) != current_id){
-                            var current_promo = vm.findEventById(value.id);
-                            current_promo.description_short = _.truncate(current_promo.description, {'length': 70});
-                            temp_promo.push(current_promo);
+                        today = moment().tz(vm.timezone);
+                        webDate = moment(value.show_on_web_date).tz(vm.timezone);
+                        if (today >= webDate) {
+                            if(_.toNumber(value.id) != current_id){
+                                var current_promo = vm.findEventById(value.id);
+                                current_promo.description_short = _.truncate(current_promo.description, {'length': 70});
+                                temp_promo.push(current_promo);
+                            }
                         }
                     });
                     this.storePromos = temp_promo;
