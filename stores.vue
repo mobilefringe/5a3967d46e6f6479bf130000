@@ -224,7 +224,7 @@
                     this.processedStores.map(function(store){
                         store.zoom = 2;
                     })
-                    return this.processedStores;
+                    return _.filter(this.processedStores, function(o) { return o.name != "Bentall Kennedy Store" });
                 },
                 allCatergories() {
                     return this.processedCategories;
