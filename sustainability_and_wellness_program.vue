@@ -107,7 +107,7 @@
     define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "vue-meta", "vue-lazy-load"], function(Vue, Vuex, moment, tz, VueMoment, Meta, VueLazyload) {
         Vue.use(Meta);
         Vue.use(VueLazyload);
-        return Vue.component("events-component", {
+        return Vue.component("sustainabilty-component", {
             template: template, // the variable template will be injected
             data () {
               return {
