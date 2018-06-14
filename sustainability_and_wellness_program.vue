@@ -1,5 +1,5 @@
 <template>
-	<div class="page_container events_container" v-if="dataLoaded">
+	<div class="page_container events_container" v-if="dataLoaded" id="events_container>
 		<div class="promo_container" v-if="events.length > 0">
 			<div class="row promo_dets is-table-row" v-for="promo in events">
 				<div class="col-sm-7" >
