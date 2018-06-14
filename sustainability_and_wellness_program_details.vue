@@ -129,7 +129,7 @@
                     'timezone',
                     'processedPromos',
                     'findPromoBySlug',
-                    'findEventById'
+                    'findPromoById'
                 ]),
                 allEvents() {
                     var events = this.processedPromos;
