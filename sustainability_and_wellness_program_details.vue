@@ -149,6 +149,7 @@
             methods: {
                 updateCurrentEvent (id) {
                     this.currentEvent = this.findPromoBySlug(id);
+                    console.log(findPromoBySlug)''
                     if (this.currentEvent === null || this.currentEvent === undefined){
                         this.$router.replace({ path: '/'});
                     }
