@@ -83,7 +83,7 @@
         margin: 0;
     }
     .events_container .row.is-table-row [class*="col-"] {
-        padding:0;
+           padding: 0 15px;
     }
     .events_container .feature_read_more {
         width : auto;
