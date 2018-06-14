@@ -143,7 +143,7 @@
                             value.image_url = vm.property.default_logo_url;
                         }
                             
-                        if(!value.is_special_promo) {
+                        if(value.is_special_promo) {
                             temp_promo.push(value);
                         }
                     });
