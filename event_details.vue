@@ -34,7 +34,7 @@
 		            <img :src="property.default_logo_url"/>
 		        </div>
 		        <div class="promo_div_image text-left" v-else v-lazy-container="{ selector: 'img' }">
-		            <img :data-src="promo.image_url" data-loading='//codecloud.cdn.speedyrails.net/sites/5af082f76e6f6450e9040000/image/png/1521035009104/Screen Shot 2018-03-14 at 9.43.24 AM.png' alt=""/>
+		            <img :src="promo.image_url" data-loading='//codecloud.cdn.speedyrails.net/sites/5af082f76e6f6450e9040000/image/png/1521035009104/Screen Shot 2018-03-14 at 9.43.24 AM.png' alt=""/>
 		        </div>
 		        </div>
 		        <div class="col-sm-5 promo_div_dets">
