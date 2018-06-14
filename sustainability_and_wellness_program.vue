@@ -83,7 +83,7 @@
         margin: 0;
     }
     .events_container .row.is-table-row [class*="col-"] {
-           padding: 0 15px;
+       padding: 0 15px;
     }
     .events_container .feature_read_more {
         width : auto;
@@ -152,7 +152,7 @@
             },
             methods: {
                 shareURL(slug){
-                    var share_url = "https://eastgatesquare.ca/events/" + slug;
+                    var share_url = "https://eastgatesquare.ca/sustainability_and_wellness_program/" + slug;
                     return share_url;
                 }
             }
