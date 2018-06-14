@@ -37,7 +37,7 @@
 			</div>
 		</div>
 		<div class="promo_container" v-else>
-		    <p style="padding:20px"> Sorry, there are no events currently available.</p>
+		    <p style="padding:20px"> Sorry, there are no events available.</p>
 		</div>
 	</div>
 </template>
