@@ -115,7 +115,7 @@
               }  
             },
             created () {
-                this.$store.dispatch("getData", "events").then(response => {
+                this.$store.dispatch("getData", "promotions").then(response => {
                    this.dataLoaded = true;
                 }, error => {
                     console.error("Could not retrieve data from server. Please check internet connection and try again.");
@@ -132,7 +132,7 @@
                     var vm = this;
                     var temp_promo = [];
                     var temp_job = [];
-                    _.forEach(this.processedEvents, function(value, key) {
+                    _.forEach(this.processedPromos, function(value, key) {
                         value.description_short = _.truncate(value.description, {
                             'length': 70
                         });
