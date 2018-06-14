@@ -83,7 +83,7 @@
 <script>
     define(['Vue', 'vuex', 'moment', 'vue-lazy-load'], function(Vue, Vuex, moment, VueLazyload) {
         Vue.use(VueLazyload);
-        return Vue.component("event-details-component", {
+        return Vue.component("sustainabilty-details-component", {
             template: template, // the variable template will be injected,
             data: function() {
                 return {
