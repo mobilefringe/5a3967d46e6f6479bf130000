@@ -143,7 +143,9 @@
                             value.image_url = vm.property.default_logo_url;
                         }
                             
-                        temp_promo.push(value);
+                        if(!value.is_special_promo) {
+                            temp_promo.push(value);
+                        }
                     });
                     return _.sortBy(temp_promo, [function(o) { return o.end_date; }]);
                 }
