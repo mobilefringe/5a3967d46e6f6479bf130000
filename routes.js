@@ -57,8 +57,8 @@ define([], function() {
             component: view('default'),
             children: [{
                     path: '',
-                    component: view('events'),
-                    name: 'eventList'
+                    component: view('sustainability_and_wellness_program'),
+                    name: 'sustainability_and_wellness_program'
                 },
                 {
                     path: ':id',
