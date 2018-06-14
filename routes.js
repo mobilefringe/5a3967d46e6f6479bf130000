@@ -63,7 +63,7 @@ define([], function() {
                 {
                     path: ':id',
                     component: view('sustainability_and_wellness_program_details'),
-                    name: 'eventDetails',
+                    name: 'ustainabilityDetails',
                     props: true
                 }
             ]
