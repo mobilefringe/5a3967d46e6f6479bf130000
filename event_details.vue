@@ -34,7 +34,7 @@
 		            <img :src="property.default_logo_url"/>
 		        </div>
 		        <div class="promo_div_image text-left" v-else>
-		            <img :src="promo.image_url"  alt=""/>
+		            <img :src="promo.image_url"  alt="promo.name"/>
 		        </div>
 		        </div>
 		        <div class="col-sm-5 promo_div_dets">
