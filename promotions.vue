@@ -181,7 +181,9 @@
                         if (_.includes(value.image_url, 'missing')) {
                             value.image_url = vm.property.default_logo_url;
                         }
-                        temp_promo.push(value);
+                        if() {
+                            temp_promo.push(value);
+                        }
                     });
                     _.sortBy(temp_promo, [function(o) { return o.start_date; }]);
                     return temp_promo;
