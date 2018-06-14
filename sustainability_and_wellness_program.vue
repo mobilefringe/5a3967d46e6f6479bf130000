@@ -126,7 +126,7 @@
                 ...Vuex.mapGetters([
                     'property',
                     'timezone',
-                    'processedEvents'
+                    'processedPromos'
                 ]),
                 events() {
                     var vm = this;
