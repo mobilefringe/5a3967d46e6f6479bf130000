@@ -13,7 +13,7 @@
 					<p class="promo_div_description">{{promo.description_short}}</p>
 					<div class="promo_feature_share row is-table-row">
     					<span class="feature_read_more col-sm-8">
-    						<router-link :to="'/events/'+promo.slug" class="mobile_readmore" >
+    						<router-link :to="'/sustainability_and_wellness_program/'+promo.slug" class="mobile_readmore" >
     							<p class="feature-readmore" :aria="promo.name">View Event Details<i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></p>
     						</router-link>
     					</span>
