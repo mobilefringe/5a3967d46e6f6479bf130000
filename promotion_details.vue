@@ -47,34 +47,7 @@
 		</div>
 	</div>
 </template>
-<style>
-    #promo_dets_container .promo_logo_container,
-    #promo_dets_container .promo_image_container,
-    #promo_dets_container .promo_details_container,
-    #promo_dets_container .promo_desc_container{
-        padding: 20px 10px;
-    }
-    #promo_dets_container .promo_image_container img{
-        max-height: 300px;
-    }
-    #promo_dets_container .promo_logo_container img{
-        border: 1px solid #aea99e;
-        width:300px;
-        height:300px
-    }
-    #promo_dets_container .promo_details_container h1{
-        padding: 0;
-    }
-    #promo_dets_container .promo_store_name, .promo_div_date{
-        font-size: 16px;
-    }
-    #promo_dets_container .promo_container_title{
-        border-top:1px solid #aea99e;
-        border-bottom:1px solid #aea99e;
-        height: 35px;
-        line-height: 35px;
-    }
-</style>
+
 <script>
     define(['Vue', 'vuex', 'moment', 'vue-lazy-load'], function(Vue, Vuex, moment, VueLazyload) {
         Vue.use(VueLazyload);
