@@ -4,7 +4,7 @@
 			<div class="row promo_dets is-table-row" v-for="promo in events">
 				<div class="col-sm-7" >
 					<div class="promo_div_image">
-						<img :src="promo.image_url" alt=""/>
+						<img :src="promo.image_url" :alt="promo.name.url"/>
 					</div>
 				</div>
 				<div class="col-sm-5 promo_div_dets text-left">
