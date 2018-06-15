@@ -40,7 +40,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="promo_container" v-else>
+		<div class="promo_container text-left" v-else>
 		    <p style="padding:20px"> Sorry, there are no events available at the moment.</p>
 		</div>
 	</div>
