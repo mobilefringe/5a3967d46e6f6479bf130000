@@ -1,6 +1,9 @@
 <template>
 	<div class="page_container events_container" v-if="dataLoaded" id="sustainability_container">
 		<div class="promo_container" v-if="events.length > 0">
+		    <div>
+		        
+		    </div>
 			<div class="row promo_dets is-table-row" v-for="promo in events">
 				<div class="col-sm-7" >
 					<div class="promo_div_image">
