@@ -1,5 +1,8 @@
 <template>
 	<div class="page_container events_container" v-if="dataLoaded" id="sustainability_container">
+	    <div class="">
+		        <img src="//codecloud.cdn.speedyrails.net/sites/5af082f76e6f6450e9040000/image/jpeg/1529091914686/sustainability-banner.jpg" class="" alt="">
+		    </div>
 		<div class="promo_container" v-if="events.length > 0">
 		    
 			<div class="row promo_dets is-table-row" v-for="promo in events">
