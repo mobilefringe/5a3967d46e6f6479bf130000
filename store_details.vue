@@ -239,6 +239,7 @@
                 },
                 updateCurrentStore (id) {
                     this.currentStore = this.findStoreBySlug(id);
+                    console.log(this.currentStore)
                     if (this.currentStore === null || this.currentStore === undefined){
                         this.$router.replace({ path: '/'});
                     }
