@@ -94,10 +94,13 @@
         padding: 20px 10px;
     }
     
-    .store_logo_container img{
+    .store_logo_container div{
         border: 1px solid #aea99e;
         width:300px;
         height:300px
+    }
+    .store_logo_container div img {
+        max-width: 100%;
     }
     .promo_container_title{
         border-top:1px solid #aea99e;
