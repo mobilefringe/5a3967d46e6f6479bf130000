@@ -113,9 +113,7 @@
                             job.store.store_front_url_abs = vm.property.default_logo_url;
                         }
                     });
-                    var jobs = _.sortBy(this.processedJobs, [function(o) {
-                        return o.show_on_web_date;
-                    }]).reverse();
+                    var jobs = _.sortBy(this.processedJobs, [function(o) { return o.show_on_web_date }]).reverse();
                     return jobs;
                 }
             },
