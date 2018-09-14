@@ -101,7 +101,8 @@
                 jobs() {
                     var vm = this;
                     console.log(this.processedJobs)
-                    this.processedJobs.map(job => {
+                    var jobs = this.processedJobs;
+                    jobs.map(job => {
                         job.description_short = _.truncate(job.description, {
                             'length': 70
                         });
@@ -113,9 +114,10 @@
                             job.store.store_front_url_abs = vm.property.default_logo_url;
                         }
                     });
-                    _.sortBy(this.processedJobs, [function(o) {
+                    jobs = _.sortBy(jobs, [function(o) {
                         return o.end_date;
                     }]);
+                    
                     return this.processedJobs;
                 }
             },
