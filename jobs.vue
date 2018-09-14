@@ -115,7 +115,7 @@
                     });
                     var jobs = _.sortBy(this.processedJobs, [function(o) {
                         return o.show_on_web_date;
-                    }]);
+                    }]).reverse();
                     return jobs;
                 }
             },
