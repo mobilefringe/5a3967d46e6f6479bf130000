@@ -100,6 +100,7 @@
                 ]),
                 jobs() {
                     var vm = this;
+                    console.log(this.processedJobs)
                     this.processedJobs.map(job => {
                         job.description_short = _.truncate(job.description, {
                             'length': 70
