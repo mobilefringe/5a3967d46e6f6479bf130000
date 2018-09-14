@@ -114,7 +114,7 @@
                         }
                     });
                     _.sortBy(this.processedJobs, [function(o) {
-                        return o.start_date;
+                        return o.show_on_web_date;
                     }]);
                     return this.processedJobs;
                 }
