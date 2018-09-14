@@ -102,7 +102,7 @@
                     var vm = this;
                     console.log(this.processedJobs)
 
-                    _.forEach(this.processedJobs, function(value, key) {
+                    _.forEach(this.processedJobs, function(job, key) {
                     // jobs.map(job => {
                         job.description_short = _.truncate(job.description, {
                             'length': 70
