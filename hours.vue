@@ -55,12 +55,18 @@
         Vue.use(Meta);
         return Vue.component("hours-component", {
             template: template, // the variable template will be injected
+            data: function() {
+                return {
+                    pageImage: null
+                }
+            }
             created() {
                 this.$store.dispatch("getData", "repos").then(response => {
                     var temp_repo = this.findRepoByName('Hours Page Image');
                     if(temp_repo != null) {
                         console.log(temp_repo)
-                        this.pageBanner = temp_repo[0];
+                        this.pageImage = temp_repo.images[0];
+                        console.log(this.pageImage)
                     } else {
                         this.pageBanner = {
                             "image_url": "//codecloud.cdn.speedyrails.net/sites/5b915e966e6f6472b6290000/image/png/1531495616000/inside_banner.png"
