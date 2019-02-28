@@ -58,7 +58,14 @@
         				<div  class="prev"></div>
         				<slick ref="slick" :options="slickOptions">
         					<div class="" v-for="banner in banners" v-if="banners">
-        						<img :src="banner.image_url" class="" :alt="banner.name">
+        					    <span v-if="banner.url">
+        					        <a :href="banner.url">
+        					            <img :src="banner.image_url" class="" :alt="banner.name">
+        					        </a>
+        					    </span>
+        					    <span v-else>
+        						    <img :src="banner.image_url" class="" :alt="banner.name">
+        						</span>
         					</div>
         				</slick>
         				<div class="next"></div>
