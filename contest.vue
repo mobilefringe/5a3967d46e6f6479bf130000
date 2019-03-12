@@ -76,7 +76,7 @@
 						    <div class="col-xs-12">
 						        <label class="checkbox">
                                     <input name="agree_terms" required type="checkbox" >
-                                    I agree to the <a href = "//codecloud.cdn.speedyrails.net/sites/5af082f76e6f6450e9040000/application/pdf/1551729932000/Nintendo Switch Rules and Regs March Break.pdf" target="_blank"><u> rules and regulations</u></a>
+                                    I agree to the <a href = "/pages/eastgate-contest-rules-and-regulations" target="_blank"><u> rules and regulations</u></a>
                                 </label>
 						    </div>
 							<div class="col-xs-12">
