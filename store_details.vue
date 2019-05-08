@@ -20,7 +20,7 @@
 					<p>{{currentStore.category_name}}</p>
 					<p>{{currentStore.phone}}</p>
 					<div class="margin_20">
-					    <a v-bind:href="'//'+currentStore.website" target="_blank">Visit Store Site</a>    
+					    <a v-bind:href="'http://'+currentStore.website" target="_blank">Visit Store Site</a>    
 					</div>
 					
 					<div v-if="currentStore.store_hours">
