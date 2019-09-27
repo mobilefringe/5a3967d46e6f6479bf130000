@@ -2,7 +2,7 @@
     <div class="page_container" id="photos_container" v-if="dataloaded">
     <div v-for="photo in all_photos" class="col-sm-6" style="    padding-top: 20px;">
     <div class="image_container">
-        <a :href="photo.image_url" :data-lightbox="photo.name" data-title="photos">
+        <a :href="photo.image_url" data-lightbox="photos" :data-title="photo.name">
             <img v-lazy="photo.image_url" :alt="photo.name"/>
         </a>
     </div>
