@@ -58,7 +58,7 @@ define([], function() {
             children: [{
                     path: '',
                     component: view('sustainability_and_wellness_program'),
-                    name: 'ustainabilityList'
+                    name: 'sustainabilityList'
                 },
                 {
                     path: ':id',
@@ -95,13 +95,15 @@ define([], function() {
             }]
         },
         {
-            path: '/hours',
-            component: view('default'),
-            children: [{
-                path: '',
-                component: view('hours'),
-                name: 'hourList'
-            }]
+           path: '/hours',
+           component: view('default'),
+           children: [
+              {
+                 path: '',
+                 component: view('hours'),
+                 name: 'hourList',
+              }
+           ]
         },
         {
             path: '/contest',
