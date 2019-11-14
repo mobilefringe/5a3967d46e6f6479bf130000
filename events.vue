@@ -90,7 +90,9 @@
                         }
                     });
                     console.log(temp_promo)
-                    return _.sortBy(temp_promo, [function(o) { return o.end_date; }]);
+                    // earliestFirst = _.sortBy(temp_promo, [function(o){ return o.start_date}])
+                    
+                    return _.sortBy(temp_promo, [function(o) { return o.start_date; }]);
                 }
             },
             methods: {
