@@ -8,7 +8,6 @@
 			</div>
 			<div class="col-sm-8 store_map_container">
 				<div id="mapsvg_store_detail">
-					<!--<png-map ref="pngmapref" v-bind:png-map-url="getPNGurl" v-bind:initial-position="'500 400'" @updateMap="updatePNGMap" :key="currentStore.id"></png-map>-->
 					<mapplic-png-map ref="pngmap_ref" :height="300" :hovertip="true" :storelist="allStores" :floorlist="floorList" :svgWidth="property.map_image_width" :svgHeight="property.map_image_height" @updateMap="updatePNGMap"></mapplic-png-map>
 				</div>
 			</div>
@@ -38,7 +37,7 @@
 			</div>
 			<div class="col-sm-8 store_desc_container">
 				<div class="text-left store_description">
-					<p>{{currentStore.description}}</p>
+					<div v-html="currentStore.description"></div>
 				</div>
 			</div>
 		</div>
