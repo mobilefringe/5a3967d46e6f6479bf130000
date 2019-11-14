@@ -37,7 +37,7 @@
 			</div>
 			<div class="col-sm-8 store_desc_container">
 				<div class="text-left store_description">
-					<div v-html="currentStore.description"></div>
+					<div v-html="currentStore.rich_description"></div>
 				</div>
 			</div>
 		</div>
