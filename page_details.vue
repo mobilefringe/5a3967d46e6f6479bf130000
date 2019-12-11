@@ -21,7 +21,7 @@
         line-height: 35px;
     }
     #pages_container img{
-        width: 100%;
+        max-width: 100%;
         height: auto;
     }
     #pages_container h3{
