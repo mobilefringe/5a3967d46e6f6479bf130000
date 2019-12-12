@@ -5,7 +5,7 @@
 		</div>
 		<div class="page_container">
 			<div class="store-list-left-block col-sm-4 padding_top_20">
-			    <div style="position:relative; z-index:999999999;">
+			    <div style="position:relative;">
     			    <p class="text_left">Select Stores: </p>
     				<div class="alphabet-dd show_phone" >
     				    <v-select v-model="selectedStore" :options="filteredStores" :searchable="false" id="mobile_alpha_list" label="name" placeholder="Select a Store"></v-select>
