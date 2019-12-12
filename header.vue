@@ -5,7 +5,7 @@
     		<div class="header page_container">
     			<div class="col-sm-6 text_left no_padding">
     				<router-link to="/" exact>
-    					<img class="site-logo col-sm-3" src="//codecloud.cdn.speedyrails.net/sites/5af082f76e6f6450e9040000/image/png/1516652184126/ES_logo_red.png" alt="Eastgate Square">
+    					<img class="site-logo" src="//codecloud.cdn.speedyrails.net/sites/5af082f76e6f6450e9040000/image/png/1516652184126/ES_logo_red.png" alt="Eastgate Square">
     				</router-link>
     				
     				<div class="header-ribbon">
