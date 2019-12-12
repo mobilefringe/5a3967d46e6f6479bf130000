@@ -4,13 +4,16 @@
             <h1 v-if="property" style="display:none;">property.name</h1>
     		<div class="header page_container">
     			<div class="col-sm-6 text_left no_padding">
-    				<router-link to="/" exact>
-    					<img class="site-logo" src="//codecloud.cdn.speedyrails.net/sites/5af082f76e6f6450e9040000/image/png/1516652184126/ES_logo_red.png" alt="Eastgate Square">
-    				</router-link>
+    			    <div class="header-logos">
+    			        <router-link to="/" exact>
+        					<img class="site-logo" src="//codecloud.cdn.speedyrails.net/sites/5af082f76e6f6450e9040000/image/png/1516652184126/ES_logo_red.png" alt="Eastgate Square">
+        				</router-link>
+        				
+        				<div class="header-ribbon">
+        				    <img src="//codecloud.cdn.speedyrails.net/sites/5afdb6876e6f6410c7c90000/image/png/1576000331000/Commercial-2019-Web-Page-Emblem-1.png" alt="2019 Kingsley Excellence Tenant Satisfaction Emblem">
+        				</div>
+    			    </div>
     				
-    				<div class="header-ribbon">
-    				    <img src="//codecloud.cdn.speedyrails.net/sites/5afdb6876e6f6410c7c90000/image/png/1576000331000/Commercial-2019-Web-Page-Emblem-1.png" alt="2019 Kingsley Excellence Tenant Satisfaction Emblem">
-    				</div>
     				
     				<span class="pull-right show_phone">
     					<router-link style="background-color:transparent;" to="/newsletter" ><img src="//codecloud.cdn.speedyrails.net/sites/5af082f76e6f6450e9040000/image/png/1511797731769/newsletter.png" class="mobile_newsletter_btn" alt="Mobile Newsletter signup icon"></router-link>
