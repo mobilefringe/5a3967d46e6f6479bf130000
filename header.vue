@@ -7,6 +7,11 @@
     				<router-link to="/" exact>
     					<img class="site-logo" src="//codecloud.cdn.speedyrails.net/sites/5af082f76e6f6450e9040000/image/png/1516652184126/ES_logo_red.png" alt="Eastgate Square">
     				</router-link>
+    				
+    				<div>
+    				    <img src="//codecloud.cdn.speedyrails.net/sites/5afdb6876e6f6410c7c90000/image/png/1576000331000/Commercial-2019-Web-Page-Emblem-1.png" alt="2019 Kingsley Excellence Tenant Satisfaction Emblem">
+    				</div>
+    				
     				<span class="pull-right show_phone">
     					<router-link style="background-color:transparent;" to="/newsletter" ><img src="//codecloud.cdn.speedyrails.net/sites/5af082f76e6f6450e9040000/image/png/1511797731769/newsletter.png" class="mobile_newsletter_btn" alt="Mobile Newsletter signup icon"></router-link>
     					<img src="//codecloud.cdn.speedyrails.net/sites/56c740936e6f642d56000000/image/png/1455905827000/icon_menu.png" class="open_menu show_phone" alt="Mobile Menu"  id="open_menu"  @click="show_mobile_menu = !show_mobile_menu">
