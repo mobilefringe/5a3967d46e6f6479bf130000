@@ -10,7 +10,11 @@
         				</router-link>
         				
         				<div class="header-ribbon">
-        				    <img src="//codecloud.cdn.speedyrails.net/sites/5afdb6876e6f6410c7c90000/image/png/1576000331000/Commercial-2019-Web-Page-Emblem-1.png" alt="2019 Kingsley Excellence Tenant Satisfaction Emblem">
+        				    <!--<img src="//codecloud.cdn.speedyrails.net/sites/5afdb6876e6f6410c7c90000/image/png/1576000331000/Commercial-2019-Web-Page-Emblem-1.png" alt="2019 Kingsley Excellence Tenant Satisfaction Emblem">-->
+        				    
+        				    <a target="_blank" href="https://kingsleyassociates.com/kingsley-excellence" rel="noopener noreferrer">
+<img height="20%" width="20%" src="http://docs.kingsleyportal.com/Images/Awards/Commercial2019Emblem.svg"/>
+</a>
         				</div>
     			    </div>
     				
