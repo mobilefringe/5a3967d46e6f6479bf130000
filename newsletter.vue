@@ -3,7 +3,7 @@
         <div class="margin_25_across padding_top_40">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <img style="margin: 20px auto; max-width:100%;" src="//codecloud.cdn.speedyrails.net/sites/5af082f76e6f6450e9040000/image/jpeg/1516643986000/NEW NEW E News a.jpg" alt="plaza">
+                    <img style="margin: 20px auto; max-width:100%;" src="//codecloud.cdn.speedyrails.net/sites/5af082f76e6f6450e9040000/image/png/1583183188100/Newsletter Page Image.png" alt="">
                 </div> 
             </div>
             <div class="row"> 
