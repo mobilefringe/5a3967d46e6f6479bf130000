@@ -142,7 +142,7 @@
                        meta_description: "",
                        meta_keywords: "",
                        meta_image: ""
-                    }
+                    },
                 }
             },
             created () {
