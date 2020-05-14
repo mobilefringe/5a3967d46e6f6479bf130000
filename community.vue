@@ -269,8 +269,7 @@
 </style>
 
 <script>
-    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "vue-meta", 'vee-validate',"v-calendar",'utility', 'jquery'], function(Vue, Vuex, moment, tz, VueMoment, Meta, VeeValidate,VCalendar, Utility, $) {
-        Vue.use(Meta);
+    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", 'vee-validate',"v-calendar",'utility', 'jquery'], function(Vue, Vuex, moment, tz, VueMoment, VeeValidate,VCalendar, Utility, $) {
         Vue.use(VeeValidate);
         Vue.use(VCalendar.default);
         return Vue.component("community-component", {
