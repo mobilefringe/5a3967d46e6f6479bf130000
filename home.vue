@@ -98,8 +98,7 @@
 </template>
 
 <script>
-    define(["Vue", "vuex", "vue!today_hours", "vue!search-component", 'vue!vue-slick','js-cookie', "vue-meta"], function(Vue, Vuex, TodayHoursComponent, SearchComponent, slick, Cookies, Meta) {
-        Vue.use(Meta);
+    define(["Vue", "vuex", "vue!today_hours", "vue!search-component", 'vue!vue-slick','js-cookie'], function(Vue, Vuex, TodayHoursComponent, SearchComponent, slick, Cookies) {
         return Vue.component("home-component", {
             template: template, // the variable template will be injected
             head: {
