@@ -24,8 +24,7 @@
     }
 </style>
 <script>
-    define(["Vue", 'vuex', "vue-meta", "lightbox", "vue-lazy-load"], function(Vue, Vuex, Meta, Lightbox, VueLazyload) {
-        Vue.use(Meta);
+    define(["Vue", 'vuex', "lightbox", "vue-lazy-load"], function(Vue, Vuex, Lightbox, VueLazyload) {
         Vue.use(VueLazyload);
         Vue.use(Lightbox);
 
