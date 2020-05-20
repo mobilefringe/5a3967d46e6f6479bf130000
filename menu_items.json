@@ -55,10 +55,7 @@
         "href": "#",
         "show_sub_menu": false,
         "sub_menu": [
-            {
-                "name": "CENTRE AMENITIES",
-                "href": "/contact_us"
-            },
+      
             {
                 "name": "Customer Service ",
                 "href": "/pages/eastgate-customer-service"
