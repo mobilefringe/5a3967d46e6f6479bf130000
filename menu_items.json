@@ -5,16 +5,27 @@
         "href": "/stores"
     },
     {
-        "name": "Events",
-        "id": "events_link",
-        "href": "/events",
+        "name": "COVID-19 UPDATES",
+        "id": "events_covid19_link",
+        "href": "/events/eastgate-covid-19-update",
         "show_sub_menu": false
     },
     {
         "name": "Promotions",
         "id": "sales_link",
-        "href": "/promotions",
-        "show_sub_menu": false
+        "href": "#",
+        "show_sub_menu": false,
+        "sub_menu": [{
+                "name": "Mall Events",
+                "id": "events_link",
+                "href": "/events"
+            },
+            {
+                "name": "Store Promotions",
+                "id": "sales_link",
+                "href": "/promotions"
+            }
+        ]
     },
     {
         "name": "Leasing",
@@ -39,7 +50,7 @@
         ]
     },
     {
-        "name": "Contact Us",
+        "name": "Mall Info",
         "id": "contact_link",
         "href": "#",
         "show_sub_menu": false,
