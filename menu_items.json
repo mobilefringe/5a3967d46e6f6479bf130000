@@ -78,6 +78,10 @@
             {
                 "name": "Hours & Directions",
                 "href": "/hours"
+            },
+            {
+                "name": "Contact Us",
+                "href": "/contact_us"
             }
             
         ]
