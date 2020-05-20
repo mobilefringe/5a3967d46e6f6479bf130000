@@ -56,7 +56,7 @@
         "show_sub_menu": false,
         "sub_menu": [
             {
-                "name": "Contact Us ",
+                "name": "CENTRE AMENITIES",
                 "href": "/contact_us"
             },
             {
@@ -64,25 +64,26 @@
                 "href": "/pages/eastgate-customer-service"
             },
             {
-                "name": "Find Us",
+                "name": "Gift Cards",
                 "href": "/find_us"
-            },
-            {
-                "name": "About Us",
-                "href": "/pages/eastgate-about-us"
             },
             {
                 "name": "Jobs",
                 "href": "/jobs"
             },
             {
-                "name": "Shopping Hours",
-                "href": "/hours"
-            },
-            {
                 "name": "Community",
                 "href": "/community"
+            },
+            {
+                "name": "Find Us",
+                "href": "/find_us"
+            },
+            {
+                "name": "Hours & Directions",
+                "href": "/hours"
             }
+            
         ]
     }
 ]
